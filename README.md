@@ -15,6 +15,16 @@
 * Lab: <a href="https://github.com/upperlinecode/ShorthandConverter" target="_blank_">Shorthand Converter</a> (Convert shorthand to HTML)
 * Lab: <a href="https://github.com/upperlinecode/SeriousSelectors" target="_blank_">Serious Selectors</a> (Specificity & niche CSS selectors)
 
+### Unit 1-3 CSS Grid
+* Lesson: [CSS Grid](html/3-html.md)
+* Lab: <a href="https://github.com/upperlinecode/GridGames" target="_blank_">Grid Games</a> (Match styled)
+* Lab: <a href="https://github.com/upperlinecode/WebsiteEdition" target="_blank_">Fakebook</a> (Match unstyled HTML to a Grid mockup)
+* Lab: <a href="https://github.com/upperlinecode/MockupMagic" target="_blank_">Mockup Magic/a> (Nested Grids)
+
+### Unit 1-4 CSS Flexbox
+* Lesson: [CSS Flexbox](html/4-html.md)
+* Lab: <a href="https://github.com/upperlinecode/Flexbox" target="_blank_">Flexbox</a> (Flexbox alone)
+
 ## Unit 2: React.js
 
 ## Unit 3: Data Science Mindsets
