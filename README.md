@@ -23,7 +23,7 @@
 
 ### Unit 1-4 CSS Flexbox
 * Lesson: [CSS Flexbox](html/4-html.md)
-* Lab: <a href="https://github.com/upperlinecode/Flexbox" target="_blank_">Flexbox</a> (Flexbox alone)
+* Lab: <a href="https://github.com/upperlinecode/Flexbox" target="_blank_">Flexsites</a> (Flexbox)
 
 ## Unit 2: React.js
 
