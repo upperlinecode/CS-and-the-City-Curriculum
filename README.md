@@ -27,35 +27,35 @@
 
 ## Unit 2: React.js
 ### Unit 2-1 React Setup
-* Lesson: Hello World
+* Lesson: [Hello World](react/1-react.md)
 	* Possible Stretch: Routes
 
 ### Unit 2-2 Functional Components
-* Lesson: Functional Components
+* Lesson: [Functional Components](react/2-react.md)
 * Lab: TBD (Build components on an existing template)
 * Lab: TBD (Convert HTML site to React site)
 
 ### Unit 2-3 Props + JSX
-* Lesson: Props + JSX
+* Lesson: [Props + JSX](react/3-react.md)
 * Lab: TBD (Pass props to pre-built, reusable components)
 	* Possible Stretch: Build own reusable components
 * Lab: Pizza v2 refactor (Refactor a hardcoded component to be responsive)
 * Lab: TBD (Use props passed to component to populate page [to match a mockup])
 
 ### Unit 2-4 Parent & Child Components
-* Lesson: Parent & Child Components (Breaking a page down into components, deciding what will be inside of what)
+* Lesson: [Parent & Child Components]](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
 * Lab: TBD (Build components which are nested [match a mockup, basic stylesheet already created, possible shorthand])
 * Lab: TBD (Pass props down through nested components)
 
 ### Unit 2-5 Style Props & Inline Styling
-* Lesson: Style Props & Inline Styling (Time of day / open / closed conditional styling)
+* Lesson: [Style Props & Inline Styling](react/5-react.md) (Time of day / open / closed conditional styling)
 * Lab: TBD (Crazy clocks style lab)
 
 ### Unit 2-6 State
-* Lesson: State (State, inline events)
+* Lesson: [State](react/6a-react.md) (State, inline events)
 * Lab: Fidget App
 * Lab: TBD (Other inline events)
-* Lesson: State (Lifecycle methods, passing state among elements)
+* Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
 * Lab: TBD
 * Lab: TBD
 * Lab: TBD
