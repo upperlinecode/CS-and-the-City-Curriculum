@@ -19,7 +19,7 @@
 * Lesson: [CSS Grid](html/3-html.md)
 * Lab: <a href="https://github.com/upperlinecode/GridGames" target="_blank_">Grid Games</a> (Match styled)
 * Lab: <a href="https://github.com/upperlinecode/WebsiteEdition" target="_blank_">Fakebook</a> (Match unstyled HTML to a Grid mockup)
-* Lab: <a href="https://github.com/upperlinecode/MockupMagic" target="_blank_">Mockup Magic/a> (Nested Grids)
+* Lab: <a href="https://github.com/upperlinecode/MockupMagic" target="_blank_">Mockup Magic</a> (Nested Grids)
 
 ### Unit 1-4 CSS Flexbox
 * Lesson: [CSS Flexbox](html/4-html.md)
