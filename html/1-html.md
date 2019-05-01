@@ -68,27 +68,10 @@ Students will take about 3 minutes, and usually create concentric circles, a vis
       </area>
 
       <area class="borough" id="Queens">
-
+      
       </area>
     </city>
   </state>
-
-  <state id="Tennessee">
-    <city id="Nashville">
-      <street id="AndrewCrockettCt">
-        <house id="1725">
-          Robin and Marty!
-        </house>
-        <house id="1727">
-          Jeff's parents!
-        </house>
-        <house id="1729">
-          Gene and Judy!
-        </house>
-      </street>
-    </city>
-  </state>
-
 </USA>
 
 ```
