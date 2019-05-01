@@ -28,7 +28,7 @@
 ## Unit 2: React.js
 ### Unit 2-1 React Setup
 * Lesson: Hello World
-> Possible Stretch: Routes
+	* Possible Stretch: Routes
 
 ### Unit 2-2 Functional Components
 * Lesson: Functional Components
@@ -38,7 +38,7 @@
 ### Unit 2-3 Props + JSX
 * Lesson: Props + JSX
 * Lab: TBD (Pass props to pre-built, reusable components)
-> Possible Stretch: Build own reusable components
+	* Possible Stretch: Build own reusable components
 * Lab: Pizza v2 refactor (Refactor a hardcoded component to be responsive)
 * Lab: TBD (Use props passed to component to populate page [to match a mockup])
 
