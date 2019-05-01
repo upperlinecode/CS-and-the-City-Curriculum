@@ -43,7 +43,7 @@
 * Lab: TBD (Use props passed to component to populate page [to match a mockup])
 
 ### Unit 2-4 Parent & Child Components
-* Lesson: [Parent & Child Components]](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
+* Lesson: [Parent & Child Components](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
 * Lab: TBD (Build components which are nested [match a mockup, basic stylesheet already created, possible shorthand])
 * Lab: TBD (Pass props down through nested components)
 
