@@ -38,7 +38,7 @@
 ### Unit 2-3 Props + JSX
 * Lesson: Props + JSX
 * Lab: TBD (Pass props to pre-built, reusable components)
-> Stretch: build own
+> Possible Stretch: Build own reusable components
 * Lab: Pizza v2 refactor (Refactor a hardcoded component to be responsive)
 * Lab: TBD (Use props passed to component to populate page [to match a mockup])
 
