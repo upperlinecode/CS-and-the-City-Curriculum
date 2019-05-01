@@ -30,8 +30,6 @@ HTML requires less introduction than you might think. The most foundational unde
 Here's a list of things, mostly in NYC. Your challenge, on whiteboards, is to come up with some visual representation of this information. Most importantly, I want to be able to understand what is inside of what.
 * USA
 * New York
-* Tennessee (or wherever)
-* Nashville (or wherever)
 * New York City
 * Brooklyn
 * Manhattan
@@ -68,7 +66,7 @@ Students will take about 3 minutes, and usually create concentric circles, a vis
       </area>
 
       <area class="borough" id="Queens">
-      
+
       </area>
     </city>
   </state>
