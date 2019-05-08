@@ -40,7 +40,7 @@ Often, we'll want to pass state from a parent component to a child component, an
 - Create a new functional component, `NewComponent`, that receives state from the `App` component and displays the `______` property.
 - Modify your code above so `NewComponent` shows `"Some text"` if `isTrue` is `true`, and `"Some different text"` if `isTrue` is `false`.
 - Add a new property to the state, and use it in `NewComponent`.
-- Create another component, `ChildComponent` that is a child of `NewComponent`. Pass the state of `NewComponent` to `ChildComponent` and show (something).
+- Create another component, `ChildComponent`, that is a child of `NewComponent`. Pass the state of `NewComponent` to `ChildComponent` and show (something).
 
 ## Lifecycle Methods
 
