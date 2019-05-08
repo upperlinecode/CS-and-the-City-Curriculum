@@ -129,7 +129,7 @@ Now that you've had a chance to think about how to restructure the app above, tr
 
 ## Close
 
-Think back to the three changes that you were asked to make at the beginning of this lesson. Take a moment to make those changes to your app now that you've broken it apart into parent and child functional components:
+Think back to the three changes that you were asked to make at the beginning of this lesson. Take a moment to make those changes to your app now that you've broken it apart into nested functional components:
 
 - Make all `<h2>`'s (in certain conditions) `<h3>`'s (so you can't just do a find/replace).
 - Reorder the elements so the `<p>` is the last element in each container.
