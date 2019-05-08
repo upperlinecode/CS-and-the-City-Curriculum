@@ -39,7 +39,7 @@ When component A uses component B as part of its `return` statement, component A
 import React from 'react'
 import ComponentB from './ComponentB'
 
-function ComponentA(){
+const ComponentA = () => {
 	return (
 		<ComponentB />
 	)
@@ -54,7 +54,7 @@ import React from 'react'
 import ComponentC from './ComponentC'
 import ComponentD from './ComponentD'
 
-function ComponentB(){
+const ComponentB = () => {
 	return (
 		<div>
 			<ComponentC />
@@ -70,7 +70,7 @@ export default ComponentB
 ```js
 import React from 'react'
 
-function ComponentC(){
+const ComponentC = () => {
 	return (
 		<div>
 			// Some code
@@ -85,7 +85,7 @@ export default ComponentC
 ```js
 import React from 'react'
 
-function ComponentD(){
+const ComponentD = () => {
 	return (
 		<div>
 			// Some code
@@ -115,10 +115,11 @@ Now that you've had a chance to think about how to restructure the app above, tr
 	```
 	import React from 'react'
 	import AnotherComponent from './AnotherComponent'
-	...
-	```
-	and
-	```
+
+	const ComponentName = () => {
+		...
+	}
+
 	export default ComponentName
 	```
 	2. Remember to include a new `import` statement wherever you use a new functional component.
