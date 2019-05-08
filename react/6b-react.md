@@ -33,6 +33,15 @@ Often, we'll want to pass state from a parent component to a child component, an
 // example of passing state as prop(s)
 ```
 
+[INSERT FOLLOW-ALONG TO PASS STATE VIA PROPS]
+
+#### Mini-Challenges
+
+- Create a new functional component, `NewComponent`, that receives state from the `App` component and displays the `______` property.
+- Modify your code above so `NewComponent` shows `"Some text"` if `isTrue` is `true`, and `"Some different text"` if `isTrue` is `false`.
+- Add a new property to the state, and use it in `NewComponent`.
+- Create another component, `ChildComponent` that is a child of `NewComponent`. Pass the state of `NewComponent` to `ChildComponent` and show (something).
+
 ## Lifecycle Methods
 
 Description of why lifecycle methods are needed...
@@ -51,20 +60,13 @@ As of React v16.3, the lifecycle methods are:
 
 ### Using Lifecycle Methods
 
-Some text about using lifecycle methods
+Some text about using lifecycle methods... You won't use all of them, and you often won't use any of them...
 
 ```js
 // example of how to modify a functional component to include a lifecycle method
 ```
 
-### Sub-content 2
-
-Some text
-
-#### Mini-Challenges
-
-- Challenge 1
-- Challenge 2
+[INSERT FOLLOW-ALONG FOR ADDING A LIFECYCLE EVENT]
 
 ## Close
 
