@@ -40,9 +40,9 @@ import React from 'react'
 import ComponentB from './ComponentB'
 
 const ComponentA = () => {
-	return (
-		<ComponentB />
-	)
+  return (
+    <ComponentB />
+  )
 }
 
 export default ComponentA
@@ -55,12 +55,12 @@ import ComponentC from './ComponentC'
 import ComponentD from './ComponentD'
 
 const ComponentB = () => {
-	return (
-		<div>
-			<ComponentC />
-			<ComponentD />
-		</div>
-	)
+  return (
+    <div>
+      <ComponentC />
+      <ComponentD />
+    </div>
+  )
 }
 
 export default ComponentB
@@ -71,11 +71,11 @@ export default ComponentB
 import React from 'react'
 
 const ComponentC = () => {
-	return (
-		<div>
-			// Some code
-		</div>
-	)
+  return (
+    <div>
+      // Some code
+    </div>
+  )
 }
 
 export default ComponentC
@@ -86,11 +86,11 @@ export default ComponentC
 import React from 'react'
 
 const ComponentD = () => {
-	return (
-		<div>
-			// Some code
-		</div>
-	)
+  return (
+    <div>
+      // Some code
+    </div>
+  )
 }
 
 export default ComponentD
@@ -108,24 +108,24 @@ The parent-child relationship is all about nesting.
 Now that you've had a chance to think about how to restructure the app above, try to implement that restructuring:
 
 1. Break apart the code into functional components
-	1. Tip: start by breaking the code into large components, then try to break those components into smaller components.
-	2. Keep an eye out for any code you might be able to package into a component and reuse.
+  1. Tip: start by breaking the code into large components, then try to break those components into smaller components.
+  2. Keep an eye out for any code you might be able to package into a component and reuse.
 2. Keep breaking the code into separate functional components until you are satisfied that the functional components are as granular as they should be.
-	1. Remember to include the necessary `import` and `export` statements when you create new functional components:
-	```javascript
-	import React from 'react'
-	import AnotherComponent from './AnotherComponent'
+  1. Remember to include the necessary `import` and `export` statements when you create new functional components:
+  ```javascript
+  import React from 'react'
+  import AnotherComponent from './AnotherComponent'
 
-	const ComponentName = () => {
-		return (
-			// Some code
-		)
-	}
+  const ComponentName = () => {
+    return (
+      // Some code
+    )
+  }
 
-	export default ComponentName
-	```
-	2. Remember to include a new `import` statement wherever you use a new functional component.
-	3. Remember to replace the code you abstract into the functional component with the component name: e.g. `<ComponentName />`.
+  export default ComponentName
+  ```
+  2. Remember to include a new `import` statement wherever you use a new functional component.
+  3. Remember to replace the code you abstract into the functional component with the component name: e.g. `<ComponentName />`.
 
 ## Close
 
