@@ -74,7 +74,7 @@ Often, we'll want to pass state from a parent component to a child component, an
 Because state is closely associated with interactivity, we need a way to listen for when a user interacts with elements in our app. HTML has a native set of "[event handlers](https://www.w3schools.com/js/js_events.asp)" that will execute a JavaScript function when a particular action happens. In React, there are similar, slightly different camel-cased versions of these same event handlers that are used in functional components to execute an action when a user interacts with that element.
 
 | HTML | React | Action |
-| *---* | *---* | --- |
+| :---: | :---: | --- |
 | onchange | onChange | An HTML element has been changed |
 | onclick | onClick | The user clicks an HTML element |
 | onmouseover | onMouseOver | The user moves the mouse over an HTML element |
