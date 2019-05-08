@@ -2,9 +2,9 @@
 
 ## Learning Objectives
 
-- SWBAT 
-- SWBAT
-- SWBAT
+- SWBAT pass state between components using props
+- SWBAT explain when to use various lifecycle methods
+- SWBAT add a lifecycle method to a functional component
 
 ## Sequence
 
@@ -46,6 +46,8 @@ As of React v16.3, the lifecycle methods are:
 - `componentWillUpdate`: similar to `componentWillReceiveProps` but used when also using `shouldComponentUpdate`.
 - `componentDidUpdate`: what to do when a component gets new props or new state; most useful for making a change only when particular props or state is changed.
 - `componentWillUnmount`: to control what happens before a component is removed; most useful for cleaning up after a component.
+
+[INCLUDE AN IMAGE OF LIFECYCLE EVENTS HERE]
 
 ### Using Lifecycle Methods
 
