@@ -100,6 +100,7 @@ Now that you've had a chance to think about how to restructure the app above, tr
 
 1. Break apart the code into functional components
 	1. Tip: start by breaking the code into large components, then try to break those components into smaller components.
+	2. Keep an eye out for any code you might be able to package into a component and reuse.
 2. Keep breaking the code into separate functional components until you are satisfied that the functional components are as granular as they should be.
 	1. Remember to include the necessary `import` and `export` statements when you create new functional components:
 	```
