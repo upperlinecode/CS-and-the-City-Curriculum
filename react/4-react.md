@@ -32,7 +32,7 @@ Based on what you know so far, how would you accomplish the following modificati
 
 As you've seen, it's possible to break code up into functional components to make it easier for a developer to manage the code in different parts of a React app. It's worth recognizing, however, that components can use (or be used by) other components. This makes code a bit more structurally semantic (it gives it more meaning), instead of just duplicating the way you might build an app in HTML.
 
-When component A uses component B as part of its `return` statement, component A is referred to as the "parent" of component B, and component B is referred to as the "child" of parent A. Component B could, in turn, be built from other components - say components C and D. In this case, component B is the "parent" of components C and D, and components C and D are the "children" of component B. Component B is the "child" of component A and the "parent" of components B and C; it's all about the relationship between component B and one of the other elements.
+When component A uses component B as part of its `return` statement, component A is referred to as the "parent" of component B, and component B is referred to as the "child" of parent A. Component B could, in turn, be built from other components - say components C and D. In this case, component B is the "parent" of components C and D, and components C and D are the "children" of component B. Component B is the "child" of component A and the "parent" of components B and C.
 
 #### Component A
 ```js
@@ -67,7 +67,7 @@ import React from 'react'
 
 function ComponentC(){
 	return (
-		// Some code here
+		// Some code
 	)
 }
 
@@ -80,7 +80,7 @@ import React from 'react'
 
 function ComponentD(){
 	return (
-		// Some code here
+		// Some code
 	)
 }
 
