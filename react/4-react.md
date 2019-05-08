@@ -117,7 +117,9 @@ Now that you've had a chance to think about how to restructure the app above, tr
 	import AnotherComponent from './AnotherComponent'
 
 	const ComponentName = () => {
-		...
+		return (
+			// Some code
+		)
 	}
 
 	export default ComponentName
