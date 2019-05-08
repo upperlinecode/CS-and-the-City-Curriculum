@@ -114,7 +114,7 @@ Now that you've had a chance to think about how to restructure the app above, tr
 	1. Remember to include the necessary `import` and `export` statements when you create new functional components:
 	```
 	import React from 'react'
-	import Component from './Component'
+	import AnotherComponent from './AnotherComponent'
 	...
 	```
 	and
@@ -122,7 +122,7 @@ Now that you've had a chance to think about how to restructure the app above, tr
 	export default ComponentName
 	```
 	2. Remember to include a new `import` statement wherever you use a new functional component.
-	3. Remember to replace the code you abstract into the functional component with the component name: e.g. `<Component />`.
+	3. Remember to replace the code you abstract into the functional component with the component name: e.g. `<ComponentName />`.
 
 ## Close
 
