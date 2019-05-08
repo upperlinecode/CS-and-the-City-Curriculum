@@ -8,10 +8,10 @@
 
 ## Sequence
 
-1. Launch
-2. Parent & Child Components
-3. Rearranging Components
-4. Close
+1. [Launch](#launch)
+2. [Parent & Child Components](#parent--child-components)
+3. [Rearranging Components](#rearranging-components)
+4. [Close](#close)
 
 ## Launch
 
