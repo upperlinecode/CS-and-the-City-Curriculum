@@ -61,14 +61,6 @@ State is an immutable (unchangeable) object, which means when we are interacting
 // An example of updating state here
 ```
 
-### Passing State as props
-
-Often, we'll want to pass state from a parent component to a child component, and we do that by passing state as a prop (or set of props). By doing this, whenever the state is updated, the update will trickle down to child components and update those as well.
-
-```js
-// example of passing state as prop(s)
-```
-
 ## Inline Events
 
 Because state is closely associated with interactivity, we need a way to listen for when a user interacts with elements in our app. HTML has a native set of "[event handlers](https://www.w3schools.com/js/js_events.asp)" that will execute a JavaScript function when a particular action happens. In React, there are similar, slightly different camel-cased versions of these same event handlers that are used in functional components to execute an action when a user interacts with that element.
@@ -90,10 +82,29 @@ Because state is closely associated with interactivity, we need a way to listen 
 
 > Check out the [React Documentation for Event Handlers](https://reactjs.org/docs/handling-events.html)
 
+### Changing State with an Inline Event
+
+As you might have anticipated, inline events can be used to change state.
+
+In the example below:
+
+- there is a state property `isChecked` which is initially set to `false`.
+- the `checked` property of the `<input>` is set based on the `isChecked` state
+- the `<input>` also has an inline event, `onChange` which calls the `handleClick` function
+- the `handleClick` function updates the `isChecked` state to the opposite of its current value
+- the update to the `isChecked` state then causes the checkbox to change its `checked` property to appear as a checked box
+
+```js
+// example of checkbox changing state with handleClick event handler
+```
+
 ## Close
 
-Some text here
+We've seen how state is an object in which properties (related to the interactivity) of the app can be stored.
+
+In the next lesson, we'll see how state can be passed between components, and we'll learn about how to optimize when components are created, for how long they live, when they know to update, and how to remove them from our app's memory.
 
 #### Questions for students
 
-> Some question
+- Consider an app you use regularly. Assume it's built using React: how are they using state to create a pleasant user experience?
+- Thinking of the same app, what inline events do you think are being called to control the app's interactivity?
