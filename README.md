@@ -37,9 +37,8 @@
 
 ### Unit 2-3 Props + JSX
 * Lesson: [Props + JSX](react/3-react.md)
-* Lab: TBD (Pass props to pre-built, reusable components)
-	* Possible Stretch: Build own reusable components
-* Lab: Pizza v2 refactor (Refactor a hardcoded component to be responsive)
+* Lab: TBD
+* Lab: [NYS C-Schools](https://github.com/upperlinecode/react-NYSED-lab) (Refactor a hardcoded component to be responsive)
 * Lab: TBD (Use props passed to component to populate page [to match a mockup])
 
 ### Unit 2-4 Parent & Child Components
