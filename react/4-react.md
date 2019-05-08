@@ -35,7 +35,7 @@ As you've seen, it's possible to break code up into functional components to mak
 When component A uses component B as part of its `return` statement, component A is referred to as the "parent" of component B, and component B is referred to as the "child" of parent A. Component B could, in turn, be built from other components - say components C and D. In this case, component B is the "parent" of components C and D, and components C and D are the "children" of component B. Component B is the "child" of component A and the "parent" of components B and C.
 
 #### `./ComponentA.js`
-```js
+```javascript
 import React from 'react'
 import ComponentB from './ComponentB'
 
@@ -49,7 +49,7 @@ export default ComponentA
 ```
 
 #### `./ComponentB.js`
-```js
+```javascript
 import React from 'react'
 import ComponentC from './ComponentC'
 import ComponentD from './ComponentD'
@@ -67,7 +67,7 @@ export default ComponentB
 ```
 
 #### `./ComponentC.js`
-```js
+```javascript
 import React from 'react'
 
 const ComponentC = () => {
@@ -82,7 +82,7 @@ export default ComponentC
 ```
 
 #### `./ComponentD.js`
-```js
+```javascript
 import React from 'react'
 
 const ComponentD = () => {
@@ -112,7 +112,7 @@ Now that you've had a chance to think about how to restructure the app above, tr
 	2. Keep an eye out for any code you might be able to package into a component and reuse.
 2. Keep breaking the code into separate functional components until you are satisfied that the functional components are as granular as they should be.
 	1. Remember to include the necessary `import` and `export` statements when you create new functional components:
-	```
+	```javascript
 	import React from 'react'
 	import AnotherComponent from './AnotherComponent'
 
