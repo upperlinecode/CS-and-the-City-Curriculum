@@ -25,8 +25,8 @@ Based on what you know so far, how would you accomplish the following modificati
 
 #### Questions for students
 
-> - How tedious did you think it was to make those changes?
-> - Can you think of a more efficient way to arrange the code so that changes like those are not so laborious?
+- How tedious did you think it was to make those changes?
+- Can you think of a more efficient way to arrange the code so that changes like those are not so laborious?
 
 ## Parents & Children
 
