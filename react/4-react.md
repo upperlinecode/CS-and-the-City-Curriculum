@@ -9,7 +9,7 @@
 ## Sequence
 
 1. [Launch](#launch)
-2. [Parent & Child Components](#parent--child-components)
+2. [Parents & Children](#parents--children)
 3. [Rearranging Components](#rearranging-components)
 4. [Close](#close)
 
@@ -28,7 +28,7 @@ Based on what you know so far, how would you accomplish the following modificati
 > - How tedious did you think it was to make those changes?
 > - Can you think of a more efficient way to arrange the code so that changes like those are not so laborious?
 
-## Parent & Child Components
+## Parents & Children
 
 As you've seen, it's possible to break code up into functional components to make it easier for a developer to manage the code in different parts of a React app. It's worth recognizing, however, that components can use (or be used by) other components. This makes code a bit more structurally semantic (it gives it more meaning), instead of just duplicating the way you might build an app in HTML.
 
