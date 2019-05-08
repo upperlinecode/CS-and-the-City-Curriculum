@@ -56,8 +56,10 @@ import ComponentD from './ComponentD'
 
 function ComponentB(){
 	return (
-		<ComponentC />
-		<ComponentD />
+		<div>
+			<ComponentC />
+			<ComponentD />
+		</div>
 	)
 }
 
@@ -70,7 +72,9 @@ import React from 'react'
 
 function ComponentC(){
 	return (
-		// Some code
+		<div>
+			// Some code
+		</div>
 	)
 }
 
@@ -83,7 +87,9 @@ import React from 'react'
 
 function ComponentD(){
 	return (
-		// Some code
+		<div>
+			// Some code
+		</div>
 	)
 }
 
