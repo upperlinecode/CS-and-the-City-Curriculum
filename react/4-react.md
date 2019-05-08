@@ -34,7 +34,7 @@ As you've seen, it's possible to break code up into functional components to mak
 
 When component A uses component B as part of its `return` statement, component A is referred to as the "parent" of component B, and component B is referred to as the "child" of parent A. Component B could, in turn, be built from other components - say components C and D. In this case, component B is the "parent" of components C and D, and components C and D are the "children" of component B. Component B is the "child" of component A and the "parent" of components B and C.
 
-#### `ComponentA.js`
+#### `./ComponentA.js`
 ```js
 import React from 'react'
 import ComponentB from './ComponentB'
@@ -48,7 +48,7 @@ function ComponentA(){
 export default ComponentA
 ```
 
-#### `ComponentB.js`
+#### `./ComponentB.js`
 ```js
 import React from 'react'
 import ComponentC from './ComponentC'
@@ -64,7 +64,7 @@ function ComponentB(){
 export default ComponentB
 ```
 
-#### `ComponentC.js`
+#### `./ComponentC.js`
 ```js
 import React from 'react'
 
@@ -77,7 +77,7 @@ function ComponentC(){
 export default ComponentC
 ```
 
-#### `ComponentD.js`
+#### `./ComponentD.js`
 ```js
 import React from 'react'
 
