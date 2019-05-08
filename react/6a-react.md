@@ -8,11 +8,11 @@
 
 ## Sequence
 
-1. Launch
-2. State
-3. State in Functional Components
-4. Inline Events
-5. Close
+1. [Launch](#launch)
+2. [State](#state)
+3. [State in Functional Components](#state-in-functional-components)
+4. [Inline Events](#inline-events)
+5. [Close](#close)
 
 ## Launch
 
