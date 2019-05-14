@@ -44,19 +44,29 @@ Often, we'll want to pass state from a parent component to a child component, an
 
 ## Lifecycle Methods
 
-Description of why lifecycle methods are needed...
+Sometimes a developer will want to control how components are added (mounted), how and when they are updated, and how they are removed (unmounted) from an app. Instead of relying on React to always know when to mount, update, and unmount components based on updates to props and state, we can use lifecycle methods to specify to React exactly how a component should act throughout its existence.
 
-As of React v16.3, the lifecycle methods are:
+![Common React Lifecycle Methods](../img/react-lifecycle-methods.png)
 
-- `componentWillMount`: what to do when your component is about to mount; most useful for setting the configuration of the component that will be added soon.
-- `componentDidMount`: what to do once your component is there; most useful for executing an API call for data that will be used to populate the component's props.
+> View an interactive version of this diagram on [projects.wojtekmaj.pl](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+
+
+
+As of React v16.3, the complete list of lifecycle methods are:
+
+#### Mounting Lifecycle Methods
+
+| Lifecycle Method | Description | Use |
+| :---: | --- | --- |
+| `componentWillMount` | What to do when your component is about to mount | Most useful for setting the configuration of the component that will be added soon|
+| `componentDidMount` | What to do once your component is there | Most useful for executing an API call for data that will be used to populate the component's props |
+
+
 - `componentWillReceiveProps`: what to do when a components gets a bunch of new props; most useful to act on a particular prop change.
 - `shouldComponentUpdate`: to control how a component should decide whether or not to update; most useful for controlling when a component re-renders.
 - `componentWillUpdate`: similar to `componentWillReceiveProps` but used when also using `shouldComponentUpdate`.
 - `componentDidUpdate`: what to do when a component gets new props or new state; most useful for making a change only when particular props or state is changed.
 - `componentWillUnmount`: to control what happens before a component is removed; most useful for cleaning up after a component.
-
-[INCLUDE AN IMAGE OF LIFECYCLE EVENTS HERE]
 
 ### Using Lifecycle Methods
 
