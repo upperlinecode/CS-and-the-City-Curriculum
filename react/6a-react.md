@@ -67,11 +67,11 @@ Because state is closely associated with interactivity, we need a way to listen 
 
 | HTML | React | Action | Example |
 | :---: | :---: | --- | --- |
-| onchange | onChange | An HTML element has been changed | A checkbox checked/unchecked<br>A dropdown choice selected<br>Etc. |
-| onclick | onClick | The user clicks an HTML element ||
-| onmouseover | onMouseOver | The user moves the mouse over an HTML element ||
-| onmouseout | onMouseOut | The user moves the mouse away from an HTML element ||
-| onkeydown | onKeyDown | The user pushes a keyboard key ||
+| onchange | onChange | An HTML element has been changed | A checkbox is checked<br>A checkbox is unchecked<br>A dropdown choice selected<br>Etc. |
+| onclick | onClick | User clicks an HTML element ||
+| onmouseover | onMouseOver | User cursors over an HTML element ||
+| onmouseout | onMouseOut | User cursors away from an HTML element ||
+| onkeydown | onKeyDown | User pushes a keyboard key ||
 
 ```js
 // examples of inline event
