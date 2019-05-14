@@ -16,7 +16,7 @@
 
 ## Launch
 
-So far we've seen how props can be used in React to pass data to functional components. This enables us to write a component once and then feed in the property data in order to show different versions of the same component.
+So far we've seen how props can be used in React to pass data to functional components. Passing props enables us to design and code a component one time and then feed in property data in order to show different versions of that component.
 
 But what if we wanted to know:
 
@@ -24,11 +24,11 @@ But what if we wanted to know:
 - a selection the user makes on a form
 - whether the user has selected a particular global configuration
 
-Props don't enable us to keep track of interactive data like this; props don't get changed or updated when a user interacts in a particular way. To keep track of that, we need to understand a new concept in React: state.
+Props don't enable us to keep track of interactive data like this; props don't get changed or updated when a user interacts with a component in a particular way. To keep track of that, we need to understand a new concept in React: state.
 
 ## State
 
-State is a set of stored properties (an `Object`) that can be used throughout an app:
+State is a set of stored properties (an `Object`) that can be used or referenced throughout an app, and when changes are made to the state object, those changes can cascade throughout an app.
 
 ```js
 this.state = {
@@ -43,7 +43,7 @@ this.state = {
 
 ## State in Functional Components
 
-Note: Any component can include state, but we'll mostly be using state in the `App` component and then "passing" state to any child components.
+> Note: Any component can include state, but we'll mostly be using state in the `App` component and then "passing" state to any child components.
 
 ### Accessing State
 
@@ -65,13 +65,13 @@ State is an immutable (unchangeable) object, which means when we are interacting
 
 Because state is closely associated with interactivity, we need a way to listen for when a user interacts with elements in our app. HTML has a native set of "[event handlers](https://www.w3schools.com/js/js_events.asp)" that will execute a JavaScript function when a particular action happens. In React, there are similar, slightly different camel-cased versions of these same event handlers that are used in functional components to execute an action when a user interacts with that element.
 
-| HTML | React | Action |
-| :---: | :---: | --- |
-| onchange | onChange | An HTML element has been changed |
-| onclick | onClick | The user clicks an HTML element |
-| onmouseover | onMouseOver | The user moves the mouse over an HTML element |
-| onmouseout | onMouseOut | The user moves the mouse away from an HTML element |
-| onkeydown | onKeyDown | The user pushes a keyboard key |
+| HTML | React | Action | Example |
+| :---: | :---: | --- | --- |
+| onchange | onChange | An HTML element has been changed | A checkbox checked/unchecked<br>A dropdown choice selected<br>Etc. |
+| onclick | onClick | The user clicks an HTML element ||
+| onmouseover | onMouseOver | The user moves the mouse over an HTML element ||
+| onmouseout | onMouseOut | The user moves the mouse away from an HTML element ||
+| onkeydown | onKeyDown | The user pushes a keyboard key ||
 
 ```js
 // examples of inline event
