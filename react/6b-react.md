@@ -50,7 +50,7 @@ Sometimes a developer will want to control how components are added (mounted), h
 
 > View an interactive version of this diagram on [projects.wojtekmaj.pl](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
 
-As of React v16.3, the **most common** lifecycle methods are:
+The **most common** lifecycle methods are:
 
 ### Mounting
 

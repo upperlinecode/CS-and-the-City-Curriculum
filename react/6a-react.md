@@ -43,7 +43,15 @@ this.state = {
 
 ## State in Functional Components
 
-> Note: Any component can include state, but we'll mostly be using state in the `App` component and then "passing" state to any child components.
+State can be included as part of a component or it can be passed from a parent to a child component. First we'll take a look at how state can be stored as part of a component, and later we'll look at how state can be passed between child components via state on a parent component (or a global state on the App component).
+
+### But First, a Note on Components with State
+
+So far, we've primarily been using functional components (components written as functions) to build our React applications. If you look at most React developer documentation, you'll find that functional components cannot be used to store state. As a result, class-based components (components written as classes) are typically introduced at the same time as state is introduced.
+
+In these lessons, however, we have been using (and will continue to use) [a workaround that enables us to write a functional component](https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160) which has the effect of creating a class-based component that can store state. If you're interested, here's a [line-by-line map]() of how the functional contructor is converted to a class-based constructor.
+
+The tl;dr here is that we'll be using functional components to store state even though that isn't normally how React is written.
 
 ### Accessing State
 
