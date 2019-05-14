@@ -96,7 +96,9 @@ const ComponentD = () => {
 export default ComponentD
 ```
 
-The parent-child relationship is all about nesting. 
+The parent-child relationship is all about nesting.
+
+![Image of Nesting Components](../img/react-nesting.png) 
 
 #### Mini-Challenges
 
