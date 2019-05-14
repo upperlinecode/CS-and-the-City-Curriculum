@@ -44,28 +44,24 @@ Often, we'll want to pass state from a parent component to a child component, an
 
 ## Lifecycle Methods
 
-Sometimes a developer will want to control how components are added (mounted), how and when they are updated, and how they are removed (unmounted) from an app. Instead of relying on React to always know when to mount, update, and unmount components based on updates to props and state, we can use lifecycle methods to specify to React exactly how a component should act throughout its existence.
+Sometimes a developer will want to control how components are added (mounted), how and when they are updated based on changes to props and state, and how they are removed (unmounted) from an app. Instead of relying on React to always know when to mount, update, and unmount components, we can use lifecycle methods to instruct React exactly how a component should act throughout its existence.
 
 ![Common React Lifecycle Methods](../img/react-lifecycle-methods.png)
 
-> View an interactive version of this diagram on [projects.wojtekmaj.pl](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+> View an interactive version of this diagram on [projects.wojtekmaj.pl](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
 
-As of React v16.3, the lifecycle methods are:
+As of React v16.3, the **most common** lifecycle methods are:
 
 ### Mounting
 
 | Lifecycle Method | Description | Most useful for ... |
 | :---: | --- | --- |
-| `componentWillMount` | What to do when your component is about to mount | Setting the configuration of the component that will be added soon |
 | `componentDidMount` | What to do once your component is there | Executing an API call for data that will be used to populate the component's props |
 
 ### Updating
 
 | Lifecycle Method | Description | Most useful for ... |
 | :---: | --- | --- |
-| `componentWillReceiveProps` | What to do when a components gets a bunch of new props | Acting on a particular prop change |
-| `shouldComponentUpdate` | To control how a component should decide whether or not to update | Controlling when a component re-renders |
-| `componentWillUpdate` | Similar to `componentWillReceiveProps` | Also using `shouldComponentUpdate` |
 | `componentDidUpdate` | What to do when a component gets new props or new state | Making a change only when particular props or state is changed |
 
 ### Unmounting
@@ -73,6 +69,8 @@ As of React v16.3, the lifecycle methods are:
 | Lifecycle Method | Description | Most useful for ... |
 | :---: | --- | --- |
 | `componentWillUnmount` | To control what happens before a component is removed | Cleaning up after a component |
+
+> Check the [React Developer Documentation](https://reactjs.org/docs/react-component.html) for a full list of supported (and unsupported) lifecycle methods.
 
 ### Using Lifecycle Methods
 
