@@ -43,7 +43,7 @@
 
 ### Unit 2-4 Parent & Child Components
 * Lesson: [Parent & Child Components](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
-* Lab: [Parent-Child Lab](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested [match a mockup, basic stylesheet already created, possible shorthand])
+* Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested [match a mockup, basic stylesheet already created, possible shorthand])
 * Lab: TBD (Pass props down through nested components)
 
 ### Unit 2-5 Style Props & Inline Styling
@@ -52,7 +52,7 @@
 
 ### Unit 2-6 State
 * Lesson: [State](react/6a-react.md) (State, inline events)
-* Lab: [React State Lab](https://github.com/upperlinecode/react-state-lab) (Fidget App)
+* Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab)
 * Lab: TBD (Other inline events)
 * Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
 * Lab: TBD
