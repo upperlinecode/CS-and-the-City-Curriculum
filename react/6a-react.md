@@ -32,12 +32,12 @@ State is a set of stored properties (an `Object`) that can be used or referenced
 
 ```js
 this.state = {
-	posts: [],
-	comments: [],
-	nightMode: true,
-	style: {},
-	date: new Date(),
-	// etc.
+  posts: [],
+  comments: [],
+  nightMode: true,
+  style: {},
+  date: new Date(),
+  // etc.
 }
 ```
 
@@ -111,11 +111,11 @@ Because state is closely associated with interactivity, we need a way to listen 
 
 ```html
 // example of the onClick inline event
-<input type="button" value="Click me!" onClick={handleClick} />
+<input type="button" onClick={handleClick} value="Click me!" />
 
 // example of the onChange inline event
-<select onChange={handleChange} className="selectInput">
-	<!-- options -->
+<select onChange={handleChange}>
+  <!-- options -->
 </select>
 ```
 
@@ -148,7 +148,7 @@ function Checkbox() {
 
   component.render = function() {
     return (
-    	<input type="checkbox" onChange={handleClick} />
+      <input type="checkbox" onChange={handleClick} />
     )
   }
   return component;
