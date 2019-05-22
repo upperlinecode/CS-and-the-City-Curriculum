@@ -52,7 +52,7 @@
 
 ### Unit 2-6 State
 * Lesson: [State](react/6a-react.md) (State, inline events)
-* Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab)
+* Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
 * Lab: TBD (Other inline events)
 * Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
 * Lab: TBD

@@ -15,13 +15,13 @@
 
 ## Launch
 
-Let's all clone this React app [insert a link to a repository] and take a look at the code. [The code is all one long not-at-all-nested series of nested JSX with no props]
+Let's all clone [this repository](https://github.com/upperlinecode/react-parent-child-lab) and take a look at the code.
 
 Based on what you know so far, how would you accomplish the following modifications to this code:
 
-- Make all `<h2>`'s (in certain conditions) `<h3>`'s (so you can't just do a find/replace).
-- Reorder the elements so the `<p>` is the last element in each container.
-- Change the class of the second `<li>` in each list to be `completed`.
+- Change the comment icon for each of the recent photos.
+- Reorder the buttons so the "Add to Album", "Email", and "Favorite" buttons come before the `div` with the class `card-image`.
+- Remove the "Add to Album" button from all recent articles and change the class of the remaining buttons to `half`.
 
 #### Questions for students
 
@@ -133,9 +133,11 @@ Now that you've had a chance to think about how to restructure the app above, tr
 
 Think back to the three changes that you were asked to make at the beginning of this lesson. Take a moment to make those changes to your app now that you've broken it apart into nested functional components:
 
-- Make all `<h2>`'s (in certain conditions) `<h3>`'s (so you can't just do a find/replace).
-- Reorder the elements so the `<p>` is the last element in each container.
-- Change the class of the second `<li>` in each list to be `completed`.
+- Change the comment icon for each of the recent photos.
+- Reorder the buttons so the "Add to Album", "Email", and "Favorite" buttons come before the `div` with the class `card-image`.
+- Remove the "Add to Album" button from all recent articles and change the class of the remaining buttons to `half`.
+
+> You may have to duplicate components that are used elsewhere in order to make changes in only certain circumstances. Don't forget to create a new component name, export it, and import it (where necessary).
 
 #### Questions for students
 

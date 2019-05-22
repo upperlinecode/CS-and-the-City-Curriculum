@@ -55,18 +55,46 @@ The tl;dr here is that we'll be using functional components to store state even 
 
 ### Accessing State
 
-Functional components can access the state object by using ...
+Functional components can access the state object by using JSX. The code below would insert the value of the `text` property of state in between the two `span` elements:
 
-```js
-// An example of accessing state
+```html
+<span>{component.state.text}</span>
 ```
 
 ### Updating State
 
-State is an immutable (unchangeable) object, which means when we are interacting with the state object, we don't modify it directly. Instead, we can essentially make a copy of state, update that copy, then set the copy to be the new version of state.
+State is an immutable (unchangeable) object, which means when we are interacting with the state object, we don't modify it directly. Instead, we make a copy of state, update that copy, then set the copy to be the new version of state.
+
+The state property `favoriteColor` might be `red`:
 
 ```js
-// An example of updating state here
+component.state = {
+  favoriteColor: "red",
+  favoriteBand: "Wham!"
+}
+```
+
+But when we've changed our minds, and now our `favoriteColor` is `blue`, we need to use the `.setState()` method in order to update state:
+
+```js
+/* incomplete way to update state */
+component.setState({"favoriteColor": "blue"});
+```
+
+This way works well when we only have one property in state. But since we have more than one property, we'd lose the state of our `favoriteBand` if we did it this way.
+
+Instead, we need to first make a copy of the current state, then update that copy, then store that copy as the new state:
+
+```js
+/* complete way to update state */
+// first make a duplicate of the current state
+let newState = component.state;
+
+// update the duplicate
+newState.favoriteColor = "blue";
+
+// store the modified duplicate as the new state
+component.setState(newState);
 ```
 
 ## Inline Events
@@ -81,12 +109,17 @@ Because state is closely associated with interactivity, we need a way to listen 
 | `onmouseout` | `onMouseOut` | User cursors away from an HTML element ||
 | `onkeydown` | `onKeyDown` | User pushes a keyboard key ||
 
-```js
-// examples of inline event
+```html
+// example of the onClick inline event
+<input type="button" value="Click me!" onClick={handleClick} />
 
-// examples of inline event
-
+// example of the onChange inline event
+<select onChange={handleChange} className="selectInput">
+	<!-- options -->
+</select>
 ```
+
+Separately, we'd need to define a function called `handleClick` or `handleChange` (or whatever you called the function) in order to control what happens when that click or change occurs. 
 
 > Check out the [React Documentation for Event Handlers](https://reactjs.org/docs/handling-events.html)
 
@@ -97,13 +130,31 @@ As you might have anticipated, inline events can be used to change state.
 In the example below:
 
 - there is a state property `isChecked` which is initially set to `false`.
-- the `checked` property of the `<input>` is set based on the `isChecked` state
-- the `<input>` also has an inline event, `onChange` which calls the `handleClick` function
-- the `handleClick` function updates the `isChecked` state to the opposite of its current value
-- the update to the `isChecked` state then causes the checkbox to change its `checked` property to appear as a checked box
+- the `<input>` has an `onChange` inline event that calls the `handleClick` function
+- the `handleClick` function updates the `isChecked` state to the opposite of its current value while the checkbox is being un/checked
 
 ```js
-// example of checkbox changing state with handleClick event handler
+function Checkbox() {
+  const component = new React.Component();
+  component.state = {
+    "isChecked": false
+  }
+  
+  function handleClick(event) {
+    var state = component.state;
+    state.isChecked = !component.state.isChecked;
+    component.setState(state);
+  }
+
+  component.render = function() {
+    return (
+    	<input type="checkbox" onChange={handleClick} />
+    )
+  }
+  return component;
+}
+
+export default Checkbox
 ```
 
 ## Close
