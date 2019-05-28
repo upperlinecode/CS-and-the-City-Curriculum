@@ -15,17 +15,17 @@
 
 ## Launch
 
-Let's all clone [this repository](https://github.com/upperlinecode/react-parent-child-lab) and take a look at the code.
+Let's all clone [this repository](https://github.com/upperlinecode/react-parent-child-lecture) and take a look at the code.
 
 Based on what you know so far, how would you accomplish the following modifications to this code:
 
-- Change the comment icon for each of the recent photos.
-- Reorder the buttons so the "Add to Album", "Email", and "Favorite" buttons come before the `div` with the class `card-image`.
-- Remove the "Add to Album" button from all recent articles and change the class of the remaining buttons to `half`.
+- Add an "Honors" section for each student.
+- Make all Senior quotes in _italics_.
+- Move each student's name above their picture.
 
 #### Questions for students
 
-- How tedious did you think it was to make those changes?
+- How tedious did you think it would be to make those changes?
 - Can you think of a more efficient way to arrange the code so that changes like those are not so laborious?
 
 ## Parents & Children
@@ -133,11 +133,11 @@ Now that you've had a chance to think about how to restructure the app above, tr
 
 Think back to the three changes that you were asked to make at the beginning of this lesson. Take a moment to make those changes to your app now that you've broken it apart into nested functional components:
 
-- Change the comment icon for each of the recent photos.
-- Reorder the buttons so the "Add to Album", "Email", and "Favorite" buttons come before the `div` with the class `card-image`.
-- Remove the "Add to Album" button from all recent articles and change the class of the remaining buttons to `half`.
+- Add an "Honors" section for each student.
+- Make all Senior quotes in _italics_.
+- Move each student's name above their picture.
 
-> You may have to duplicate components that are used elsewhere in order to make changes in only certain circumstances. Don't forget to create a new component name, export it, and import it (where necessary).
+> It's possible that you may have to duplicate components that are used elsewhere in order to make changes in only certain circumstances. Don't forget to create a new component name, export it, and import it (where necessary).
 
 #### Questions for students
 
