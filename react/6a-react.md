@@ -88,7 +88,7 @@ Instead, we need to first make a copy of the current state, then update that cop
 ```js
 /* complete way to update state */
 // first make a duplicate of the current state
-let newState = component.state;
+let newState = {...component.state};
 
 // update the duplicate
 newState.favoriteColor = "blue";
@@ -141,7 +141,7 @@ function Checkbox() {
   }
   
   function handleClick(event) {
-    var state = component.state;
+    var state = {...component.state};
     state.isChecked = !component.state.isChecked;
     component.setState(state);
   }
