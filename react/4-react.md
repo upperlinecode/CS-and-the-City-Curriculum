@@ -17,7 +17,7 @@
 
 Let's all clone [this repository](https://github.com/upperlinecode/react-parent-child-lecture) and take a look at the code.
 
-Based on what you know so far, how would you accomplish the following modifications to this code:
+Based on what you know so far, how would you accomplish the following modifications to this digital yearbook mockup for Glenbrook North High School:
 
 - Add an "Honors" section for each student.
 - Make all Senior quotes in _italics_.
