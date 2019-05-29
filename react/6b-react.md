@@ -116,7 +116,7 @@ And this works well enough, but it's not great.
 
 > Note: we need to write the function as an anonymous function to prevent it from running when the page is rendered.
 
-2. Instead, maybe we'd want to abstract the inline function into a definition of the function (`const buy...`) and then an implementation of the function (`onClick={buy}` like this:
+2. Instead, maybe we'd want to abstract the inline function into a definition of the function (`const buy...`) and then an implementation of the function (`onClick={buy}`) like this:
 
 ```js
 // define the function ...
@@ -192,7 +192,7 @@ Try adding a new property called `cart` to the state object where `cart` is an a
 
 > Note: we're already passing the entire state object to the `<Summary />` component as a prop called `globalState`. Think of how you might use `.map()` to iterate over the `cart`.
 
-10. Showing every purchase is ok for line-item detail, but how might you show aggregate counts of each purchased item in the `<Summary />`?
+10. Showing every purchase is ok for line-item detail, but try to show aggregate counts of each purchased item in the `<Summary />`.
 
 
 ## Lifecycle Methods (optional)
