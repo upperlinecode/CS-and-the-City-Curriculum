@@ -29,7 +29,6 @@
 ### Unit 2-1 React Setup
 * Lesson: [Hello World](react/1-react.md)
 	* Additional: [Goorm Setup](react/1-react-goorm.md)
-	* Possible Stretch: Routes
 
 ### Unit 2-2 Functional Components
 * Lesson: [Functional Components](react/2-react.md)
@@ -49,7 +48,7 @@
 	* [Accompanying App](https://github.com/upperlinecode/react-parent-child-lecture)
 	* [Explanatory App](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
 * Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested)
-* Lab: TBD (Pass props down through nested components)
+* Lab: Prop Drilling (Pass props down through nested components)
 
 ### Unit 2-5 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/5-react.md) (Time of day / open / closed conditional styling)
@@ -64,7 +63,6 @@
 	* [Accompanying App](https://github.com/upperlinecode/react-pass-state)
 * Lab: [Grosseries](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
-* Lab: TBD (?)
 
 ## Unit 3: Data Science Mindsets
 
