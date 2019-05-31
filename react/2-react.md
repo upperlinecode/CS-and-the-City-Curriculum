@@ -1,4 +1,4 @@
-# Functional Components
+# React Functional Components
 
 ## Learning objectives
 * SWBAT separate HTML into individual components
@@ -10,7 +10,7 @@
 ## Sequence
 
 1. [Launch](#launch)
-2. [Functional Components](#functional)
+2. [Functional Components](#functional-components)
 4. [Close](#close)
 
 
