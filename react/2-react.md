@@ -1,4 +1,4 @@
-# React Functional Components
+# Functional Components in React
 
 ## Learning objectives
 * SWBAT separate HTML into individual components
