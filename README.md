@@ -45,6 +45,8 @@
 
 ### Unit 2-4 Parent & Child Components
 * Lesson: [Parent & Child Components](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
+	* [Accompanying App](https://github.com/upperlinecode/react-parent-child-lecture)
+	* [Explanatory App](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
 * Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested)
 * Lab: TBD (Pass props down through nested components)
 
@@ -58,6 +60,7 @@
 * Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
 * Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
+	* [Accompanying App](https://github.com/upperlinecode/react-pass-state)
 * Lab: [Grosseries](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 * Lab: TBD (?)
