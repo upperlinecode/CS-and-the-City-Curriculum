@@ -28,6 +28,7 @@
 ## Unit 2: React.js
 ### Unit 2-1 React Setup
 * Lesson: [Hello World](react/1-react.md)
+	* Additional: [Goorm Setup](react/1-react-goorm.md)
 	* Possible Stretch: Routes
 
 ### Unit 2-2 Functional Components
