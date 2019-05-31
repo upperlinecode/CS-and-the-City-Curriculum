@@ -100,7 +100,7 @@ export default ComponentD
 
 The parent-child relationship is all about nesting.
 
-![Image of Nesting Components](../img/react-nesting.png)
+![Image of Nesting Components](./img/react-nesting.png)
 
 What happens when you:
 

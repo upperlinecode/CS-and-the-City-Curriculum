@@ -41,7 +41,7 @@
 	* [Accompanying App](https://github.com/upperlinecode/street-meat-react)
 * Lab: [NY State Education Data: Props](https://github.com/upperlinecode/react-NYSED-lab) (Refactor a hardcoded component to be responsive)
 * Lab: [New York Education Data Transparency](https://github.com/upperlinecode/lab-props-education-data-display) (Use props passed to component to populate page to match a mockup)
-* Lab: [Reusable Components with Props](https://github.com/upperlinecode/street-hard-reusable-components-props-lab/)
+* Lab: [Reusable Components with Props](https://github.com/upperlinecode/street-hard-reusable-components-props-lab)
 
 ### Unit 2-4 Parent & Child Components
 * Lesson: [Parent & Child Components](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
@@ -53,7 +53,7 @@
 ### Unit 2-5 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/5-react.md) (Time of day / open / closed conditional styling)
 	* [Accompanying App](https://github.com/upperlinecode/inline-and-conditional-style-lecture)
-* Lab: [Crazy Clocks](https://github.com/upperlinecode/crazy-clocks/)
+* Lab: [Crazy Clocks](https://github.com/upperlinecode/crazy-clocks)
 
 ### Unit 2-6 State
 * Lesson: [State](react/6a-react.md) (State, inline events)

@@ -199,7 +199,7 @@ Try adding a new property called `cart` to the state object where `cart` is an a
 
 Sometimes a developer will want to control how components are added (mounted), how and when they are updated based on changes to props and state, and how they are removed (unmounted) from an app. Instead of relying on React to always know when to mount, update, and unmount components, we can use lifecycle methods to instruct React exactly how a component should act throughout its existence.
 
-![Common React Lifecycle Methods](../img/react-lifecycle-methods.png)
+![Common React Lifecycle Methods](./img/react-lifecycle-methods.png)
 
 > View an interactive version of this diagram on [projects.wojtekmaj.pl](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
 
