@@ -33,8 +33,8 @@
 
 ### Unit 2-2 Functional Components
 * Lesson: [Functional Components](react/2-react.md)
-* Lab: TBD (Build components on an existing template)
-* Lab: TBD (Convert HTML site to React site)
+* Lab: [Dollar Pizza](https://github.com/upperlinecode/dollar-pizza-react-final) (Build components on an existing template)
+* Lab: [Refactoring HTML into React](https://github.com/upperlinecode/html-to-react-refactor) (Convert HTML site to React site)
 
 ### Unit 2-3 Props + JSX
 * Lesson: [Props + JSX](react/3-react.md)
