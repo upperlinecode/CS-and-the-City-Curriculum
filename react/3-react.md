@@ -31,7 +31,7 @@ As we have discussed, React allows developers to build websites by piecing toget
 <a id="singleprop"></a>
 ### Passing Our First Property
 
-Props are passed from the parent element to the child element. We are going to pass our first prop from `App.js` component (parent) to our `Testimonials.js` (child) component. To do so, we are going to modify the code in the `App.js` and `Testimonials.js` files to the following:
+Props are passed from the implementation of a component, e.g. `<someComponent />`, down into the definition of that component, e.g. `function someComponent(){..}` in `someComponent.js`. We are going to pass our first prop from where we use `<Testimonials />` in `App.js` to our `Testimonials` function in `Testimonials.js`. To do so, we are going to modify the code in the `App.js` and `Testimonials.js` files to the following:
 
 ```javascript
 const App = () => {
