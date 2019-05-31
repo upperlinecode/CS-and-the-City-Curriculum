@@ -1,6 +1,6 @@
-# Props in React
+# Props + JSX in React
 
-## Learning objectives
+## Learning Objectives
 * Students will be able to pass props from a parent component to a child component.
 * Students will be able to export and import variables between files.
 * Students will be able to create components that operate as templates.
@@ -11,8 +11,6 @@
 2. [Passing Our First Property](#singleprop)
 3. [Passing Multiple Properties](#multipleprop)
 4. [Close](#close)
-
->
 
 ## Launch
 Have students navigate to a website of their choice that is made with React (REMEMBER: They made a list of websites in the first lecture). Instruct students to Look over the page and look for any component of the website that seems to be repeated. The content doesn't have to be the same, but these components should have similar features. For example, the AirBnB website has cards that use that have a photo, title, price, and review; this is a repeated component. What repeated component can you find?

@@ -1,6 +1,6 @@
 # React Setup
 
-## Learning objectives
+## Learning Objectives
 * SWBAT set up a React project locally on personal computer or Goorm IDE
 * SWBAT edit the React starter page to display HTML they have written
 * SWBAT identify why React is a popular front-end development framework

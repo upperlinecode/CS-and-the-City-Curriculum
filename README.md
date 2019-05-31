@@ -38,9 +38,10 @@
 
 ### Unit 2-3 Props + JSX
 * Lesson: [Props + JSX](react/3-react.md)
-* Lab: TBD
-* Lab: [NYS C-Schools](https://github.com/upperlinecode/react-NYSED-lab) (Refactor a hardcoded component to be responsive)
-* Lab: TBD (Use props passed to component to populate page [to match a mockup])
+	* [Accompanying App](https://github.com/upperlinecode/street-meat-react)
+* Lab: [NY State Education Data: Props](https://github.com/upperlinecode/react-NYSED-lab) (Refactor a hardcoded component to be responsive)
+* Lab: [New York Education Data Transparency](https://github.com/upperlinecode/lab-props-education-data-display) (Use props passed to component to populate page to match a mockup)
+* Lab: [Reusable Components with Props](https://github.com/upperlinecode/street-hard-reusable-components-props-lab/)
 
 ### Unit 2-4 Parent & Child Components
 * Lesson: [Parent & Child Components](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)

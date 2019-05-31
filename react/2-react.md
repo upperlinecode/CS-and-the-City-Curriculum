@@ -1,6 +1,6 @@
 # Functional Components in React
 
-## Learning objectives
+## Learning Objectives
 * SWBAT separate HTML into individual components
 * SWBAT reuse a component multiple times in a React project
 * SWBAT modify the HTML in a component that has already been written
