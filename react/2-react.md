@@ -10,7 +10,7 @@
 ## Sequence
 
 1. [Launch](#launch)
-2. [Function Components](#functional)
+2. [Functional Components](#functional)
 4. [Close](#close)
 
 
@@ -138,7 +138,7 @@ Most of the code you see should look familiar. This is normal HTML with one slig
 
 You will also notice an export statement at the end of each file. This export statement allows other files to access the code in each component file. You will notice that when you want to use a component in other areas of your project, you must import that component first. Look back at App.js to see that each component has been imported at the top of the file. You might want to make an analogy to students that when a country exports goods there must be another country that imports it - or else it'll just be floating the middle of the ocean forever!
 
-> ###Note To Teachers
+> ### Note To Teachers
 >This is likely a good time to discuss JSX with your students. React uses JSX to combine HTML and Javascript into a single file. This will come in handy later when we want to add JavaScript functionality to our components. To learn more, go to https://reactjs.org/docs/introducing-jsx.html
 
 ### Components are JavaScript functions
