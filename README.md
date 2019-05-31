@@ -51,12 +51,12 @@
 ### Unit 2-5 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/5-react.md) (Time of day / open / closed conditional styling)
 	* [Accompanying App](https://github.com/upperlinecode/inline-and-conditional-style-lecture)
-* Lab: TBD (Crazy clocks style lab)
+* Lab: [Crazy Clocks](https://github.com/upperlinecode/crazy-clocks/)
 
 ### Unit 2-6 State
 * Lesson: [State](react/6a-react.md) (State, inline events)
 * Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
-* Lab: TBD (Other inline events)
+* Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
 * Lab: TBD
 * Lab: TBD
