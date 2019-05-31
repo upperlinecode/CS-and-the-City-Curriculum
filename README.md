@@ -45,11 +45,12 @@
 
 ### Unit 2-4 Parent & Child Components
 * Lesson: [Parent & Child Components](react/4-react.md) (Breaking a page down into components, deciding what will be inside of what)
-* Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested [match a mockup, basic stylesheet already created, possible shorthand])
+* Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested)
 * Lab: TBD (Pass props down through nested components)
 
 ### Unit 2-5 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/5-react.md) (Time of day / open / closed conditional styling)
+	* [Accompanying App](https://github.com/upperlinecode/inline-and-conditional-style-lecture)
 * Lab: TBD (Crazy clocks style lab)
 
 ### Unit 2-6 State

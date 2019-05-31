@@ -85,7 +85,7 @@ Try adding some HTML to get "Hello World" to appear on the web page instead!
 ![Hello World](./img/hello-world.png)
 
 
-#### Mini-challenges
+#### Mini-Challenges
 * Add an h1 tag with the text "About YOUR_NAME" within the div with the class "App." Obviously, replace YOUR_NAME with your actual name.
 * Create a short About Me page. This page should include your favorite quote, your nick name, and a list of activities you enjoy.
 * Extension - Style the page using the index.css file

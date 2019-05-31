@@ -188,7 +188,7 @@ Now we need to modify ReviewCard.js to utilize the props that are being passed d
 #### Question for Students
 * How could we pass the review data to each card using only one attribute?
 
-#### Mini-challenges
+#### Mini-Challenges
 * Complete the website by creating a review card for each of the six reviews
 * Refactor your code so that you **iterate** through the review data and create each card programmatically (rather than hard coding each one). Try researching how to do this!
 

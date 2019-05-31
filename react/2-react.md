@@ -121,7 +121,7 @@ There are two Navbars now! How easy was that?! This should illustrate to student
 
 ![Two Navbars](./img/two-navbars.png)
 
-#### Mini-challenges
+#### Mini-Challenges
 * Can you add five Navbar components to the Pet Book website?
 * Can you add three Splash components to the Pet Book website?
 * Can you add two Photo components to the Pet Book website?
@@ -194,7 +194,7 @@ For now, either method works, so in order to get practice with both, we'll use t
 
 NOTE: a component can technically only return a single element, but other elements can be nested inside that one. If you want to return multiple HTML elements, then all your HTML must be wrapped in a single parent element. The `<div>` in the examples above is a good way to do that.
 
-#### Mini-challenges
+#### Mini-Challenges
 * Change the "sub-text" in the Description component
 * Change the "value" attribute of the input in the Navbar component
 * Add another h5 tag in the splash page with a quote about animals
