@@ -58,9 +58,9 @@
 * Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
 * Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
-* Lab: TBD
-* Lab: TBD
-* Lab: TBD
+* Lab: [Grosseries](https://github.com/upperlinecode/grosseries)
+* Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
+* Lab: TBD (?)
 
 ## Unit 3: Data Science Mindsets
 
