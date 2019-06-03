@@ -61,7 +61,7 @@
 * Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/6b-react.md) (Lifecycle methods, passing state among elements)
 	* [Accompanying App](https://github.com/upperlinecode/react-pass-state)
-* Lab: [Grosseries](https://github.com/upperlinecode/grosseries)
+* Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
 ## Unit 3: Data Science Mindsets
