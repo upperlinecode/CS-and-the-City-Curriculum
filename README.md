@@ -2,6 +2,10 @@
 
 # Course Contents
 
+## Framing Documents
+* <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank_">Course Overview</a>
+* <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank_">Implementation Guide</a>
+
 ## Unit 1: HTML and CSS Review
 ### Unit 1-1: Elements and Nesting
 * Lesson: [Elements and Nesting](html/1-html.md)
