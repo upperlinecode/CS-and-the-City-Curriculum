@@ -243,8 +243,8 @@ const ComponentD = (props) => {
   return (
     <ul>
       {
-        props.songs.map(song => {
-          return "<li>" + song.title + "</li>";
+        props.songs.map(tune => {
+          return "<li>" + tune.title + "</li>";
         })
       }
     </ul>
@@ -254,7 +254,7 @@ const ComponentD = (props) => {
 export default ComponentD
 ```
 
-`ComponentD` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data...
+`ComponentD` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list of tune titles (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data...
 
 ## Close
 
