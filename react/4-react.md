@@ -5,13 +5,15 @@
 - SWBAT articulate the difference between parent and child components
 - SWBAT break down a page into parent and child components
 - SWBAT rearrange existing code into parent and child components
+- SWBAT pass props from parent components to child components
 
 ## Sequence
 
 1. [Launch](#launch)
 2. [Parents & Children](#parents--children)
 3. [Rearranging Components](#rearranging-components)
-4. [Close](#close)
+4. [Passing Props from Parent to Child](#passing-props-from-parent-to-child)
+5. [Close](#close)
 
 ## Launch
 
@@ -136,6 +138,123 @@ Now that you've had a chance to think about how to restructure the app above, tr
   ```
   2. Remember to include a new `import` statement wherever you use a new functional component.
   3. Remember to replace the code you abstract into the functional component with the component name: e.g. `<ComponentName />`.
+
+## Passing Props from Parent to Child
+
+Now that you've seen how to break up a page into components, let's take a step back and think about the data that flows into a webpage which is rearranged into what is displayed on that page. This data most often comes as a list, array, or object, where each component that is shown is a list entry and each entry contains all of the information necessary for the component.
+
+You've already seen how functions like `.map()` can make quick work of iterating over an array in order to return a new array or new HTML. By extension, `.map()` can also be used to quickly generate the JSX for components in a React app.
+
+But, as you've just learned above, components can be made from nested components which themselves may nest components. To understand how that top-level data is passed to the correct component which will display it, we need to understand "prop drilling". "Prop drilling" is how props can be passed from parent to child, then to a child of that child, and so on until the value reaches the depth containing the component where it is displayed.
+
+Let's revisit our nesting example above to see how data could be passed from `ComponentA` through `ComponentB` to `ComponentC` and `ComponentD`. Consider the following components:
+
+#### `./ComponentA.js`
+```javascript
+import React from 'react'
+import ComponentB from './ComponentB'
+
+// this data might come from a database or a music service like spotify
+let data = {
+  "artist": "My favorite singer",
+  "album": "Their best album",
+  "image": "albumCover.png",
+  "tracks": [
+    {
+      "id": 1,
+      "title": "Opening Song",
+      "duration": "2:31",
+      "comment": "makes me want to dance"
+    },
+    {
+      "id": 2,
+      "title": "Second Song",
+      "duration": "3:12",
+      "comment": "always skip this one"
+    },
+    {
+      "id": 3,
+      "title": "Third Song",
+      "duration": "5:33",
+      "comment": "my favorite!"
+    }
+  ]
+}
+
+const ComponentA = (data) => {
+  return (
+    <div>
+      <h1>data.artist</h1>
+      <ComponentB data=data/>
+    </div>
+  )
+}
+
+export default ComponentA
+```
+
+`ComponentA` receives the `data` (from some database or some API call) and renders the artist name in an `<h1>`. However, the rest of the data isn't used in `ComponentA`, so the entire data object is passed as a prop called `data` to `ComponentB`.
+
+#### `./ComponentB.js`
+```javascript
+import React from 'react'
+import ComponentC from './ComponentC'
+import ComponentD from './ComponentD'
+
+const ComponentB = (props) => {
+  return (
+    <div>
+      <h3>{props.data.album}</h3>
+      <ComponentC image={props.data.image}/>
+      <ComponentD songs={props.data.tracks}/>
+    </div>
+  )
+}
+
+export default ComponentB
+```
+
+`ComponentB` receives the `data` as props, and renders an `<h3>` showing the name of the album. Note: we could imagine making some small updates to this code in order to show multiple albums, right?
+
+The remaining data, however, doesn't get used by `ComponentB`. In this case `ComponentC` might show album artwork and `ComponentD` could show a tracklist. Data from `props` is passed to each of those components as `image` and `songs`, respectively, but those props could have been called anything.
+
+#### `./ComponentC.js`
+```javascript
+import React from 'react'
+
+const ComponentC = (props) => {
+  return (
+    <div>
+      <img src="{props.image}">
+    </div>
+  )
+}
+
+export default ComponentC
+```
+
+`ComponentC` receives a single prop, `image`, and then uses it to render the album artwork. There are no more nested components that will need any additional data here...
+
+#### `./ComponentD.js`
+```javascript
+import React from 'react'
+
+const ComponentD = (props) => {
+  return (
+    <ul>
+      {
+        props.songs.map(song => {
+          return "<li>" + song.title + "</li>";
+        })
+      }
+    </ul>
+  )
+}
+
+export default ComponentD
+```
+
+`ComponentD` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data...
 
 ## Close
 
