@@ -58,17 +58,17 @@ First, we created an object called `divStyle` (you can name this whatever you wa
 Once we have our object, we can style our `div` by passing this object to the `style` attribute of the element.
 
 > It should be noted that you can style an element by passing an object directly into the style attribute (see below), but this can become hard to read/organize if multiple CSS properties are being applied to the element.
-
-```javascript
-function App() {
-  return (
-    <div className="App" style = {{ background: "rgb(0,0,255)"}}>
-      <Navbar/>
-      <TableHeader/>
-    </div>
-  );
-}
-```
+>
+>```javascript
+>function App() {
+>  return (
+>    <div className="App" style = {{ background: "rgb(0,0,255)"}}>
+>      <Navbar/>
+>      <TableHeader/>
+>    </div>
+>  );
+>}
+>```
 
 Let's add one style property to our object to make sure the whole screen has a background of blue.
 
