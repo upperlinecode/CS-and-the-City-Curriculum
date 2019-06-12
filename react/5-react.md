@@ -20,7 +20,7 @@ Add some inline styling to the div with the className `App` in the `App.js` file
 
 > If students are unfamiliar with inline styling you can just have them copy the following code:
 ```html
-  <div className="App" style="background: rgb(0,0,255)">
+  <div className="App" style="background-color: rgb(0,0,255)">
 ```
 
 #### Questions for Students
@@ -41,7 +41,7 @@ As we saw from our opening, it is not possible to add inline style to an element
 ```javascript
 function App() {
   let divStyle = {
-    background: "rgb(0,0,255)"
+    backgroundColor: "rgb(0,0,255)"
   }
 
   return (
@@ -74,7 +74,7 @@ Let's add one style property to our object to make sure the whole screen has a b
 
 ```javascript
 let divStyle = {
-  background: "rgb(0,0,255)",
+  backgroundColor: "rgb(0,0,255)",
   minHeight: "100vh"
 }
 ```
@@ -119,7 +119,7 @@ Then, we add some styling to `<TableRow />` with some inline styling as shown be
 ```javascript
 const TableRow = (props) => {
   let style = {
-    background: "rgb(240,240,240)"
+    backgroundColor: "rgb(240,240,240)"
   }
 
   return(
@@ -142,14 +142,14 @@ At this point, our web page looks OK. But, we can make it a bit more user-friend
 ```javascript
 const TableRow = (props) => {
   let rowStyle = {
-    background: "rgb(240,240,240)"
+    backgroundColor: "rgb(240,240,240)"
   }
 
   if(props.result === "W"){
-    style.background = "rgb(0,255,0)"
+    rowStyle.backgroundColor = "rgb(0,255,0)"
   }
   else if(props.result === "L"){
-    style.background = "rgb(255,0,0)"
+    rowStyle.backgroundColor = "rgb(255,0,0)"
   }
 
   return(
