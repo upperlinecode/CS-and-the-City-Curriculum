@@ -90,10 +90,23 @@ Well, let's say I have a bunch of buttons, each with a certain `id`, and I bind 
 
 Let's compare these two ways of constructing components line-by-line to see how the class-based component maps to the functional constructor:
 
-| | Class-Based | Functional Constructor |
-| --- | --- | --- |
-| Initiation | `class Example extends React.Component {` | <code>const Example = () => {<br>const component = new React.Component()</code> |
+### Initiation
 
+#### Class-Based
+
+```js
+class Example extends React.Component {
+
+}
+```
+
+#### Functional Constructor
+```js
+const Example = () => {
+  const component = new React.Component()
+
+}
+```
 
 
 
