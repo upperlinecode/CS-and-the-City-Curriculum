@@ -216,7 +216,7 @@ export default Album
 
 `Album` receives the `data` as props, and renders an `<h3>` showing the name of the album. Note: we could imagine making some small updates to this code in order to show multiple albums, right?
 
-The remaining data, however, doesn't get used by `Album`. In this case `AlbumArt` might show album artwork and `TrackList` could show a tracklist. Data from `props` is passed to each of those components as `image` and `songs`, respectively, but those props could have been called anything.
+The remaining data, however, doesn't get used by `Album`. In this case `AlbumArt` might show an image of album artwork and `TrackList` could show a list of songs. Data from `props` is passed to each of those components as `image` and `songs`, respectively, but those props could have been called anything.
 
 #### `./AlbumArt.js`
 ```javascript
