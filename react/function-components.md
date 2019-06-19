@@ -199,7 +199,9 @@ const Example = () => {
 
 For now, either method works, so in order to get exposure to both, we'll use the more complex method (Option 2 - functional component as constructor) for the `App.js` component, since it will probably need more complex functionality sooner than the others, and we'll use the simpler true functional components (Option 1) for our simpler components like the `<Navbar />` and its sibling components. In reality, which form a developer chooses to use depends on what that components needs to do and how it will be used.
 
-> Note: as we'll learn later when we discuss state, the constructor approach (Option 2) can be used as [a work-around for writing Class-based components](https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160). In order to keep things simple, all components will be written as functions in this course; we won't discuss Class-based components, however students may encounter them if they continue to work with React.
+> Note: as we'll learn later when we discuss state, the constructor approach (Option 2) can be used as [a work-around for writing Class-based components](https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160). In order to keep things simple, all components will be written as functions in this course; we won't discuss class-based components, however students may encounter them if they continue to work with React.
+>
+> To go a bit more in-depth, see [how the construtor method compares to the class-based method](class-to-function-component.md).
 
 Components can technically only return a single element, but other elements can be nested inside that one. If you want to return multiple HTML elements, then all of your HTML must be wrapped in a single parent element. The `<div>` in the examples above is a good way to do that.
 
