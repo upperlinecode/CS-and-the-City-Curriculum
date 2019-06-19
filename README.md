@@ -28,6 +28,8 @@
 ## Unit 2: React.js
 ### Unit 2-1 React Setup
 * Lesson: [Hello World](react/react-setup.md)
+	* [Worksheet #1 (HTML)](react/launch-worksheet-html.md)
+	* [Worksheet #2 (React)](react/launch-worksheet-react.md)
 	* Additional: [Goorm Setup](react/goorm-react-setup.md)
 
 ### Unit 2-2 Functional Components
