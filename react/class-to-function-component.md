@@ -168,7 +168,6 @@ function handleChange(event) {}
 
 ```
 componentDidMount() {}
-
 ```
 
 #### Functional Constructor
@@ -217,7 +216,8 @@ component.render = function() {
 return component;
 ```
 
+## Wrap
 
+So that's it! Now you can see how the class-based component has been re-written in the form of a constructor.
 
-
-
+Again, out in the wild, developers will more often be using class-based components in cases where state and lifecycle methods are necessary for a component, but for this unit we've opted instead to write everything in one of two functional forms, either as a true functional component or as a functional constructor. The functional constructor produces the same result as the class-based component with a slightly less confusing syntax because it avoids the need for using `this` throughout.
