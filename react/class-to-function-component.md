@@ -101,11 +101,120 @@ class Example extends React.Component {
 ```
 
 #### Functional Constructor
+
 ```js
 const Example = () => {
   const component = new React.Component()
 
 }
+```
+
+### Including props
+
+#### Class-Based
+
+```
+constructor(props) {
+  super(props)
+}
+```
+
+#### Functional Constructor
+
+```js
+const Example = (props) => {
+  const component = new React.Component()
+
+}
+```
+
+### Including State
+
+#### Class-Based
+
+```
+constructor() {
+  this.state = {};
+}
+```
+
+#### Functional Constructor
+
+```js
+component.state = {}
+```
+
+### Handling Events
+
+#### Class-Based
+
+```
+constructor() {
+  this.handleChange = this.handleChange.bind(this);
+}
+
+handleChange(event) {}
+```
+
+#### Functional Constructor
+
+```js
+function handleChange(event) {}
+```
+
+### Handling Lifecycle Events
+
+#### Class-Based
+
+```
+componentDidMount() {}
+
+```
+
+#### Functional Constructor
+
+```js
+component.componentDidMount = function() {}
+```
+
+### Returning JSX
+
+#### Class-Based
+
+```
+render() {
+  return (
+    <div>
+      //Block of JSX/HTML code goes here
+    </div>
+  )
+}
+```
+
+#### Functional Constructor
+
+```js
+component.render = function() {
+  return (
+    <div>
+      //Block of JSX/HTML code goes here
+    </div>
+  )
+}
+```
+
+### Wrap-Up
+
+#### Class-Based
+
+```
+
+```
+
+#### Functional Constructor
+
+```js
+return component;
 ```
 
 
