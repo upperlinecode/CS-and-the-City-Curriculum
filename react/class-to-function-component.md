@@ -20,20 +20,28 @@ And there's the "Functional Component as Constructor" method:
 ```javascript
 // Functional Component as Constructor
 const Example = () => {
-  const component = new React.Component() // Create a component
+  // Create a component
+  const component = new React.Component()
 
-  component.state = {} // Store state variables
+  // Store state variables
+  component.state = {}
 
-  // Modify the component
+  // Deal with an event
+  function handleChange(event) {}
 
-  component.render = () => { // The component's return method
+  // Deal with a lifecycle method
+  component.componentDidMount = function() {} 
+
+  // The component's return method
+  component.render = () => {
     return(
       <div>
         //Block of JSX/HTML code goes here
       </div>
   )}
 
-  return component // Return the component
+  // Return the component
+  return component
 }
 ```
 
@@ -51,23 +59,24 @@ A class-based component looks something like this:
 
 ```js
 class Example extends React.Component {
+  // Create a component with props, state, and event binding
   constructor(props) {
     super(props)
     this.state = {};
     this.handleChange = this.handleChange.bind(this);
   }
 
-  // handle an event
+  // Deal with an event
   handleChange(event) {
     this.setState({});
   }
 
-  // handle a lifecycle method
+  // Deal with a lifecycle method
   componentDidMount() {
     // some lifecycle action here
   }
 
-  // render the component
+  // Render the component
   render() {
     return (
       <div>
