@@ -89,7 +89,7 @@ class Example extends React.Component {
 
 > Here we've also shown how an event handler and a lifecycle method could be included in the definition of the `Example` component.
 
-#### Aside: `this`
+### Aside: `this`
 
 This way of writing components is different than the True Functional Component method, but it can get confusing especially when it comes to `this`. `this` is a part of JavaScript that enables a developer to write functions that refer to the part of the DOM that the function is bound to. Umm, what?
 
