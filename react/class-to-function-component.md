@@ -1,4 +1,4 @@
-# A Note on Functional Components & Class Components in React
+# Functional Components & Class Components
 
 ## Functional Components Review
 
