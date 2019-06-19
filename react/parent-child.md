@@ -147,7 +147,7 @@ You've already seen how functions like `.map()` can make quick work of iterating
 
 But, as you've just learned above, components can be made from nested components which themselves may nest components. To understand how that top-level data is passed to the correct component which will display it, we need to understand "prop drilling". "Prop drilling" is how props can be passed from parent to child, then to a child of that child, and so on until the value reaches the depth containing the component where it is displayed.
 
-Let's revisit our nesting example above to see how data could be passed from `ComponentA` through `ComponentB` to `ComponentC` and `ComponentD`. Consider the following components:
+Let's revisit our nesting example above to see how data could be passed from `Artist` through `Album` to `AlbumArt` and `TrackList`. Consider the following components:
 
 #### `./Artist.js`
 ```javascript
