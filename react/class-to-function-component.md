@@ -92,8 +92,7 @@ Let's compare these two ways of constructing components line-by-line to see how 
 
 | | Class-Based | Functional Constructor |
 | --- | --- | --- |
-| Initiation | `class Example extends React.Component {` | <code>const Example = () => {<br>
-  const component = new React.Component()</code> |
+| Initiation | `class Example extends React.Component {` | <code>const Example = () => {<br>const component = new React.Component()</code> |
 
 
 
