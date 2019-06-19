@@ -37,7 +37,7 @@
 * Lab: [Refactoring HTML into React](https://github.com/upperlinecode/html-to-react-refactor) (Convert HTML site to React site)
 
 ### Unit 2-3 Iteration
-* Lesson [JavaScript Iteration](https://github.com/upperlinecode/javascript-iteration-lecture)
+* Lesson [JavaScript Iteration](react/javascript-iteration.md)
 * Lab: [Survey Says](https://github.com/upperlinecode/survey-says-iteration-lab)
 
 ### Unit 2-4 Props + JSX
