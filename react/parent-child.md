@@ -36,60 +36,45 @@ As you've seen, it's possible to break code up into functional components to mak
 
 > Explore [this repository](https://github.com/upperlinecode/react-parent-child-lecture-nesting) to demonstrate the following description of nested components. Either `clone` the repository, `npm install` then `npm start`, or explore the code in the `src/` subfolder.
 
-When component A uses component B as part of its `return` statement, component A is referred to as the "parent" of component B, and component B is referred to as the "child" of parent A. Component B could, in turn, be built from other components - say components C and D. In this case, component B is the "parent" of components C and D, and components C and D are the "children" of component B. Component B is the "child" of component A and the "parent" of components B and C.
+When the `Artist` component uses the `Album` component as part of its `return` statement, `Artist` is referred to as the "parent" of `Album`, and `Album` is referred to as the "child" of `Artist`. `Album` could, in turn, be built from other components - say `AlbumArt` and `TrackList`. In this case, `Album` is the "parent" of `AlbumArt` and `TrackList`, and `AlbumArt` and `TrackList` are the "children" of `Album`. `Album` is the "child" of `Artist` and the "parent" of `AlbumArt` and `TrackList`.
 
-#### `./ComponentA.js`
+#### `./Artist.js`
 ```javascript
 import React from 'react'
-import ComponentB from './ComponentB'
+import Album from './Album'
 
-const ComponentA = () => {
+const Artist = () => {
   return (
-    <ComponentB />
+    <Album />
   )
 }
 
-export default ComponentA
+export default Artist
 ```
 
-#### `./ComponentB.js`
+#### `./Album.js`
 ```javascript
 import React from 'react'
-import ComponentC from './ComponentC'
-import ComponentD from './ComponentD'
+import AlbumArt from './AlbumArt'
+import TrackList from './TrackList'
 
-const ComponentB = () => {
+const Album = () => {
   return (
     <div>
-      <ComponentC />
-      <ComponentD />
+      <AlbumArt />
+      <TrackList />
     </div>
   )
 }
 
-export default ComponentB
+export default Album
 ```
 
-#### `./ComponentC.js`
+#### `./AlbumArt.js`
 ```javascript
 import React from 'react'
 
-const ComponentC = () => {
-  return (
-    <div>
-      // Some code
-    </div>
-  )
-}
-
-export default ComponentC
-```
-
-#### `./ComponentD.js`
-```javascript
-import React from 'react'
-
-const ComponentD = () => {
+const AlbumArt = () => {
   return (
     <div>
       // Some code
@@ -97,7 +82,22 @@ const ComponentD = () => {
   )
 }
 
-export default ComponentD
+export default AlbumArt
+```
+
+#### `./TrackList.js`
+```javascript
+import React from 'react'
+
+const TrackList = () => {
+  return (
+    <div>
+      // Some code
+    </div>
+  )
+}
+
+export default TrackList
 ```
 
 The parent-child relationship is all about nesting.
@@ -106,9 +106,9 @@ The parent-child relationship is all about nesting.
 
 What happens when you:
 
-- add an additional `ComponentA` in `App.js`?
-- add an additional `ComponentB` in `ComponentA`?
-- add an additional `ComponentC` in `ComponentB`?
+- add an additional `Artist` in `App.js`?
+- add an additional `Album` in `Artist`?
+- add an additional `AlbumArt` in `Album`?
 
 #### Mini-Challenges
 
@@ -149,10 +149,10 @@ But, as you've just learned above, components can be made from nested components
 
 Let's revisit our nesting example above to see how data could be passed from `ComponentA` through `ComponentB` to `ComponentC` and `ComponentD`. Consider the following components:
 
-#### `./ComponentA.js`
+#### `./Artist.js`
 ```javascript
 import React from 'react'
-import ComponentB from './ComponentB'
+import Album from './Album'
 
 // this data might come from a database or a music service like spotify
 let data = {
@@ -181,48 +181,48 @@ let data = {
   ]
 }
 
-const ComponentA = (data) => {
+const Artist = (data) => {
   return (
     <div>
       <h1>data.artist</h1>
-      <ComponentB data=data/>
+      <Album data={data} />
     </div>
   )
 }
 
-export default ComponentA
+export default Artist
 ```
 
-`ComponentA` receives the `data` (from some database or some API call) and renders the artist name in an `<h1>`. However, the rest of the data isn't used in `ComponentA`, so the entire data object is passed as a prop called `data` to `ComponentB`.
+`Artist` receives the `data` (from some database or some API call) and renders the artist name in an `<h1>`. However, the rest of the data isn't used in `Artist`, so the entire data object is passed as a prop called `data` to `Album`.
 
-#### `./ComponentB.js`
+#### `./Album.js`
 ```javascript
 import React from 'react'
-import ComponentC from './ComponentC'
-import ComponentD from './ComponentD'
+import AlbumArt from './AlbumArt'
+import TrackList from './TrackList'
 
-const ComponentB = (props) => {
+const Album = (props) => {
   return (
     <div>
       <h3>{props.data.album}</h3>
-      <ComponentC image={props.data.image}/>
-      <ComponentD songs={props.data.tracks}/>
+      <AlbumArt image={props.data.image}/>
+      <TrackList songs={props.data.tracks}/>
     </div>
   )
 }
 
-export default ComponentB
+export default Album
 ```
 
-`ComponentB` receives the `data` as props, and renders an `<h3>` showing the name of the album. Note: we could imagine making some small updates to this code in order to show multiple albums, right?
+`Album` receives the `data` as props, and renders an `<h3>` showing the name of the album. Note: we could imagine making some small updates to this code in order to show multiple albums, right?
 
-The remaining data, however, doesn't get used by `ComponentB`. In this case `ComponentC` might show album artwork and `ComponentD` could show a tracklist. Data from `props` is passed to each of those components as `image` and `songs`, respectively, but those props could have been called anything.
+The remaining data, however, doesn't get used by `Album`. In this case `AlbumArt` might show album artwork and `TrackList` could show a tracklist. Data from `props` is passed to each of those components as `image` and `songs`, respectively, but those props could have been called anything.
 
-#### `./ComponentC.js`
+#### `./AlbumArt.js`
 ```javascript
 import React from 'react'
 
-const ComponentC = (props) => {
+const AlbumArt = (props) => {
   return (
     <div>
       <img src="{props.image}">
@@ -230,16 +230,16 @@ const ComponentC = (props) => {
   )
 }
 
-export default ComponentC
+export default AlbumArt
 ```
 
-`ComponentC` receives a single prop, `image`, and then uses it to render the album artwork. There are no more nested components that will need any additional data here...
+`AlbumArt` receives a single prop, `image`, and then uses it to render the album artwork. There are no more nested components that will need any additional data here...
 
-#### `./ComponentD.js`
+#### `./TrackList.js`
 ```javascript
 import React from 'react'
 
-const ComponentD = (props) => {
+const TrackList = (props) => {
   return (
     <ul>
       {
@@ -251,10 +251,10 @@ const ComponentD = (props) => {
   )
 }
 
-export default ComponentD
+export default TrackList
 ```
 
-`ComponentD` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list of tune titles (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data...
+`TrackList` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list of tune titles (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data...
 
 ## Close
 
