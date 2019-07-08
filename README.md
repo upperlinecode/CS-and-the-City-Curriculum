@@ -2,8 +2,13 @@
 
 # Course Contents
 
+## Framing Documents
+* <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank">Course Overview</a>
+* <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank">Implementation Guide</a>
+
 ## Unit 1: HTML and CSS Review
 ### Unit 1-1: Elements and Nesting
+
 * Lesson: [Elements and Nesting](html/basic-html.md)
 * Lab: <a href="https://github.com/upperlinecode/html_biography" target="_blank_">HTML Biography</a> (Core Elements)
 * Lab: <a href="https://github.com/upperlinecode/FixerUpper" target="_blank_">Fixer Upper</a> (Code formatting)
