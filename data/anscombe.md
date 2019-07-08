@@ -62,7 +62,7 @@
 | 8.0	| 7.91 |
 | 8.0	| 6.89 |
 
-> Note: the x values for the first three datasets are identical.
+> Note: the x values in Datasets I, II, and III are identical.
 
 In pairs:
 
