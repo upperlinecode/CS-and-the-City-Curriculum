@@ -6,13 +6,18 @@
 
 ## Sequence
 
-1. [Some text](#some-text)
+1. [Intro](#intro)
+2. [Mean, Median, Mode](#mean-median-mode)
+3. [Variance](#variance)
+4. [Quartiles](#quartiles)
+5. [Other Statistical Descriptions](#other-statistical-descriptions)
+6. [Close](#close)
 
-## Topic
+## Intro
 
 Some text
 
-## Topic
+## Mean, Median, Mode
 
 Some text
 
@@ -29,3 +34,53 @@ Some text
 * Topic - Some text
 * Topic - Some text
 * Topic - Some text
+
+## Variance
+
+Some text
+
+### Activity: Some text
+
+Some text
+
+### Takeaways
+
+* Topic - Some text
+
+## Quartiles
+
+Some text
+
+### Activity: Some text
+
+Some text
+
+### Some text
+
+Some text
+
+### Takeaways
+
+* Topic - Some text
+
+## Other Statistical Descriptions
+
+Some text
+
+### Activity: Some text
+
+Some text
+
+### Some text
+
+Some text
+
+### Takeaways
+
+* Topic - Some text
+* Topic - Some text
+* Topic - Some text
+
+## Close
+
+Some text
