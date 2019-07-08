@@ -82,13 +82,13 @@
 
 ### Unit 3-2 Bias
 * Lesson: [Bias](data/bias.md)
-* Lab:
+* Lab: [Critiquing Bias](data/bias-critique.md)
 * Lab:
 
 ### Unit 3-3 Data Collection
 * Lesson: [Data Collection](data/collection.md)
-* Lab:
-* Lab:
+* Lab: [Finding Data](data/finding-data.md)
+* Lab: 
 * Lab:
 
 ### Unit 3-4 Statistical Measurements

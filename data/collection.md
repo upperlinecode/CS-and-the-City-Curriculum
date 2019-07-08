@@ -7,6 +7,8 @@
 
 ### Activities / datasets
 - [YPAR](http://yparhub.berkeley.edu/) is a good resource and method
+	- [Brainstorming Data Sources and Making a Data Collection Plan](http://yparhub.berkeley.edu/investigate/brainstorming-data-sources-and-making-a-data-collection-plan/)
+	- [Internet Searches](http://yparhub.berkeley.edu/investigate/internet-searches/)
 - Buzzfeed article on gentrification + 311 + noise complaints
 
 ## Sequence
