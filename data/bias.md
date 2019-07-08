@@ -4,7 +4,7 @@
 
 * SWBAT examine the ways in which data can be misused in presentation and analysis.
 * SWBAT recognize the unintentional misuse of data.
-* SWBAT to critique the intentional misuse of data.
+* SWBAT critique the intentional misuse of data.
 
 ### Activities / datasets
 

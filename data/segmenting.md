@@ -1,10 +1,9 @@
-# Data Analysis
+# Segmenting & Pivot Tables
 
 ## Learning Objectives
 
-* SWBAT examine how to craft questions that data can answer.
-* SWBAT relate statistical measurements to determine those answers.
-* SWBAT to differentiate between abstract and concrete questions.
+* SWBAT craft questions that data can answer.
+* SWBAT differentiate between abstract and concrete questions.
 
 
 ### Activities / datasets 

@@ -79,22 +79,31 @@
 
 ### Unit 3-1 Data in Argument & Decision-Making
 * Lesson: [Data in Argument & Decision-Making](data/argument-decision-making.md)
-* Lab:
 
 ### Unit 3-2 Bias
 * Lesson: [Bias](data/bias.md)
+* Lab:
 * Lab:
 
 ### Unit 3-3 Data Collection
 * Lesson: [Data Collection](data/collection.md)
 * Lab:
-
-### Unit 3-4 Data Analysis
-* Lesson: [Data Analysis](data/analysis.md)
+* Lab:
 * Lab:
 
-### Unit 3-5 Data Visualization
+### Unit 3-4 Statistical Measurements
+* Lesson: [Statistical Measurements](data/statistics.md)
+* Lab:
+
+### Unit 3-5 Segmenting & Pivot Tables
+* Lesson: [Data Analysis](data/segmenting.md)
+* Lab:
+* Lab:
+
+### Unit 3-6 Data Visualization (Mapping)
 * Lesson: [Data Visualization](data/visualization.md)
+* Lab:
+* Lab:
 * Lab:
 
 ## Unit 4: Project Mode
