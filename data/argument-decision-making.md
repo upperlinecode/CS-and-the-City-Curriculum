@@ -7,10 +7,6 @@
 * SWBAT recognize how data can be used to control human behavior.
 * SWBAT differentiate kinds of data and different uses for data.
 
-## Sequence
-
-1. [Some text](#some text)
-
 - General Data 
 	- Definitions
 	- Useful data v. information
@@ -36,6 +32,9 @@
 - [Discrimination innovation 2018](https://www.youtube.com/watch?v=dSeCV5Tad7I&list=PLgCe1KzF20ix9S_6L41iCChJDv20MX4fu&index=16) (video)
 - [Discrimination innovation 2017](https://www.youtube.com/watch?v=9U1Ka5DJXTU&list=PLgCe1KzF20ixjsDCjbyFMgdgwv_3yBHmf&index=17) (video)
 
+## Sequence
+
+1. [Some text](#some-text)
 
 ## Topic
 

@@ -21,7 +21,7 @@
 
 ## Sequence
 
-1. [Some text](#some text)
+1. [Some text](#some-text)
 
 ## Topic
 
