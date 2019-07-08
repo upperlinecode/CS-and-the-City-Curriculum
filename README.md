@@ -93,7 +93,7 @@
 
 ### Unit 3-4 Statistical Measurements
 * Lesson: [Statistical Measurements](data/statistics.md)
-* Lab:
+* Lab: [Anscombe's Quartet](data/anscombe.md)
 
 ### Unit 3-5 Segmenting & Pivot Tables
 * Lesson: [Data Analysis](data/segmenting.md)
