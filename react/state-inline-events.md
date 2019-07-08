@@ -51,6 +51,8 @@ So far, we've primarily been using functional components (components written as 
 
 In these lessons, however, we have been using (and will continue to use) [a workaround that enables us to write a functional component](https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160) which has the effect of creating a class-based component that can store state. The tl;dr here is that we'll be using functional components to store state even though that isn't normally how React is written.
 
+> To go a bit more in-depth, see [how the construtor method compares to the class-based method](class-to-function-component.md).
+
 ### Accessing State
 
 Functional components can access the state object by using JSX. The code below would insert the value of the `text` property of state in between the two `span` elements:
