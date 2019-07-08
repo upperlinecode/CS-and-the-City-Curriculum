@@ -1,6 +1,6 @@
 # Anscombe's Quartet: Lab
 
-## Consider the following sets of data:
+Consider the following sets of data:
 
 #### Dataset I
 | x	| y	|
