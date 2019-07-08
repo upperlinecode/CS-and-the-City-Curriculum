@@ -77,4 +77,24 @@
 
 ## Unit 3: Data Science Mindsets
 
+### Unit 3-1 Data in Argument & Decision-Making
+* Lesson: [Data in Argument & Decision-Making](data/argument-decision-making.md)
+* Lab:
+
+### Unit 3-2 Bias
+* Lesson: [Bias](data/bias.md)
+* Lab:
+
+### Unit 3-3 Data Collection
+* Lesson: [Data Collection](data/collection.md)
+* Lab:
+
+### Unit 3-4 Data Analysis
+* Lesson: [Data Analysis](data/analysis.md)
+* Lab:
+
+### Unit 3-5 Data Visualization
+* Lesson: [Data Visualization](data/visualization.md)
+* Lab:
+
 ## Unit 4: Project Mode
