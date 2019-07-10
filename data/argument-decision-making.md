@@ -38,6 +38,14 @@ Data science as a field is put into practice depending on what you want to do wi
 - **Prediction**: You want to guess what's going to happen in the future. _e.g. Next week, ridership will increase across the subway system by 9%._
 - **Prescription**: You want to say what should be done as a result of your prediction about the future. _e.g. In order to meet the anticipated increase in demand, the MTA should add 3 trains per line per hour from 7am to 7pm._
 
+#### Optional Activity: Descriptive, Predictive, Prescriptive
+
+Think about something you do most days. Maybe you ride the subway, maybe you go shopping, maybe you check social media, maybe you spend time with your family, maybe you go to the movies. See if you can come up with three questions you could investigate about that activity:
+
+* The first question should be **descriptive** - it should just describe the activity. _e.g. What percentage of my time do I spend playing video games every week?_
+* The second question should be **predictive** - it should ask about some future state of the activity. _e.g. How much time can I expect to spend playing games next month?_
+* The third question should be **prescriptive** - the answer to this question should recommend an action based on the answer to a prediction. _e.g. What other activities should I do instead of playing video games so often?_
+
 #### Additional Reading
 
 Explore these resources to see how journalists are talking about - and using - data.
@@ -47,7 +55,12 @@ Explore these resources to see how journalists are talking about - and using - d
 
 ### Data vs. Information
 
-Some text
+When you've talked about data in the past, you may have used the words **data** and **information** interchangeably. Although they are quite similar, these two words have an important distinction:
+
+- **Data** is comprised of the raw measurements, observations, or responses that would be collected from tools like feedback surveys, mechanical sensors, or even digital logs. Data can also be simple facts and figures that result from those raw measurements.
+- **Information** is data that has been processed, interpreted, organized, structured or presented in a way that makes the data meaningful or useful. Information carries with it a point-of-view or an opinion because a human has made decisions about its meaning.
+
+In addition to **data** and **information**, the term **insight** often accompanies a discussion about data. **Insight** is the understanding we get from data and information and usually relates to the decision-making capabilities that result from processing data into information.
 
 ### Open Data
 
