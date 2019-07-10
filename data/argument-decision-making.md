@@ -114,7 +114,7 @@ Share your list with a classmate to see what each other came up with. Add any ad
 
 ## The Misuse of Data
 
-Data does not exist in a neutral vacuum. Throughout history, data has been used both positively and negatively. At its worst, data has been a justification for discrimination ([GI bill and black WWII veterans](https://www.history.com/news/gi-bill-black-wwii-veterans-benefits)), a means by which to forcibly separate people ([WWII internment of Japanese Americans](https://www.washingtonpost.com/news/retropolis/wp/2018/04/03/secret-use-of-census-info-helped-send-japanese-americans-to-internment-camps-in-wwii/?noredirect=on&utm_term=.f5e994f73a5d)), and a basis for all sorts of racist, sexist, xenophobic, and classist ills. Still today we see data being used to justify humanitarian crises around the world.
+Data does not exist in a neutral vacuum. Throughout history, data has been used both positively and negatively. At its worst, data has been a justification for discrimination ([GI Bill and black WWII veterans](https://www.history.com/news/gi-bill-black-wwii-veterans-benefits)), a means by which to forcibly separate people ([WWII internment of Japanese Americans](https://www.washingtonpost.com/news/retropolis/wp/2018/04/03/secret-use-of-census-info-helped-send-japanese-americans-to-internment-camps-in-wwii/?noredirect=on&utm_term=.f5e994f73a5d)), and a basis for all sorts of racist, sexist, xenophobic, and classist ills. Still today we see data being used to justify humanitarian crises around the world.
 
 The intentional disregard of data poses a threat equal to the use of data for nefarious purposes, especially when that disregard is coupled with political or business interests. Perhaps the critical issue of our time where data has been misused by being _unused_ is climate change. Despite scientific consensus about the correlation between atmospheric carbon dioxide concentration and global temperature, politicians continue to ignore and deny the data, its interpretation, and its effects upon our planet.
 
@@ -147,21 +147,29 @@ These videos detail innovations in anti-discrimination technology:
 - [Discrimination innovation 2018](https://www.youtube.com/watch?v=dSeCV5Tad7I&list=PLgCe1KzF20ix9S_6L41iCChJDv20MX4fu&index=16) (video)
 - [Discrimination innovation 2017](https://www.youtube.com/watch?v=9U1Ka5DJXTU&list=PLgCe1KzF20ixjsDCjbyFMgdgwv_3yBHmf&index=17) (video)
 
-### Data in the Media & "Fake News"
+### "Fake News"
 
-Some text about sensationalism, clickbait, and market forces of information
+The rise of partisan journalism has led to claims of "fake news" throughout the socio-political spectrum. "Fake news" has permeated elections, has destroyed careers, and is too-often used to deny any story someone disagrees with, whether the story is based in fact or not. But in reality, "fake news" is a symptom of the metrics by which **user engagement** is measured: clicks, views, and shares.
+
+As information has become commoditized, the techniques used by content-providers, marketers, and media outlets have been co-opted to guide users to tantalizingly wrong information. The headline writing style made popular by websites like Upworthy - "You're not going to believe what happened next..." - which, once recognized as immensely effective at driving people to click and engage, was then used to sensationalize and polarize people's beliefs.
+
+### Optional Activity: Identifying "Fake News"
+
+How can you distinguish real news from "fake news"?
+
+Take a few minutes to consider how you can tell whether a news story is real or "fake". Write down at least 5 questions you would use to interrogate any news story and how the answers to those questions might lead you to label the story as real or "fake".
+
+Find a news article online from a satirical news outlet, such as [The Onion](https://www.theonion.com/), [The Daily Mash](https://www.thedailymash.co.uk/), [The Borowitz Report](https://www.newyorker.com/humor/borowitz-report), [Private Eye](https://www.private-eye.co.uk/), or [ClickHole](https://www.clickhole.com/).
+
+Use your 5 questions to decide whether the news story is real or "fake". How well did your questions do at identifying "fake news"?
 
 #### Additional Reading
 
 - ["The Misinformation Age" (PBS, Apr 22, 2019)](https://www.pbs.org/video/the-misinformation-age-0xqnez/)
 - [PBS Newshour: Stories on "Misinformation"](https://www.pbs.org/newshour/search-results?q=misinformation)
-- ["Who, what, when, where, why do hyperpartisan news sites exist?" (PBS Newshour"](https://www.pbs.org/newshour/extra/daily-videos/who-what-when-where-why-do-hyperpartisan-news-sites-exist/)
+- ["Who, what, when, where, why do hyperpartisan news sites exist?" (PBS Newshour)](https://www.pbs.org/newshour/extra/daily-videos/who-what-when-where-why-do-hyperpartisan-news-sites-exist/)
 - [Lesson plan: How teens deal with the spread of misinformation](https://www.pbs.org/newshour/extra/lessons-plans/lesson-plan-student-reporting-labs-explores-how-youth-deal-with-misinformation/)
 - [PBS Newshour: Tag: "Fake news"](https://www.pbs.org/newshour/extra/tag/fake-news/)
-
-### Activity: Identifying clickbait and fake news
-
-Some text
 
 ## Data Literacy
 
