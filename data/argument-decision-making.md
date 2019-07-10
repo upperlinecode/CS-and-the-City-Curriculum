@@ -38,7 +38,7 @@ Data science as a field is put into practice depending on what you want to do wi
 - **Prediction**: You want to guess what's going to happen in the future. _e.g. Next week, ridership will increase across the subway system by 9%._
 - **Prescription**: You want to say what should be done as a result of your prediction about the future. _e.g. In order to meet the anticipated increase in demand, the MTA should add 3 trains per line per hour from 7am to 7pm._
 
-#### Optional Activity: Three Questions
+### Optional Activity: Three Questions
 
 Think about something you do most days. Maybe you ride the subway, maybe you go shopping, maybe you check social media, maybe you spend time with your family, maybe you go to the movies. See if you can come up with three questions you could investigate about that activity:
 
@@ -62,6 +62,15 @@ When you've talked about data in the past, you may have used the words **data** 
 
 In addition to **data** and **information**, the term **insight** often accompanies a discussion about data. **Insight** is the understanding we get from data and information and usually relates to the decision-making capabilities that result from processing data into information.
 
+#### Additional Reading
+
+These readings introduce the concept of civic data, and how cities are collecting an increasing amount of data about residents, municipal activities (housing, crime, transportation, etc.), and more.
+
+- ["The City of the Future Is a Data-Collection Machine" (The Atlantic, Nov 21, 2018)](https://www.theatlantic.com/technology/archive/2018/11/google-sidewalk-labs/575551/)
+- ["On Being a Civic Data Scientist" (Medium, Aug 11, 2017)](https://towardsdatascience.com/on-being-a-civic-data-scientist-774c15232695)
+- ["History of NYC's open data" (Data-Smart City Solutions, Mar. 8, 2017)](https://datasmart.ash.harvard.edu/news/article/new-york-city-open-data-a-brief-history-991)
+- [How City Council uses open data to create legislation (YouTube)](https://www.youtube.com/watch?v=mrVevDEFan8&list=PLgCe1KzF20iwjeJDnI4l9OxDZKEsA6R6l&index=4) (video)
+
 ### Open Data
 
 When you think about all of the data that exists in the world, you might start to realize that you cannot access most of it. In fact, businesses, governments, and even people keep a lot of the data they have private in order to secure a competitive advantage over other businesses, governments, and people. In the last decade, however, there has been a movement to make data more available instead of locking it down. This movement is called the Open Data Movement.
@@ -78,30 +87,30 @@ In the other city, the transit authority restricts access to their train arrival
 
 In New York City, however, the transit authority recognizes that they're pretty good at driving trains, but not so great at making apps. The MTA instead spends $10,000 to build a system that shares train arrival data with developers. This open data is then taken by developers who compete for a $5,000 prize to whomever can build the best app with that data. The MTA receives more than 50 app submissions, and the public gets to choose which app is the best and should get the money. The developers of the winning app choose to build a business from their app, and they go on to develop apps for other cities as well. The MTA spent $15,000, didn't go over-budget, and got loads of great apps just by opening up their data and making it available for developers to use.
 
-- Check out some of the apps made by developers using the MTA's open data: [web.mta.info/apps/](http://web.mta.info/apps/)
+- Check out some of the real apps made by developers using the MTA's open data: [web.mta.info/apps/](http://web.mta.info/apps/)
 - Explore the MTA's open data portal: [web.mta.info/developers/](http://web.mta.info/developers/)
 
 #### Read more about open data in government
 
 - [Open data in practice (NYC.gov video)](https://www.youtube.com/watch?v=l4undH4y0Ws)
 - [Open Government Timeline](http://www.opengovtimeline.com/)
+- ["What I learned in two years of moving government forms online" (Medium, Feb 22, 2018)](https://medium.com/@jgee/what-i-learned-in-two-years-of-moving-government-forms-online-1edc4c2aa089)
 
 ### Activity: What data do you encounter on a daily basis?
 
-Consider [the Firefox Data Privacy Promise](https://blog.mozilla.org/firefox/firefox-data-privacy-promise/)...
-- ["A Data Detox for a healthier, balanced digital life" (Mozilla: Internet Citizen, Nov. 8, 2017)](https://blog.mozilla.org/internetcitizen/2017/11/08/data-detox/)
-- ["What I learned in two years of moving government forms online" (Medium, Feb 22, 2018)](https://medium.com/@jgee/what-i-learned-in-two-years-of-moving-government-forms-online-1edc4c2aa089)
+Take a moment to think through your daily routine, from when you wake up in the morning - maybe you eat breakfast, then you get dressed, commute to school, go to class, etc. - until you go to sleep at night. Think about each activity you do most every day, and make a list of your routine.
 
-Some text
+Now think about the data you encounter, interact with, and engage during each of those activities. Augment your list with the data you might see or create during each of those activities. It's ok if you just have a hunch that something might have data; go ahead and list it anyway. For example:
+
+- There's nutritional data on the box of cereal I have for breakfast.
+- I create data every time I swipe my MetroCard on the bus or train.
+- Crosswalk signals are timed to be some duration; maybe they're based on data?
+
+Share your list with a classmate to see what each other came up with. Add any additional data to your list if you hear something that you may have missed.
 
 #### Additional Reading
 
-These readings introduce the concept of civic data, and how cities are collecting an increasing amount of data about residents, municipal activities (housing, crime, transportation, etc.), and more.
-
-- ["The City of the Future Is a Data-Collection Machine" (The Atlantic, Nov 21, 2018)](https://www.theatlantic.com/technology/archive/2018/11/google-sidewalk-labs/575551/)
-- ["On Being a Civic Data Scientist" (Medium, Aug 11, 2017)](https://towardsdatascience.com/on-being-a-civic-data-scientist-774c15232695)
-- ["History of NYC's open data" (Data-Smart City Solutions, Mar. 8, 2017)](https://datasmart.ash.harvard.edu/news/article/new-york-city-open-data-a-brief-history-991)
-- [How City Council uses open data to create legislation (YouTube)](https://www.youtube.com/watch?v=mrVevDEFan8&list=PLgCe1KzF20iwjeJDnI4l9OxDZKEsA6R6l&index=4) (video)
+- ["A Data Detox for a healthier, balanced digital life" (Mozilla: Internet Citizen, Nov. 8, 2017)](https://blog.mozilla.org/internetcitizen/2017/11/08/data-detox/)
 
 ## The Misuse of Data
 
@@ -138,6 +147,8 @@ Some text
 - Anecdotal data, case studies, and aggregate data
 
 ### Takeaways
+
+Consider [the Firefox Data Privacy Promise](https://blog.mozilla.org/firefox/firefox-data-privacy-promise/)...
 
 * Topic - Some text
 * Topic - Some text
