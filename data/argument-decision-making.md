@@ -22,7 +22,7 @@ If you've been tuned into the news, the job market, or even just looking at ads 
 
 But what is "data science"?
 
-![Data Science Cartoon](./data/images/data-science.png)
+![Data Science Cartoon](./images/data-science.png)
 
 Data science is an umbrella term that includes a number of fields: including mathematics, statistics, computer science, and even sociology, journalism, and design. Depending on how the term is being used, it could mean anything from statistics to machine learning and artificial intelligence. 
 
