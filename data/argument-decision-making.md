@@ -188,7 +188,7 @@ As you continue to grapple with distinguishing real news from "fake news", you'l
 
 See how many types of data you can brainstorm in 5 minutes. For each type, also consider potential sources of that data.
 
-_For example, geographic data might come from satellites, from locations of users on their smartphones, or from city zoning data._
+_For example, geographic data might come from satellites, from locations of users on their smartphones, from city zoning data, etc._
 
 > Note: Think broadly! Try to consider various types of quantitative (numerical), qualitiative (textual), and alternative (images, video, sound, etc.) data. You might also think about less traditional sources of data like anecdotal data, case studies, and/or aggregate data.
 
