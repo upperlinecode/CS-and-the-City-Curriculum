@@ -114,12 +114,38 @@ Share your list with a classmate to see what each other came up with. Add any ad
 
 ## The Misuse of Data
 
+Data does not exist in a neutral vacuum. Throughout history, data has been used both positively and negatively. At its worst, data has been a justification for discrimination ([GI bill and black WWII veterans](https://www.history.com/news/gi-bill-black-wwii-veterans-benefits)), a means by which to forcibly separate people ([WWII internment of Japanese Americans](https://www.washingtonpost.com/news/retropolis/wp/2018/04/03/secret-use-of-census-info-helped-send-japanese-americans-to-internment-camps-in-wwii/?noredirect=on&utm_term=.f5e994f73a5d)), and a basis for all sorts of racist, sexist, xenophobic, and classist ills. Still today we see data being used to justify humanitarian crises around the world.
+
+The intentional disregard of data poses a threat equal to the use of data for nefarious purposes, especially when that disregard is coupled with political or business interests. Perhaps the critical issue of our time where data has been misused by being _unused_ is climate change. Despite scientific consensus about the correlation between atmospheric carbon dioxide concentration and global temperature, politicians continue to ignore and deny the data, its interpretation, and its effects upon our planet.
+
+#### How can data be misused?
+
+Below are several ways data can be (or has been) misused. Can you think of any others?
+
+- Data can be ignored. (see climate change example above)
+- Data can be selectively filtered to support an argument. By not including all available data, a conclusion can be skewed in favor of a pre-determined outcome.
+- Data can be used to round up, segregate, or otherwise disenfranchise a group of people. Census data is often cited as a means by which the government can assert control over specific sub-groups of the population.
+- Data can be mis-interpreted. Too often the public lacks the skills to interpret data for themselves, so people accept the interpretation they are provided.
+- Data can be used to violate privacy. Even though data providers claim data has been anonymized, sometimes there is still enough to find out exactly who someone is.
+
+#### A Simple Case Study
+
+Imagine a bank that is trying to decide whether or not to give someone a loan. In addition to deciding whether or not to grant a loan, the bank can also set the interest rate at which the customer should pay back the loan.
+
+In order to make the loan application easier, the bank has made an app for smart phones through which the application is filled out. Once the app has been installed on a user's phone, the app also requests access to the user's music libraries (iTunes, Spotify, Pandora, etc.). The bank knows that most users will not read the fine print in the Terms & Conditions of their app, and since most users will just want to get a loan, they'll agree to whatever the bank wants them to.
+
+**Can you think of ways data about a user's music listening might impact the decisions a bank would make about a loan?** Take a moment to brainstorm with a partner.
+
+Do you think the bank could tell what sex, race, or class a user is just by the music they listen to? Maybe they would think the user is _probably_ Dominican if they listen to bachata; maybe they would think the user is _probably_ black if they listen to particular artists; maybe they would think the user is _probably_ wealthy if they listen to a lot of classical music. Accessing a user's music listening history might indicate information about the user that the bank couldn't otherwise ask in order to discriminate against loan applicants.
+
+- What other data exists on your phone that might be misused to violate your privacy?
+
+#### Additional information
+
+These videos detail innovations in anti-discrimination technology:
+
 - [Discrimination innovation 2018](https://www.youtube.com/watch?v=dSeCV5Tad7I&list=PLgCe1KzF20ix9S_6L41iCChJDv20MX4fu&index=16) (video)
 - [Discrimination innovation 2017](https://www.youtube.com/watch?v=9U1Ka5DJXTU&list=PLgCe1KzF20ixjsDCjbyFMgdgwv_3yBHmf&index=17) (video)
-- [World War II-Internment of Japanese Americans](https://www.washingtonpost.com/news/retropolis/wp/2018/04/03/secret-use-of-census-info-helped-send-japanese-americans-to-internment-camps-in-wwii/?noredirect=on&utm_term=.f5e994f73a5d)
-- antisemitism in the media
-- [GI bill and its impacts in perpetuating racial divides](https://www.history.com/news/gi-bill-black-wwii-veterans-benefits)
-
 
 ### Data in the Media & "Fake News"
 
