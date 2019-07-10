@@ -116,7 +116,7 @@ Share your list with a classmate to see what each other came up with. Add any ad
 
 Data does not exist in a neutral vacuum. Throughout history, data has been used both positively and negatively. At its worst, data has been a justification for discrimination ([GI Bill and black WWII veterans](https://www.history.com/news/gi-bill-black-wwii-veterans-benefits)), a means by which to forcibly separate people ([WWII internment of Japanese Americans](https://www.washingtonpost.com/news/retropolis/wp/2018/04/03/secret-use-of-census-info-helped-send-japanese-americans-to-internment-camps-in-wwii/?noredirect=on&utm_term=.f5e994f73a5d)), and a basis for all sorts of racist, sexist, xenophobic, and classist ills. Still today we see data being used to justify humanitarian crises around the world.
 
-The intentional disregard of data poses a threat equal to the use of data for nefarious purposes, especially when that disregard is coupled with political or business interests. Perhaps the critical issue of our time where data has been misused by being _unused_ is climate change. Despite scientific consensus about the correlation between atmospheric carbon dioxide concentration and global temperature, politicians continue to ignore and deny the data, its interpretation, and its effects upon our planet.
+The [intentional disregard of data](https://www.washingtonpost.com/opinions/unauthorized-immigrants-are-overwhelmingly-law-abiding-but-it-wont-stop-trump/2019/06/02/5f4f696a-8193-11e9-bce7-40b4105f7ca0_story.html) poses a threat equal to the use of data for nefarious purposes, especially when that disregard is coupled with political or business interests. Perhaps the critical issue of our time where data has been misused by being _unused_ is climate change. Despite scientific consensus about the correlation between atmospheric carbon dioxide concentration and global temperature, politicians continue to ignore and deny the data, its interpretation, and its effects upon our planet.
 
 #### How can data be misused?
 
@@ -159,7 +159,7 @@ How can you distinguish real news from "fake news"?
 
 Take a few minutes to consider how you can tell whether a news story is real or "fake". Write down at least 5 questions you would use to interrogate any news story and how the answers to those questions might lead you to label the story as real or "fake".
 
-Find a news article online from a satirical news outlet, such as [The Onion](https://www.theonion.com/), [The Daily Mash](https://www.thedailymash.co.uk/), [The Borowitz Report](https://www.newyorker.com/humor/borowitz-report), [Private Eye](https://www.private-eye.co.uk/), or [ClickHole](https://www.clickhole.com/).
+Find a news article online from a satirical news outlet such as [The Onion](https://www.theonion.com/), [The Daily Mash](https://www.thedailymash.co.uk/), [The Borowitz Report](https://www.newyorker.com/humor/borowitz-report), [Private Eye](https://www.private-eye.co.uk/), or [ClickHole](https://www.clickhole.com/).
 
 Use your 5 questions to decide whether the news story is real or "fake". How well did your questions do at identifying "fake news"?
 
@@ -173,21 +173,30 @@ Use your 5 questions to decide whether the news story is real or "fake". How wel
 
 ## Data Literacy
 
-Some text
+As you continue to grapple with distinguishing real news from "fake news", you'll realize that you're building an intuition for how to read and understand data. That data might be numerical, but it also might be textual, contextual, or even visual. The ability to digest and synthesize information is core to what is known as "data literacy". Data literacy also includes the ability to critique data and information as well as a visual acuity to interpret data-based graphics such as data visualizations.
 
-- Why does literacy with respect to data matter to me?
-- Validity of arguments
-- Quantitative v. qualitative
-- Anecdotal data, case studies, and aggregate data
+- Why should data literacy matter to you?
+- How will data literacy help you better judge arguments?
+- Who do you think ought to be "data literate"? Why?
+- How can data literacy help you protect yourself online?
 
-### Takeaways
+#### Additional Reading
 
-Consider [the Firefox Data Privacy Promise](https://blog.mozilla.org/firefox/firefox-data-privacy-promise/)...
+- [The Firefox Data Privacy Promise](https://blog.mozilla.org/firefox/firefox-data-privacy-promise/)
 
-* Topic - Some text
-* Topic - Some text
-* Topic - Some text
+### Activity: Types of Data
+
+See how many types of data you can brainstorm in 5 minutes. For each type, also consider potential sources of that data.
+
+_For example, geographic data might come from satellites, from locations of users on their smartphones, or from city zoning data._
+
+> Note: Think broadly! Try to consider various types of quantitative (numerical), qualitiative (textual), and alternative (images, video, sound, etc.) data. You might also think about less traditional sources of data like anecdotal data, case studies, and/or aggregate data.
 
 ## Close
 
-Some text
+We've seen a lot about how data is all around us and how that data can be used and misused. Next time we'll dig into how bias affects data science:
+
+- decisions about what data we collect
+- interpretation of data and information creation
+- communication of analytical results
+- possible actions to take resulting from analysis
