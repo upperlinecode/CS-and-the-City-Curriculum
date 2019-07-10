@@ -38,12 +38,12 @@ Data science as a field is put into practice depending on what you want to do wi
 - **Prediction**: You want to guess what's going to happen in the future. _e.g. Next week, ridership will increase across the subway system by 9%._
 - **Prescription**: You want to say what should be done as a result of your prediction about the future. _e.g. In order to meet the anticipated increase in demand, the MTA should add 3 trains per line per hour from 7am to 7pm._
 
-#### Optional Activity: Descriptive, Predictive, Prescriptive
+#### Optional Activity: Three Questions
 
 Think about something you do most days. Maybe you ride the subway, maybe you go shopping, maybe you check social media, maybe you spend time with your family, maybe you go to the movies. See if you can come up with three questions you could investigate about that activity:
 
-* The first question should be **descriptive** - it should just describe the activity. _e.g. What percentage of my time do I spend playing video games every week?_
-* The second question should be **predictive** - it should ask about some future state of the activity. _e.g. How much time can I expect to spend playing games next month?_
+* The first question should be **descriptive** - the answer to this question should just describe the activity. _e.g. What percentage of my time do I spend playing video games every week?_
+* The second question should be **predictive** - the answer to this question is related to some future state of the activity. _e.g. How much time can I expect to spend playing games next month?_
 * The third question should be **prescriptive** - the answer to this question should recommend an action based on the answer to a prediction. _e.g. What other activities should I do instead of playing video games so often?_
 
 #### Additional Reading
@@ -64,7 +64,24 @@ In addition to **data** and **information**, the term **insight** often accompan
 
 ### Open Data
 
-Some text
+When you think about all of the data that exists in the world, you might start to realize that you cannot access most of it. In fact, businesses, governments, and even people keep a lot of the data they have private in order to secure a competitive advantage over other businesses, governments, and people. In the last decade, however, there has been a movement to make data more available instead of locking it down. This movement is called the Open Data Movement.
+
+**Open data** is data that has been collected by businesses, governments or people that is shared freely on the Internet. This data could comprise anything: restaurant reviews, geolocation data, census data, 411 calls, property values, government budget data, etc. But why would governments be sharing data for anyone to take and use?
+
+Increasingly, governments have recognized the fact that their authority and power is drawn from the people, and unlike businesses which might argue that exclusive access to their data would lead to increased profit, governments are arguing that opening access to their data is leading to increased civic engagement, improved public works, and additional accountability.
+
+#### A Simple Case Study
+
+Let's compare the MTA in New York City and a transit authority in some other city.
+
+In the other city, the transit authority restricts access to their train arrival time data and budgets $20,000 to build an app for users to see when trains will arrive at the station. That transit authority doesn't know how to build apps; they know how to drive trains. So instead of only spending $20,000, their app goes over-budget by $15,000; it then underperforms with users, and the agency doesn't have any additional funds to spend to make it better.
+
+In New York City, however, the transit authority recognizes that they're pretty good at driving trains, but not so great at making apps. The MTA instead spends $10,000 to build a system that shares train arrival data with developers. This open data is then taken by developers who compete for a $5,000 prize to whomever can build the best app with that data. The MTA receives more than 50 app submissions, and the public gets to choose which app is the best and should get the money. The developers of the winning app choose to build a business from their app, and they go on to develop apps for other cities as well. The MTA spent $15,000, didn't go over-budget, and got loads of great apps just by opening up their data and making it available for developers to use.
+
+- Check out some of the apps made by developers using the MTA's open data: [web.mta.info/apps/](http://web.mta.info/apps/)
+- Explore the MTA's open data portal: [web.mta.info/developers/](http://web.mta.info/developers/)
+
+#### Read more about open data in government
 
 - [Open data in practice (NYC.gov video)](https://www.youtube.com/watch?v=l4undH4y0Ws)
 - [Open Government Timeline](http://www.opengovtimeline.com/)
