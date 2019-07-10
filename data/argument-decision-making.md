@@ -18,7 +18,15 @@
 
 ### What is "Data Science"?
 
-Some text
+If you've been tuned into the news, the job market, or even just looking at ads on the subway recently, you've probably come across the term "data science". Colleges and universities are offering degrees in data science, businesses are using data science to out-perform each other, and even the government at all levels (borough, city, state, federal, international) is using data science to make data-driven decisions.
+
+But what is "data science"?
+
+![Data Science Cartoon](/images/data-science.png)
+
+Data science is an umbrella term that includes a number of fields: including mathematics, statistics, computer science, and even sociology, journalism, and design. Depending on how the term is being used, it could mean anything from statistics to machine learning and artificial intelligence. 
+
+
 
 - [WNYC Data News](https://www.wnyc.org/tags/data_news)
 - [ProPublica](https://www.propublica.org/)
@@ -38,6 +46,7 @@ Some text
 
 Consider [the Firefox Data Privacy Promise](https://blog.mozilla.org/firefox/firefox-data-privacy-promise/)...
 - ["A Data Detox for a healthier, balanced digital life" (Mozilla: Internet Citizen, Nov. 8, 2017)](https://blog.mozilla.org/internetcitizen/2017/11/08/data-detox/)
+- ["What I learned in two years of moving government forms online" (Medium, Feb 22, 2018)](https://medium.com/@jgee/what-i-learned-in-two-years-of-moving-government-forms-online-1edc4c2aa089)
 
 Some text
 
@@ -54,7 +63,6 @@ These readings introduce the concept of civic data, and how cities are collectin
 
 - [Discrimination innovation 2018](https://www.youtube.com/watch?v=dSeCV5Tad7I&list=PLgCe1KzF20ix9S_6L41iCChJDv20MX4fu&index=16) (video)
 - [Discrimination innovation 2017](https://www.youtube.com/watch?v=9U1Ka5DJXTU&list=PLgCe1KzF20ixjsDCjbyFMgdgwv_3yBHmf&index=17) (video)
-
 - [World War II-Internment of Japanese Americans](https://www.washingtonpost.com/news/retropolis/wp/2018/04/03/secret-use-of-census-info-helped-send-japanese-americans-to-internment-camps-in-wwii/?noredirect=on&utm_term=.f5e994f73a5d)
 - antisemitism in the media
 - [GI bill and its impacts in perpetuating racial divides](https://www.history.com/news/gi-bill-black-wwii-veterans-benefits)
