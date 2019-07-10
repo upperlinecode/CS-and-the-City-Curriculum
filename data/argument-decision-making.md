@@ -24,22 +24,23 @@ But what is "data science"?
 
 ![Data Science Cartoon](./images/data-science.png)
 
-Data science is an umbrella term that includes a number of fields including mathematics, statistics, computer science, and even sociology, journalism, and design. Depending on how the term is being used, it could mean anything from statistics to machine learning and artificial intelligence.
+**Data science** is an umbrella term that draws upon a number of fields including mathematics, statistics, computer science, and even sociology, journalism, and design. Depending on how the term is being used, it could mean anything from statistics to machine learning and artificial intelligence.
 
 What distinguishes the different meanings of "data science" is really a question of what you're trying to do with data:
 
-- Are you trying to better understand the data that you have? (That's analytics.)
-- Are you trying to make decisions based upon the data you have? (That's probably statistics.)
-- Do you have a lot of complex data and are trying to make sense of it? (That's machine learning.)
+- Are you trying to better understand the data that you have? (That's **analytics**.)
+- Are you trying to make decisions based upon the data you have? (That's probably **statistics**.)
+- Do you have a lot of complex data and are trying to make sense of it? (That's **machine learning**.)
 
-Data science as a field is better described relative to what you want to do with data:
+Data science as a field is put into practice depending on what you want to do with data:
 
-- Description: You want to understand the data you have. _e.g. Subway trains arrive late to the station 24% of the time._
-- Prediction: You want to guess what's going to happen in the future. _e.g. Next week, ridership will increase across the subway system by 9%._
-- Prescription: You want to say what should be done as a result of your prediction about the future. _e.g. In order to meet the anticipated increase in demand, the MTA should add 3 trains per line per hour from 7am to 7pm._
+- **Description**: You want to understand the data you have. _e.g. Subway trains arrive late to the station 24% of the time._
+- **Prediction**: You want to guess what's going to happen in the future. _e.g. Next week, ridership will increase across the subway system by 9%._
+- **Prescription**: You want to say what should be done as a result of your prediction about the future. _e.g. In order to meet the anticipated increase in demand, the MTA should add 3 trains per line per hour from 7am to 7pm._
 
+#### Additional Reading
 
-
+Explore these resources to see how journalists are talking about - and using - data.
 
 - [WNYC Data News](https://www.wnyc.org/tags/data_news)
 - [ProPublica](https://www.propublica.org/)
