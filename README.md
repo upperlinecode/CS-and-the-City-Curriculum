@@ -93,17 +93,17 @@
 
 ### Unit 3-4 Statistical Measurements
 * Lesson: [Statistical Measurements](data/statistics.md)
-* Lab: [Anscombe's Quartet](data/anscombe.md)
+* Lab: 
 
 ### Unit 3-5 Segmenting & Pivot Tables
 * Lesson: [Data Analysis](data/segmenting.md)
-* Lab:
-* Lab:
+* Lab: [NYC Restaurant Ratings/Squirrels?](data/segmenting-lab.md)
+* Lab: [Titantic Data](data/titanic-lab.md)
 
 ### Unit 3-6 Data Visualization (Mapping)
 * Lesson: [Data Visualization](data/visualization.md)
 * Lab:
-* Lab:
+* Lab: [Google Maps](data/google-maps.md)
 * Lab:
 
 ## Unit 4: Project Mode

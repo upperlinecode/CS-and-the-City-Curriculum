@@ -5,6 +5,21 @@
 * SWBAT consider how and when data visualization can (and must) be used to help communicate information more intelligibly.
 * SWBAT differentiate between ethical, unintentionally misleading, and intentionally misleading data visualizations.
 
+## Launch
+
+Let's all copy this spreadsheet: [https://docs.google.com/spreadsheets/d/1oIMO0LyJLDOKUmzJl_f_g-ggm-PlijnvoLyubye_mvY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1oIMO0LyJLDOKUmzJl_f_g-ggm-PlijnvoLyubye_mvY/edit?usp=sharing)
+
+1. Describe any similarities or differences you observe between the four datasets.
+2. Based on your observations, predict which dataset will have the largest mean value of x and which will have the largest mean value of y.
+3. Based on your observations, predict which dataset will have the largest median value of x and which will have the largest median value of y.
+4. Based on your observations, predict which dataset will have the largest variance of x and which will have the largest variance of y.
+5. For each dataset, calculate the mean of x and the mean of y. Compare your answer to your prediction.
+6. For each dataset, calculate the median of x and the median of y. Compare your answer to your prediction.
+7. For each dataset, calculate the variance of x and the variance of y. Compare your answer to your prediction.
+8. Calculate the equation for the linear regression (line of best fit) for each dataset. What do you notice?
+9. Taking into account your predictions and your calculations, how might you compare the datasets to one another?
+10. Can you create a fifth dataset that follows the pattern you've observed so far?
+
 ### Activities / datasets
 
 - Election maps
