@@ -93,13 +93,21 @@ See if you can arrange the following datasets in terms of increasing variance. W
 
 <table>
 	<tr>
-		<td><img src="./images/normal-1.png"><br>Distribution 1</td>
-		<td><img src="./images/normal-2.png"><br>Distribution 2</td>
+		<td><img src="./images/normal-1.png"></td>
+		<td><img src="./images/normal-2.png"></td>
 	</tr>
 	<tr>
-		<td><img src="./images/normal-3.png"><br>Distribution 3</td>
-		<td><img src="./images/normal-4.png"><br>Distribution 4</td>
+		<td>Distribution 1</td>
+		<td>Distribution 2</td>
 	</tr>
+	<tr>
+		<td><img src="./images/normal-3.png"></td>
+		<td><img src="./images/normal-4.png"></td>
+	</tr>
+	<tr>
+		<td>Distribution 3</td>
+		<td>Distribution 4</td>
+	</tr
 </table>
 
 
