@@ -98,7 +98,7 @@ See if you can arrange the following datasets in terms of increasing variance. W
 	</tr>
 	<tr>
 		<td align="center"><b>Distribution 1</b></td>
-		<td><b>Distribution 2</b></td>
+		<td align="center"><b>Distribution 2</b></td>
 	</tr>
 	<tr>
 		<td><img src="./images/normal-3.png"></td>
@@ -109,19 +109,6 @@ See if you can arrange the following datasets in terms of increasing variance. W
 		<td align="center"><b>Distribution 4</b></td>
 	</tr>
 </table>
-
-
-#### Distribution 1
-![Uniform Distribution](./images/normal-1.png)
-
-#### Distribution 2
-![Uniform Distribution](./images/normal-2.png)
-
-#### Distribution 3
-![Uniform Distribution](./images/normal-3.png)
-
-#### Distribution 4
-![Uniform Distribution](./images/normal-4.png)
 
 ## Quartiles
 
