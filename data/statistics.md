@@ -107,7 +107,7 @@ See if you can arrange the following datasets in terms of increasing variance. W
 	<tr>
 		<td>Distribution 3</td>
 		<td>Distribution 4</td>
-	</tr
+	</tr>
 </table>
 
 
