@@ -48,14 +48,19 @@ Instead of boiling down 11 million numbers to one of these three statistical val
 
 Consider the distributions below:
 
+#### Normal Distribution
 ![Normal Distribution](./images/bell-shaped-histogram.jpg)
 
+#### Skewed Left Distribution
 ![Skewed Left Distribution](./images/skewed-left-histogram.jpg)
 
+#### Skewed Right Distribution
 ![Skewed Right Distribution](./images/skewed-right-histogram.jpg)
 
+#### Bimodal Distribution
 ![Bimodal Distribution](./images/bimodal-histogram.jpg)
 
+#### Uniform Distribution
 ![Uniform Distribution](./images/uniform-histogram.jpg)
 
 - What is the mode of each dataset?
