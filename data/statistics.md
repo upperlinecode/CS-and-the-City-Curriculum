@@ -7,7 +7,7 @@
 ## Sequence
 
 1. [Intro](#intro)
-2. [Mean, Median, Mode](#mean-median-mode)
+2. [Mean, Median, Mode, Range](#mean-median-mode-range)
 3. [Variance](#variance)
 4. [Quartiles](#quartiles)
 5. [Other Statistical Descriptions](#other-statistical-descriptions)
@@ -17,7 +17,7 @@
 
 You may remember from previous math classes where you've been taught how to calculate the mean, median, and mode of a set of numbers. The focus of this lesson is not on the mathematics of how to do those calculations (and others), but instead on what those numbers represent. This less will give you a better understanding of how useful statistical measurements can be and how to ask whether or not they're the right way to summarize a set of data. 
 
-## Mean, Median, Mode
+## Mean, Median, Mode, Range
 
 #### Review on calculations
 
@@ -26,6 +26,7 @@ Recall how to calculate these statistical values:
 - Mean (also called the average): to calculate the mean, we add up all of the values in a set of data and then divide by the number of values in the set.
 - Median: to calculate the median, we arrange all of the values in increasing order and count to the middle number.
 - Mode: to calculate the mode, we arrange all of the values in increasing order and identify which value occurs most often.
+- Range: to calculate the range, we subtract the smallest value in the dataset from the largest value.
 
 #### Example
 
@@ -35,18 +36,21 @@ Consider a dataset of exam scores: [100, 86, 90, 93, 75, 40, 66, 98, 90, 79, 88]
 - Rearranging the values in increasing order: [40, 66, 75, 79, 86, 88, 90, 90, 93, 98, 100]
 	- There are 11 total values, so the median is the 6th value: 86
 	- The mode is the value that occurs most often: 90
+	- The range is the largest value (100) minus the smallest value (40): 60
 
-Think about why computers are particularly good at calculating the mean, median, and mode. Could you write a function that would calculate each statistical measurement?
+Think about why computers are particularly good at calculating the mean, median, mode, and range. Could you write a function that would calculate each statistical measurement?
 
 ### Understanding Distributions
 
-You've probably been able to calculate the mean, median, and mode of a set of values using your calculator or even a computer, but what happens when the number of values in the data set goes from 11 (above) to 11 million? Do you think these statistical measurements are as meaningful?
+You've probably been able to calculate the mean, median, mode, and range of a set of values using your calculator or even a computer, but what happens when the number of values in the data set goes from 11 (above) to 11 million? Do you think these statistical measurements are as meaningful?
 
-Instead of boiling down 11 million numbers to one of these three statistical values, data scientists will often instead prefer to look at the distribution of the values to get a better sense of the data. Distributions are difficult to calculate by hand, but they are a graphical way to know whether the values in a data set are evenly spread around some central value, whether there are more greater values or lesser values (whether the data is skewed), or even whether the data is composed of multiple features that might be grouped around particular values. Distributions can be represented as column (bar) charts or line charts; column charts are used when there is a relatively small number of possible discrete values in the dataset, and line charts either to approximate many many more discrete values or when the data is continuous. In each case, the x-axis represents the value and the y-axis represents the number of times that value is in the data set, or that value's frequency.
+Instead of boiling down 11 million numbers to one of these four statistical values, data scientists will often instead prefer to look at the distribution of the values to get a better sense of the data. Distributions are difficult to calculate by hand, but they are a graphical way to know whether the values in a data set are evenly spread around some central value, whether there are more greater values or lesser values (whether the data is skewed), or even whether the data is composed of multiple features that might be grouped around particular values. Distributions can be represented as column (bar) charts or line charts; column charts are used when there is a relatively small number of possible discrete values in the dataset, and line charts either to approximate many many more discrete values or when the data is continuous. In each case, the x-axis represents the value and the y-axis represents the number of times that value is in the data set, or that value's frequency.
 
 Some distributions are bell-shaped; you may have heard of a Bell curve. Other distributions are shifted one way or another, e.g. a Boltzmann distribution. Still others have more than one hump; a distribution with two humps is called "bimodal". Other distributions may have values that are evenly distributed, and those are called "uniform" distributions.
 
-Let's take the skewed-left distribution below. Visually, the mode is the easiest statistical measurement to determine from a graph; it's the high point because that represents the value that occurs most often in the data. The mean and median are a bit trickier and generally depend on the shape of the distribution. For the skewed-left distribution below, the value of the median is a bit higher than the value of the mode; to visually determine the median, imagine drawing a line that has equal area on the left and the right sides of the line. Lastly, the value of the mean is a bit higher than the value of the median because the few larger values have the effect of pulling the mean up relative to the median. 
+Let's take the skewed-left distribution below. Visually, the mode is the easiest statistical measurement to determine from a graph; it's the high point because that represents the value that occurs most often in the data. The mean and median are a bit trickier and generally depend on the shape of the distribution. For the skewed-left distribution below, the value of the median is a bit higher than the value of the mode; to visually determine the median, imagine drawing a line that has equal area on the left and the right sides of the line. Lastly, the value of the mean is a bit higher than the value of the median because the few larger values have the effect of pulling the mean up relative to the median.
+
+_Note: the range is a less relevant measurement when a distribution has a very long tail on either side (or both) since it can be difficult to determine a maximum and minimum value.
 
 ![Skewed Left Distribution](./images/mean-median-mode-on-skewed-right-curve.png)
 
@@ -71,6 +75,7 @@ For each distribution, can you guess-timate (guess + estimate):
 - What is the value of the mode of each dataset?
 - What is the value of the median of each dataset?
 - What is the value of the mean of each dataset?
+- What is the value of the range of each dataset?
 
 Now consider these three datasets represented below by the bold, thin, and dotted lines:
 
@@ -110,38 +115,52 @@ See if you can arrange the following datasets in terms of increasing variance. W
 	</tr>
 </table>
 
+### Activity: Real-World Variance
+
+Some text here
+
 ## Quartiles
 
-Some text
+We can build upon our understanding of variance and begin to quantify the shapes of distributions using quartiles. Quartiles are a way to dissect a distribution by splitting the data into four chunks where each chunk of the dataset has the same number of values within it.
 
-Include distributions with same center, difference spreads, broken down into quartiles.
+How can you do that? We already know how to split a dataset into two equal chunks: that's the median. So to split a dataset into quartiles, you first find the median of a dataset, and then you find the median of each half. Doing this defines the boundaries of each quartile:
 
-Can also talk about standard deviations from the average.
+- The first quarter ranges from the minimum value in the dataset up to the median of the first half of the dataset (the first quartile).
+- The second quarter ranges from the median of the first half of the dataset (the first quartile) up to the median of the whole dataset (the middle quartile).
+- The third quarter ranges from the median of the whole dataset (the middle quartile) up to the median of the second half of the dataset (the third quartile).
+- The fourth quarter ranges from the median of the second half (the third quartile) of the dataset up to the maximum value in the dataset.
 
-### Activity: Some text
+### Activity: Dividing into Quartiles
 
-Some text
+Dissect each of the following datasets into quarters. What are the values of the first, second, and third quartiles?
 
-## Other Statistical Descriptions
+- 10,10,11,13,16,16,18,20
+- 1,1,1,2,2,2,2,3,3,3,3,4,4,5,5,5,5,6,6,6,7,7,7,7,8,8,9,9,9,9,9,10
+- -5,-5,-4,-4,-4,-3,-3,-2,-2,-1,-1,-1,-1,-1,0,0,0,0,2,4,4,4,5
+- 6,3,4,7,2,0,0,7,6,5,3,2,1,1,3,6,7,9,0,9,5,5,4,3,2,5,4,3,2,7,6,8,5,3,4
 
-Some text
+### Activity: Other Statistical Descriptions
 
-Maybe root-mean squared, maybe standard deviations, maybe some others?
+So far we've learned a number of statistical measurements that enable a data scientist to better understand how large datasets are distributed:
 
-### Activity: Some text
+- Mode
+- Median
+- Mean
+- Variance
+- Quartiles
 
-Some text
+There are many other statistical measurements used by data scientists, each of which has its own method of calculation and contextual meaning. Investigate one or more of the measurements below, and share what you find with a partner. In what circumstances is that measurement used? And how does it relate to what you've already learned?
 
-### Some text
-
-Some text
-
-### Takeaways
-
-* Topic - Some text
-* Topic - Some text
-* Topic - Some text
+- Root-Mean-Squared Average
+- Standard Deviation
+- Poisson Distribution
+- Boltzmann Distribution
+- Binomial Distribution
+- Exponential Distribution
+- [Other Probability Distributions](https://en.wikipedia.org/wiki/List_of_probability_distributions)
 
 ## Close
 
-Some text
+Statistics is an entire field of mathematics devoted to making sense of sets of values, and new measurements are necessary as the number of values increases dramatically.
+
+In the next lesson, we'll learn how to use various tools to better understand complex numerical and non-numerical datasets.
