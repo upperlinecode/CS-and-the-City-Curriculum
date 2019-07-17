@@ -48,13 +48,15 @@ Instead of boiling down 11 million numbers to one of these three statistical val
 
 Consider the distributions below:
 
-![Normal Distribution]()
+![Normal Distribution](./images/bell-shaped-histogram.jpg)
 
-![Boltzmann Distribution]()
+![Skewed Left Distribution](./images/skewed-left-histogram.jpg)
 
-![Bimodal Distribution]()
+![Skewed Right Distribution](./images/skewed-right-histogram.jpg)
 
-![Random Distribution]()
+![Bimodal Distribution](./images/bimodal-histogram.jpg)
+
+![Uniform Distribution](./images/uniform-histogram.jpg)
 
 - What is the mode of each dataset?
 - What is the mean of each dataset?
