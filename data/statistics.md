@@ -91,6 +91,13 @@ Variance helps a data scientist gauge how uniform or distributed the values in a
 
 See if you can arrange the following datasets in terms of increasing variance. What conditions must be true in order to visually compare various datasets?
 
+| ![Uniform Distribution](./images/normal-1.png) | ![Uniform Distribution](./images/normal-2.png) |
+| Distribution 1 | Distribution 2 |
+| | |
+| ![Uniform Distribution](./images/normal-3.png) | ![Uniform Distribution](./images/normal-4.png) |
+| Distribution 3 | Distribution 4 |
+
+
 #### Distribution 1
 ![Uniform Distribution](./images/normal-1.png)
 
