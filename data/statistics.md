@@ -97,7 +97,7 @@ See if you can arrange the following datasets in terms of increasing variance. W
 		<td><img src="./images/normal-2.png"></td>
 	</tr>
 	<tr>
-		<td>Distribution 1</td>
+		<td><center><b>Distribution 1</b></center></td>
 		<td>Distribution 2</td>
 	</tr>
 	<tr>
