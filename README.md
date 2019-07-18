@@ -82,18 +82,17 @@
 
 ### Unit 3-2 Bias
 * Lesson: [Bias](data/bias.md)
+* Lab: [Unintentional Bias](data/bias-unintentional.md)
 * Lab: [Critiquing Bias](data/bias-critique.md)
-* Lab:
 
 ### Unit 3-3 Data Collection
 * Lesson: [Data Collection](data/collection.md)
 * Lab: [Finding Data](data/finding-data.md)
-* Lab: 
-* Lab:
+* Lab: [Collecting Our Own Data (2 Days)](data/collection-lab.md)
 
 ### Unit 3-4 Statistical Measurements
 * Lesson: [Statistical Measurements](data/statistics.md)
-* Lab: 
+* Lab: maybe subway data? or polling data?
 
 ### Unit 3-5 Segmenting & Pivot Tables
 * Lesson: [Data Analysis](data/segmenting.md)
@@ -102,8 +101,7 @@
 
 ### Unit 3-6 Data Visualization (Mapping)
 * Lesson: [Data Visualization](data/visualization.md)
-* Lab:
+* Lab: [Exploratory Visualization](data/exploratory-visualization.md)
 * Lab: [Google Maps](data/google-maps.md)
-* Lab:
 
 ## Unit 4: Project Mode
