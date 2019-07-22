@@ -2,10 +2,9 @@
 
 Choose one of the following data sources:
 
-- [NYC Open Datasets](https://opendata.cityofnewyork.us/)
-- [New York State Open Data](https://data.ny.gov/)
-- [Unites States Open Data](https://www.data.gov)
-- [United Nations Open Data](http://data.un.org/)
+| :---: | :---: | :---: | :---: |
+|![NYC Open Data](./images/nyc-open-data.png)|![NY State Open Data](./images/nys-open-data.png)|![United States Open Data](./images/us-open-data.png)|![United Nations Open Data](./images/un-open-data.png)|
+|[NYC Open Datasets](https://opendata.cityofnewyork.us/)|[New York State Open Data](https://data.ny.gov/)|[United States Open Data](https://www.data.gov)|[United Nations Open Data](http://data.un.org/)|
 
 Take a few minutes to explore the data source you selected.
 
