@@ -1,4 +1,4 @@
-# Titanic Lab
+# Surviving the Titanic
 
 ![RMS Titanic](./images/titanic.png)
 
@@ -6,7 +6,7 @@ In this lab, you'll explore historical data about passengers on the _RMS Titanic
 
 - Make a copy of the [Titanic Data Google Sheet](https://docs.google.com/spreadsheets/d/17PncyppLXjKyGZFgcSfgkWIulJ-rsZv2suqQ_bsSKE4/edit?usp=sharing)
 
-> The file contains a `README` sheet with definitions for the variables. Consult this file for abbreviations (e.g. C, Q, S) and Booleans (survival: 0 = No, 1 = Yes).
+> The file contains a `README` sheet with definitions for the variables. Consult the `README` for abbreviations (e.g. C, Q, S) and Booleans (survival: 0 = No, 1 = Yes).
 
 1. Using the Filter view of the data, who were the oldest and youngest recorded passengers on the _Titanic_? What was the cost of each of their tickets? and from which port did they leave?
 2. Using the Filter view of the data, list the members of the biggest family on the voyage. (Hint: use the `SibSp` and `ParCh` counts.)
