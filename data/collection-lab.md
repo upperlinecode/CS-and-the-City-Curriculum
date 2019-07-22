@@ -24,7 +24,7 @@ Come up with a statement that the group wants to study, and be as specific as yo
 	- some that could be answered categorically (e.g. "Which social media platform do you use the most?")
 - Keep writing questions until you have a bank of 15-20 questions as a group.
 - Consolidate any duplicate questions, and then arrange the questions in order of increasing complexity. Choose no more than 10 question that will go into your data collection instrument; try to have a variety of question types.
-- > Note: Additionally, include demographics questions that may be helpful when you try to make sense of your data: e.g. age, location, gender, etc. Be as specific as you can.
+> Note: Additionally, include demographics questions that may be helpful when you try to make sense of your data: e.g. age, location, gender, etc. Be as specific as you can.
 
 ### Build the instrument
 
@@ -42,10 +42,12 @@ Come up with a statement that the group wants to study, and be as specific as yo
 ### Data Aggregation
 
 - As a group, create a shared Google Sheet where you can aggregate the data that was collected.
-- > Make a note of which data was collected electronically and which data was collected in-person.
+- Make a note of which data was collected electronically and which data was collected in-person.
 - Share the Google Sheet with everyone in the group. Each team member should make a copy of the aggregate data in order to be able to work with it.
 
 ### Clustering
+
+This activity can be done electronically (in a Google Sheet) or on post-it notes. If choosing the latter, write out the data with one respondent per post-it.
 
 - Cluster the responses you gathered by similarity. What criteria can you use to consider responses/respondents similar (or dissimilar)?
 - Give each cluster a name that describes how the responses/respondents are similar.
