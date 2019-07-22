@@ -1,6 +1,6 @@
-# Segmenting & Pivot Tables Lab
+# Manhattan Street Trees
 
-![NYC Street Trees](./images/nyc-street-trees.png)
+![NYC Street Trees](./images/nyc-street-trees.jpg)
 
 You've been asked by the New York City Department of Parks & Recreation to analyze the status of the trees located along the streets of Manhattan in order to equitably allocate new plantings throughout the borough.
 
