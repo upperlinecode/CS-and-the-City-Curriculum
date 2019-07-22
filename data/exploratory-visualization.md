@@ -1,7 +1,7 @@
 # NYC Census Data by Neighborhood
 
 ![NYC Property Values](./images/nyc-property-value.jpg)
-> Image from [neighborhoodx.com](https://neighborhoodx.com)
+> 3D map of NYC property values by neighborhood from [neighborhoodx.com](https://neighborhoodx.com)
 
 It's 20 minutes before a big meeting with City Hall, and your manager asks you to quickly make sense of the city's most recent census data. How can you quickly explore a dataset to get a sense of it?
 
@@ -12,7 +12,9 @@ It's 20 minutes before a big meeting with City Hall, and your manager asks you t
 > Note: this data is also available [from the NYC Open Data Portal](https://data.cityofnewyork.us/City-Government/Census-Demographics-at-the-Neighborhood-Tabulation/rnsn-acs2)
 
 1. Scroll down through the dataset: what trends and patterns can you see? Does any data not belong?
+
 ![Explore](./images/google-sheets-explore.png)
+
 2. Tap the "Explore" button in the bottom-right corner of Google Sheets. Then next to "Analysis", tap "More". Do any of the graphs have useful insights to share with your manager?
 3. What do the peaks represent in the graph of "Total Population Change 2000-2010 Percent vs. Geographic Area - Neighborhood Tabulation Area"?
 4. Explore the Chart feature of Google Sheets to try to generate a meaningful exploratory data visualization.
