@@ -4,6 +4,8 @@
 
 In this lab, you'll design your own data collection _instrument_ and you'll use it to collect your own data.
 
+![Homepage of the New York Times](./images/nytimes.png)
+
 ## Day 1: Instrument Design
 
 ### Choose a topic
