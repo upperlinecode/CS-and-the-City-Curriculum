@@ -96,8 +96,8 @@
 
 ### Unit 3-5 Segmenting & Pivot Tables
 * Lesson: [Data Analysis](data/segmenting.md)
-* Lab: [NYC Restaurant Ratings/Squirrels?](data/segmenting-lab.md)
 * Lab: [Titantic Data](data/titanic-lab.md)
+* Lab: [Manhattan Street Trees](data/nyc-street-trees.md)
 
 ### Unit 3-6 Data Visualization (Mapping)
 * Lesson: [Data Visualization](data/visualization.md)
