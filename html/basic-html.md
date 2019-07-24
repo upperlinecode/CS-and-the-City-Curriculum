@@ -1,11 +1,44 @@
 # Basic HTML
 
+## Learning Objectives
+
+* SWBAT use the element inspector to examine rendered HTML.
+* SWBAT create a new `.html` file with the HTML shell.
+* SWBAT add paragraph and heading elements to an HTML page.
+* SWBAT add images to an HTML page.
+* SWBAT add `a` hyperlinks to their code.
+* SWBAT differentiate between elements that have both opening and closing tags, and elements which are self-closing.
+* SWBAT use element level selectors to style their code in CSS.
+
 ## Sequence
 
 1. [HTML Elements](#html-elements)
 2. [URLs](#urls)
 3. [Structures](#structures)
 4. [Colors](#colors)
+
+## Launch
+
+The launch should likely be differentiated based on the prior knowledge of students.
+
+_NOTE that if students have not worked with HTML before, you'll likely want to split this content up into 2-4 lessons, and not touch CSS at all on day 1._
+
+##### If most of your students HAVE NOT worked with HTML before:
+
+Send students to the New York Times website. Ask them to make a list of everything they notice. You'll get lots of answers, but be sure to garner these:
+* Text
+* Images
+* Clickable links (that take you to other pages)
+
+Students may also notice colors, fonts, layout, etc. Honor these contributions and explain that they're up next, but that we won't be covering them today.
+
+Then, open up the [Chrome inspector](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and model for students how to see what type of tags are used to create each element on screen using the element inspector ![inspector](img/inspector.png) - point out the color coding to keep attuned to the correct items. Have them make a list of every element they can find using the inspector.
+
+They'll find WAY more than you can teach in 40 minutes, so skip down to the `framing` section so they know which items we will be prioritizing.
+
+##### If most of your students HAVE worked with HTML before:
+
+In this course, we're ultimately going to work with a framework called React.js, which allows us to assemble HTML pages dynamically in JavaScript - but HTML rendered in React.js is a bit less forgiving than vanilla HTML. Every single element that is opened must also be closed, so skip down to the `optional nesting activity` to help frame this for students.
 
 ## Framing
 
@@ -27,7 +60,7 @@ HTML requires less introduction than you might think. The most foundational unde
 
 ###### Optional Activity: Real-World Nesting Analogy
 
-Here's a list of things, mostly in NYC. Your challenge, on whiteboards, is to come up with some visual representation of this information. Most importantly, I want to be able to understand what is inside of what.
+Here's a list of things, mostly in NYC. Your challenge, on whiteboards, is to come up with some visual representation of this information. Most importantly, I want to be able to understand **what is contained inside of what**.
 * USA
 * New York
 * Tennessee (or wherever)
@@ -169,7 +202,7 @@ Direct them to the documentation for an ordered and unordered list. Launch after
 
 #### Takeaways
 
-* HTML - Create ordered and unordered lists
+* HTML - Create ordered and unordered lists *(stretch)*
 * HTML - Create tables *(stretch)*
 * HTML - Create forms, including various inputs: text, password, number, date, radio, checkbox, button, submit *(stretch)*
 
@@ -211,6 +244,11 @@ Challenge students to add other [styling properties](https://www.w3schools.com/c
 
 Challenge students to style other elements, like the h1 or h3 elements.
 
-#### Takeaways
+## Close
 
-* CSS - Write element selectors, verify selection using visual styling (like color)
+Remember to gather student feedback on this lesson. In addition to the standard close, consider priming students for feedback with the following questions.
+
+#### Questions for Students
+* What errors / mistakes did you find easiest to make?
+* What do you still want to learn?
+* What's missing that separates your site from the New York Times website?

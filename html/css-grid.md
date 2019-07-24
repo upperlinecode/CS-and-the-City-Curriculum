@@ -1,5 +1,11 @@
 # CSS Grid
 
+## Learning Objectives
+
+* SWBAT define a grid template using CSS Grid.
+* SWBAT plan HTML such that it can be styled in Grid.
+* SWBAT modify the positioning and sizing of individual elements within a grid.
+
 ## Sequence
 
 1. [Grid Template](#grid-template)
@@ -7,6 +13,12 @@
 3. [Resources](#resources)
 
 NOTE: The CSS Grid properties aren't recognized by all IDEs, but they are correctly rendered by most browsers. If you see errors in front of CSS Grid properties, test it before assuming it's wrong. Those errors may be in error themselves.
+
+## Launch
+
+First, have students pull up the vertical-only content they've created so far. Ask them to share with you their lists of things they still would like to improve about it if they had time.
+
+Have students go to a major website that uses Grid. Some excellent examples include Apple, Spotify, Microsoft, and the New York Times. 
 
 ## Grid Template
 
@@ -138,3 +150,11 @@ Introduce students to some reference material to help them keep their cool. We'r
 
 + [CSS Grid Periodic Table](https://codepen.io/dudleystorey/full/rmWMXY/)
 + [Magazine Layout](https://codepen.io/hbuchel/pen/qOxGzW/)
+
+## Close
+
+Remember to gather student feedback on this lesson. In addition to the standard close, consider priming students for feedback with the following questions.
+
+#### Questions for Students
+* What do you imagine are the most common mistakes to make with grid?
+* Find one major website that you suspect uses a grid system to organize their content?
