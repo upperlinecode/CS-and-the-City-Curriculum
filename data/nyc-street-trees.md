@@ -23,7 +23,7 @@ You've been asked by the New York City Department of Parks & Recreation to analy
 7. A manager at DEP is arguing that trees offset from the curb are always healthier than trees on the curb. Is she right? What does the data say?
 8. What are the most common problems for Manhattan's street trees? Are those issues uniform across the borough or located in particular neighborhoods?
 9. Which factors (root treatments, trunk treatments, branch treatments) most contribute to the health of Manhattan's street trees?
-10. Based on your analysis, make a recommendation to the Manhattan DEP that should include:
+10. Based on your analysis, **make a recommendation to the Manhattan DEP** that should include:
 	1. the number and location of new street trees,
 	2. the type of tree(s) to plant,
 	3. the preferred planting location,
@@ -31,7 +31,7 @@ You've been asked by the New York City Department of Parks & Recreation to analy
 	5. any other information the DEP should consider when planting
 
 
-## Alternates?
+## Alternatives?
 
 - [NYC Restaurant Rating Visualization (New York Times)](http://archive.nytimes.com/www.nytimes.com/interactive/dining/new-york-health-department-restaurant-ratings-map.html)
 - [NYC Restaurant Ratings Data (NYC Open Data)](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j)
