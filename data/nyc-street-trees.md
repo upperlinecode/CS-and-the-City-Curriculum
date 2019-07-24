@@ -2,11 +2,17 @@
 
 ![NYC Street Trees](./images/nyc-street-trees.jpg)
 
-You've been asked by the New York City Department of Parks & Recreation to analyze the status of the trees located along the streets of Manhattan in order to equitably allocate new plantings throughout the borough.
+## Framing
+
+You've been asked by the New York City Department of Parks & Recreation to analyze the status of the trees located along the streets of Manhattan in order to equitably allocate new plantings throughout the borough. They're working with a budget of **$500,000** (about 1/1000 of the department's total budget), and need you to recommend the best trees to plant, but it's up to you and your lab partner to decide on what the word "best" means in this case. 
+
+## Setup
 
 - Make a copy of the [2015 Street Tree Census - Manhattan](https://docs.google.com/spreadsheets/d/1Kta3D3B6GcSdce23mIGqpRgEzVdCenC5vwGjlJaRJtY/edit?usp=sharing)
 
 > Note: this file is a subset of [2015 Street Tree Census - Tree Data](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35) which is available on the NYC Open Data Portal. Some columns of data were removed and the data was filtered to the borough of Manhattan to be able to work in Google Sheets. Feel free to use another tool that can handle the full dataset (236 MB, CSV) if you want to extend this lab to all five boroughs.
+
+## The Lab
 
 1. What is the most common street tree in Manhattan?
 2. What is the most common street tree in each neighborhood (`nta_name`)? in each State Assembly District? in each State Senate District?
