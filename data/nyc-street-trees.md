@@ -4,7 +4,7 @@
 
 ## Framing
 
-You've been asked by the New York City Department of Parks & Recreation to analyze the status of the trees located along the streets of Manhattan in order to equitably allocate new plantings throughout the borough. They're working with a budget of **$500,000** (about 1/1000 of the department's total budget), and need you to recommend the best trees to plant, but it's up to you and your lab partner to decide on what the word "best" means in this case. 
+You've been asked by the New York City Department of Parks & Recreation to analyze the status of the trees located along the streets of Manhattan in order to equitably allocate new plantings throughout the borough. They're working with a budget of **$500,000** (about 1/1000 of the department's total budget), and **need you to recommend the best trees to plant** with that money, but it's up to you and your lab partner to decide on what the word "best" means in this case. 
 
 ## Setup
 
