@@ -1,5 +1,13 @@
 # Wireframing & Basic Flexbox
 
+## Learning Objectives
+
+* SWBAT create a wireframe of a webpage before building it out.
+* SWBAT identify sections of a wireframe with horizontal arrangements as items that need to be styled with Flexbox.
+* SWBAT correctly wrap rows of items that need to be displayed horizontally in a parent element.
+* SWBAT use the `display`, `align-items`, and `justify-content` properties to achieve desired layouts.
+* SWBAT reference Flexbox documentation to answer their layout questions.
+
 ## Sequence
 
 1. [Wireframing](#wireframing)
@@ -7,20 +15,23 @@
 3. [Properties for the Parent](#properties-for-the-parent)
 4. [Properties for the Child Elements](#properties-for-the-child-elements)
 
-## Wireframing
+## Launch
+### Wireframing
 
-A wireframe is a visual representation or sketch of a webpage. Why would it be important to know what you want your website to look like before you start coding it? This may seem obvious, but you'd be amazed at how many first-time developers just jump in and start throwing code on an html file.
+A **wireframe** is a visual representation or sketch of a webpage.
+
+Why would it be important to know what you want your website to look like before you start coding it? This may seem obvious, but you'd be amazed at how many first-time developers just jump in and start throwing code on an html file.
 
 Here's an [example](https://wireframe.cc/oQEVPW). We'll use this for our code-along. Ask students what they notice.
 > It's sparse. The actual text isn't written. The images are just giant rectangles. There are three rows.
 
 Have students wireframe their ideal reorganization of their profile page.
 
-Clarify that this will be the goal by the END of the session, but before we get there, we need to learn how to create flexbox containers.
+Clarify that this will be the goal by the END of the session, but before we get there, we need to learn how to create Flexbox containers.
 
 ## Flexbox
 
-A Flexbox layout is made of parent elements which we can call containers or rows, and child elements, which we could call items or columns.
+A Flexbox layout is made of **parent elements** which we can call containers or rows, and **child elements** nested inside them, which we could call items or columns.
 
 Below is the sample code for this lesson. You can disseminate the code via Slack, or a cloning mechanism like GitHub or Glitch.
 
@@ -147,14 +158,14 @@ The most critical pieces of information for the **parent** elements has to do wi
 
 ## Properties for the parent
 
-Most of the most powerful aspects of flexbox come into play when we apply one or more styling properties to the parent element. While child elements can be styled individually to display differently from their peers, that behavior is useful less frequently than the following properties for the parent:
+Most of the most powerful aspects of Flexbox come into play when we apply one or more styling properties to the parent element. While child elements can be styled individually to display differently from their peers, that behavior is useful less frequently than the following properties for the parent:
 * flex-direction
 * align-items
 * justify-content
 
 ### Flex Direction
 
-When we added `display: flex;` to our `.row` ruleset, the three parent elements became rows. But flexbox containers can display in any of four directions:
+When we added `display: flex;` to our `.row` ruleset, the three parent elements became rows. But Flexbox containers can display in any of four directions:
 * `row`
 * `column`  
 * `row-reverse`
@@ -316,3 +327,13 @@ Now that we understand how the items work in isolation, here are some mini-chall
 3. Make the middle row a column, and center the contents within the column.
 4. Make all three rows into columns at least 400px tall, and have their contents flex to take up all the space inside.
 5. STRETCH: Display all three columns next to each other (kind of like Pinterest).
+
+## Close
+
+Remember to gather student feedback on this lesson. In addition to the standard close, consider priming students for feedback with the following questions.
+
+#### Questions for Students
+* When it comes to layout, what do you still want to be able to do that we haven't been able to do yet?
+* Why does horizontal layout matter for websites? When will you need Flexbox?
+* Is creating a Flexbox layout more taxing on the HTML side of things, or on the CSS side of things?
+* Which layout scheme do you prefer - Grid or Flexbox? What are advantages and disadvantages of each of these two layout methods?

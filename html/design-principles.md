@@ -1,5 +1,13 @@
 # Design Principles
 
+## Learning Objectives
+
+* SWBAT describe bad and good visual design with respect to organization,  readability, font size, and accents like color, fonts, and images.
+* SWBAT make the most important information the easiest to find.
+* SWBAT articulate their design preferences and priorities using vocabulary like **readability**, **negative space**, **hierarchy**, **contrast**, **consistency**.
+* SWBAT write basic CSS rulesets that accomplish their design end goals, including modifying text size, line height, margin, padding, color, and background color.
+
+
 ## Sequence
 
 1. [Launch](#launch)
@@ -50,7 +58,7 @@ Try each of the following:
 * [Whitespace](#whitespace)
   * [Padding](#padding)
   * [Margins](#margins)
-* [Shadows](#shadows)
+* [Shadows (stretch)](#shadows)
 
 
 ### Color
@@ -257,3 +265,12 @@ h2 {
 * Box shadow is used when trying to make digital items resemble real items (like cards or paper) from the material world, because it simulates depth. Only use box shadow if it's important that an item appear to be hovering above its neighbors.
   * Google, which generally adheres to Material Design principles, makes use of box shadow all the time.
   * Apple and Spotify edge-to-edge flat design, so their content is less likely to use box shadow.
+
+## Close
+
+Remember to gather student feedback on this lesson. In addition to the standard close, consider priming students for feedback with the following questions.
+
+#### Questions for Students
+* Does good design depend more on your HTML, or more on your CSS? (Answer: both play a critical role. The less organized your HTML is, the more difficult it will be to style it in CSS)
+* We've seen that the most well-designed websites don't have a lot of text on their main pages. When you have to cut text from your main page, how will you decide what to cut?
+* One of the principles we've seen applied with some success is having only one main thing on screen at a time, so your user doesn't have to divide their focus. What css property / properties will be most helpful in making sure this happens?
