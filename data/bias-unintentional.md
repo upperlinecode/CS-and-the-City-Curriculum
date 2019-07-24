@@ -2,10 +2,10 @@
 
 - bias can be accidental
 
+- [UCLA Admission Data - 2018](https://docs.google.com/spreadsheets/d/15rM467p06DFr95n0An11z-N4jQXiNcBqXQaMfUKb2BY/edit?usp=sharing)
+
 Statements that don't disaggregate cause and effect
 assumptions that go into the cause and the solution (that isn't actually the solution)
-
-Use 2-3 Excerpts with framing and debrief questions around
 
 1970 data interpreted, 2019 reinterpreted with new analysis - more critical frameworks have been developed
 

@@ -16,6 +16,17 @@
 
 ## Launch
 
+Show a spurious correlation w/ numbers to prove it.
+
+## Types of Bias in Data Science
+
+1. Confirmation bias - when you want to prove a pre-determined conclusion.
+2. Selection bias - when you subjectively use data that supports the point you want to make.
+3. Outliers - if a dataset has extreme outliers, average values can be skewed.
+4. Overfitting (and underfitting) - making an overly-complicated (or overly-simplistic) model to represent the data.
+5. Confounding variables - there's something missing from the dataset that influences both the independent and dependent variables, but which causes you to assume a cause-and-effect relationship.
+6. Correlation is not causation - just because two things follow the same trend doesn't necessarily mean one causes the other. [can also show spurious correlation]
+
 ## Case Study 1: Bias in Reporting
 
 The following two passages were written about the _____ in the 19##'s
