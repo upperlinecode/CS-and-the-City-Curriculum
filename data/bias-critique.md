@@ -1,6 +1,17 @@
-# Critiquing Bias: Lab
+# Critiquing Bias: Discussion
 
-## Articles
+## Central Question
+
+- It's impossible to be unbiased.
+
+(Subconscious and unintentional bias)
+
+- SWBAT
+
+JIGSAW
+
+## Articles - separate files about the same length
+
 
 Choose one of the following:
 
@@ -23,3 +34,7 @@ For the article you chose, consider:
 8. Some harder question
 9. Some reach question
 10. Some reach question
+
+## Conclusion
+
+- All technology has the biases of its creators
