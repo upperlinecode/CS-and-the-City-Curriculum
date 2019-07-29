@@ -2,45 +2,55 @@
 
 ## Learning Objectives
 
+* SWBAT sort data.
+* SWBAT filter data.
+* SWBAT aggregate data in a PivotTable.
+* SWBAT manipulate data.
 * SWBAT craft questions that data can answer.
-* SWBAT differentiate between abstract and concrete questions.
 
+![Michael Phelps](./images/michael-phelps.jpg)
 
-### Activities / datasets 
-- Titanic dataset:
-	- Abstract questions:
-		- How did a person's sex impact their odds of survival?
-		- How did a person's wealth impact their odds of survival?
-	- Concrete questions:
-		- How many men between 18-30 years of age survived?
-		- What percentage of women under the age 18 survived.
+In this lab, we'll explore a dataset of every Olympic athlete (Summer and Winter Games) since the 1896 Olympic Games in Athens. Make a copy of the [Olympic Athletes Dataset](https://docs.google.com/spreadsheets/d/1Q2iJtAOdec18Ufh_2lcvOLHSl37rDKOFfU5i4n1odqw/edit?usp=sharing), and begin by exploring the data.
 
-- [Human Pivot Table](https://docs.google.com/document/d/185lRocur3g-EyvXIUnYXNITSPp0hcB9wQ7DsA7Hvl3M/edit#heading=h.qkvugbuhee8v)-page 7 and [materials for it](https://docs.google.com/document/d/12lFMDS7SHWpqjRW_nzSEtYr_DAYKRyY0jaFrbPd3P8M/edit)
-- Conceptual resource around data analysis:
-	- [This curriculum](http://www.datapolitan.com/data-driven-gov/#1) from Datapolitan covers a lot of these concepts and has interesting case studies. Slides 26, 262, 267 in particular. May need different examples for kids, but a good starting point. (Elana)
+1. Make a prediction about the following:
+- What country has won the most Olympic medals in history?
+- In what year did the greatest number of athletes participate in the Olympics?
+- Which has more events: the Summer or the Winter Olympics?
 
-## Sequence
+2. Based on your exploration of the dataset, come up with three original questions you could ask of this dataset.
+> e.g. How many gold medalists has Bulgaria produced?
+> e.g. How many athletes from the United States have been in the Olympics?
+> e.g. What is the average weight of all silver medalists in the 1988 Winter Olympics?
 
-1. [Some text](#some-text)
+## Sorting Data
 
-## Topic
+Some questions can be answered simply by sorting data. For instance:
 
-Some text
+- Who is the heaviest Olympic athelete ever, and what is their weight? Who is the lightest, and what is their weight?
+- Who is the oldest Olympic athlete ever, and what is their age? Who is the youngest, and what is their age?
+- Who is the tallest Olympic athlete ever, and what is their height? Who is the shortest, and what is their height?
 
-## Topic
+Answer these questions by sorting the worksheet by the correct column. To sort, click on the down arrow in the column header, then choose `Sort sheet A → Z` for descending order or `Sort sheet Z → A` for ascending order:
 
-Some text
+![Click down in the column header](./images/sort-1.png)
+![Choose how to sort the sheet](./images/sort-2.png)
 
-### Activity: Some text
+Questions that can be answered by sorting don't require any complex filtering or aggregation of data; the data is already in the right format and we simply want to see what's on the top or bottom of a sorted list.
 
-Some text
+> You can always reset the sheet to its original sort by sorting on the `ID` field.
 
-### Some text
+## Filtering Data
 
-Some text
+To answer some questions you want to filter out data and only show (or not show) certain things. Filtering can be used in combination with sorting to answer slightly more complex questions:
 
-### Takeaways
+- Who is the oldest Olympic athlete from Canada, and how old were they when they competed?
+- What event(s) did the first South African Olympian(s) participate in?
+- Who won the gold, silver, and bronze medals in the Rowing Men's Coxed Eights in the 1964 Summer Olympics?
 
-* Topic - Some text
-* Topic - Some text
-* Topic - Some text
+To filter data, we have to turn on filters for the entire table. Select the entire table by clicking in the top-left-most box (to the left of Column A), and then select `Data > Create a filter` or the filter icon: ![Filter icon](./images/filter.png)
+
+## Aggregating Data in a PivotTable
+
+## Manipulating Data
+
+## Close
