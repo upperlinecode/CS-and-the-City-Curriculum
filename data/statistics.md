@@ -15,6 +15,9 @@
 
 ## Intro
 
+- revise with [Countdown clock data](https://toddwschneider.com/posts/nyc-subway-data-analysis/)
+- [How 2 MTA Decisions pushed the subway to crisis](https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html) - NY Times
+
 You may remember from previous math classes where you've been taught how to calculate the mean, median, and mode of a set of numbers. The focus of this lesson is not on the mathematics of how to do those calculations (and others), but instead on what those numbers represent. This less will give you a better understanding of how useful statistical measurements can be and how to ask whether or not they're the right way to summarize a set of data. 
 
 ## Mean, Median, Mode, Range
