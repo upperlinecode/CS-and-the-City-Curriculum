@@ -70,12 +70,10 @@ The bad visualizations above work because our brains are sometimes too quick to 
 
 To practice your visual literacy, choose one of the visualizations below from W.E.B. Du Bois's "Modernist Data Visualizations of Black Life" (1900), and do your best to answer the questions above:
 
-| | | |
-| :---: | :---: | :---: |
 |![W.E.B. Du Bois - 1](./images/dubois-1.jpg)|![W.E.B. Du Bois - 2](./images/dubois-2.jpg)|![W.E.B. Du Bois - 3](./images/dubois-3.jpg)|
+| :---: | :---: | :---: |
 |![W.E.B. Du Bois - 4](./images/dubois-4.jpg)|![W.E.B. Du Bois - 5](./images/dubois-5.jpg)|![W.E.B. Du Bois - 6](./images/dubois-6.jpg)|
 |![W.E.B. Du Bois - 7](./images/dubois-7.jpg)|||
-| | | |
 
 > [Images source](http://www.loc.gov/pictures/search/?q=%22lot%2011931%22%20NOT%20medal&st=grid&co=anedub&loclr=blogpic) and [a blog post about them](https://hyperallergic.com/306559/w-e-b-du-boiss-modernist-data-visualizations-of-black-life/).
 
