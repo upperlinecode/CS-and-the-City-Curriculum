@@ -44,4 +44,18 @@ It's 20 minutes before a big meeting with City Hall, and your manager asks you t
 10. Use the Sunburst chart to emphasize areas of the five boroughs where the population has grown significantly from 2000 to 2010. If you had more time, how might you clean the data to make the chart more visually appealing?
 11. Use the Scatter Plot to emphasize neighborhoods where the population has grown significantly from 2000 to 2010. What outliers do you notice?
 ![NYC Census Data 4](./images/nyc-census-data-4.png)
-12. Explore the other visualization types to see if you can find any that give additional insight. Share what you create with your neighbor.
+
+### Exploring Property Values
+
+In addition to the population counts in 2000 and 2010, the dataset also has data about property sales from July 2018 to June 2019. This data includes (by neighborhood/NTA code) the average sale price, the average gross square footage of the property, and the average price per square foot for sold property.
+
+12. Using this property value data to make a visualization that can be used to see the most expensive neighborhood in each borough.
+13. Make a visualization to see which neighborhoods are selling the largest properties (by square footage), and which are selling the smallest.
+14. Make a visualization to see if there is a relationship between population and property value. How about between population change and property value?
+15. Take a moment to explore the [source data of the property values](https://docs.google.com/spreadsheets/d/1LMC4PFq7Tqc6_KSYx8hHEjAARjdUuXbwJpGG64iLYqc/edit?usp=sharing), e.g. the `Bronx` worksheet and the `Bronx Pivot` worksheet. Notice how the average of **all** property sales has been used in the pivot table. Do you see any problems using the average of all types of property sales? What other value(s) could have been used instead?
+16. Update the pivot table to slice the data by another property, e.g. `Building Class at Time of Sale`.
+17. For the borough you're exploring, make a visualization of the different property values based on the newly sub-divided data. What insight does this new visualization provide?
+
+> Raw data for [NYC Property Sale Price Average by Neighborhood](https://docs.google.com/spreadsheets/d/1LMC4PFq7Tqc6_KSYx8hHEjAARjdUuXbwJpGG64iLYqc/edit?usp=sharing) is available here. The second sheet, `NYC Sale, Sq. Ft. by Neighborhood`, shows data compiled from rolling property sales from July 2018 to June 2019 in each borough; the raw data for each borough is included (each sheet has the name of its borough) along with a pivot table for each borough. Some data has been pre-processed for you: the average sale price and average gross square footage have been used to calculate an average price per square foot.
+> 
+> Note: Some neighborhoods have multile NTA codes, and some NTA codes are used for multiple neighborhoods.
