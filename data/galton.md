@@ -1,6 +1,6 @@
 # Galton Height Dataset
 
-![Baker Family of Fort Wayne, IN - 1880's](./images/galton-1.png)
+![Baker Family of Fort Wayne, IN - 1880's](./images/galton-1.jpg)
 The Baker Family of Fort Wayne, Indiana
 
 In this lab, you'll explore data from the famous 1885 study of Francis Galton which explored the relationship between the heights of adult children and the heights of their parents. Each case is an adult child, and the variables are:
