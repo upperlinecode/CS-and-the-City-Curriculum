@@ -21,7 +21,7 @@ Let's all copy this spreadsheet: [https://docs.google.com/spreadsheets/d/1oIMO0L
 
 ### Visualization
 
-Visualization is an umbrella term that emcompasses any technique of making data visually accessible, including the graphs and charts you're used to seeing, along with maps, interactive tools, dashboards, and more. Data visualization is used everywhere from scientific reports to the news, from government analyses to [the grocery store](https://www.fastcompany.com/90347782/the-humble-receipt-gets-a-brilliant-redesign):
+Visualization is an umbrella term that emcompasses any technique of making data visually accessible, including the graphs and charts you're used to seeing, along with maps, interactive tools, dashboards, and more. Data visualization is used everywhere from scientific reports to the news, from [analyzing Hamilton lyrics](https://pudding.cool/2017/03/hamilton/) to [seeing income inequality along the subway](https://projects.newyorker.com/story/subway/) and [casting NYC shadows](https://www.nytimes.com/interactive/2016/12/21/upshot/Mapping-the-Shadows-of-New-York-City.html?mtrref=www.google.com), from government analyses to [the grocery store](https://www.fastcompany.com/90347782/the-humble-receipt-gets-a-brilliant-redesign):
 
 ![Susie Lu: Redesigned Receipt](./images/susie-lu.png)
 > Susie Lu: Redesigned Receipt
@@ -70,7 +70,6 @@ The bad visualizations above work because our brains are sometimes too quick to 
 
 To practice your visual literacy, choose one of the visualizations below from W.E.B. Du Bois's "Modernist Data Visualizations of Black Life" (1900), and do your best to answer the questions above:
 
-| | | |
 | :---: | :---: | :---: |
 |![W.E.B. Du Bois - 1](./images/dubois-1.jpg)|![W.E.B. Du Bois - 2](./images/dubois-2.jpg)|![W.E.B. Du Bois - 3](./images/dubois-3.jpg)|
 |![W.E.B. Du Bois - 4](./images/dubois-4.jpg)|![W.E.B. Du Bois - 5](./images/dubois-5.jpg)|![W.E.B. Du Bois - 6](./images/dubois-6.jpg)|
@@ -78,15 +77,6 @@ To practice your visual literacy, choose one of the visualizations below from W.
 
 > [Images source](http://www.loc.gov/pictures/search/?q=%22lot%2011931%22%20NOT%20medal&st=grid&co=anedub&loclr=blogpic) and [a blog post about them](https://hyperallergic.com/306559/w-e-b-du-boiss-modernist-data-visualizations-of-black-life/).
 
+## Close
 
-
-### Activities / datasets
-
-- Election maps
-- 52% v 48% bar charts
-
-
-- Visualizations about NYC water sources? (NY Historical Society)
-
-
-
+- Describe a data visualization you've seen outside of school. It could be during a sports match, an online game, in a book/tv show/movie, or anywhere else. What data did the visualization show? What was the message of the visualization? 
