@@ -75,8 +75,10 @@ To practice your visual literacy, choose one of the visualizations below from W.
 |![W.E.B. Du Bois - 4](./images/dubois-4.jpg)|![W.E.B. Du Bois - 5](./images/dubois-5.jpg)|![W.E.B. Du Bois - 6](./images/dubois-6.jpg)|
 |![W.E.B. Du Bois - 7](./images/dubois-7.jpg)|||
 
-> [Images source](http://www.loc.gov/pictures/search/?q=%22lot%2011931%22%20NOT%20medal&st=grid&co=anedub&loclr=blogpic) and [a blog post about them](https://hyperallergic.com/306559/w-e-b-du-boiss-modernist-data-visualizations-of-black-life/).
+> [W.E.B. Du Bois's "Modernist Data Visualizations of Black Life" (1900)](http://www.loc.gov/pictures/search/?q=%22lot%2011931%22%20NOT%20medal&st=grid&co=anedub&loclr=blogpic) and [a blog post about them](https://hyperallergic.com/306559/w-e-b-du-boiss-modernist-data-visualizations-of-black-life/).
 
 ## Close
 
-- Describe a data visualization you've seen outside of school. It could be during a sports match, an online game, in a book/tv show/movie, or anywhere else. What data did the visualization show? What was the message of the visualization? 
+- Describe a data visualization you've seen outside of school. It could be during a sports match, an online game, in a book/tv show/movie, or anywhere else.
+	- What data did the visualization show?
+	- What was the message of the visualization? 
