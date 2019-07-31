@@ -30,9 +30,18 @@ Think about something you do most days. Maybe you ride the subway, maybe you go 
 * The second question should be **predictive** - the answer to this question is related to some future state of the activity. _e.g. How much time can I expect to spend playing games next month?_
 * The third question should be **prescriptive** - the answer to this question should recommend an action based on the answer to a prediction. _e.g. What other activities should I do instead of playing video games so often?_
 
-#### Additional Reading
+#### Additional Reading on Data in Journalism
 
 Explore these resources to see how journalists are talking about - and using - data.
 
 - [WNYC Data News](https://www.wnyc.org/tags/data_news)
 - [ProPublica](https://www.propublica.org/)
+
+#### Additional Readings on Civic Data
+
+These readings introduce the concept of civic data, and how cities are collecting an increasing amount of data about residents, municipal activities (housing, crime, transportation, etc.), and more.
+
+- ["The City of the Future Is a Data-Collection Machine" (The Atlantic, Nov 21, 2018)](https://www.theatlantic.com/technology/archive/2018/11/google-sidewalk-labs/575551/)
+- ["On Being a Civic Data Scientist" (Medium, Aug 11, 2017)](https://towardsdatascience.com/on-being-a-civic-data-scientist-774c15232695)
+- ["History of NYC's open data" (Data-Smart City Solutions, Mar. 8, 2017)](https://datasmart.ash.harvard.edu/news/article/new-york-city-open-data-a-brief-history-991)
+- [How City Council uses open data to create legislation (YouTube)](https://www.youtube.com/watch?v=mrVevDEFan8&list=PLgCe1KzF20iwjeJDnI4l9OxDZKEsA6R6l&index=4) (video)
