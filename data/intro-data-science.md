@@ -45,3 +45,11 @@ These readings introduce the concept of civic data, and how cities are collectin
 - ["On Being a Civic Data Scientist" (Medium, Aug 11, 2017)](https://towardsdatascience.com/on-being-a-civic-data-scientist-774c15232695)
 - ["History of NYC's open data" (Data-Smart City Solutions, Mar. 8, 2017)](https://datasmart.ash.harvard.edu/news/article/new-york-city-open-data-a-brief-history-991)
 - [How City Council uses open data to create legislation (YouTube)](https://www.youtube.com/watch?v=mrVevDEFan8&list=PLgCe1KzF20iwjeJDnI4l9OxDZKEsA6R6l&index=4) (video)
+
+## Activity: Types of Data
+
+See how many types of data you can brainstorm in 5 minutes. For each type, also consider potential sources of that data.
+
+_For example, geographic data might come from satellites, from locations of users on their smartphones, from city zoning data, etc._
+
+> Note: Think broadly! Try to consider various types of quantitative (numerical), qualitiative (textual), and alternative (images, video, sound, etc.) data. You might also think about less traditional sources of data like anecdotal data, case studies, and/or aggregate data.

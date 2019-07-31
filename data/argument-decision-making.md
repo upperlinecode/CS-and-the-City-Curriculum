@@ -66,15 +66,17 @@ The [intentional disregard of data](https://www.washingtonpost.com/opinions/unau
 
 #### How can data be misused?
 
-Below are several ways data can be (or has been) misused. Can you think of any others?
+Below are several ways data can be (or has been) misused.
 
-- Data can be ignored. (see climate change example above)
-- Data can be selectively filtered to support an argument. By not including all available data, a conclusion can be skewed in favor of a pre-determined outcome.
-- Data can be used to round up, segregate, or otherwise disenfranchise a group of people. Census data is often cited as a means by which the government can assert control over specific sub-groups of the population.
-- Data can be mis-interpreted. Too often the public lacks the skills to interpret data for themselves, so people accept the interpretation they are provided.
-- Data can be used to violate privacy. Even though data providers claim data has been anonymized, sometimes there is still enough to find out exactly who someone is.
+- *Data can be ignored.* (e.g. climate change)
+- *Data can be selectively filtered to support an argument.* By not including all available data, a conclusion can be skewed in favor of a pre-determined outcome.
+- *Data can be used to round up, segregate, or otherwise disenfranchise a group of people.* Census data is often cited as a means by which the government can assert control over specific sub-groups of the population.
+- *Data can be mis-interpreted.* Too often the public lacks the skills to interpret data for themselves, so people accept the interpretation they are provided.
+- *Data can be used to violate privacy.* Even though data providers claim data has been anonymized, sometimes there is still enough to find out exactly who someone is.
 
-#### A Simple Case Study
+In what other ways can data be misused?
+
+#### Optional Case Study
 
 Imagine a bank that is trying to decide whether or not to give someone a loan. In addition to deciding whether or not to grant a loan, the bank can also set the interest rate at which the customer should pay back the loan.
 
@@ -99,15 +101,17 @@ The rise of partisan journalism has led to claims of "fake news" throughout the 
 
 As information has become commoditized, the techniques used by content-providers, marketers, and media outlets have been co-opted to guide users to tantalizingly wrong information. The headline writing style made popular by websites like Upworthy - "You're not going to believe what happened next..." - which, once recognized as immensely effective at driving people to click and engage, was then used to sensationalize and polarize people's beliefs.
 
-### Optional Activity: Identifying "Fake News"
+### Activity: Identifying "Fake News"
 
 How can you distinguish real news from "fake news"?
 
 Take a few minutes to consider how you can tell whether a news story is real or "fake". Write down at least 5 questions you would use to interrogate any news story and how the answers to those questions might lead you to label the story as real or "fake".
 
-Find a news article online from a satirical news outlet such as [The Onion](https://www.theonion.com/), [The Daily Mash](https://www.thedailymash.co.uk/), [The Borowitz Report](https://www.newyorker.com/humor/borowitz-report), [Private Eye](https://www.private-eye.co.uk/), or [ClickHole](https://www.clickhole.com/).
+Find a news article online from a satirical news outlet such as [The Onion](https://www.theonion.com/), [The Borowitz Report](https://www.newyorker.com/humor/borowitz-report), or [Private Eye](https://www.private-eye.co.uk/).
 
 Use your 5 questions to decide whether the news story is real or "fake". How well did your questions do at identifying "fake news"?
+
+Now use your questions and re-evaluate [the article we used at the beginning of class.](https://www.washingtonpost.com/posteverything/wp/2015/10/23/forced-busing-didnt-fail-desegregation-is-the-best-way-to-improve-our-schools/?noredirect=on&utm_term=.b7ef44272407). How well did your questions do at identifying "real" news?
 
 #### Additional Reading
 
@@ -130,19 +134,10 @@ As you continue to grapple with distinguishing real news from "fake news", you'l
 
 - [The Firefox Data Privacy Promise](https://blog.mozilla.org/firefox/firefox-data-privacy-promise/)
 
-### Activity: Types of Data
-
-See how many types of data you can brainstorm in 5 minutes. For each type, also consider potential sources of that data.
-
-_For example, geographic data might come from satellites, from locations of users on their smartphones, from city zoning data, etc._
-
-> Note: Think broadly! Try to consider various types of quantitative (numerical), qualitiative (textual), and alternative (images, video, sound, etc.) data. You might also think about less traditional sources of data like anecdotal data, case studies, and/or aggregate data.
-
 ## Close
 
-We've seen a lot about how data is all around us and how that data can be used and misused. Next time we'll dig into how bias affects data science:
+We've seen a lot about how data is all around us and how that data can be used and misused, how it can produce information, and how that information can be used to gain insight about a problem.
 
-- decisions about what data we collect
-- interpretation of data and information creation
-- communication of analytical results
-- possible actions to take resulting from analysis
+Think of a civic issue you care deeply about. Give an example of data, of information, and of insight that you've seen (or that you'd want to see) about that issue.
+
+> e.g. On school performance, I'd want to see annual National Assessment of Educational Progress data, I'd want to use that data to see what percent of NYC schools are above and below average, and I'd want to use that information to understand whether NYC schools are improving or in decline.
