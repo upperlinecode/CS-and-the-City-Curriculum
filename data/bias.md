@@ -33,9 +33,7 @@ The following two passages were written about the _____ in the 19##'s
 
 | Passage A |
 | --- |
-| ### Police officer charged in shooting death of unarmed neighbor
-
-#### Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports. |
+| <h3>Police officer charged in shooting death of unarmed neighbor</h3><br><h5>Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports.</h5> |
 
 ## Passage B
 
