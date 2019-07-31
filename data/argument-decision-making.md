@@ -49,14 +49,14 @@ When you've talked about data in the past, you may have used the words **data** 
 
 In addition to **data** and **information**, the term **insight** often accompanies a discussion about data. **Insight** is the understanding we get from data and information and usually relates to the decision-making capabilities that result from processing data into information.
 
-- Look back at the excerpts above. Make a list of the data, information, and insight included by the author to make his point.
+- Look back at the excerpts above. Make a list of the data, information, and insight included by the author to make his argument.
 
 | Data | Information | Insight |
 | --- | --- | ---|
 | e.g. 400 students at Westside | e.g. 85% of Westside students are black | e.g. Westside is a disadvantaged school |
-| | | |
-| | | |
-| | | |
+| &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; | &nbsp; |
 
 ## The Misuse of Data
 
