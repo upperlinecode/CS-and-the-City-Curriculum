@@ -13,10 +13,59 @@
 5. [Other Statistical Descriptions](#other-statistical-descriptions)
 6. [Close](#close)
 
-## Intro
+## Launch
+
+Make a copy of the [NYC Subway Customer Journey Time Performance](https://docs.google.com/spreadsheets/d/1uSd7IMLpnMWYM0zrJJZLdXc_yVAD-dK62XRNRLl7U0Y/edit?usp=sharing) Google Sheet (Source: [dashboard.mta.info](http://dashboard.mta.info/))
+
+> Note: This data considers end-to-end trips and any delays caused by the MTA. The data represents the percent of successful trips each month; a successful trip is defined as a traveler who arrives within 5 minutes of the expected trip duration (according to the MTA).
+
+Explore the raw data in the "Customer Journey Time Performan" sheet. Answer as many of the following questions as you can based on the raw data:
+- Which line has the best performance during peak times? during off-peak times?
+- Which line has the worst performance during peak times? during off-peak times?
+- Which line has had the broadest range of performance during peak times? during off-peak times?
+- Which line has had the narrowest range of performance during peak times? during off-peak times?
+- Which non-shuttle line, on average, is the best during peak times? during off-peak times?
+- Across all lines, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times? during off-peak times?
+- For the 6, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times? during off-peak times?
+
+Did you find it difficult/frustrating/impossible to answer any of those questions? It's ok if you did. We're going to aggregate and manipulate the data so that we can begin to answer all of those questions.
+
+## Mean, Median, Mode, and Range
+
+You probably have already learned about mean (the average), median (the middle number), mode (the number occurring most often), and range (the max minus the min) in math class, so we won't cover those here. Instead, we're going to use those statistical measurements in Google Sheets to get a sense of our data.
+
+First of all, when you have a set of data, you can quickly calculate each measurement in Google Sheets using a formula:
+
+#### Mean
+```
+=AVERAGE(A:A) # calculates the mean of everything in column A
+=AVERAGE(B2:B5) # calculates the mean of the values in the cells B2, B3, B4, B5
+```
+
+#### Median
+```
+=MEDIAN(A:A) # calculates the median of everything in column A
+=MEDIAN(B2:B5) # calculates the median of the values in the cells B2, B3, B4, B5
+```
+
+#### Mode
+```
+=MODE(A:A) # calculates the mode of everything in column A
+=MODE(B2:B5) # calculates the mode of the values in the cells B2, B3, B4, B5
+```
+
+#### Range
+```
+=MAX(A:A)-MIN(A:A) # calculates the range of everything in column A
+=MAX(B2:B5)-MIN(B2:B5) # calculates the range of the values in the cells B2, B3, B4, B5
+```
+
+
+
 
 - revise with [Countdown clock data](https://toddwschneider.com/posts/nyc-subway-data-analysis/)
 - [How 2 MTA Decisions pushed the subway to crisis](https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html) - NY Times
+- [How your commute has changed: NYC subway variability calculator](https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html?mtrref=www.google.com)
 
 You may remember from previous math classes where you've been taught how to calculate the mean, median, and mode of a set of numbers. The focus of this lesson is not on the mathematics of how to do those calculations (and others), but instead on what those numbers represent. This less will give you a better understanding of how useful statistical measurements can be and how to ask whether or not they're the right way to summarize a set of data. 
 
