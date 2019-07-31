@@ -5,7 +5,6 @@
 * SWBAT sort data.
 * SWBAT filter data.
 * SWBAT aggregate data in a PivotTable.
-* SWBAT manipulate data.
 * SWBAT craft questions that data can answer.
 
 ![Michael Phelps](./images/michael-phelps.jpg)
