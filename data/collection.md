@@ -7,7 +7,22 @@
 
 ## Launch
 
-What does data come from?
+#### The Gentrification of NYC
+
+Make a copy of this [NYC Census Demographics by Council District](https://docs.google.com/spreadsheets/d/15uTiVHDRNAc4bDdrC8W13T-0oXXyWsrzVTAKnwchlQs/edit?usp=sharing) Google Sheet.
+
+1. Based on the four worksheets, what ethnic group saw the greatest population increase from 2000 to 2010? What ethnic group saw the greatest population decrease from 2000 to 2010?
+2. Compare the population changes in Districts 3, 6, and 10. Which changed the most?
+3. Which sheet(s) would make the best case for gentrification of NYC?
+4. Which sheet(s) show gentrification isn't occurring in NYC?
+5. Where did this data come from? Do you trust that source?
+6. What if the data didn't indicate its source - would you still trust it?
+
+#### Additional Reading
+
+- ["They Played Dominoes Outside Their Apartment For Decades. Then The White People Moved In And Police Started Showing Up." (Buzzfeed: June 29, 2018)](https://www.buzzfeednews.com/article/lamvo/gentrification-complaints-311-new-york)
+
+## Where does data come from?
 
 ![Mind Map of Data Sources](./images/mind-map-1.png)
 
@@ -42,7 +57,7 @@ Not all data can be seen by everyone. Many companies closely guard their data (a
 
 Do you have more boxes or X's on your mind map? Why do you think that is? Is that a good thing?
 
-#### A Simple Case Study
+#### Optional Case Study
 
 Let's compare the MTA in New York City and a transit authority in some other city.
 
@@ -61,42 +76,31 @@ In New York City, however, the transit authority recognizes that they're pretty 
 - [Open Government Timeline](http://www.opengovtimeline.com/)
 - ["What I learned in two years of moving government forms online" (Medium, Feb 22, 2018)](https://medium.com/@jgee/what-i-learned-in-two-years-of-moving-government-forms-online-1edc4c2aa089)
 
+## Data Collection
 
+A critical part of working with data is sourcing data. Sometimes you have to go out and find data. Sometimes the data you want doesn't exist. And sometimes, the data exists, but you aren't allowed to see it. What's the best way to collect data? Well, it depends on the issue you're investigating.
 
+1. As a group, choose a civic issue you feel strongly about.
 
+> e.g. Access to Housing, Waste Water Treatment, Food Islands, Transit Spending, etc.
+
+To begin, we need to have one or more questions we want to ask about that issue.
+
+2. Brainstorm 5 or more questions you have about your topic.
+
+> e.g. How far is every New Yorker from a grocery store?
+> e.g. How much do New Yorkers spend on groceries every month?
+> e.g. Where does produce in New York markets come from?
+
+3. As a group, choose the top one or two questions you want to investigate further.
+4. For each question, list the data you'd need to answer that question. (Don't worry if you think you wouldn't be allowed to get the data.) Make sure to include survey data for one of your questions.
+
+> e.g. To answer "How much do New Yorkers spend on groceries every month?", we'd need receipts or bills from a lot of people's groceries. Or we could get financial records from several big New York groceries. Or maybe banks would give us people's spending records. Or we'd have to go survey people and ask them how much they spend every month, and we'd probably have to do that over a few months to make an average.
+
+5. For the survey data you'd want to collect, write down 5-10 questions you could to ask people in order to better understand the problem you chose.
 
 ## Close
 
+Finding data can be the most liberating or the most frustrating part of working with data.
 
-
-### Activities / datasets
-- [YPAR](http://yparhub.berkeley.edu/) is a good resource and method
-	- [Brainstorming Data Sources and Making a Data Collection Plan](http://yparhub.berkeley.edu/investigate/brainstorming-data-sources-and-making-a-data-collection-plan/)
-	- [Internet Searches](http://yparhub.berkeley.edu/investigate/internet-searches/)
-- Buzzfeed article on gentrification + 311 + noise complaints
-
-## Sequence
-
-1. [Some text](#some-text)
-
-## Topic
-
-Some text
-
-## Topic
-
-Some text
-
-### Activity: Some text
-
-Some text
-
-### Some text
-
-Some text
-
-### Takeaways
-
-* Topic - Some text
-* Topic - Some text
-* Topic - Some text
+With so much data out there, how do you decide which data you can trust and use vs. which data might be problematic and you shouldn't use?
