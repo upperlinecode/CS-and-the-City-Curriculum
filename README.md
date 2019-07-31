@@ -92,7 +92,7 @@
 * Lab: [Collecting Our Own Data (2 Days)](data/collection-lab.md)
 
 ### Unit 3-4 Statistical Measurements
-* Lesson: [Statistical Measurements](data/statistics.md) - w/ subway data
+* Lesson: [Statistical Measurements](data/statistics.md)
 * Lab: [Galton Height Dataset](data/galton.md)
 
 ### Unit 3-5 Segmenting & Pivot Tables
