@@ -60,120 +60,15 @@ First of all, when you have a set of data, you can quickly calculate each measur
 =MAX(B2:B5)-MIN(B2:B5) # calculates the range of the values in the cells B2, B3, B4, B5
 ```
 
+## Distributions
 
+Can you guess how many trips there are every year on the NYC subway? [According to the MTA](http://web.mta.info/nyct/facts/ridership/), there were 1,680,060,402 rides in 2018 - which was actually down from a peak in 2015 of 1,762,565,419 rides. That's a lot of swipes!
 
-
-- revise with [Countdown clock data](https://toddwschneider.com/posts/nyc-subway-data-analysis/)
-- [How 2 MTA Decisions pushed the subway to crisis](https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html) - NY Times
-- [How your commute has changed: NYC subway variability calculator](https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html?mtrref=www.google.com)
-
-You may remember from previous math classes where you've been taught how to calculate the mean, median, and mode of a set of numbers. The focus of this lesson is not on the mathematics of how to do those calculations (and others), but instead on what those numbers represent. This less will give you a better understanding of how useful statistical measurements can be and how to ask whether or not they're the right way to summarize a set of data. 
-
-## Mean, Median, Mode, Range
-
-#### Review on calculations
-
-Recall how to calculate these statistical values:
-
-- Mean (also called the average): to calculate the mean, we add up all of the values in a set of data and then divide by the number of values in the set.
-- Median: to calculate the median, we arrange all of the values in increasing order and count to the middle number.
-- Mode: to calculate the mode, we arrange all of the values in increasing order and identify which value occurs most often.
-- Range: to calculate the range, we subtract the smallest value in the dataset from the largest value.
-
-#### Example
-
-Consider a dataset of exam scores: [100, 86, 90, 93, 75, 40, 66, 98, 90, 79, 88]
-
-- The mean is: (100 + 86 + 90 + 93 + 75 + 40 + 66 + 98 + 90 + 79 + 88)/11 = (905)/11 = 82.27
-- Rearranging the values in increasing order: [40, 66, 75, 79, 86, 88, 90, 90, 93, 98, 100]
-	- There are 11 total values, so the median is the 6th value: 86
-	- The mode is the value that occurs most often: 90
-	- The range is the largest value (100) minus the smallest value (40): 60
-
-Think about why computers are particularly good at calculating the mean, median, mode, and range. Could you write a function that would calculate each statistical measurement?
-
-### Understanding Distributions
-
-You've probably been able to calculate the mean, median, mode, and range of a set of values using your calculator or even a computer, but what happens when the number of values in the data set goes from 11 (above) to 11 million? Do you think these statistical measurements are as meaningful?
-
-Instead of boiling down 11 million numbers to one of these four statistical values, data scientists will often instead prefer to look at the distribution of the values to get a better sense of the data. Distributions are difficult to calculate by hand, but they are a graphical way to know whether the values in a data set are evenly spread around some central value, whether there are more greater values or lesser values (whether the data is skewed), or even whether the data is composed of multiple features that might be grouped around particular values. Distributions can be represented as column (bar) charts or line charts; column charts are used when there is a relatively small number of possible discrete values in the dataset, and line charts either to approximate many many more discrete values or when the data is continuous. In each case, the x-axis represents the value and the y-axis represents the number of times that value is in the data set, or that value's frequency.
-
-Some distributions are bell-shaped; you may have heard of a Bell curve. Other distributions are shifted one way or another, e.g. a Boltzmann distribution. Still others have more than one hump; a distribution with two humps is called "bimodal". Other distributions may have values that are evenly distributed, and those are called "uniform" distributions.
-
-Let's take the skewed-left distribution below. Visually, the mode is the easiest statistical measurement to determine from a graph; it's the high point because that represents the value that occurs most often in the data. The mean and median are a bit trickier and generally depend on the shape of the distribution. For the skewed-left distribution below, the value of the median is a bit higher than the value of the mode; to visually determine the median, imagine drawing a line that has equal area on the left and the right sides of the line. Lastly, the value of the mean is a bit higher than the value of the median because the few larger values have the effect of pulling the mean up relative to the median.
-
-_Note: the range is a less relevant measurement when a distribution has a very long tail on either side (or both) since it can be difficult to determine a maximum and minimum value.
-
-![Skewed Left Distribution](./images/mean-median-mode-on-skewed-right-curve.png)
-
-Consider the distributions below:
-
-#### Bell-Shaped Distribution
-![Normal Distribution](./images/bell-shaped-histogram.jpg)
-
-#### Skewed Left Distribution
-![Skewed Left Distribution](./images/skewed-left-histogram.jpg)
-
-#### Skewed Right Distribution
-![Skewed Right Distribution](./images/skewed-right-histogram.jpg)
-
-#### Bimodal Distribution
-![Bimodal Distribution](./images/bimodal-histogram.jpg)
-
-#### Uniform Distribution
-![Uniform Distribution](./images/uniform-histogram.jpg)
-
-For each distribution, can you guess-timate (guess + estimate):
-- What is the value of the mode of each dataset?
-- What is the value of the median of each dataset?
-- What is the value of the mean of each dataset?
-- What is the value of the range of each dataset?
-
-Now consider these three datasets represented below by the bold, thin, and dotted lines:
-
-![Uniform Distribution](./images/overlapping-normal-distributions.png)
-
-For each distribution, can you guess-timate:
-- What is the value of the mode of each dataset?
-- What is the value of the median of each dataset?
-- What is the value of the mean of each dataset?
-
-As you can see, unfortunately just determining the mean, median, and mode is not sufficient to distinguish between these three datasets. For that, we need a new measurement: the variance.
-
-## Variance
-
-Without going too deep into the mathematics about distributions, you have seen (above) how some datasets look more spread out than others. The more spread out the values in a dataset are, the larger the variance of the dataset. The more closely aligned the values in a dataset are, the smaller the variance of the dataset.
-
-Variance helps a data scientist gauge how uniform or distributed the values in a dataset are.
-
-See if you can arrange the following datasets in terms of increasing variance. What conditions must be true in order to visually compare various datasets?
-
-<table>
-	<tr>
-		<td><img src="./images/normal-1.png"></td>
-		<td><img src="./images/normal-2.png"></td>
-	</tr>
-	<tr>
-		<td align="center"><b>Distribution 1</b></td>
-		<td align="center"><b>Distribution 2</b></td>
-	</tr>
-	<tr>
-		<td><img src="./images/normal-3.png"></td>
-		<td><img src="./images/normal-4.png"></td>
-	</tr>
-	<tr>
-		<td align="center"><b>Distribution 3</b></td>
-		<td align="center"><b>Distribution 4</b></td>
-	</tr>
-</table>
-
-### Activity: Real-World Variance
-
-Some text here
+Data scientists use different mathematical tools to make sense of data when there are so many data points to crunch because it's not just the average or middle value that matters, but instead how all of the values are distributed; are there more high numbers? more low numbers? an even amount of each? And with so much data, there are usually a lot of different ways you can cut it: by line, by borough, by stop, by time of day, etc.
 
 ## Quartiles
 
-We can build upon our understanding of variance and begin to quantify the shapes of distributions using quartiles. Quartiles are a way to dissect a distribution by splitting the data into four chunks where each chunk of the dataset has the same number of values within it.
+One way to get a sense of a distriubtion is by using **quartiles**. Quartiles are a way to dissect a distribution by splitting the data into four chunks where each chunk of the dataset has the same number of values within it.
 
 How can you do that? We already know how to split a dataset into two equal chunks: that's the median. So to split a dataset into quartiles, you first find the median of a dataset, and then you find the median of each half. Doing this defines the boundaries of each quartile:
 
@@ -184,12 +79,85 @@ How can you do that? We already know how to split a dataset into two equal chunk
 
 ### Activity: Dividing into Quartiles
 
-Dissect each of the following datasets into quarters. What are the values of the first, second, and third quartiles?
+Consider the following dataset of customer journey time performance for the A train, which only got the necessary sensors installed in March 2017:
 
-- [10, 10, 11, 13, 16, 16, 18, 20]
-- [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 6, 6, 6, 7, 7, 7, 7, 8, 8, 9, 9, 9, 9, 9, 10]
-- [-5, -5, -4, -4, -4, -3, -3, -2, -2, -1, -1, -1, -1, -1, 0, 0, 0, 0, 2, 4, 4, 4, 5]
-- [6, 3, 4, 7, 2, 0, 0, 7, 6, 5, 3, 2, 1, 1, 3, 6, 7, 9, 0, 9, 5, 5, 4, 3, 2, 5, 4, 3, 2, 7, 6, 8, 5, 3, 4]
+```csv
+month, period, customer journey time performance
+2017-03, peak, 75.00%
+2017-03, offpeak, 72.60%
+2017-04, offpeak, 72.90%
+2017-04, peak, 76.90%
+2017-05, peak, 73.00%
+2017-05, offpeak, 69.90%
+2017-06, peak, 70.60%
+2017-06, offpeak, 66.40%
+2017-07, offpeak, 71.00%
+2017-07, peak, 76.80%
+2017-08, offpeak, 72.30%
+2017-08, peak, 77.20%
+2017-09, offpeak, 71.60%
+2017-09, peak, 77.10%
+2017-10, peak, 73.70%
+2017-10, offpeak, 69.70%
+2017-11, offpeak, 67.50%
+2017-11, peak, 71.80%
+2017-12, peak, 71.90%
+2017-12, offpeak, 68.20%
+2018-01, peak, 69.50%
+2018-01, offpeak, 60.90%
+2018-02, peak, 74.60%
+2018-02, offpeak, 65.50%
+2018-03, peak, 76.30%
+2018-03, offpeak, 68.90%
+2018-04, peak, 74.10%
+2018-04, offpeak, 70.50%
+2018-05, offpeak, 69.20%
+2018-05, peak, 75.90%
+2018-06, peak, 78.70%
+2018-06, offpeak, 71.50%
+2018-07, offpeak, 70.90%
+2018-07, peak, 78.00%
+2018-08, offpeak, 70.90%
+2018-08, peak, 77.90%
+2018-09, peak, 77.80%
+2018-09, offpeak, 72.00%
+2018-10, offpeak, 71.80%
+2018-10, peak, 77.20%
+2018-11, peak, 75.00%
+2018-11, offpeak, 71.50%
+2018-12, offpeak, 73.10%
+2018-12, peak, 76.20%
+2019-01, offpeak, 75.10%
+2019-01, peak, 76.90%
+2019-02, offpeak, 74.40%
+2019-02, peak, 76.90%
+2019-03, peak, 78.30%
+2019-03, offpeak, 75.40%
+2019-04, offpeak, 77.10%
+2019-04, peak, 81.30%
+2019-05, peak, 82.50%
+2019-05, offpeak, 76.70%
+2019-06, offpeak, 77.40%
+2019-06, peak, 82.00%
+```
+
+1. Calculate the quartiles for all A train data.
+2. Calculate the quartiles for the peak A train data and the quartiles for the off-peak A train data.
+3. What difference(s) do you see between the peak and off-peak data?
+
+> Note: you can copy and paste this data into a new Google Sheet in order to help sort it.
+
+
+
+
+- revise with [Countdown clock data](https://toddwschneider.com/posts/nyc-subway-data-analysis/)
+- [How 2 MTA Decisions pushed the subway to crisis](https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html) - NY Times
+- [How your commute has changed: NYC subway variability calculator](https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html?mtrref=www.google.com)
+
+
+
+
+
 
 ### Activity: Other Statistical Descriptions
 

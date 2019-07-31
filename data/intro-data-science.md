@@ -1,3 +1,5 @@
+(this is a holding pen for extra content)
+
 # Intro to Data Science
 
 ## What is "Data Science"?
@@ -53,3 +55,82 @@ See how many types of data you can brainstorm in 5 minutes. For each type, also 
 _For example, geographic data might come from satellites, from locations of users on their smartphones, from city zoning data, etc._
 
 > Note: Think broadly! Try to consider various types of quantitative (numerical), qualitiative (textual), and alternative (images, video, sound, etc.) data. You might also think about less traditional sources of data like anecdotal data, case studies, and/or aggregate data.
+
+### Understanding Distributions
+
+You've probably been able to calculate the mean, median, mode, and range of a set of values using your calculator or even a computer, but what happens when the number of values in the data set goes from 11 (above) to 11 million? Do you think these statistical measurements are as meaningful?
+
+Instead of boiling down 11 million numbers to one of these four statistical values, data scientists will often instead prefer to look at the distribution of the values to get a better sense of the data. Distributions are difficult to calculate by hand, but they are a graphical way to know whether the values in a data set are evenly spread around some central value, whether there are more greater values or lesser values (whether the data is skewed), or even whether the data is composed of multiple features that might be grouped around particular values. Distributions can be represented as column (bar) charts or line charts; column charts are used when there is a relatively small number of possible discrete values in the dataset, and line charts either to approximate many many more discrete values or when the data is continuous. In each case, the x-axis represents the value and the y-axis represents the number of times that value is in the data set, or that value's frequency.
+
+Some distributions are bell-shaped; you may have heard of a Bell curve. Other distributions are shifted one way or another, e.g. a Boltzmann distribution. Still others have more than one hump; a distribution with two humps is called "bimodal". Other distributions may have values that are evenly distributed, and those are called "uniform" distributions.
+
+Let's take the skewed-left distribution below. Visually, the mode is the easiest statistical measurement to determine from a graph; it's the high point because that represents the value that occurs most often in the data. The mean and median are a bit trickier and generally depend on the shape of the distribution. For the skewed-left distribution below, the value of the median is a bit higher than the value of the mode; to visually determine the median, imagine drawing a line that has equal area on the left and the right sides of the line. Lastly, the value of the mean is a bit higher than the value of the median because the few larger values have the effect of pulling the mean up relative to the median.
+
+_Note: the range is a less relevant measurement when a distribution has a very long tail on either side (or both) since it can be difficult to determine a maximum and minimum value.
+
+![Skewed Left Distribution](./images/mean-median-mode-on-skewed-right-curve.png)
+
+Consider the distributions below:
+
+#### Bell-Shaped Distribution
+![Normal Distribution](./images/bell-shaped-histogram.jpg)
+
+#### Skewed Left Distribution
+![Skewed Left Distribution](./images/skewed-left-histogram.jpg)
+
+#### Skewed Right Distribution
+![Skewed Right Distribution](./images/skewed-right-histogram.jpg)
+
+#### Bimodal Distribution
+![Bimodal Distribution](./images/bimodal-histogram.jpg)
+
+#### Uniform Distribution
+![Uniform Distribution](./images/uniform-histogram.jpg)
+
+For each distribution, can you guess-timate (guess + estimate):
+- What is the value of the mode of each dataset?
+- What is the value of the median of each dataset?
+- What is the value of the mean of each dataset?
+- What is the value of the range of each dataset?
+
+Now consider these three datasets represented below by the bold, thin, and dotted lines:
+
+![Uniform Distribution](./images/overlapping-normal-distributions.png)
+
+For each distribution, can you guess-timate:
+- What is the value of the mode of each dataset?
+- What is the value of the median of each dataset?
+- What is the value of the mean of each dataset?
+
+As you can see, unfortunately just determining the mean, median, and mode is not sufficient to distinguish between these three datasets. For that, we need a new measurement: the variance.
+
+## Variance
+
+Without going too deep into the mathematics about distributions, you have seen (above) how some datasets look more spread out than others. The more spread out the values in a dataset are, the larger the variance of the dataset. The more closely aligned the values in a dataset are, the smaller the variance of the dataset.
+
+Variance helps a data scientist gauge how uniform or distributed the values in a dataset are.
+
+See if you can arrange the following datasets in terms of increasing variance. What conditions must be true in order to visually compare various datasets?
+
+<table>
+	<tr>
+		<td><img src="./images/normal-1.png"></td>
+		<td><img src="./images/normal-2.png"></td>
+	</tr>
+	<tr>
+		<td align="center"><b>Distribution 1</b></td>
+		<td align="center"><b>Distribution 2</b></td>
+	</tr>
+	<tr>
+		<td><img src="./images/normal-3.png"></td>
+		<td><img src="./images/normal-4.png"></td>
+	</tr>
+	<tr>
+		<td align="center"><b>Distribution 3</b></td>
+		<td align="center"><b>Distribution 4</b></td>
+	</tr>
+</table>
+
+### Activity: Real-World Variance
+
+Some text here
