@@ -9,7 +9,15 @@
 
 ## Launch
 
-The following is an excerpt from ["'Forced busing' didn't fail. Desegregation is the best way to improve our schools."](https://www.washingtonpost.com/posteverything/wp/2015/10/23/forced-busing-didnt-fail-desegregation-is-the-best-way-to-improve-our-schools/?noredirect=on&utm_term=.b7ef44272407) published in _The Washington Post_ on October 23, 2015.
+Below is an excerpt from ["'Forced busing' didn't fail. Desegregation is the best way to improve our schools."](https://www.washingtonpost.com/posteverything/wp/2015/10/23/forced-busing-didnt-fail-desegregation-is-the-best-way-to-improve-our-schools/?noredirect=on&utm_term=.b7ef44272407) published in _The Washington Post_ on October 23, 2015.
+
+Before reading the excerpt:
+
+- Based on the title, what argument do you think the author is going to make?
+- Based on the title, what data do you think the author will use to support his point?
+- Based on the subtitle - "Racial achievement gaps were narrowest at the height of school integration." - what issue(s) do you think the author perceives are problematic today?
+
+Consider the following excerpt:
 
 > Two miles from my office in Syracuse, N.Y., Westside Academy Middle School has been in need of repairs for decades. Located in one of the nation's poorest census tracts, 85 percent of its students are black or Latino, and 86 percent are poor enough to qualify for free or reduced-price lunches. The 400 students have limited creative outlets, with no orchestra or band and just two music teachers.
 >
