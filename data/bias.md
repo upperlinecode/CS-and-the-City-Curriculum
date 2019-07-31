@@ -31,22 +31,17 @@ Show a spurious correlation w/ numbers to prove it.
 
 The following two passages were written about the _____ in the 19##'s
 
-<table>
-	<tr>
-		<td>Passage A</td>
-		<td>Passage B</td>
-	</tr>
-	<tr>
-		<td>
-			<h1>Police officer charged in shooting death of unarmed neighbor</h1>
-			<h3>Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports.</h3>
-		</td>
-		<td>
-			<h1>Dallas police officer charged with manslaughter in fatal shooting of unarmed man in his own apartment</h1>
-			<h3>A Dallas police officer was arrested Sunday in connection with the shooting death of Botham Shem Jean, the Texas Rangers said. Amber Guyger, who is white, was off-duty when she shot Jean, a black man, after mistakenly entering his apartment at the complex where she also lived, police said Thursday.</h3>
-		</td>
-	</tr>
-</table>
+## Passage A
+
+### Police officer charged in shooting death of unarmed neighbor</h1>
+
+#### Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports.
+
+## Passage B
+
+### Dallas police officer charged with manslaughter in fatal shooting of unarmed man in his own apartment
+
+#### A Dallas police officer was arrested Sunday in connection with the shooting death of Botham Shem Jean, the Texas Rangers said. Amber Guyger, who is white, was off-duty when she shot Jean, a black man, after mistakenly entering his apartment at the complex where she also lived, police said Thursday.
 
 ### Discussion Questions
 
