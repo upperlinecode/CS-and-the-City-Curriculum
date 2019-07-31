@@ -20,13 +20,13 @@ Make a copy of the [NYC Subway Customer Journey Time Performance](https://docs.g
 > Note: This data considers end-to-end trips and any delays caused by the MTA. The data represents the percent of successful trips each month; a successful trip is defined as a traveler who arrives within 5 minutes of the expected trip duration (according to the MTA).
 
 Explore the raw data in the "Customer Journey Time Performan" sheet. Answer as many of the following questions as you can based on the raw data:
-- Which line has the best performance during peak times? during off-peak times?
-- Which line has the worst performance during peak times? during off-peak times?
-- Which line has had the broadest range of performance during peak times? during off-peak times?
-- Which line has had the narrowest range of performance during peak times? during off-peak times?
-- Which non-shuttle line, on average, is the best during peak times? during off-peak times?
-- Across all lines, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times? during off-peak times?
-- For the 6, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times? during off-peak times?
+- Which line has the best performance during peak times?
+- Which line has the worst performance during peak times?
+- Which line has had the broadest range of performance during peak times?
+- Which line has had the narrowest range of performance during peak times?
+- Which non-shuttle line, on average, is the best during peak times?
+- Across all lines, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times?
+- For the 6, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times?
 
 Did you find it difficult/frustrating/impossible to answer any of those questions? It's ok if you did. We're going to aggregate and manipulate the data so that we can begin to answer all of those questions.
 
@@ -145,42 +145,42 @@ month, period, customer journey time performance
 2. Calculate the quartiles for the peak A train data and the quartiles for the off-peak A train data.
 3. What difference(s) do you see between the peak and off-peak data?
 
-> Note: you can copy and paste this data into a new Google Sheet in order to help sort it.
+> Note: you can copy and paste this data into a new Google Sheet and "Data > Split text to columns" in order to help sort it.
 
+### Activity: Interpreting Quartiles
 
+![NYC MTA Peak Customer Journey Time Performance](./images/subway-customer-performance.png)
+> NYC MTA Peak Customer Journey Time Performance by Subway Line
 
+The graph above is a "Candlestick Plot" (or Box Plot, or Box-and-Whiskers Plot) for the dataset we've been exploring, which shows the distributions for all of the various lines in the dataset. The bottom and top of each box represent the 1st and 3rd quartiles, respectively, and the ends of the whiskers represent the maximum and minimum values. Unfortuately Google Sheets doesn't also show the median value, however most Box Plots do.
 
-- revise with [Countdown clock data](https://toddwschneider.com/posts/nyc-subway-data-analysis/)
-- [How 2 MTA Decisions pushed the subway to crisis](https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html) - NY Times
-- [How your commute has changed: NYC subway variability calculator](https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html?mtrref=www.google.com)
+> Note: If you'd like to see/show how the data was manipulated in Google Sheets to produce the Candlestick Plot, it's available [here](https://docs.google.com/spreadsheets/d/1uSd7IMLpnMWYM0zrJJZLdXc_yVAD-dK62XRNRLl7U0Y/edit?usp=sharing).
 
+Let's revisit the questions we asked before and see whether we can now answer any of them:
+- Which line has the best performance during peak times?
+- Which line has the worst performance during peak times?
+- Which line has had the broadest range of performance during peak times?
+- Which line has had the narrowest range of performance during peak times?
+- Which non-shuttle line, on average, is the best during peak times?
+- Across all lines, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times?
+- For the 6, how often does a rider get to their destination within 5 minutes of their anticipated travel time during peak times?
 
+#### Optional Extension
 
+If there's extra time, feel free to modify the ["Journey Time Summary Statistics" sheet](https://docs.google.com/spreadsheets/d/1uSd7IMLpnMWYM0zrJJZLdXc_yVAD-dK62XRNRLl7U0Y/edit?usp=sharing) in order to make the same graph for the "off peak" data. To do so, click on Column C or D, then click on the existing filter of the Pivot Table (you'll learn more about these in a future class). Uncheck "peak", and check "offpeak", tap "OK", and the data should update.
 
+Click over to the "Quartiles Chart" to see the updated graph.
 
+- How do the "off-peak" distributions compare to the "peak" distributions?
 
-### Activity: Other Statistical Descriptions
+#### Additional Reading
 
-So far we've learned a number of statistical measurements that enable a data scientist to better understand how large datasets are distributed:
-
-- Mode
-- Median
-- Mean
-- Variance
-- Quartiles
-
-There are many other statistical measurements used by data scientists, each of which has its own method of calculation and contextual meaning. Investigate one or more of the measurements below, and share what you find with a partner. In what circumstances is that measurement used? And how does it relate to what you've already learned?
-
-- Root-Mean-Squared Average
-- Standard Deviation
-- Poisson Distribution
-- Boltzmann Distribution
-- Binomial Distribution
-- Exponential Distribution
-- [Other Probability Distributions](https://en.wikipedia.org/wiki/List_of_probability_distributions)
+- This lecture was inspired by [Todd W. Schneider's analysis of subway countdown clock data](https://toddwschneider.com/posts/nyc-subway-data-analysis/)
+- [How 2 MTA Decisions pushed the subway to crisis (NY Times, May 5, 2018)](https://www.nytimes.com/interactive/2018/05/09/nyregion/subway-crisis-mta-decisions-signals-rules.html) - NY Times
+- [How your commute has changed: NYC subway variability calculator (NY Times, July 8, 2019)](https://www.nytimes.com/interactive/2019/07/08/upshot/nyc-subway-variability-calculator.html?mtrref=www.google.com)
 
 ## Close
 
-Statistics is an entire field of mathematics devoted to making sense of sets of values, and new measurements are necessary as the number of values increases dramatically.
+The dataset we explored didn't just have customer journey time performance; it also included the number of passengers who rode on each line during each month.
 
-In the next lesson, we'll learn how to use various tools to better understand complex numerical and non-numerical datasets.
+Come up with 5 questions you could ask about the number of passengers who rode on each line during each month that make use of statistical measurements.

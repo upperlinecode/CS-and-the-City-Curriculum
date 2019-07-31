@@ -134,3 +134,23 @@ See if you can arrange the following datasets in terms of increasing variance. W
 ### Activity: Real-World Variance
 
 Some text here
+
+### Activity: Other Statistical Descriptions
+
+So far we've learned a number of statistical measurements that enable a data scientist to better understand how large datasets are distributed:
+
+- Mode
+- Median
+- Mean
+- Variance
+- Quartiles
+
+There are many other statistical measurements used by data scientists, each of which has its own method of calculation and contextual meaning. Investigate one or more of the measurements below, and share what you find with a partner. In what circumstances is that measurement used? And how does it relate to what you've already learned?
+
+- Root-Mean-Squared Average
+- Standard Deviation
+- Poisson Distribution
+- Boltzmann Distribution
+- Binomial Distribution
+- Exponential Distribution
+- [Other Probability Distributions](https://en.wikipedia.org/wiki/List_of_probability_distributions)
