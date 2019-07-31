@@ -29,21 +29,19 @@ Show a spurious correlation w/ numbers to prove it.
 
 ## Case Study 1: Bias in Reporting
 
-The following two passages were written about the _____ in the 19##'s
+The following two headlines and subheads were written about the _____ in the 19##'s
 
-| Passage A |
+| Headline A |
 | --- |
 | <h3>Police officer charged in shooting death of unarmed neighbor</h3><h5>Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports.</h5> |
 
-## Passage B
-
-### Dallas police officer charged with manslaughter in fatal shooting of unarmed man in his own apartment
-
-#### A Dallas police officer was arrested Sunday in connection with the shooting death of Botham Shem Jean, the Texas Rangers said. Amber Guyger, who is white, was off-duty when she shot Jean, a black man, after mistakenly entering his apartment at the complex where she also lived, police said Thursday.
+| Headline B |
+| --- |
+| <h3>Dallas police officer charged with manslaughter in fatal shooting of unarmed man in his own apartment</h3><h5>A Dallas police officer was arrested Sunday in connection with the shooting death of Botham Shem Jean, the Texas Rangers said.</h5><h5>Amber Guyger, who is white, was off-duty when she shot Jean, a black man, after mistakenly entering his apartment at the complex where she also lived, police said Thursday.</h5> |
 
 ### Discussion Questions
 
-- How would you describe each author's intent for writing their passage?
+- How would you describe each author's intent for writing their headline and subhead?
 - How is each author using their language to impact the reader's response?
 - JOLSON TO ADD GUIDING QUESTION(S)
 
