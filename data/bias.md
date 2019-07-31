@@ -31,11 +31,11 @@ Show a spurious correlation w/ numbers to prove it.
 
 The following two passages were written about the _____ in the 19##'s
 
-## Passage A
+| Passage A |
+| --- |
+| ### Police officer charged in shooting death of unarmed neighbor
 
-### Police officer charged in shooting death of unarmed neighbor</h1>
-
-#### Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports.
+#### Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports. |
 
 ## Passage B
 
