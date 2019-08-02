@@ -30,9 +30,7 @@ But the report offers guidance for education and steps to address the issues, wh
 
 Dr. Gardner’s organization works to bring women working in A.I. together with business leaders and politicians to discuss the ethics, bias and potential for legislative frameworks to develop the industry in a way that is more representative.
 
-The group has published its own list of recommendations for building inclusive artificial intelligence, among them establishing a regulatory body to audit algorithms, investigate complaints and ensure bias is taken into account in the development of new technology.
-
-“We need to change things now, because these things are being implemented now,” Dr. Gardner said, pointing to the rapid spread of A.I.-powered virtual assistants. “We are writing the standards now that will be used in the future.”
+...
 
 Dr. Gardner said that changes are also needed in education, because the bias was a symptom of systemic underrepresentation within a male-dominated field.
 
