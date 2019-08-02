@@ -22,7 +22,7 @@ Today you'll each choose one of 5 excerpts (each is approximately the same lengt
 	- [The Economic Impact of School Suspensions (The Atlantic)](./school-suspensions.md)
 	- [Siri and Alexa Reinforce Gender Bias, U.N. Finds (New York Times)](./gender-bias.md)
 	- [MIT Researcher Exposing Bias in Facial Recognition Tech Triggers Amazon's Wrath (Insurance Journal)](./facial-recognition.md)
-	- [Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech (The Verge)](./gorillas.md)
+	- [When It Comes to Gorillas, Google Photos Remains Blind (Wired)](./gorillas.md)
 
 4. Read over the excerpt you chose. Then read over the excerpt again. (You don't need to memorize it; you're just getting a good understanding of the article.)
 5. For each article, form an "expert group" of all students who chose the same article.
