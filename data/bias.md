@@ -59,7 +59,8 @@ This is an example of selection bias: the senator and the newspaper each had a s
 3. *Outliers* - if a dataset has extreme outliers, average values can be skewed.
 4. *Overfitting (and underfitting)* can lead to an overly-complicated (or overly-simplistic) model to represent the data.
 5. *Confounding variables* is when there's something missing from the dataset that influences both the independent and dependent variables, but which causes you to assume a cause-and-effect relationship.
-6. *Correlation is not causation.* Just because two things follow the same trend doesn't necessarily mean one causes the other. [can also show spurious correlation]
+6. *Correlation is not causation.* Just because two things follow the same trend doesn't necessarily mean one causes the other.
+	1. Can also show [Spurious Correlations](https://www.tylervigen.com/spurious-correlations).
 
 ## Case Study 1: Bias in Reporting
 
