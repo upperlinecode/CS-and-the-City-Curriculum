@@ -46,6 +46,10 @@ The actual result of the election was 62% for Roosevelt vs. 38% for Landon, a 24
 - What could the _Literary Digest_ have done to mitigate the impacts of those biases?
 - JOLSON QUESTIONS
 
+#### Additional Reading
+
+- Based on [Case Study 1: 1936 _Literary Digest_ Poll](https://www.math.upenn.edu/~deturck/m170/wk4/lecture/case1.html) 
+
 ## Summary Questions
 
 - Today you've seen two ways that unintentional bias can skew the insight we get from data. Make a list of ways that you will avoid unintentional bias in your data project(s).
