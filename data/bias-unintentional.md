@@ -52,5 +52,7 @@ The actual result of the election was 62% for Roosevelt vs. 38% for Landon, a 24
 
 ## Summary Questions
 
+- What similarities can you identify between the ways that crime data is collected and how data was collected for the _Literary Digest_ poll?
+- What differences can you identify between the ways data is/was collected?
 - Today you've seen two ways that unintentional bias can skew the insight we get from data. Make a list of ways that you will avoid unintentional bias in your data project(s).
 - JOLSON QUESTIONS
