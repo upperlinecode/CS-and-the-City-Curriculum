@@ -10,6 +10,8 @@
 2. [Mean, Median, Mode, and Range](#mean-median-mode-and-range)
 3. [Distributions](#distributions)
 4. [Quartiles](#quartiles)
+	1. [Activity: Dividing into Quartiles](#activity-dividing-into-quartiles)
+	2. [Activity: Interpreting Quartiles](#activity-interpreting-quartiles)
 5. [Close](#close)
 
 ## Launch

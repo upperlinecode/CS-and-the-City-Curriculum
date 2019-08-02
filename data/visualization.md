@@ -5,6 +5,17 @@
 * SWBAT consider how and when data visualization can (and must) be used to help communicate information more intelligibly.
 * SWBAT differentiate between ethical, unintentionally misleading, and intentionally misleading data visualizations.
 
+## Sequence
+
+1. [Launch](#launch)
+2. [Visualization](#visualization)
+	1. [Bad visualizations](#bad-visualizations)
+3. [Interpreting Data Visualizations](#interpreting-data-visualizations)
+	1. [Questions to Ask When Reading a Visualization](#questions-to-ask-when-reading-a-visualization)
+	2. [Questions to Ask When Evaluating a Visualization](#questions-to-ask-when-evaluating-a-visualization)
+	3. [Activity: Data Visualization Interpretation](#activity-data-visualization-interpretation)
+4. [Close](#close)
+
 ## Launch
 
 Let's all copy this spreadsheet: [https://docs.google.com/spreadsheets/d/1oIMO0LyJLDOKUmzJl_f_g-ggm-PlijnvoLyubye_mvY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1oIMO0LyJLDOKUmzJl_f_g-ggm-PlijnvoLyubye_mvY/edit?usp=sharing)
@@ -19,7 +30,7 @@ Let's all copy this spreadsheet: [https://docs.google.com/spreadsheets/d/1oIMO0L
 7. Taking into account your predictions and your calculations, how might you compare the datasets to one another?
 8. Graph each dataset using a Scatter Plot in Google Sheets. How do the four datasets differ?
 
-### Visualization
+## Visualization
 
 Visualization is an umbrella term that emcompasses any technique of making data visually accessible, including the graphs and charts you're used to seeing, along with maps, interactive tools, dashboards, and more. Data visualization is used everywhere from scientific reports to the news, from [analyzing Hamilton lyrics](https://pudding.cool/2017/03/hamilton/) to [seeing income inequality along the subway](https://projects.newyorker.com/story/subway/) and [casting NYC shadows](https://www.nytimes.com/interactive/2016/12/21/upshot/Mapping-the-Shadows-of-New-York-City.html?mtrref=www.google.com), from government analyses to [the grocery store](https://www.fastcompany.com/90347782/the-humble-receipt-gets-a-brilliant-redesign):
 
@@ -36,7 +47,7 @@ Or even a map that helped determine the source of a cholera outbreak. Can you fi
 ![John Snow: Map of Cholera Outbreak (1854)](./images/john-snow-cholera.jpg)
 > John Snow: Map of Cholera Outbreak (1854) 
 
-### Bad visualizations
+### Bad Visualizations
 
 The [worst visualizations](https://simplystatistics.org/2012/11/26/the-statisticians-at-fox-news-use-classic-and-novel-graphical-techniques-to-lead-with-data/) intentionally mislead the viewer to a conclusion that the data does not support. You might encounter these visualizations when the y-axis is truncated or when percentages don't add up to 100%:
 
@@ -67,6 +78,8 @@ The bad visualizations above work because our brains are sometimes too quick to 
 - Does the visualization do a good job of telling its story?
 - Why do you think the author chose a visualization to convey their message?
 - Do you feel like you can explain this visualization to others?
+
+### Activity: Data Visualization Interpretation
 
 To practice your visual literacy, choose one of the visualizations below from W.E.B. Du Bois's "Modernist Data Visualizations of Black Life" (1900), and do your best to answer the questions above:
 

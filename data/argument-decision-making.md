@@ -7,6 +7,15 @@
 * SWBAT recognize how data can be used to control human behavior.
 * SWBAT differentiate kinds of data and different uses for data.
 
+## Sequence
+
+1. [Launch](#launch)
+2. [Data vs. Information](#data-vs-information)
+3. [The Misuse of Data](#the-misuse-of-data)
+	1. ["Fake News"](#fake-news)
+	2. [Data Literacy](#data-literacy)
+4. [Close](#close)
+
 ## Launch
 
 Below is an excerpt from ["'Forced busing' didn't fail. Desegregation is the best way to improve our schools."](https://www.washingtonpost.com/posteverything/wp/2015/10/23/forced-busing-didnt-fail-desegregation-is-the-best-way-to-improve-our-schools/?noredirect=on&utm_term=.b7ef44272407) published in _The Washington Post_ on October 23, 2015.
@@ -40,7 +49,7 @@ The author continues:
 - Based on this excerpt, what does the author want you to think about the state of segregation in schools?
 - SOME MORE JOLSON QUESTIONS
 
-### Data vs. Information
+## Data vs. Information
 
 When you've talked about data in the past, you may have used the words **data** and **information** interchangeably. Although they are quite similar, these two words have an important distinction:
 

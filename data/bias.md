@@ -16,7 +16,39 @@
 
 ## Launch
 
-Show a spurious correlation w/ numbers to prove it.
+Consider the following Facebok post and excerpt from a [news article in the _Tennessean_ newspaper](https://www.tennessean.com/story/news/2017/07/20/tennessees-unemployment-rate-last-month-lowest-state-history-gov-bill-haslam-announced-thursday/496383001/) from 2017:
+
+| Facebook Post |
+| --- |
+| <h3>Tennessee continues to be a great place to do business, and I am proud of all our state has done to create an environment for job growth.</h3><h5>--Sen. Bob Corker, TN</h5> |
+
+| Tennessean Excerpt |
+| --- |
+| <h3>Haslam: June featured lowest unemployment rate in Tennessee history</h3><h5>Tennessee's unemployment rate last month was the lowest in state history, Gov. Bill Haslam announced Thursday.</h5>
+<h5>The state had a preliminary seasonally adjusted unemployment rate of 3.6 percent in June.</h5><h5>[...]</h5><h5>Haslam said the unemployment figures came after decisions made by his administration and the state legislature. "We honestly think this is a result of the policies put in place by the state of Tennessee and the General Assembly," he said.</h5><h5>The state's previous low for unemployment rate was 3.7 percent in March 2000.</h5> |
+
+#### Discussion Questions
+
+- How would you describe each author's intent for writing their post/artcile?
+- How is each author using their language to impact the reader's response?
+- What data is each author including or not including that might impact the reader's response?
+- What other data might be relevant for making a decision whether or not the post and excerpt are meaningful?
+
+Now consider the following chart that shows the percent of each state's workers who are paid at or below minimum wage:
+
+![Workers Paid At or Below Minimum Wage](./image/percent-min-wage.png)
+
+- Where does Tennessee rank on the list?
+- Does this data support Sen. Corker's assertion that "Tennessee continues to be a great place to do business" and that Tennessee has "create[d] an environment for job growth"? Do you think it's a great place for workers to work?
+- How does this data complicate the _Tennessean_'s conclusions about the state's unemployment rate?
+
+One conclusion might be that even though the state's unemployment rate is lower than it has been (but what is it compared to other states?), you still can't get anywhere working in Tennessee since so many jobs are at or below minimum wage.
+
+This is an example of selection bias: the senator and the newspaper each had a story they wanted to tell and chose data that supports the point the want to make. In this case, that point may just be "Tennessee is a great place for jobs!"
+
+#### Additional Reading
+
+- Based on this [Quora discussion about political spin](https://www.quora.com/Whats-an-example-of-a-misleading-political-spin).
 
 ## Types of Bias in Data Science
 
@@ -41,7 +73,7 @@ The following two headlines and subheads were written by two different news outl
 | --- |
 | <h3>Dallas police officer charged with manslaughter in fatal shooting of unarmed man in his own apartment</h3><h5>A Dallas police officer was arrested Sunday in connection with the shooting death of Botham Shem Jean, the Texas Rangers said.</h5><h5>Amber Guyger, who is white, was off-duty when she shot Jean, a black man, after mistakenly entering his apartment at the complex where she also lived, police said Thursday.</h5> |
 
-### Discussion Questions
+#### Discussion Questions
 
 - How would you describe each author's intent for writing their headline and subhead?
 - How is each author using their language to impact the reader's response?
@@ -55,23 +87,28 @@ The comparison you've just made is what people think about when they think about
 When we interpret data, we can "spin" data in quite a few ways:
 > Many people will be familiar with the concept of "spin"; in popular culture, spin is "a form of propaganda to influence public opinion" (Esquire 1996;126:70), more specifically "the manipulation of language to convince the reader of the likely truth of the result." (BMJ 1995;310:985–7)
 
-1. *Confirmation bias* is evaluating evidence that supports one's preconceptions differently from evidence that challenges these convictions
-2. *Rescue bias* is discounting data by finding selective faults in the experiment
-3. *Auxiliary hypothesis bias* is introducing ad hoc modifications to imply that an unanticipated finding would have been otherwise had the experimental conditions been different
-4. *Mechanism bias* is being less skeptical when underlying science furnishes credibility for the data
-5. *"Time will tell" bias* is the phenomenon that different scientists need different amounts of confirmatory evidence
-6. *Orientation bias* is the possibility that the hypothesis itself introduces prejudices and errors and becomes a determinate of experimental outcomes
+1. *Confirmation bias* (mentioned above) is evaluating evidence that supports one's preconceptions differently from evidence that challenges these convictions.
+2. *Rescue bias* is discounting data by finding selective faults in the experiment.
+3. *Auxiliary hypothesis bias* is introducing ad hoc modifications to imply that an unanticipated finding would have been otherwise had the experimental conditions been different.
+4. *Mechanism bias* is being less skeptical when underlying science furnishes credibility for the data.
+5. *"Time will tell" bias* is the phenomenon that different scientists need different amounts of confirmatory evidence.
+6. *Orientation bias* is the possibility that the hypothesis itself introduces prejudices and errors and becomes a determinate of experimental outcomes.
 
-The following two passages are news articles covering a recent report by the _____. (same statistic/survey/data/information: two separate interpretations of the same data, selective about what to include/framing/interpretation)
+The following [two passages](https://www.business2community.com/government-politics/celebrating-2016-elections-history-political-spin-01672605) about the same person are examples of a type of political spin. Each is selective about how it frames the story in order to achieve its intended outcome.
 
-| Passage A | Passage B |
-| :--- | :--- |
-| Some text here | Some text here |
+| Passage A |
+| --- |
+| <h5>His great-great uncle was hanged for horse stealing and train robbery in the late 1880s. He was first captured as a horse thief, but then he escaped incarceration and went on to rob trains. He was eventually re-captured and was ultimately put to death by hanging.</h5> |
 
-### Discussion Questions
+| Passage B |
+| --- |
+| <h5>His great-great uncle was a famous cowboy in the Montana Territory. His business empire grew to include acquisition of valuable equestrian assets and intimate dealings with the Montana railroad. Beginning in 1883, he devoted several years of his life to government service, finally taking leave to resume his dealings with the railroad. In 1887, he was a key player in a vital investigation. In 1889, he passed away during an important civic function held in his honor when the platform upon which he was standing collapsed.</h5> |
 
-- How do the authors' interpretations of the report differ?
-- Where do you think that difference comes from?
+#### Discussion Questions
+
+- How do the authors' interpretations of the historical record differ?
+- What would each author want the reader to think about the subject's great-great uncle?
+- How does each author use data and information to guide the reader's opinion of the subject's great-great uncle?
 - JOLSON TO ADD GUIDING QUESTION(S)
 
 Sometimes people interpret data differently, and that can be ok. However, if those interpretations don't also recognize the effects of inherent biases, the reader is required to make a critique of the biases which might be affecting how an author has come to their conclusions.
@@ -92,7 +129,7 @@ Consider the three sets of data visualizations below. Each pair represents the s
 | :---: | :---: |
 | ![Gun Deaths](./images/gun-deaths-0.jpg) | ![Gun Deaths](./images/gun-deaths-1.jpg) |
 
-### Discussion Questions
+#### Discussion Questions
 
 - Why did the person making each of these graphs choose to represent the data the way they have?
 - What message do you think that person was trying to communicate by making those choices?
@@ -106,5 +143,3 @@ Bias is complicated. It can be intentional or unintentional; it can be hidden or
 - What are your biases?
 - How can you ensure that your biases don't affect your interpretation of data?
 - JOLSON TO ADD GUIDING QUESTION(S)
-
-

@@ -7,9 +7,20 @@
 * SWBAT aggregate data in a PivotTable.
 * SWBAT craft questions that data can answer.
 
+## Sequence
+
+1. [Launch](#launch)
+2. [Sorting Data](#sorting-data)
+3. [Filtering Data](#filtering-data)
+4. [Aggregating Data in a PivotTable](#aggregating-data-in-a-pivottable)
+5. [Manipulating & Visualizing Data](#manipulating--visualizing-data)
+6. [Close](#close)
+
+## Launch
+
 ![Michael Phelps](./images/michael-phelps.jpg)
 
-In this lab, we'll explore a dataset of every Olympic athlete (Summer and Winter Games) since the 1896 Olympic Games in Athens. Make a copy of the [Olympic Athletes Dataset](https://docs.google.com/spreadsheets/d/1Q2iJtAOdec18Ufh_2lcvOLHSl37rDKOFfU5i4n1odqw/edit?usp=sharing), and begin by exploring the data.
+Today we're going to explore a dataset of every Olympic athlete (Summer and Winter Games) since the 1896 Olympic Games in Athens. Make a copy of the [Olympic Athletes Dataset](https://docs.google.com/spreadsheets/d/1Q2iJtAOdec18Ufh_2lcvOLHSl37rDKOFfU5i4n1odqw/edit?usp=sharing), and begin by exploring the data.
 
 1. Make a prediction about the following:
 - What country has won the most Olympic medals in history?

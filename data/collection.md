@@ -5,6 +5,15 @@
 * SWBAT examine the ways that data collection can impact the story that data tells.
 * SWBAT understand how sample size, sample technique, and sample demographics can affect data interpretation.
 
+## Sequence
+
+1. [Launch](#launch)
+2. [Where does data come from?](#where-does-data-come-from)
+3. [Open data vs. private data](#open-data-vs-private-data)
+4. [Data Collection](#data-collection)
+	1. [Activity: Making a Civic Data Collection Plan](#activity-making-a-civic-data-collection-plan)
+5. [Close](#close)
+
 ## Launch
 
 #### The Gentrification of NYC
@@ -79,6 +88,8 @@ In New York City, however, the transit authority recognizes that they're pretty 
 ## Data Collection
 
 A critical part of working with data is sourcing data. Sometimes you have to go out and find data. Sometimes the data you want doesn't exist. And sometimes, the data exists, but you aren't allowed to see it. What's the best way to collect data? Well, it depends on the issue you're investigating.
+
+### Activity: Making a Civic Data Collection Plan
 
 1. As a group, choose a civic issue you feel strongly about.
 
