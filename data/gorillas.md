@@ -24,9 +24,7 @@ Google’s caution around images of gorillas illustrates a shortcoming of existi
 
 As a result, machine-learning engineers deploying their creations in the real world must worry about “corner cases” not found in their training data. “It’s very hard to model everything your system is going to see once it’s live,” says Vicente Ordóñez Román, a professor at the University of Virginia. He contributed to research last year that showed machine-learning algorithms applied to images could pick up and amplify biased views of gender roles.
 
-Google Photos users upload photos snapped under all kinds of imperfect conditions. Given the number of images in the massive database, a tiny chance of mistaking one type of great ape for another can become a near certainty.
-
-Google parent Alphabet and the wider tech industry face versions of this problem with even higher stakes, such as with self-driving cars. Together with colleague Baishakhi Ray, an expert in software reliability, Román is probing ways to constrain the possible behaviors of vision systems used in scenarios like self-driving cars. Ray says there has been progress, but it is still unclear how well the limitations of such systems can be managed. “We still don’t know in a very concrete way what these machine learning models are learning,” she says.
+...
 
 Some of Google’s machine-learning systems are permitted to detect gorillas in public. The company’s cloud-computing division offers businesses a service called Cloud Vision API to build into their own projects. When WIRED tested the online demo with gorilla and chimp photos, it identified both.
 
