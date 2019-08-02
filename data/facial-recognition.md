@@ -26,13 +26,7 @@ Amazon, whose CEO, Jeff Bezos, she emailed directly last summer, has responded b
 
 A Buolamwini-led study published just over a year ago found disparities in how facial-analysis systems built by IBM, Microsoft and the Chinese company Face Plus Plus classified people by gender. Darker-skinned women were the most misclassified group, with error rates of up to 34.7%. By contrast, the maximum error rate for lighter-skinned males was less than 1%.
 
-The study called for “urgent attention” to address the bias.
-
-“I responded pretty much right away,” said Ruchir Puri, chief scientist of IBM Research, describing an email he received from Buolamwini last year.
-
-Since then, he said, “it’s been a very fruitful relationship” that informed IBM’s unveiling this year of a new 1 million-image database for better analyzing the diversity of human faces. Previous systems have been overly reliant on what Buolamwini calls “pale male” image repositories.
-
-Microsoft, which had the lowest error rates, declined comment. Messages left with Megvii, which owns Face Plus Plus, weren’t immediately returned.
+...
 
 Months after her first study, when Buolamwini worked with University of Toronto researcher Inioluwa Deborah Raji on a follow-up test, all three companies showed major improvements.
 
@@ -48,18 +42,12 @@ Amazon dismissed what it called Buolamwini’s “erroneous claims” and said t
 
 “I didn’t know their reaction would be quite so hostile,” Buolamwini said recently in an interview at her MIT lab.
 
-Coming to her defense Wednesday was a coalition of researchers, including AI pioneer Yoshua Bengio , recent winner of the Turing Award, considered the tech field’s version of the Nobel Prize.
+Coming to her defense Wednesday was a coalition of researchers, including AI pioneer Yoshua Bengio, recent winner of the Turing Award, considered the tech field’s version of the Nobel Prize.
 
 They criticized Amazon’s response, especially its distinction between facial recognition and analysis.
 
 “In contrast to Dr. Wood’s claims, bias found in one system is cause for concern in the other, particularly in use cases that could severely impact people’s lives, such as law enforcement applications,” they wrote.
 
-Its few publicly known clients have defended Amazon’s system.
-
-Chris Adzima, senior information systems analyst for the Washington County Sheriff’s Office in Oregon, said the agency uses Amazon’s Rekognition to identify the most likely matches among its collection of roughly 350,000 mug shots. But because a human makes the final decision, “the bias of that computer system is not transferred over into any results or any action taken,” Adzima said.
-
-But increasingly, regulators and legislators are having their doubts. A bipartisan bill in Congress seeks limits on facial recognition. Legislatures in Washington and Massachusetts are considering laws of their own.
-
-Buolamwini said a major message of her research is that AI systems need to be carefully reviewed and consistently monitored if they’re going to be used on the public. Not just to audit for accuracy, she said, but to ensure face recognition isn’t abused to violate privacy or cause other harms.
+...
 
 “We can’t just leave it to companies alone to do these kinds of checks,” she said.
