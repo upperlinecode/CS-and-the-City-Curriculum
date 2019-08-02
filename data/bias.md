@@ -20,16 +20,18 @@ Show a spurious correlation w/ numbers to prove it.
 
 ## Types of Bias in Data Science
 
-1. Confirmation bias - when you want to prove a pre-determined conclusion.
-2. Selection bias - when you subjectively use data that supports the point you want to make.
-3. Outliers - if a dataset has extreme outliers, average values can be skewed.
-4. Overfitting (and underfitting) - making an overly-complicated (or overly-simplistic) model to represent the data.
-5. Confounding variables - there's something missing from the dataset that influences both the independent and dependent variables, but which causes you to assume a cause-and-effect relationship.
-6. Correlation is not causation - just because two things follow the same trend doesn't necessarily mean one causes the other. [can also show spurious correlation]
+*Bias* means believing what you want to believe and refusing to take into consideration the opinions of others. In data science, bias can manifest in a few ways:
+
+1. *Confirmation bias* is when you want to prove a pre-determined conclusion.
+2. *Selection bias* is when you subjectively use data that supports the point you want to make.
+3. *Outliers* - if a dataset has extreme outliers, average values can be skewed.
+4. *Overfitting (and underfitting)* can lead to an overly-complicated (or overly-simplistic) model to represent the data.
+5. *Confounding variables* is when there's something missing from the dataset that influences both the independent and dependent variables, but which causes you to assume a cause-and-effect relationship.
+6. *Correlation is not causation.* Just because two things follow the same trend doesn't necessarily mean one causes the other. [can also show spurious correlation]
 
 ## Case Study 1: Bias in Reporting
 
-The following two headlines and subheads were written about the _____ in the 19##'s
+The following two headlines and subheads were written by two different news outlets about a 2018 shooting death in Dallas, TX.
 
 | Headline A |
 | --- |
@@ -43,11 +45,22 @@ The following two headlines and subheads were written about the _____ in the 19#
 
 - How would you describe each author's intent for writing their headline and subhead?
 - How is each author using their language to impact the reader's response?
+- What data is each author including or not including that might impact the reader's response?
 - JOLSON TO ADD GUIDING QUESTION(S)
 
 The comparison you've just made is what people think about when they think about biased reporting. Unfortunately, the biases with which we analyze data can also lead to differences in interpretation.
 
 ## Case Study 2: Bias in Interpretation
+
+When we interpret data, we can "spin" data in quite a few ways:
+> Many people will be familiar with the concept of "spin"; in popular culture, spin is "a form of propaganda to influence public opinion" (Esquire 1996;126:70), more specifically "the manipulation of language to convince the reader of the likely truth of the result." (BMJ 1995;310:985–7)
+
+1. *Confirmation bias* is evaluating evidence that supports one's preconceptions differently from evidence that challenges these convictions
+2. *Rescue bias* is discounting data by finding selective faults in the experiment
+3. *Auxiliary hypothesis bias* is introducing ad hoc modifications to imply that an unanticipated finding would have been otherwise had the experimental conditions been different
+4. *Mechanism bias* is being less skeptical when underlying science furnishes credibility for the data
+5. *"Time will tell" bias* is the phenomenon that different scientists need different amounts of confirmatory evidence
+6. *Orientation bias* is the possibility that the hypothesis itself introduces prejudices and errors and becomes a determinate of experimental outcomes
 
 The following two passages are news articles covering a recent report by the _____. (same statistic/survey/data/information: two separate interpretations of the same data, selective about what to include/framing/interpretation)
 
@@ -65,7 +78,7 @@ Sometimes people interpret data differently, and that can be ok. However, if tho
 
 ## Case Study 3: Bias in Visualization
 
-Consider the three sets of data visualizations below. Each set represents the same information:
+Consider the three sets of data visualizations below. Each pair represents the same information:
 
 | Visualization A | Visualization B |
 | :---: | :---: |
@@ -78,7 +91,6 @@ Consider the three sets of data visualizations below. Each set represents the sa
 | Visualization A | Visualization B |
 | :---: | :---: |
 | ![Gun Deaths](./images/gun-deaths-0.jpg) | ![Gun Deaths](./images/gun-deaths-1.jpg) |
-
 
 ### Discussion Questions
 
