@@ -10,7 +10,7 @@
 
 1. [Launch](#launch)
 2. [Case Study 1: Bias in Reporting](#case-study-1-bias-in-reporting)
-3. [Case Study 2: Bias in Interpretation](#case-study-2-bias-in-interpretaion)
+3. [Case Study 2: Bias in Interpretation](#case-study-2-bias-in-interpretation)
 4. [Case Study 3: Bias in Visualization](#case-study-3-bias-in-visualization)
 5. [Close](#close)
 
