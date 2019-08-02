@@ -1,0 +1,1 @@
+# Excerpt from [Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech (The Verge)](https://www.theverge.com/2018/1/12/16882408/google-racist-gorillas-photo-recognition-algorithm-ai)

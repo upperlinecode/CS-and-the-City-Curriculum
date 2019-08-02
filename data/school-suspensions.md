@@ -1,0 +1,1 @@
+# Excerpt from [The Economic Impact of School Suspensions (The Atlantic)](https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/)

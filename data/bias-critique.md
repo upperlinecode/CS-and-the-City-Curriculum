@@ -1,40 +1,38 @@
 # Critiquing Bias: Discussion
 
-## Central Question
+## Launch
 
-- It's impossible to be unbiased.
+Do you agree or disagree with the following statement? Why do you think the way you do? Discuss.
 
-(Subconscious and unintentional bias)
+> It's impossible to be unbiased.
 
-- SWBAT
+## Jigsaw
 
-JIGSAW
+Today you'll each choose one of 5 excerpts (each is approximately the same length), and you'll critique the text for sources of subconscious and unintentional bias. Your critique should consider both what the article is about and how the article was written and the language that was used.
 
-## Articles - separate files about the same length
+1. Split into groups of 4-5 students.
+2. Appoint one student to be the group representative.
+3. Each student in the group should choose a different excerpt from the list below to critique and present.
 
+- [Machine Bias (ProPublica)](./machine-bias.md)
+- [The Economic Impact of School Suspensions (The Atlantic)](./school-suspensions.md)
+- [Siri and Alexa Reinforce Gender Bias, U.N. Finds (New York Times)](./gender-bias.md)
+- [MIT Researcher Exposing Bias in Facial Recognition Tech Triggers Amazon's Wrath (Insurance Journal)](./facial-recognition.md)
+- [Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech (The Verge)](./gorillas.md)
 
-Choose one of the following:
+4. Read over the excerpt you chose. Then read over the excerpt again. (You don't need to memorize it; you're just getting a good understanding of the article.)
+5. For each article, form an "expert group" of all students who chose the same article.
+6. In your "expert group", discuss the main points of the excerpt. As a group, critique the text for sources of subconscious and unintentional bias.
+7. Return to your original group and present back to the group what you discussed in your "expert group". Describe the excerpt, the sources of bias, and anything else you found interesting. Group members are encouraged to ask questions.
+8. As a group, identify two to three commonalities among the article excerpts to present back to the class. Consider how each commonality is supported by the set of articles.
+9. Each group representative should share one commonality back to the class and explain how the set of articles supports it.
 
-- [Machine Bias (ProPublica)](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
-- [The Economic Impact of School Suspensions (The Atlantic)](https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/)
-- [Siri and Alexa Reinforce Gender Bias, U.N. Finds (New York Times)](https://www.nytimes.com/2019/05/22/world/siri-alexa-ai-gender-bias.html)
-- [MIT Researcher Exposing Bias in Facial Recognition Tech Triggers Amazon's Wrath (Insurance Journal)](https://www.insurancejournal.com/news/national/2019/04/08/523153.htm)
-- [Google 'fixed' its racist algorithm by removing gorillas from its image-labeling tech (The Verge)](https://www.theverge.com/2018/1/12/16882408/google-racist-gorillas-photo-recognition-algorithm-ai)
-- Additional articles
+## Close
 
-For the article you chose, consider:
+Consider the following statement:
 
-1. Some question
-2. Some question
-3. Some question
-4. Some question
-5. What additional data might you want to find that would add to this discussion?
-6. Where would you look for that data?
-7. Some harder question
-8. Some harder question
-9. Some reach question
-10. Some reach question
+> All technology has the biases of its creators.
 
-## Conclusion
-
-- All technology has the biases of its creators
+- How does this statement apply to the articles you discussed today?
+- Do you agree or disagree with the statement? Why?
+- JOLSON QUESTIONS

@@ -1,0 +1,1 @@
+# Excerpt from [MIT Researcher Exposing Bias in Facial Recognition Tech Triggers Amazon's Wrath (Insurance Journal)](https://www.insurancejournal.com/news/national/2019/04/08/523153.htm)
