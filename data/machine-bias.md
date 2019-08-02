@@ -1,9 +1,7 @@
 # Excerpt
 
-## Machine Bias
+## Machine Bias (in [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing))
 #### There’s software used across the country to predict future criminals. And it’s biased against blacks.
-
-- in [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
 
 ON A SPRING AFTERNOON IN 2014, Brisha Borden was running late to pick up her god-sister from school when she spotted an unlocked kid’s blue Huffy bicycle and a silver Razor scooter. Borden and a friend grabbed the bike and scooter and tried to ride them down the street in the Fort Lauderdale suburb of Coral Springs.
 
