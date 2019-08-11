@@ -37,6 +37,6 @@ Consider the following statement:
 
 > All technology has the biases of its creators.
 
-- How does this statement apply to the articles you discussed today?
+- How does this statement relate to the articles you discussed today?
+- We understand that *content* like books and articles can demonstrate bias - how is technological bias different from or similar to that type of bias?
 - Do you agree or disagree with the statement? Why?
-- JOLSON QUESTIONS

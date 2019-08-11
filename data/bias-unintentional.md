@@ -16,8 +16,8 @@
 
 - What forms of bias are discussed in the passage above?
 - What do you think the author believes about crime data?
-- How does the author consider missing or absent data in her analysis?
-- JOLSON QUESTIONS
+- How does the author consider missing or absent data in their analysis?
+- What assumptions does this author make in analyzing the data? Do you see these assumptions as forms of bias?
 
 ## The Presidential Election of 1936
 
@@ -43,16 +43,19 @@ The actual result of the election was 62% for Roosevelt vs. 38% for Landon, a 24
 - What sources of bias can you see in the data collection?
 	> Hint: How were participants selected? and what was the response rate?
 - How would those sources of bias have impacted the data collected?
+- Why didn't the _Literary Digest_ anticipate or see these biases?
 - What could the _Literary Digest_ have done to mitigate the impacts of those biases?
-- JOLSON QUESTIONS
+
 
 #### Additional Reading
 
-- Based on [Case Study 1: 1936 _Literary Digest_ Poll](https://www.math.upenn.edu/~deturck/m170/wk4/lecture/case1.html) 
+- Based on [Case Study 1: 1936 _Literary Digest_ Poll](https://www.math.upenn.edu/~deturck/m170/wk4/lecture/case1.html)
 
 ## Summary Questions
 
 - What similarities can you identify between the ways that crime data is collected and how data was collected for the _Literary Digest_ poll?
 - What differences can you identify between the ways data is/was collected?
-- Today you've seen two ways that unintentional bias can skew the insight we get from data. Make a list of ways that you will avoid unintentional bias in your data project(s).
-- JOLSON QUESTIONS
+- Today you've seen two ways that unintentional bias can skew the insight we get from data.
+
+## Close
+Make a list of ways that you will avoid unintentional bias in your data project(s).

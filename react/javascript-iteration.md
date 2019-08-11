@@ -150,4 +150,4 @@ Remember to gather student feedback on this lesson. In addition to the standard 
 
 #### Questions for Students
 
-* In your own words, what is the difference between for loops and the map method? Can you think of a situation where you would use a for loop? Can you think of a situation where you would use the map method?
+* In your own words, what is the difference between for loops and the map method? In what situations would we prefer a `for` loop? In what situations would we prefer the `.map()` method?
