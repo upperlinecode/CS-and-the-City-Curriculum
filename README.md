@@ -3,8 +3,10 @@
 # Course Contents
 
 ## Framing Documents
-* <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank">Course Overview</a>
-* <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank">Implementation Guide</a>
+* <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank_">Course Overview</a>
+* <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank_">Implementation Guide</a>
+* Student Exemplar Project: <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank_">Deployed</a>
+* Student Exemplar Project: <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank_">Code</a>
 
 ## Unit 1: HTML and CSS Review
 ### Unit 1-1: Elements and Nesting
