@@ -15,7 +15,7 @@
 
 ## Launch
 
-Have students navigate to a website of their choice that is made with React (REMEMBER: They made a list of websites in the first lecture). Instruct students to look over the page and look for any component of the website that seems to be repeated. The content doesn't have to be the same, but these components should have similar features. For example, the AirBnB website has cards that have a photo, title, price, and review; this is a repeated component. What repeated component(s) can you find?
+Have students navigate to a website of their choice that is made with React (find and share an up-to-date list with them). Instruct students to look over the page and look for any component of the website that seems to be repeated. The content doesn't have to be the same, but these components should have similar features. For example, the AirBnB website has cards that have a photo, title, price, and review; this is a repeated component. What repeated component(s) can you find?
 
 ![AirBnB](./img/airbnb.png)
 
