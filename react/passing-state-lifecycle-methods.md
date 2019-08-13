@@ -21,7 +21,7 @@ In the last lesson, we learned about state in functional components and how inli
 
 Think back over the last few things you've learned about React:
 
-- How would you make it so that a child component is affected by a change in state of a parent component?
+- Can you think of a website (a web application) where interacting with ONE component, changes the way ANOTHER component behaves or is rendered?
 
 ## Passing State Among Elements
 
@@ -40,7 +40,7 @@ Often, we'll want to pass state from a parent component to a child component, an
 Importantly, any time we need a function to be able to access the parent state, we write that function as part of the parent component and pass the function to the child as a prop. This ensures that the child component has access to both the parent state and the function necessary to use or modify the state.
 
 ```js
-function App() {
+const App = () => {
   const component = new React.Component();
   component.state = {
   	ItemA: 0,
@@ -49,7 +49,7 @@ function App() {
   }
 
   // Here we define a function that is passed to a component below...
-  const someFunction = () => {
+  component.someFunction = () => {
     // code that uses or modifies state
   }
   
@@ -57,9 +57,9 @@ function App() {
     return (
       <div>
       	// And we pass the someFunction function to each component as a prop
-        <Item type="ItemA" price="1" buy={someFunction} />
-        <Item type="ItemB" price="2" buy={someFunction} />
-        <Item type="ItemC" price="3" buy={someFunction} />
+        <Item type="ItemA" price="1" buy={component.someFunction} />
+        <Item type="ItemB" price="2" buy={component.someFunction} />
+        <Item type="ItemC" price="3" buy={component.someFunction} />
       </div>
     )
   }
@@ -71,7 +71,7 @@ function App() {
 Then, the child component can call the function that was passed as a prop using an inline event. Here, we need to pass `props` as a parameter of the `Item` function:
 
 ```js
-function Item(props) {
+const Item = (props) => {
   return(
     <div className="item" onClick={props.buy}>
       <p>Buy a {props.type}!</p>
@@ -83,7 +83,7 @@ function Item(props) {
 This way of writing the function works, but we're missing an opportunity to pass it additional data in the form of some of the other props that were also passed to the component. What if we want to pass `props.type` to the `props.buy` function? We need to rewrite the function in the inline event as an anonymous function and pass it the necessary data:
 
 ```js
-function Item(props) {
+const Item = (props) => {
   return(
     <div className="item" onClick={() => {props.buy(props.type)}}>
       <p>Buy a {props.type}!</p>
@@ -95,7 +95,7 @@ function Item(props) {
 We also need to rewrite `someFunction` to take advantage of the new parameter:
 
 ```js
-const someFunction = (item) => {
+component.someFunction = (item) => {
   // code that uses or modifies state and includes the data passed to the function
 }
 ```
@@ -116,17 +116,17 @@ And this works well enough, but it's not great.
 
 > Note: we need to write the function as an anonymous function to prevent it from running when the page is rendered.
 
-2. Instead, maybe we'd want to abstract the inline function into a definition of the function (`const buy...`) and then an implementation of the function (`onClick={buy}`) like this:
+2. Instead, maybe we'd want to abstract the inline function into a definition of the function (`component.buy...`) and then an implementation of the function (`onClick={component.buy}`) like this:
 
 ```js
 // define the function ...
-const buyProduct = () => {
+component.buyProduct = () => {
   alert("Hi!")
 }
 
 // ... then use the function inline
 return(
-  <div className="product" onClick={buyProduct}>
+  <div className="product" onClick={component.buyProduct}>
     <p>Click me to buy a {props.type}!</p>
   </div>
 )
@@ -134,20 +134,20 @@ return(
 
 But that's still very limited: it's not going to allow the `<Product />` component to interact with its parent's state. To accomplish that, we need to define the function in the parent and pass it as a prop to the child component.
 
-3. Let's remove the function definition and inline event from `Product.js`. Then, let's add an inline event called `buyProduct` to each of the `<Product />` components in `App.js`, each of which calls a function called `purchase`:
+3. Let's remove the function definition and inline event from `Product.js`. Then, let's add an inline event called `buyProduct` to each of the `<Product />` components in `App.js`, each of which calls a function called `component.purchase`:
 
 ```js
   ...
-  <Product type="Laptop" price="999.00" buyProduct={purchase} />
-  <Product type="Mechanical Pencil" price="0.25" buyProduct={purchase} />
-  <Product type="College Ruled Loose Leaf" price="2.75" buyProduct={purchase} />
+  <Product type="Laptop" price="999.00" buyProduct={component.purchase} />
+  <Product type="Mechanical Pencil" price="0.25" buyProduct={component.purchase} />
+  <Product type="College Ruled Loose Leaf" price="2.75" buyProduct={component.purchase} />
   ...
 ```
 
 4. We then need to define the `purchase` function in `App.js`:
 
 ```js
-const purchase = () => {
+component.purchase = () => {
   alert("I just bought an item!");
 }
 ```
@@ -175,7 +175,7 @@ And this is great! If you click on the product, it should fire an alert that say
 7. We'll also need to rewrite the `purchase` function to incorporate passing in the parameter `item` and using it for our alert:
 
 ```js
-const purchase = (item) => {
+component.purchase = (item) => {
   alert("I just bought a " + item + "!");
 }
 ```
