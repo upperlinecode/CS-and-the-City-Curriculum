@@ -34,7 +34,7 @@ Often, we'll want to pass state from a parent component to a child component, an
 <Component state={component.state} />
 
 // passing select state properties
-<Component foo={component.state.foo} bar={component.state.bar}/>
+<Component cart={component.state.cart} status={component.state.status}/>
 ```
 
 Importantly, any time we need a function to be able to access the parent state, we write that function as part of the parent component and pass the function to the child as a prop. This ensures that the child component has access to both the parent state and the function necessary to use or modify the state.
