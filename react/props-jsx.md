@@ -95,7 +95,7 @@ const App = () => {
 
   component.render = () => {
     // Declare our variable called testimonial
-    let testimonial = "We Eat Street Meat is the best food review site that has ever been built. Now I can eat my street meat with confidence I can sit through my afternoon meetings."
+    let testimonial = "Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."
 
     // Pass that variable to the Testimonials component as part of the return
     return(
@@ -136,7 +136,7 @@ const App = () => {
   const component = new React.Component()
 
   component.render = () => {
-    let testimonial = "We Eat Street Meat is the best food review site that has ever been built. Now I can eat my street meat with confidence I can sit through my afternoon meetings."
+    let testimonial = "Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."
     return(
       <div className="App">
         <Navbar/>
