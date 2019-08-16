@@ -41,13 +41,13 @@ Consider the following excerpt:
 The author continues:
 
 > ["This American Life"] noted that, despite declarations that busing to desegregate schools failed in the 1970s and 1980s, that era actually saw significant improvement in educational equity. When the National Assessment of Educational Progress began in the early 1970s, there was a 53-point gap in reading scores between black and white 17-year-olds. That chasm narrowed to 20 points by 1988. During that time, every region of the country except the Northeast saw steady gains in school integration. In the South in 1968, 78 percent of black children attended schools with almost exclusively minority students; by 1988, only 24 percent did. In the West during that period, the figure declined from 51 percent to 29 percent.
-> 
+>
 > But since 1988, when education policy shifted away from desegregation efforts, the reading test score gap has grown — to 26 points in 2012 — with segregated schooling increasing in every region of the country.
 
 - What data is used by the author to make his point?
 - Do you think the data presented is fair and accurate?
 - Based on this excerpt, what does the author want you to think about the state of segregation in schools?
-- SOME MORE JOLSON QUESTIONS
+- How strong do you think the author's argument is? What points would someone who disagreed use to make a counterargument? 
 
 ## Data vs. Information
 
