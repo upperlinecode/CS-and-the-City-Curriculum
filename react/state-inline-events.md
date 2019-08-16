@@ -16,7 +16,8 @@
 
 ## Launch
 
-You may want to launch by having students jump into the[finished example](https://three-button-state.herokuapp.com/) of the app that we can/will build as part of this lesson. Have students clone the [template](https://github.com/upperlinecode/three-button-react-lab) to code along.
+* You may want to launch by having students jump into the [finished example](https://three-button-state.herokuapp.com/) of the app that we can/will build as part of this lesson.
+* Have students clone the [template](https://github.com/upperlinecode/three-button-react-lab) to code along.
 
 So far we've seen how props can be used in React to pass data to functional components. Passing props enables us to design and code a component one time and then feed in property data in order to show different versions of that component.
 
@@ -185,7 +186,7 @@ component.handleButton1 = () => {
     3. Embed the functions `handleButton1` and `handleButton2` into those buttons.
     4. Code out functionality for `handleButton2` to increase the `component.state.button2` property by 1 each time. Be sure to use the `component.setState({property: value})` syntax.
     5. Code out functionality for `handleButton3` to change the `component.state.button3` property each time and say the sentence "You are cool!" one word at a time. Be sure to use the `component.setState({property: value})` syntax.
-* Right now these buttons assume only a basic understanding of JavaScript, but there are some really wonderful advanced JavaScript functionalities that allow for much cooler functions. Brainstorm some more interesting behaviors for our app, and program out those event handlers. 
+* Right now these buttons assume only a basic understanding of JavaScript, but there are some really wonderful advanced JavaScript functionalities that allow for much cooler functions. Brainstorm some more interesting behaviors for our app, and program out those event handlers.
 
 ## Close
 
