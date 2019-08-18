@@ -38,6 +38,7 @@
 	* [Worksheet #1 (HTML)](react/launch-worksheet-html.md)
 	* [Worksheet #2 (React)](react/launch-worksheet-react.md)
 	* Additional: [Goorm Setup](react/goorm-react-setup.md)
+	* Additional: [Blank Project Template](https://github.com/upperlinecode/react-project-template)
 
 ### Unit 2-2 Functional Components
 * Lesson: [Functional Components](react/function-components.md)
