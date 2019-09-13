@@ -1,5 +1,7 @@
 # Finding Data
 
+> Instead of having you work directly in this lab as we have in the past, your teacher will tell you how / if you will submit your responses to the questions in this lab.
+
 Choose one of the following data sources:
 
 |![NYC Open Data](./images/nyc-open-data.png)|![NY State Open Data](./images/nys-open-data.jpg)|![United States Open Data](./images/us-open-data.png)|![United Nations Open Data](./images/un-open-data.png)|

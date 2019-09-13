@@ -12,6 +12,11 @@ In this lab, you'll explore data from the famous 1885 study of Francis Galton wh
 - Height: The height of the child, in inches
 - Kids: The number of kids in the family of the child
 
+Before you start, make a few predictions - you can use these questions to get you started, but should feel encouraged to make other predictions as well. 
+1. Do you expect sex impacts height?
+2. Do you predict that mother's height or father's height will have a greater correlation to child height?
+3. How closely do you predict that parent height will correlate to child height?
+
 Open the [Galton Height Dataset](https://docs.google.com/spreadsheets/d/1p85mYINg5O-DODzK5VqGq8sTjTkGOXi1c5sTvgLO_HA/edit?usp=sharing) in Google Sheets, and make a copy to work with.
 
 1. How many families are represented in the dataset?
@@ -19,8 +24,8 @@ Open the [Galton Height Dataset](https://docs.google.com/spreadsheets/d/1p85mYIN
 3. What is the average height of all fathers? What is the average height of all mothers?
 4. What is the average height of all male children? What is the average height of all female children?
 5. What is the range of heights for fathers and mothers? What is the range of heights for male children and female children?
-6. What is the median height for children whose father is taller than 6'? How does the median height for male children whose father is taller than 6' compare to the median height for female children whose father is taller than 6'?
-7. What is the median height for children whose mother is shorter than 5'6"? How does the median height for male children whose mother is shorter than 5'6" compare to the median height for female children whose mother is shorter than 5'6"?
+6. What is the median height for children whose father is taller than 6' (or 72 inches)? How does the median height for male children whose father is taller than 6' compare to the median height for female children whose father is taller than 6'?
+7. What is the median height for children whose mother is shorter than 5'6" (or 66 inches)? How does the median height for male children whose mother is shorter than 5'6" compare to the median height for female children whose mother is shorter than 5'6"?
 8. Determine quartile heights for the male children. How do those quartiles compare to the quartile heights for the female children?
 9. Determine quartile heights for the fathers and quartile heights for the mothers. How do those quartiles compare to the male and female children?
 10. Does the number of children affect the average height of a child? Is there any effect of the number of children on the height of male children? What about for female children?
