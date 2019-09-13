@@ -1,18 +1,16 @@
-# CS-and-the-City-Curriculum
-
 # Course Contents
+
+* [Unit 1: HTML + CSS Review](#unit-1)
+* [Unit 2: React.js](#unit-2)
+* [Unit 1: Data Science Mindsets](#unit-3)
 
 ## Framing Documents
 * <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank_">Course Overview</a>
 * <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank_">Implementation Guide</a>
-* Student Exemplar Project 1: NYC Water
-	* <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank_">Deployed</a>
-	* <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank_">Code</a>
-* Student Exemplar Project 2: Nutrition Tracker
-	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank_">Deployed</a>
-	* <a href="https://github.com/Jastor11/nyc-nutritional-facts" target="_blank_">Code</a>
 
-## Unit 1: HTML and CSS Review
+## Unit 1
+### HTML and CSS Review
+-----------
 ### Unit 1-1: Elements and Nesting
 
 * Lesson: [Elements and Nesting](html/basic-html.md)
@@ -36,7 +34,9 @@
 * Lesson: [CSS Flexbox](html/wireframing-flexbox.md)
 * Lab: <a href="https://github.com/upperlinecode/Flexbox" target="_blank_">Flexsites</a> (Flexbox)
 
-## Unit 2: React.js
+## Unit 2
+### React.js
+----------
 ### Unit 2-1 React Setup
 * Lesson: [Hello World](react/react-setup.md)
 	* [Worksheet #1 (HTML)](react/launch-worksheet-html.md)
@@ -83,8 +83,9 @@
 * Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
-## Unit 3: Data Science Mindsets
-
+## Unit 3
+### Data Science Mindsets
+----------
 ### Unit 3-1 Data in Argument & Decision-Making
 * Lesson: [Data in Argument & Decision-Making](data/argument-decision-making.md)
 * Lab: [Spin](data/spin.md)
@@ -113,4 +114,12 @@
 * Lab: [Exploratory Visualization](data/exploratory-visualization.md)
 * Lab: [Google Maps](data/google-maps.md)
 
-## Unit 4: Project Mode
+## Unit 4
+### Project Mode
+-----------
+* Student Exemplar Project 1: NYC Water
+	* <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank_">Deployed</a>
+	* <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank_">Code</a>
+* Student Exemplar Project 2: Nutrition Tracker
+	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank_">Deployed</a>
+	* <a href="https://github.com/Jastor11/nyc-nutritional-facts" target="_blank_">Code</a>
