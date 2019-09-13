@@ -1,5 +1,7 @@
 # Critiquing Bias: Discussion
 
+> If you've never facilitated an article jigsaw before, consider asking an English teacher at your school how they prefer to do it. The recommendations here are general, and if your students already have exposure to one way of doing an article jigsaw, you may want to repeat that procedure rather than pioneering a new one. 
+
 ## Launch
 
 Consider the following statement:
