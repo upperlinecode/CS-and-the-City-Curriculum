@@ -45,7 +45,7 @@ The best data visualizations take in new data as it's generated and present a vi
 Or even a map that helped determine the source of a cholera outbreak. Can you find the epicenter of the outbreak?
 
 ![John Snow: Map of Cholera Outbreak (1854)](./images/john-snow-cholera.jpg)
-> John Snow: Map of Cholera Outbreak (1854) 
+> John Snow: Map of Cholera Outbreak (1854)
 
 ### Bad Visualizations
 
@@ -57,7 +57,7 @@ The [worst visualizations](https://simplystatistics.org/2012/11/26/the-statistic
 
 ## Interpreting Data Visualizations
 
-The bad visualizations above work because our brains are sometimes too quick to jump to a conclusion; sometimes we don't pause to think about what the shapes on a visualization mean or how they might skew our perception before we settle upon the meaning of the visualization. Just like how you need to be literate when reading prose, **visual literacy** is the skill that enables us to read data visualizations.
+The bad visualizations above work because our brains are sometimes too quick to jump to a conclusion; sometimes we don't pause to think about what the shapes on a visualization mean or how they might skew our perception before we settle upon the meaning of the visualization. Just like how you need to be literate when reading prose, and to be data literate when examining information, **visual literacy** is the skill that enables us to read data visualizations.
 
 ### Questions to Ask When Reading a Visualization
 
@@ -92,6 +92,8 @@ To practice your visual literacy, choose one of the visualizations below from W.
 
 ## Close
 
+> Depending on time, this may be a more authentic activity as a homework assignment - it will be easier to notice data visualizations if students are primed to recognize them.
+
 - Describe a data visualization you've seen outside of school. It could be during a sports match, an online game, in a book/tv show/movie, or anywhere else.
 	- What data did the visualization show?
-	- What was the message of the visualization? 
+	- What was the message of the visualization?

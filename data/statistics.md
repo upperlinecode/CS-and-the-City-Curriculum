@@ -18,9 +18,9 @@
 
 Make a copy of the [NYC Subway Customer Journey Time Performance](https://docs.google.com/spreadsheets/d/1uSd7IMLpnMWYM0zrJJZLdXc_yVAD-dK62XRNRLl7U0Y/edit?usp=sharing) Google Sheet (Source: [dashboard.mta.info](http://dashboard.mta.info/))
 
-> Note: This data considers end-to-end trips and any delays caused by the MTA. The data represents the percent of successful trips each month; a successful trip is defined as a traveler who arrives within 5 minutes of the expected trip duration (according to the MTA).
+> Note: This data considers end-to-end trips and any delays caused by the MTA. The data represents the percent of successful trips each month; **a successful trip is defined as a traveler who arrives within 5 minutes of the expected trip duration (according to the MTA).**
 
-Explore the raw data in the "Customer Journey Time Performan" sheet. Answer as many of the following questions as you can based on the raw data:
+Explore the raw data in the "Customer Journey Time Performance" sheet. Answer as many of the following questions as you can based on the raw data:
 - Which line has the best performance during peak times?
 - Which line has the worst performance during peak times?
 - Which line has had the broadest range of performance during peak times?
@@ -184,4 +184,4 @@ Click over to the "Quartiles Chart" to see the updated graph.
 
 The dataset we explored didn't just have customer journey time performance; it also included the number of passengers who rode on each line during each month.
 
-Come up with 5 questions you could ask about the number of passengers who rode on each line during each month that make use of statistical measurements.
+Come up with 3-5 questions you could ask about the number of passengers who rode on each line during each month that make use of statistical measurements. How does knowing the volume of riders on each line increase (or challenge) your understanding of why certain lines were on time more frequently than others. 

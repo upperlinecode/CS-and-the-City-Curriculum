@@ -16,16 +16,15 @@
 
 ## Launch
 
-#### The Gentrification of NYC
+#### The Shifting Demographics of NYC
 
 Make a copy of this [NYC Census Demographics by Council District](https://docs.google.com/spreadsheets/d/15uTiVHDRNAc4bDdrC8W13T-0oXXyWsrzVTAKnwchlQs/edit?usp=sharing) Google Sheet.
 
-1. Based on the four worksheets, what ethnic group saw the greatest population increase from 2000 to 2010? What ethnic group saw the greatest population decrease from 2000 to 2010?
-2. Compare the population changes in Districts 3, 6, and 10. Which changed the most?
-3. Which sheet(s) would make the best case for gentrification of NYC?
-4. Which sheet(s) show gentrification isn't occurring in NYC?
-5. Where did this data come from? Do you trust that source?
-6. What if the data didn't indicate its source - would you still trust it?
+1. Based on the fourth worksheet (All Districts), what ethnic group saw the greatest population increase from 2000 to 2010? What ethnic group saw the greatest population decrease from 2000 to 2010?
+2. Compare the population changes in Districts 3, 6, and 10. Which changed the most? Why is this question particularly hard to answer?
+3. Which sheet(s) would make the best case for [gentrification](https://www.youtube.com/watch?v=V0zAvlmzDFc) of NYC? Which sheet(s) show gentrification isn't occurring in NYC?
+4. Where did this data come from? Do you trust that source?
+5. What if the data didn't indicate its source - would you still trust it?
 
 #### Additional Reading
 
@@ -35,9 +34,9 @@ Make a copy of this [NYC Census Demographics by Council District](https://docs.g
 
 ![Mind Map of Data Sources](./images/mind-map-1.png)
 
-1. In teams of 3, make a mind map of as many sources of data as you can think of. For each source, branch off bubbles that list as many kinds of data in that source as you can think of.
+1. In teams of 3, pick a sector of NYC that you interact with on a regular basis. For example, you might pick transportation, education, food / grocery, utilities / rent / real estate, music, film, TV, or an online social media presence. Then, make a mind map of as many sources of data as you can think of which relate to that topic. For each source, branch off bubbles that list as many kinds of data in that source as you can think of.
 
-> e.g. The MTA has data, including:
+> e.g. If your topic is transportation, then The MTA is a source of data, including:
 > - train arrival data,
 > - bus arrival data,
 > - passenger swipe data,
@@ -64,7 +63,7 @@ Not all data can be seen by everyone. Many companies closely guard their data (a
 
 ![Mind Map of Data Sources](./images/mind-map-2.png)
 
-Do you have more boxes or X's on your mind map? Why do you think that is? Is that a good thing?
+If you find that you've crossed off ALL or NONE of these data sources, you may need to think a bit more about other collections of data which are public or private and add them to your list. Do you have more boxes or X's on your mind map? Why do you think that is? Is that a good thing?
 
 #### Optional Case Study
 

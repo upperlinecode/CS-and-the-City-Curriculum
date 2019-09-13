@@ -22,8 +22,9 @@
 
 Today we're going to explore a dataset of every Olympic athlete (Summer and Winter Games) since the 1896 Olympic Games in Athens. Make a copy of the [Olympic Athletes Dataset](https://docs.google.com/spreadsheets/d/1Q2iJtAOdec18Ufh_2lcvOLHSl37rDKOFfU5i4n1odqw/edit?usp=sharing), and begin by exploring the data.
 
-1. Make a prediction about the following:
-- What country has won the most Olympic medals in history?
+1. Make predictions about the following:
+- What countries won the most Olympic medals in 1986?
+- What percentage of Olympic athletes earn at least one medal?
 - In what year did the greatest number of athletes participate in the Olympics?
 - Which has more events: the Summer or the Winter Olympics?
 
@@ -36,7 +37,7 @@ Today we're going to explore a dataset of every Olympic athlete (Summer and Wint
 
 Some questions can be answered simply by sorting data. For instance:
 
-- Who is the heaviest Olympic athelete ever, and what is their weight? Who is the lightest, and what is their weight?
+- Who is the heaviest Olympic athlete ever, and what is their weight? Who is the lightest, and what is their weight?
 - Who is the oldest Olympic athlete ever, and what is their age? Who is the youngest, and what is their age?
 - Who is the tallest Olympic athlete ever, and what is their height? Who is the shortest, and what is their height?
 
