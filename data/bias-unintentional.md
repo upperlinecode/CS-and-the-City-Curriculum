@@ -57,7 +57,7 @@ The actual result of the election was 62% for Roosevelt vs. 38% for Landon, a 24
 
 #### Additional Reading
 
-- Based on [Case Study 1: 1936 _Literary Digest_ Poll](https://www.math.upenn.edu/~deturck/m170/wk4/lecture/case1.html)
+- Based on [Case Study 1: 1936 _Literary Digest_ Poll](https://www.math.upenn.edu/~deturck/m170/wk4/lecture/case1.html) - proposed answers to all the questions asked above are included in this article. 
 
 ## Summary Questions
 
