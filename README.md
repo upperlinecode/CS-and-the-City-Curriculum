@@ -6,7 +6,7 @@
 * <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank_">Implementation Guide</a>
 
 #### Course Contents
-
+> These anchor links jump further down this page
 * [Unit 1: HTML + CSS Review](#unit-1)
 * [Unit 2: React.js](#unit-2)
 * [Unit 3: Data Science Mindsets](#unit-3)
