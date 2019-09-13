@@ -24,8 +24,7 @@ Consider the following Facebok post and excerpt from a [news article in the _Ten
 
 | Tennessean Excerpt |
 | --- |
-| <h3>Haslam: June featured lowest unemployment rate in Tennessee history</h3><h5>Tennessee's unemployment rate last month was the lowest in state history, Gov. Bill Haslam announced Thursday.</h5>
-<h5>The state had a preliminary seasonally adjusted unemployment rate of 3.6 percent in June.</h5><h5>[...]</h5><h5>Haslam said the unemployment figures came after decisions made by his administration and the state legislature. "We honestly think this is a result of the policies put in place by the state of Tennessee and the General Assembly," he said.</h5><h5>The state's previous low for unemployment rate was 3.7 percent in March 2000.</h5> |
+| <h3>Haslam: June featured lowest unemployment rate in Tennessee history</h3><h5>Tennessee's unemployment rate last month was the lowest in state history, Gov. Bill Haslam announced Thursday.</h5><h5>The state had a preliminary seasonally adjusted unemployment rate of 3.6 percent in June.</h5><h5>[...]</h5><h5>Haslam said the unemployment figures came after decisions made by his administration and the state legislature. "We honestly think this is a result of the policies put in place by the state of Tennessee and the General Assembly," he said.</h5><h5>The state's previous low for unemployment rate was 3.7 percent in March 2000.</h5> |
 
 #### Discussion Questions
 
@@ -36,7 +35,7 @@ Consider the following Facebok post and excerpt from a [news article in the _Ten
 
 Now consider the following chart that shows the percent of each state's workers who are paid at or below minimum wage:
 
-![Workers Paid At or Below Minimum Wage](./image/percent-min-wage.png)
+![Workers Paid At or Below Minimum Wage](./images/percent-min-wage.png)
 
 - Where does Tennessee rank on the list?
 - Does this data support Sen. Corker's assertion that "Tennessee continues to be a great place to do business" and that Tennessee has "create[d] an environment for job growth"? Do you think it's a great place for workers to work?
