@@ -2,6 +2,8 @@
 
 > As before, content contained in the data labs for subunits 3-1 and 3-2 is fairly emotionally charged. Please consider offering content warnings before engaging in this conversation with students, and consider removing or swapping out content for less charged material if you feel that is what your students may need. 
 
+> This is also the first lesson where students will likely need to use either a countif function or a pivot table to process the presented data. You may want to model this for students. 
+
 > Your teacher will tell you whether and how you need to submit your discussion notes from this lab. 
 
 ### Discussion Questions
@@ -38,6 +40,8 @@ Notes about the data collection:
 ### Calculate
 - Based on the data, who did the _Literary Digest_ predict would win the 1936 election?
 - By what margin did the _Literary Digest_ predict the winner would win?
+
+(The subset presented here only includes 1000 ballots, but the distribution is about the same as you would see in the 2.4 million actual responses.)
 
 ### Discussion Questions
 
