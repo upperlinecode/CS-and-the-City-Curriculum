@@ -1,5 +1,9 @@
 # Unintentional Bias: Discussion
 
+> As before, content contained in the data labs for subunits 3-1 and 3-2 is fairly emotionally charged. Please consider offering content warnings before engaging in this conversation with students, and consider removing or swapping out content for less charged material if you feel that is what your students may need. 
+
+> Your teacher will tell you whether and how you need to submit your discussion notes from this lab. 
+
 ### Discussion Questions
 
 - How have you seen crime data used in the media?
