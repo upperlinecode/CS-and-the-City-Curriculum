@@ -1,6 +1,6 @@
 # Unintentional Bias: Discussion
 
-> As before, content contained in the data labs for subunits 3-1 and 3-2 is fairly emotionally charged. Please consider offering content warnings before engaging in this conversation with students, and consider removing or swapping out content for less charged material if you feel that is what your students may need. 
+> As before, content contained in the data labs for subunits 3-1 and 3-2 is fairly emotionally charged. Please consider offering content warnings before engaging in this conversation with students, and consider cloning this lab and removing or swapping out content for less charged material if you feel that is what your students may need. 
 
 > This is also the first lesson where students will likely need to use either a countif function or a pivot table to process the presented data. You may want to model this for students. 
 
