@@ -16,7 +16,7 @@
 
 ## Launch
 
-> In this, and in many lessons throughout this unit, there may be occasion to include trigger warnings for students, or to swap out news sources provided for some that feel more topical and less emotionally charged for your students. You know your students, and you know what level of seriousness is going to best benefit them.
+> In this, and in many lessons throughout this unit, there may be occasion to include content warnings for students, or to swap out news sources provided for some that feel more topical and less emotionally charged for your students. You know your students, and you know what level of seriousness is going to best benefit them.
 
 Consider the following Facebook post and excerpt from a [news article in the _Tennessean_ newspaper](https://www.tennessean.com/story/news/2017/07/20/tennessees-unemployment-rate-last-month-lowest-state-history-gov-bill-haslam-announced-thursday/496383001/) from 2017:
 
@@ -67,6 +67,9 @@ This is an example of selection bias: the senator and the newspaper each had a s
 6. *Overfitting (and underfitting)* can lead to an overly-complicated (or overly-simplistic) model to represent the data - we can examine this more closely later.
 
 ## Case Study 1: Bias in Reporting
+
+### Content warning: Police violence
+> Replace or skip this case study if this is not a discussion you think wise to faciliate in your classroom. 
 
 The following two headlines and subheads were written by two different news outlets about a 2018 shooting death in Dallas, TX.
 
