@@ -14,6 +14,9 @@
 
 ## Crimes vs. Arrests vs. Crimes
 
+### Content Warning: Violence, sexual assault, rape
+> As before, please consider omitting or replacing this example depending on your comfort level presenting this to students. 
+
 | From an editorial in the [Chicago Tribune (May 25, 2018)](https://www.chicagotribune.com/opinion/commentary/ct-perspec-danger-marijuana-legalizing-crime-data-black-youth-facial-bias-0528-story.html) |
 | :--- |
 | <p>Only two thirds of murders result in arrests, which means that the homicide data are missing at least a third of actual incidents. And murders are unusual in that we typically have the body, so we know a crime actually occurred. That's not the case with assaults, rapes, thefts or illegal gun possession. There's no reason to think that the majority of these crimes lead to arrests, or that all arrests are related to actual crimes.</p><p>Reports aren't much better. People decide whether to report in a cultural context. For example, they're more likely to do so if they trust the police, and the level of trust can vary sharply over time. A year after Donald Trump was elected president, the number of reported rapes among the Latino population of Houston declined by 40 percent, a strong indication that people became afraid to report the crimes. Police often don't take rape victims' reports seriously, a problem that is probably even worse for male victims.</p> |
