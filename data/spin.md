@@ -28,7 +28,7 @@ You've received this [NY Library Dataset](https://docs.google.com/spreadsheets/d
 - **Visits Per Capita**
 - **Wireless Sessions Per Capita**
 
-**BEFORE YOU START** be sure to talk over with your lab partner and with your teacher what each of the columns mean - there's no point analyzing data in a column if you aren't sure what's being measured. 
+**BEFORE YOU START** be sure to talk over with your lab partner and with your teacher what each of the columns mean - there's no point analyzing data in a column if you aren't sure what's being measured. If you can identify at least *3-6 columns* that you understand clearly, and at least two that are significantly interesting to you, you are prepared to move ahead. 
 
 Additionally, the data has been formatted so that values above the average are green, and values below the average are red.
 
