@@ -95,7 +95,7 @@
 
 #### Unit 3-2 Bias
 * Lesson: [Bias](data/bias.md)
-* Lab: [Unintentional Bias](data/bias-unintentional.md)
+* Discussion Lab: [Unintentional Bias](data/bias-unintentional.md)
 * Lab: [Critiquing Bias](data/bias-critique.md)
 
 #### Unit 3-3 Data Collection
