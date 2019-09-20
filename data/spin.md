@@ -6,7 +6,7 @@ Some people say data is neutral. Some people say data can never be neutral. In t
 
 In early 2019, New York State announced it had lost $2.3 billion because of recent changes to federal tax laws. As a result, the decision-makers in Albany have been looking for ways to cut the state budget. A frequent target for revenue cuts is the public library system.
 
-*Your Task: pick a library and defend it from these budget cuts!**
+**Your Task: pick a library and defend it from these budget cuts!**
 
 You've received this [NY Library Dataset](https://docs.google.com/spreadsheets/d/11cBrFw0EBQWydjKXPY3TXtgnmMyIDhzxxbpAyUs-qR8/edit?usp=sharing) (adapted from [librarydatavisual.blogspot.com](http://librarydatavisual.blogspot.com/)) which contains the following fields:
 - **Zip Code**
