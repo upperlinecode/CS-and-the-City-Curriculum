@@ -8,6 +8,7 @@
 * [Unit 1: HTML + CSS Review](#unit-1)
 * [Unit 2: React.js](#unit-2)
 * [Unit 3: Data Science Mindsets](#unit-3)
+* [Unit 4: Project Mode](#unit-4)
 
 ### Unit 1
 #### HTML and CSS Review
