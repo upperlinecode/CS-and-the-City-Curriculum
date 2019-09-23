@@ -1,9 +1,7 @@
 # CS + The City
 
-#### Framing Documents
-
-* <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank_">Course Overview</a>
-* <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank_">Implementation Guide</a>
+### <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank">Course Overview</a>
+### <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank">Implementation Guide</a>
 
 #### Course Contents
 > These anchor links jump further down this page
@@ -23,19 +21,19 @@
 
 #### Unit 1-2: Design Principles
 * Lesson: [Design Principles](html/design-principles.md)
-* Lab: <a href="https://github.com/upperlinecode/NewYorkNewspaper" target="_blank_">New York Newspaper</a> (Write rulesets to match a mockup)
-* Lab: <a href="https://github.com/upperlinecode/ShorthandConverter" target="_blank_">Shorthand Converter</a> (Convert shorthand to HTML)
-* Lab: <a href="https://github.com/upperlinecode/SeriousSelectors" target="_blank_">Serious Selectors</a> (Specificity & niche CSS selectors)
+* Lab: <a href="https://github.com/upperlinecode/NewYorkNewspaper" target="_blank">New York Newspaper</a> (Write rulesets to match a mockup)
+* Lab: <a href="https://github.com/upperlinecode/ShorthandConverter" target="_blank">Shorthand Converter</a> (Convert shorthand to HTML)
+* Lab: <a href="https://github.com/upperlinecode/SeriousSelectors" target="_blank">Serious Selectors</a> (Specificity & niche CSS selectors)
 
 #### Unit 1-3 CSS Grid
 * Lesson: [CSS Grid](html/css-grid.md)
-* Lab: <a href="https://github.com/upperlinecode/GridGames" target="_blank_">Grid Games</a> (Match styled)
-* Lab: <a href="https://github.com/upperlinecode/WebsiteEdition" target="_blank_">Fakebook</a> (Match unstyled HTML to a Grid mockup)
-* Lab: <a href="https://github.com/upperlinecode/MockupMagic" target="_blank_">Mockup Magic</a> (Nested Grids)
+* Lab: <a href="https://github.com/upperlinecode/GridGames" target="_blank">Grid Games</a> (Match styled)
+* Lab: <a href="https://github.com/upperlinecode/WebsiteEdition" target="_blank">Fakebook</a> (Match unstyled HTML to a Grid mockup)
+* Lab: <a href="https://github.com/upperlinecode/MockupMagic" target="_blank">Mockup Magic</a> (Nested Grids)
 
 #### Unit 1-4 CSS Flexbox
 * Lesson: [CSS Flexbox](html/wireframing-flexbox.md)
-* Lab: <a href="https://github.com/upperlinecode/Flexbox" target="_blank_">Flexsites</a> (Flexbox)
+* Lab: <a href="https://github.com/upperlinecode/Flexbox" target="_blank">Flexsites</a> (Flexbox)
 
 ### Unit 2
 #### React.js
@@ -121,8 +119,8 @@
 #### Project Mode
 -----------
 * Student Exemplar Project 1: NYC Water
-	* <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank_">Deployed</a>
-	* <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank_">Code</a>
+	* <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank">Deployed</a>
+	* <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank">Code</a>
 * Student Exemplar Project 2: Nutrition Tracker
-	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank_">Deployed</a>
-	* <a href="https://github.com/Jastor11/nyc-nutritional-facts" target="_blank_">Code</a>
+	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank">Deployed</a>
+	* <a href="https://github.com/Jastor11/nyc-nutritional-facts" target="_blank">Code</a>
