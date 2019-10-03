@@ -1,4 +1,4 @@
-# CS + The City
+# CS and the City
 
 ### <a href="https://docs.google.com/document/d/12TsGg6Gdg2XBAbQ6aYm2MPCv01QFXyVdhafhyumJiK8/edit?usp=sharing" target="_blank">Course Overview</a>
 ### <a href="https://docs.google.com/document/d/1nJcikla7TocgzrHCTvyWmfaYsxnrBDrcp3_al40529Y/edit?usp=sharing" target="_blank">Implementation Guide</a>
@@ -119,6 +119,7 @@
 ### Unit 4
 #### Project Mode
 -----------
+* [Project facilitation guide]()
 * Student Exemplar Project 1: NYC Water
 	* <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank">Deployed</a>
 	* <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank">Code</a>
