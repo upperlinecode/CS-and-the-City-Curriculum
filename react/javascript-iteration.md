@@ -57,7 +57,7 @@ The third argument is how much we want to increment by every time the loops runs
 
 ```javascript 
 const names = ["Yhadira", "Kadiatou", "Isiah", "Yadelin", "Darius"]
-const nicknames = ["Deary", "Kadi-B","Izzy" "Loki", "Yaddy", "DRock"]
+const nicknames = ["Deary", "Kadi-B", "Izzy", "Loki", "Yaddy", "DRock"]
 const age = [22,28,27,33,29]
 const favAnimal = ["Cat", "Ferret", "Dog", "Sloth", "Zebra"]
 const born = ["Queens", "Bronx", "Manhattan", "Bronx", "Brooklyn"]
