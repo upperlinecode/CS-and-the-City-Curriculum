@@ -61,7 +61,7 @@
 	* [Accompanying App](https://github.com/upperlinecode/street-meat-react)
 * Lab: [NY State Education Data: Props](https://github.com/upperlinecode/react-NYSED-lab) (Refactor a hardcoded component to be responsive)
 * Lab: [New York Education Data Transparency](https://github.com/upperlinecode/lab-props-education-data-display) (Use props passed to component to populate page to match a mockup)
-* Lab: [Stree Difficult](https://github.com/upperlinecode/street-difficult-reusable-components-props-lab)
+* Lab: [Street Difficult](https://github.com/upperlinecode/street-difficult-reusable-components-props-lab)
 
 #### Unit 2-5 Parent & Child Components
 * Lesson: [Parent & Child Components](react/parent-child.md) (Breaking a page down into components, deciding what will be inside of what)
