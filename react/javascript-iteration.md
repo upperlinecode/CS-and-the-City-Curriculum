@@ -53,7 +53,15 @@ The third argument is how much we want to increment by every time the loops runs
 
 ### Practice with `for` loops
 
-> Some data has already been stored for you in the [`friends.js`](javascript-iteration/friends.js) file, which can be executed in this [`index.html`](javascript-iteration/index.html) file.
+> Some data has already been stored for you in the [`friends.js`](javascript-iteration/friends.js) file. It's also copied here:
+
+```javascript 
+const names = ["Yhadira", "Kadiatou", "Isiah", "Yadelin", "Darius"]
+const nicknames = ["Deary", "Kadi-B","Izzy" "Loki", "Yaddy", "DRock"]
+const age = [22,28,27,33,29]
+const favAnimal = ["Cat", "Ferret", "Dog", "Sloth", "Zebra"]
+const born = ["Queens", "Bronx", "Manhattan", "Bronx", "Brooklyn"]
+```
 
 In `friends.js` there is an array stored in the variable `names`. Let's say we wanted to greet each person in this array by saying "Hello, ____. So good to see you! Your hair looks amazing today."
 
