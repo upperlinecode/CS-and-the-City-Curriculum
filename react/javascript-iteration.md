@@ -142,7 +142,7 @@ Viola! By using loops we are harnessing the power of what computers do best - pe
 * Add two more keys to each object in the `people` array. These should store each persons age and favorite animal.
 * Console.log "Hey! My name is ____ but my friends call me ____. I am ____ years old and my favorite animal is a _____" for each person.
 * Add the sentence above to the webpage by changing the innerHTML of div with the id of `introductions`.
-* Stretch: Add another key to each person object in the `people` array for where they were born. Then, add the following sentence to the webpage for each person: "My name is ____ and I'm from ____." If they are from the Bronx, have it display they are from "DA BOOGEY DOWN BRONX."
+* Stretch: Add another key to each person object in the `people` array for where they were born. Then, add the following sentence to the webpage for each person: "My name is ____ and I'm from ____." If they are from your borough, have it display something special. For example, one student from the Bronx had his program display that they are from "DA BOOGEY DOWN BRONX."
 
 ## Close
 
