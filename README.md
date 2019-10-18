@@ -58,30 +58,30 @@
 
 #### Unit 2-4 Props + JSX
 * Lesson: [Props + JSX](react/props-jsx.md)
-	* [Accompanying App](https://github.com/upperlinecode/street-meat-react)
+	* [Accompanying App: Street Eats](https://github.com/upperlinecode/street-eats-react)
 * Lab: [NY State Education Data: Props](https://github.com/upperlinecode/react-NYSED-lab) (Refactor a hardcoded component to be responsive)
 * Lab: [New York Education Data Transparency](https://github.com/upperlinecode/lab-props-education-data-display) (Use props passed to component to populate page to match a mockup)
 * Lab: [Street Difficult](https://github.com/upperlinecode/street-difficult-reusable-components-props-lab)
 
 #### Unit 2-5 Parent & Child Components
 * Lesson: [Parent & Child Components](react/parent-child.md) (Breaking a page down into components, deciding what will be inside of what)
-	* [Accompanying App](https://github.com/upperlinecode/react-parent-child-lecture)
-	* [Explanatory App](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
+	* [Accompanying App: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
+	* [Explanatory App: Music Library](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
 * Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested)
 * Lab: [Prop Drilling](https://github.com/upperlinecode/react-prop-drilling) (Pass props down through nested components)
 
 #### Unit 2-6 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/styling.md) (Time of day / open / closed conditional styling)
-	* [Accompanying App](https://github.com/upperlinecode/inline-and-conditional-style-lecture)
+	* [Accompanying App: SportScores](https://github.com/upperlinecode/inline-and-conditional-style-lecture)
 * Lab: [Crazy Clocks](https://github.com/upperlinecode/crazy-clocks)
 
 #### Unit 2-7 State
 * Lesson: [State](react/state-inline-events.md) (State, inline events)
-	* [Accompanying App](https://github.com/upperlinecode/three-button-react-lab)
+	* [Accompanying App: The Three-Button App](https://github.com/upperlinecode/three-button-react-lab)
 * Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
 * Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/passing-state-lifecycle-methods.md) (Lifecycle methods, passing state among elements)
-	* [Accompanying App](https://github.com/upperlinecode/react-pass-state)
+	* [Accompanying App: School Supplies](https://github.com/upperlinecode/react-pass-state)
 * Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
