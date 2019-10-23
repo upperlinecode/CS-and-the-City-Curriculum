@@ -119,10 +119,10 @@
 ### Unit 4
 #### Project Mode
 -----------
-* [Project facilitation guide]()
+* [Project facilitation guide](https://docs.google.com/document/d/1nQkg67Q7NxrqoQZt8ry6V7hcmeofv31t-cfTr1qZLqU/edit#)
 * Student Exemplar Project 1: NYC Water
 	* <a href="https://zealous-liskov-deb6f8.netlify.com/" target="_blank">Deployed</a>
-	* <a href="https://github.com/Jastor11/nyc_open_data_water_project" target="_blank">Code</a>
+	* <a href="https://github.com/upperlinecode/nyc_open_data_water_project" target="_blank">Code</a>
 * Student Exemplar Project 2: Nutrition Tracker
 	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank">Deployed</a>
-	* <a href="https://github.com/Jastor11/nyc-nutritional-facts" target="_blank">Code</a>
+	* <a href="https://github.com/upperlinecode/nyc-nutritional-facts" target="_blank">Code</a>
