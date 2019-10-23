@@ -78,7 +78,7 @@
 #### Unit 2-7 State
 * Lesson: [State](react/state-inline-events.md) (State, inline events)
 	* [Accompanying App: The Three-Button App](https://github.com/upperlinecode/three-button-react-lab)
-* Lab: [Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
+* Lab: [Input Tiles Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
 * Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/passing-state-lifecycle-methods.md) (Lifecycle methods, passing state among elements)
 	* [Accompanying App: School Supplies](https://github.com/upperlinecode/react-pass-state)
