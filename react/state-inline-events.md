@@ -155,7 +155,7 @@ component.render = () => {
       <h2>Press some buttons!</h2>
       <div className="card-content">
         <div className="item">
-          <button onClick={()=>{component.handleButton1()}}>
+          <button onClick={component.handleButton1}>
             Button 1
           </button>
           <p>Current status: {component.state.button1}</p>
