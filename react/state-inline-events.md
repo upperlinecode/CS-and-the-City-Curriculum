@@ -118,13 +118,13 @@ Because state is closely associated with interactivity, we need a way to listen 
 To use these in action, add them as attributes, and then use JSX to explain what function should be called when
 
 ```html
-// Example of the onClick inline event without arguments:
+// Example of the onClick inline event callback without arguments:
 <button onClick={()=>{component.handleClick()}}>Click me!</button>
 
-// Example of the onClick inline event with arguments:
+// Example of the onClick inline event callback with arguments:
 <button onClick={()=>{component.handleClick(arguments)}}>Click me!</button>
 
-// NOTE: may also see this notation - it's simpler but only allows the default event arguments to be passed.
+// Example of the most common notation - it's simpler but only allows the default EVENT arguments to be passed.
 <button onClick={component.handleClick}>Click me!</button>
 ```
 
