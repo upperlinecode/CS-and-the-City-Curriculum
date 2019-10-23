@@ -48,9 +48,9 @@
 
 #### Unit 2-2 Functional Components
 * Lesson: [Functional Components](react/function-components.md)
-	* [Accompanying App: Petbook](https://github.com/upperlinecode/pet-book)
+	* [Accompanying App: Furbook Main Page](https://github.com/upperlinecode/furbook)
 * Lab: [Dollar Pizza](https://github.com/upperlinecode/dollar-pizza-react-final) (Build components on an existing template)
-* Lab: [Refactoring HTML into React](https://github.com/upperlinecode/html-to-react-refactor) (Convert HTML site to React site)
+* Lab: [Furbook Profile Page](https://github.com/upperlinecode/html-to-react-refactor) (Convert HTML site to React site)
 
 #### Unit 2-3 Iteration
 * Lesson [JavaScript Iteration](react/javascript-iteration.md)
