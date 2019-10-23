@@ -48,7 +48,7 @@
 
 #### Unit 2-2 Functional Components
 * Lesson: [Functional Components](react/function-components.md)
-	* [Accompanying App](https://github.com/upperlinecode/pet-book)
+	* [Accompanying App: Petbook](https://github.com/upperlinecode/pet-book)
 * Lab: [Dollar Pizza](https://github.com/upperlinecode/dollar-pizza-react-final) (Build components on an existing template)
 * Lab: [Refactoring HTML into React](https://github.com/upperlinecode/html-to-react-refactor) (Convert HTML site to React site)
 
