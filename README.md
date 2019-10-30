@@ -53,7 +53,7 @@
 * Lab: [Furbook Profile Page](https://github.com/upperlinecode/html-to-react-refactor) (Convert HTML site to React site)
 
 #### Unit 2-3 Iteration
-* Lesson [JavaScript Iteration](react/javascript-iteration.md)
+* Lesson: [JavaScript Iteration](react/javascript-iteration.md)
 * Lab: [Survey Says](https://github.com/upperlinecode/survey-says-iteration-lab)
 
 #### Unit 2-4 Props + JSX
