@@ -102,8 +102,8 @@ const App = () => {
       <div className="App">
         <Navbar/>
         <Splash/>
-        <Testimonials userTestimonial = { testimonial }/>
-        <div className = "container">
+        <Testimonials userTestimonial={testimonial} />
+        <div className="container">
           <div className="row">
 
           </div>
@@ -141,15 +141,15 @@ const App = () => {
       <div className="App">
         <Navbar/>
         <Splash/>
-        <Testimonials userTestimonial = { testimonial }/>
-        <div className = "container">
+        <Testimonials userTestimonial={testimonial} />
+        <div className="container">
           <div className="row">
             <ReviewCard
-              name={ reviews.review_array[0].name}
-              headline={ reviews.review_array[0].headline}
-              summary={ reviews.review_array[0].summary}
-              stars={ reviews.review_array[0].stars}
-              posted={ reviews.review_array[0].posted}
+              name={ reviews.review_array[0].name }
+              headline={ reviews.review_array[0].headline }
+              summary={ reviews.review_array[0].summary }
+              stars={ reviews.review_array[0].stars }
+              posted={ reviews.review_array[0].posted }
             />
           </div>
         </div>
