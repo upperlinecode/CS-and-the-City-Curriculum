@@ -145,11 +145,11 @@ const App = () => {
         <div className="container">
           <div className="row">
             <ReviewCard
-              name={ reviews.review_array[0].name }
-              headline={ reviews.review_array[0].headline }
-              summary={ reviews.review_array[0].summary }
-              stars={ reviews.review_array[0].stars }
-              posted={ reviews.review_array[0].posted }
+              name={ reviews[0].name }
+              headline={ reviews[0].headline }
+              summary={ reviews[0].summary }
+              stars={ reviews[0].stars }
+              posted={ reviews[0].posted }
             />
           </div>
         </div>
