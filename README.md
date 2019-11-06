@@ -85,6 +85,20 @@
 * Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
+> Below are three stand-along, yet interconnected extensions that can be approached in any order.
+
+#### Unit 2-A Victory
+* Lesson: [Visualizing Data with Victory](react/victory.md)
+* Lab: TBD - new repo even if revising an older lab
+
+#### Unit 2-B JSON & Firebase
+* Lesson: [JSON & Firebase](react/json-firebase.md)
+* Lab: TBD - new repo even if revising an older lab
+
+### Unit 2-C APIs
+* Lesson: [APIs](react/react-apis.md)
+* Lab: TBD - new repo even if revising an older lab
+
 ### Unit 3
 #### Data Science Mindsets
 ----------
