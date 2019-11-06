@@ -7,9 +7,9 @@
 ## Sequence
 
 1. [Launch](#launch)
-2. [APIs](#apis)
+2. [APIs Overview](#apis-overview)
 3. [Viewing Data](#viewing-data)
-4. [APIs + JavaScript](#apis-+-javascript)
+4. [APIs + JavaScript](#apis--javascript)
 5. [NYC Open Data APIs](#nyc-open-data-apis)
 6. [Close](#close)
 
@@ -17,7 +17,7 @@
 
 * click on this URL ...
 
-## APIs
+## APIs Overview
 
 - Request, response
 - ReST w/ examples (e.g. Google search)
