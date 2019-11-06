@@ -95,7 +95,7 @@
 * Lesson: [JSON & Firebase](react/json-firebase.md)
 * Lab: TBD - new repo even if revising an older lab
 
-### Unit 2-C APIs
+#### Unit 2-C APIs
 * Lesson: [APIs](react/react-apis.md)
 * Lab: TBD - new repo even if revising an older lab
 
