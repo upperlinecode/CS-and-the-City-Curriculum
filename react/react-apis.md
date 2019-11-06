@@ -28,15 +28,15 @@
 - A few examples to get raw data and to manipulate the request
 	- We love Jservice because it's an open API that allows us to spend a fair bit of time JUST messing with the endpoint. I think that fits the bill here as a simple example before ramping up to NYCOpenData
 	- fixer.io
-- For working with JSON data - see [JSON & Firebase](react/json-firebase.md) mini-unit
-- APIs can also write data - see [JSON & Firebase](react/json-firebase.md) mini-unit
+- For working with JSON data - see [JSON & Firebase](json-firebase.md) mini-unit
+- APIs can also write data - see [JSON & Firebase](json-firebase.md) mini-unit
 
 ## APIs + JavaScript
 
 - AJAX (vanilla JS & jQuery) (name only)
 - promises (name only)
 - async, await (focus here)
-- For visualizing API data - check out the [Victory](react/victory.md) mini-unit
+- For visualizing API data - check out the [Victory](victory.md) mini-unit
 
 ## NYC Open Data APIs
 

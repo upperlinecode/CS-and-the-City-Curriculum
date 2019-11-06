@@ -17,8 +17,7 @@
 
 ## Launch
 
-* You may want to launch by having students jump into the [finished example](https://three-button-state.herokuapp.com/) of the app that we can/will build as part of this lesson.
-* Have students clone the [template](https://github.com/upperlinecode/three-button-react-lab) to code along.
+* Open a JSON file in the browser...
 
 ## JSON Review
 
@@ -32,7 +31,7 @@
 - Point to Firebase documentation throughout
 > Don’t think it’s worth going into all that Firebase can do
 - Firebase + React
-	- Mention [Lifecycle Methods](react/passing-state-lifecycle-methods.md)
+	- Mention [Lifecycle Methods](passing-state-lifecycle-methods.md)
 
 ## Storing to Firebase
 
