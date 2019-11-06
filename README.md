@@ -85,7 +85,7 @@
 * Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
-> Below are three stand-along, yet interconnected extensions that can be approached in any order.
+> Below are three stand-alone, yet interconnected extensions that can be approached in any order.
 
 #### Unit 2-A Victory
 * Lesson: [Visualizing Data with Victory](react/victory.md)
