@@ -7,17 +7,47 @@
 ## Sequence
 
 1. [Launch](#launch)
-2. [JSON](#json)
-3. [](#)
-4. [](#)
-5. [Close](#close)
+2. [JSON Review](#json-review)
+3. [Firebase](#firebase)
+4. [Storing to Firebase](#storing-to-firebase)
+5. [Reading from Firebase](#reading-from-firebase)
+6. [Updating in Firebase](#updating-in-firebase)
+7. [Deleting from Firebase](#deleting-from-firebase)
+8. [Close](#close)
 
 ## Launch
 
 * You may want to launch by having students jump into the [finished example](https://three-button-state.herokuapp.com/) of the app that we can/will build as part of this lesson.
 * Have students clone the [template](https://github.com/upperlinecode/three-button-react-lab) to code along.
 
-## JSON & Firebase
+## JSON Review
+
+- Working with JSON: addressing, data types, etc.
+
+## Firebase
+
+- Review CRUD
+- Setting up Firebase: Realtime Database
+	- If you’ve done the API lesson, you can imagine this as setting up your own read/write API
+- Point to Firebase documentation throughout
+> Don’t think it’s worth going into all that Firebase can do
+- Firebase + React
+	- Mention [Lifecycle Methods](react/passing-state-lifecycle-methods.md)
+
+## Storing to Firebase
+
+Some text here
+
+## Reading from Firebase
+
+Some text here
+
+## Updating in Firebase
+
+- mirroring CRUD a bit, but although it is a combination in principle, it's a different function (as opposed to being a combination of reading then writing)
+- Jolson: To update a record, just combine Reading and Storing, with a step to modify it in between!
+
+## Deleting from Firebase
 
 Some text here
 
