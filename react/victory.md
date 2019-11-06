@@ -7,16 +7,16 @@
 ## Sequence
 
 1. [Launch](#launch)
-2. [Victory](#victory)
-3. [Visual Design for Visualization](#visual-design-for-visualization)
-4. [Other Visualizations](#other-visualizations)
+2. [Getting Started with Victory](#getting-started-with-victory)
+3. [Visual Design](#visual-design)
+4. [Other Charts](#other-charts)
 5. [Close](#close)
 
 ## Launch
 
 * Clone one of [Jastor's examples]()...
 
-## Victory
+## Getting Started with Victory
 
 - What is data visualization? Why visualize data? - go check out the lesson on [Data Visualization](./data/visualization.md)
 - Briefly mention other data visualization libraries, but we'll focus on:
@@ -31,7 +31,7 @@
 
 - If screenshots of the docs make sense, great.
 
-## Visual Design for Visualization
+## Visual Design
 
 > I'm realizing the more I think about this part, that it's VERY important to me that we model thinking through the visual design here.
 >
@@ -39,7 +39,7 @@
 >
 > Let's prioritize the visual design over the full power of Victory, because I'd rather students know how to make one beautiful data viz, rather than 6 unhelpful / unreadable ones.
 
-## Other Visualizations
+## Other Charts
 
 Some text here
 
