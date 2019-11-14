@@ -81,7 +81,7 @@
 * Lab: [Input Tiles Fidget App](https://github.com/upperlinecode/react-state-lab) (State in components, inline events)
 * Lab: [CodeBreakers](https://github.com/upperlinecode/keep-talking) (Other inline events)
 * Lesson: [State](react/passing-state-lifecycle-methods.md) (Lifecycle methods, passing state among elements)
-	* [Accompanying App: School Supplies](https://github.com/upperlinecode/react-pass-state)
+	* [Accompanying App: School Supplies](https://github.com/upperlinecode/school-supplies-react-lesson)
 * Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
