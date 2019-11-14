@@ -17,7 +17,7 @@
 
 ## Launch
 
-Let's all clone [this repository](https://github.com/upperlinecode/react-parent-child-lecture) and take a look at the code.
+Let's all look at [this repository](https://github.com/upperlinecode/react-parent-child-lecture)'s code. You're welcome to clone, install, and start the app, or you can simply reference the screenshot. 
 
 Based on what you know so far, how would you accomplish the following modifications to this digital yearbook mockup for Glenbrook North High School:
 
