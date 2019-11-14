@@ -67,7 +67,7 @@
 * Lesson: [Parent & Child Components](react/parent-child.md) (Breaking a page down into components, deciding what will be inside of what)
 	* [Accompanying App: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
 	* [Explanatory App: Music Library](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
-* Lab: [Componentization](https://github.com/upperlinecode/react-parent-child-lab) (Build components which are nested)
+* Lab: [Build-a-Blog](https://github.com/upperlinecode/build-a-blog-react-lab) (Componentize HTML into components which are nested)
 * Lab: [Prop Drilling](https://github.com/upperlinecode/react-prop-drilling) (Pass props down through nested components)
 
 #### Unit 2-6 Style Props & Inline Styling
