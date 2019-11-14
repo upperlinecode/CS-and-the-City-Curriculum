@@ -65,8 +65,8 @@
 
 #### Unit 2-5 Parent & Child Components
 * Lesson: [Parent & Child Components](react/parent-child.md) (Breaking a page down into components, deciding what will be inside of what)
-	* [Accompanying App: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
-	* [Explanatory App: Music Library](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
+	* [Example App: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
+	* [Accompanying App: Music Library](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
 * Lab: [Build-a-Blog](https://github.com/upperlinecode/build-a-blog-react-lab) (Componentize HTML into components which are nested)
 * Lab: [Atlas of Remote Islands](https://github.com/upperlinecode/atlas-of-remote-islands-lab) (Pass props down through nested components)
 
