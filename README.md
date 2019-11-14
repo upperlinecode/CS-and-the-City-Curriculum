@@ -68,7 +68,7 @@
 	* [Accompanying App: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
 	* [Explanatory App: Music Library](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
 * Lab: [Build-a-Blog](https://github.com/upperlinecode/build-a-blog-react-lab) (Componentize HTML into components which are nested)
-* Lab: [Prop Drilling](https://github.com/upperlinecode/react-prop-drilling) (Pass props down through nested components)
+* Lab: [Atlas of Remote Islands](https://github.com/upperlinecode/atlas-of-remote-islands-lab) (Pass props down through nested components)
 
 #### Unit 2-6 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/styling.md) (Time of day / open / closed conditional styling)
