@@ -72,7 +72,7 @@
 
 #### Unit 2-6 Style Props & Inline Styling
 * Lesson: [Style Props & Inline Styling](react/styling.md) (Time of day / open / closed conditional styling)
-	* [Accompanying App: SportScores](https://github.com/upperlinecode/inline-and-conditional-style-lecture)
+	* [Accompanying App: SportScores](https://github.com/upperlinecode/sports-scores)
 * Lab: [Crazy Clocks](https://github.com/upperlinecode/crazy-clocks)
 
 #### Unit 2-7 State
