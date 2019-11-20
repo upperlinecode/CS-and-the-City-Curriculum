@@ -20,6 +20,9 @@ What do you do when you want to include data visualizations in your React applic
 
 Explore their [home page](https://formidable.com/open-source/victory/) and see what you think.
 
+![Victory Example 1](./img/victory-example-1.png)
+![Victory Example 2](./img/victory-example-2.png)
+
 Now clone [this repository](https://github.com/upperlinecode/nyc_open_data_water_project), `cd` into the `nyc_open_data_water_project` folder, run `npm install` and `npm start`, and then preview the running application. Explore the code and see if you can determine how Victory was used to visualize the data in that app.
 
 - How many data visualization components are there?
@@ -136,26 +139,32 @@ Luckily, Victory comes with several built-in color palettes that make our lives 
 > The colorScale prop is an optional prop that defines a color scale to be applied to the children of the component. This prop should be given as an array of CSS colors, or as a string corresponding to one of the built in color scales: "grayscale", "qualitative", "heatmap", "warm", "cool", "red", "green", "blue".
 
 | ![Warm Colors](./img/victory-warm.png) | ![Cool Colors](./img/victory-cool.png) | ![Qualitative Colors](./img/victory-qualitative.png) | ![Grayscale Colors](./img/victory-grayscale.png) |
-|---|---|---|---|
+|:---:|:---:|:---:|:---:|
 | "warm" | "cool" | "qualitative" | "grayscale" |
 
 Ask any designer, and they'll tell you that color is a critical player in visual communication because color brings with it meaning based in societal contexts. Color theory is a whole field of study on its own, and although we can't say everything about it here, it's worth mentioning a few key ideas.
 
-1. In the West, red things tend to be hot or negative; blue things tend to be cold; green things tend to be positive.
+1. In the West, red things tend to be hot or have a negative connotation; blue things tend to be cold; green things tend to have a positive connotation.
 2. Less dense (or lighter) colors are used to represent lower concentrations, while dense (or dark) colors are used to represent high concentrations.
 3. Humans are notoriously bad at deciphering data encoded as variations in color, so it's best to use color as a signifier, but not a source of comparison (i.e. "Which is bluer?" is a tough question for us to answer).
 4. Some people are color-blind, so make sure to choose colors that are different in color, tint, and shade and don't rely on color differences to get your point across.
 
 When choosing colors and color palettes, you want to think about the message you're trying to communicate with the data. When not used properly, color can confuse a data visualization more than it can help it. The best way to avoid this confusion is to show the visualization to someone else and see whether they understand the meaning of the colors. If not, you may want to change them.
 
-### Building a Beautiful Visualization: Fonts
+### Building a Beautiful Visualization: Text & Fonts
 
-In addition to
+In addition to color, one of the biggest areas in which a visualization can be improved is by the addition of text. However, sometimes text can also overwhelm a visualization if there are too many labels, labels that are too long, or labels that take up too much space or attention in the visualization.
+
+Victory has some built-in default parameters for styling of labels (axis labels and data labels), but sometimes you need to tweak those defaults. To do so, you can edit [Victory's default theme](https://formidable.com/open-source/victory/guides/themes) or [build your own theme](https://formidable.com/open-source/victory/docs/victory-theme).
+
+Explore the [Live Code](https://formidable.com/open-source/victory/guides/themes) in Victory's documentation to see how you could implement a theme that works well for the visualizations you make.
 
 ## Close
 
-Some text here
+Although we jumped into using Victory for data visualization with React, it's worth noting that it's sometimes easier to ideate a data visualization with pencil and paper before ever touching a line of code. This way you can ensure that the time you spend corraling data leads to a worthwhile end.
 
-#### Questions for students
+Using a library like Victory makes it very easy to quickly spin up data visualizations. Equally important, the ability to source data - including live or real-time data - and visualize it can be a critical factor when relying on data and data visualizations to make good decisions.
 
-- Some text here
+#### Questions for Students
+
+- Think about the 
