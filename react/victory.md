@@ -69,7 +69,9 @@ The Getting Started Guide also shows a Step 9 which overrides the default theme 
 
 ## More Victory Examples
 
-In addition to the stacked bar graph component you just saw, there are examples of another 20+ visualizations you could implement in Victory. Check them out in Victory's [Visualization Gallery](https://formidable.com/open-source/victory/gallery/).
+In addition to the stacked bar graph component you just saw, there are examples of another 20+ visualizations you could implement in Victory's [Visualization Gallery](https://formidable.com/open-source/victory/gallery/).
+
+> These examples are constructed from the 14 Victory components (as per the Victory Documentation section "Charts"), several containers, and various effects. Each item is documented in case you'd like to use that type of graph.
 
 ![Victory Gallery](./img/victory-gallery.png)
 
@@ -79,7 +81,7 @@ Click into one of the visualizations and explore the code that's used to produce
 
 > The `y` and `y0` values define a range at a value for `x` which is then displayed on the Streamgraph. `y` corresponds to the max value, and `y0` corresponds to the min value.
 
-Although the example uses the function `getStreamData()` below to generate random values, data could also come from some other source, e.g. a spreadsheet.
+Although the example uses the function `getStreamData()` below to generate random values, data could also come from some other source, e.g. a spreadsheet or an API.
 
 ```javascript
 getStreamData() {
@@ -127,11 +129,28 @@ Now you're ready to get creative thinking about how different visualizations can
 
 ## Visual Design
 
-> I'm realizing the more I think about this part, that it's VERY important to me that we model thinking through the visual design here.
->
-> So like, it'd be easy to gloss over things like colors and font sizes in favor of showing every bell and whistle Victory has to offer.
->
-> Let's prioritize the visual design over the full power of Victory, because I'd rather students know how to make one beautiful data viz, rather than 6 unhelpful / unreadable ones.
+### Building a Beautiful Visualization: Color
+
+Luckily, Victory comes with several built-in color palettes that make our lives a lot easier when we're trying to choose colors for our visualizations. Buried [deep in the documentation](https://formidable.com/open-source/victory/docs/victory-stack#colorscale) is a description of how to use the `colorScale` prop to quickly colorize a component like a `<VictoryStack/>`, `<VictoryPie/>`, or `<VictoryGroup/>`:
+
+> The colorScale prop is an optional prop that defines a color scale to be applied to the children of the component. This prop should be given as an array of CSS colors, or as a string corresponding to one of the built in color scales: "grayscale", "qualitative", "heatmap", "warm", "cool", "red", "green", "blue".
+
+|[Warm Colors](./img/victory-warm.png)|[Cool Colors](./img/victory-cool.png)|[Qualitative Colors](./img/victory-qualitative.png)|[Grayscale Colors](./img/victory-grayscale.png)|
+|---|---|---|---|
+| "warm" | "cool" | "qualitative" | "grayscale" |
+
+Ask any designer, and they'll tell you that color is a critical player in visual communication because color brings with it meaning based in societal contexts. Color theory is a whole field of study on its own, and although we can't say everything about it here, it's worth mentioning a few key ideas.
+
+1. In the West, red things tend to be hot or negative; blue things tend to be cold; green things tend to be positive.
+2. Less dense (or lighter) colors are used to represent lower concentrations, while dense (or dark) colors are used to represent high concentrations.
+3. Humans are notoriously bad at deciphering data encoded as variations in color, so it's best to use color as a signifier, but not a source of comparison (i.e. "Which is bluer?" is a tough question for us to answer).
+4. Some people are color-blind, so make sure to choose colors that are different in color, tint, and shade and don't rely on color differences to get your point across.
+
+When choosing colors and color palettes, you want to think about the message you're trying to communicate with the data. When not used properly, color can confuse a data visualization more than it can help it. The best way to avoid this confusion is to show the visualization to someone else and see whether they understand the meaning of the colors. If not, you may want to change them.
+
+### Building a Beautiful Visualization: Fonts
+
+In addition to
 
 ## Close
 
