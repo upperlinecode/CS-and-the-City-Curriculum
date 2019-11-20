@@ -135,9 +135,9 @@ Luckily, Victory comes with several built-in color palettes that make our lives 
 
 > The colorScale prop is an optional prop that defines a color scale to be applied to the children of the component. This prop should be given as an array of CSS colors, or as a string corresponding to one of the built in color scales: "grayscale", "qualitative", "heatmap", "warm", "cool", "red", "green", "blue".
 
-| "warm" | "cool" | "qualitative" | "grayscale" |
+| ![Warm Colors](./img/victory-warm.png) | ![Cool Colors](./img/victory-cool.png) | ![Qualitative Colors](./img/victory-qualitative.png) | ![Grayscale Colors](./img/victory-grayscale.png) |
 |---|---|---|---|
-| [Warm Colors](./img/victory-warm.png) | [Cool Colors](./img/victory-cool.png) | [Qualitative Colors](./img/victory-qualitative.png) | [Grayscale Colors](./img/victory-grayscale.png) |
+| "warm" | "cool" | "qualitative" | "grayscale" |
 
 Ask any designer, and they'll tell you that color is a critical player in visual communication because color brings with it meaning based in societal contexts. Color theory is a whole field of study on its own, and although we can't say everything about it here, it's worth mentioning a few key ideas.
 
