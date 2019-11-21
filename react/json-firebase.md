@@ -219,6 +219,87 @@ Unfortunately, Firestore doesn't enable a direct upload of a JSON file, but if y
 
 ### Option B: Collect Data from a React Form
 
+Instead of [uploading data directly to Firestore](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57), it's best to think of Firestore as a place to store user data, user interactions, or user feedback. For example, Firestore is great at storing a user's account information, what a user has liked, or what a user had to say about something.
+
+> - Still need to flesh this out if we're going to go with Firestore
+
+> - This is for a simple form input, but may change this to capture other CRUD stuff, too?
+
+#### `User.js`
+
+```javascript
+import React from 'react';
+import firebase from "./Firestore";
+
+const User = () => {
+  const component = new React.Component();
+  component.state = {
+  	email: "",
+  	fullname: ""
+  }
+
+  component.updateInput = e => {
+    component.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
+  component.addUser = e => {
+    e.preventDefault();
+    const db = firebase.firestore();
+    db.settings({
+      timestampsInSnapshots: true
+    });
+    const userRef = db.collection("test").add({
+      fullname: component.state.fullname,
+      email: component.state.email
+    });  
+    component.setState({
+      fullname: "",
+      email: ""
+    });
+  };
+  
+  component.render = () => {
+    return (
+      <form onSubmit={component.addUser}>
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Full name"
+          onChange={component.updateInput}
+          value={component.state.fullname}
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          onChange={component.updateInput}
+          value={component.state.email}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    )
+  }
+
+  return component;
+}
+   
+export default User;
+```
+
+#### `App.js`
+
+```javascript
+// Add import
+import User from './components/User'
+
+...
+
+// Add User component to your app
+<User />
+```
+
 ## Reading from Firestore
 
 Some text here
