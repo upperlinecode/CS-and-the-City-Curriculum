@@ -90,7 +90,7 @@
 ----------
 #### Unit 3-1 Data in Argument & Decision-Making
 * Lesson: [Data in Argument & Decision-Making](data/argument-decision-making.md)
-* Lab: [Spin](data/spin.md)
+* Lab: [Spin: Library Dataset Lab](data/library-dataset-lab.md)
 
 #### Unit 3-2 Bias
 * Lesson: [Bias](data/bias.md)
