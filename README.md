@@ -92,11 +92,11 @@
 * Lab: TBD - new repo even if revising an older lab
 
 #### Unit 2-B JSON & Firebase
-* Lesson: [JSON & Firebase](react/json-firebase.md)
+* Lesson: [Storing Data with JSON & Firebase](react/json-firebase.md)
 * Lab: TBD - new repo even if revising an older lab
 
 #### Unit 2-C APIs
-* Lesson: [APIs](react/react-apis.md)
+* Lesson: [Getting Data into Your App](react/react-apis.md)
 * Lab: TBD - new repo even if revising an older lab
 
 ### Unit 3

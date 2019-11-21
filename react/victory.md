@@ -1,4 +1,4 @@
-# Victory
+# Visualizing Data with Victory
 
 ## Learning Objectives
 
