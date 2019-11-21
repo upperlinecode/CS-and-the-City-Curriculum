@@ -225,6 +225,8 @@ Instead of [uploading data directly to Firestore](https://levelup.gitconnected.c
 
 > - This is for a simple form input, but may change this to capture other CRUD stuff, too?
 
+> - Or should this be a simple input like a button click so the `write` doesn't get lost in the rest of the React stuff?
+
 #### `User.js`
 
 ```javascript
