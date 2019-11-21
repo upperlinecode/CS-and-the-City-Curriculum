@@ -1,4 +1,4 @@
-# Spin: Lab
+# Spin: Library Dataset Lab
 
 > NOTE: This lab, unlike the React.js labs, does not have a file for your results or responses. Your teacher will specify whether/how to submit your work on this lab.
 
