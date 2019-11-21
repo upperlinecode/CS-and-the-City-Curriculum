@@ -60,15 +60,15 @@ const data = [
   {quarter: 4, earnings: 19000}
 ];
 ```
-4. (Guide Step 4a) Import the `VictoryBar` component from the Victory library, and use it (`<VictoryBar/>`) in your project. But wait, it doesn't refer to the data yet...
-5. (Guide Step 4b) Add accessor props to the `<VictoryBar/>` component, including for `data`, `x`, and `y` values.
-6. (Guide Step 5) Wrap the `<VictoryBar/>` component with a `<VictoryChart/>` component to provide axes, and don't forget to import `VictoryChart`, too.
-7. (Guide Step 6) Import and add the `<VictoryAxis/>` component (x 2!), and set props to add `tickValues` and `tickFormatting`. Notice how you can also add `domainPadding` to the `<VictoryChart/>` component to better arrange the y-axis.
+4. (Guide Step 4a) Import the `VictoryBar` component from the Victory library, and use it (`<VictoryBar />`) in your project. But wait, it doesn't refer to the data yet...
+5. (Guide Step 4b) Add accessor props to the `<VictoryBar />` component, including for `data`, `x`, and `y` values.
+6. (Guide Step 5) Wrap the `<VictoryBar />` component with a `<VictoryChart />` component to provide axes, and don't forget to import `VictoryChart`, too.
+7. (Guide Step 6) Import and add the `<VictoryAxis />` component (x 2!), and set props to add `tickValues` and `tickFormatting`. Notice how you can also add `domainPadding` to the `<VictoryChart />` component to better arrange the y-axis.
 	- How does Victory make a distinction between the x-axis and the y-axis?
-8. (Guide Step 7) Import and add the `<VictoryTheme/>` component, and add a `theme` prop to the `<VictoryChart/>` component.
-9. (Guide Step 8) Import and add the `<VictoryStack/>` component, and update your component according to the Getting Started Guide to build the stacked bar chart shown above.
+8. (Guide Step 7) Import and add the `<VictoryTheme />` component, and add a `theme` prop to the `<VictoryChart />` component.
+9. (Guide Step 8) Import and add the `<VictoryStack />` component, and update your component according to the Getting Started Guide to build the stacked bar chart shown above.
 
-The Getting Started Guide also shows a Step 9 which overrides the default theme colors using a `colorScale` prop on the `<VictoryStack/>` component; we'll return to this later when we discuss visual design.
+The Getting Started Guide also shows a Step 9 which overrides the default theme colors using a `colorScale` prop on the `<VictoryStack />` component; we'll return to this later when we discuss visual design.
 
 ## More Victory Examples
 
@@ -78,7 +78,7 @@ In addition to the stacked bar graph component you just saw, there are examples 
 
 ![Victory Gallery](./img/victory-gallery.png)
 
-Click into one of the visualizations and explore the code that's used to produce it. Most importantly, look at the data and the structure of the data that is ingested. For instance, the Streamgraph visualization below is made up of multiple `<VictoryArea/>` components, each of which is built from a series of points with an `x`, `y`, and `y0` value.
+Click into one of the visualizations and explore the code that's used to produce it. Most importantly, look at the data and the structure of the data that is ingested. For instance, the Streamgraph visualization below is made up of multiple `<VictoryArea />` components, each of which is built from a series of points with an `x`, `y`, and `y0` value.
 
 ![Streamgraph](./img/victory-2.png)
 
@@ -134,7 +134,7 @@ Now you're ready to get creative thinking about how different visualizations can
 
 ### Building a Beautiful Visualization: Color
 
-Luckily, Victory comes with several built-in color palettes that make our lives a lot easier when we're trying to choose colors for our visualizations. Buried [deep in the documentation](https://formidable.com/open-source/victory/docs/victory-stack#colorscale) is a description of how to use the `colorScale` prop to quickly colorize a component like a `<VictoryStack/>`, `<VictoryPie/>`, or `<VictoryGroup/>`:
+Luckily, Victory comes with several built-in color palettes that make our lives a lot easier when we're trying to choose colors for our visualizations. Buried [deep in the documentation](https://formidable.com/open-source/victory/docs/victory-stack#colorscale) is a description of how to use the `colorScale` prop to quickly colorize a component like a `<VictoryStack />`, `<VictoryPie />`, or `<VictoryGroup />`:
 
 > The colorScale prop is an optional prop that defines a color scale to be applied to the children of the component. This prop should be given as an array of CSS colors, or as a string corresponding to one of the built in color scales: "grayscale", "qualitative", "heatmap", "warm", "cool", "red", "green", "blue".
 
