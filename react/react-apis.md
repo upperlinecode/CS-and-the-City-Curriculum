@@ -75,11 +75,11 @@ Now click on the URL. What happens if you change part of the URL from `red+lobst
 Most API requests are built from three parts:
 
 1. An Endpoint: an endpoint is the stem of the request URL. For the example above, the endpoint is `https://www.google.com/search`.
-> For the first example we saw, the endpoint is `http://jservice.io/api/random`.
+	> For the first example we saw, the endpoint is `http://jservice.io/api/random`.
 2. Parameters: parameters are the variables that are passed to the database as part of the request and follow the `?`. For the example above, there is one parameter, `q`.
-> For the first example we saw, the parameter was `count`.
+	> For the first example we saw, the parameter was `count`.
 3. Values: values are paired with variables and are the data that is passed to the database in the request. For the example above, the value `red+lobster` is paired with the parameter `q`.
-> For the first example we saw, the value was `1`.
+	> For the first example we saw, the value was `1`.
 
 Not all API requests will return the data for a webpage like Google search results; some APIs like jservice.io just return raw data.
 	
@@ -96,7 +96,7 @@ Before jumping into React, however, we need to strategize a bit about how we wan
 
 When we make a request to an API, sometimes it takes a bit of time for the API to respond. So if we wait to fully load a webpage until the API responds, we might be making our user wait a long time before the page loads, if it even loads at all. In the worst case scenario, if we wait to load a page until an API responds and the API never responds, then the page will never load and the user will have a terrible experience; we can't rely on the success of a call to the API in order to load the page.
 
-To overcome this problem, we need to use a way of calling the API where the call is done as soon as a page loads, and then the response (or lack thereof) can trigger a secondary event such as rendering the data. This pattern of requesting data in parallel to the normal loading order of the page is done using a "promise" pattern called `async` (for asynchronous). Then, the code will `await` a response from the API, and depending on the response - usually either a `success` or an `error` - will do something. `async` and `await` are useful because they won't block the rest of the page from continuing to load even though data hasn't been received yet.
+To overcome this problem, we need to use a way of calling the API where the call is done as soon as a page loads, and then the response (or lack thereof) can trigger a secondary event such as rendering the data. This pattern of requesting data in parallel to the normal loading order of the page is done using a "promise" pattern called `async` (for asynchronous). Then, the code will `await` a response from the API, and depending on the response - usually either `success` or an `error` - will do something. `async` and `await` are useful because they won't block the rest of the page from continuing to load even though data hasn't been received yet.
 
 ### Using `async` & `await`
 
@@ -117,8 +117,8 @@ There's a lot to be said about using `async` and `await` properly, and there's a
 ```
 - the `async` keyword is placed before the function to define it as an asynchronous function and to indicate that it will return a promise
 - `try ... catch` is used to handle any errors that might result from an unsuccessful API request
-- `await` makes JavaScript wait until the function has returned a result
-- `await` only works within an `async` function
+- `await` makes JavaScript wait until the `fetch()` request has returned a result
+> Note: `await` only works within an `async` function
 
 So the anonymous function will wait for `https://someAPIcall` to return a result. If it does return a result, then it will store that as the `response` variable and then do something with it. If the request throws an error, then the function will do what's the in the `catch` code block, in this case showing an `alert()` with the error.
 
@@ -137,19 +137,19 @@ import React from 'react';
 const Item = () => {
   const component = new React.Component();
   component.state = {
-  	// define state variables here
+    // define state variables here
   }
 
   async component.componentDidMount = () => {
     try {
-	  let response = await fetch('https://someAPIcall');
-	  // other await statements could go here
+      let response = await fetch('https://someAPIcall');
+      // other await statements could go here
 
-	  // other code to execute once response is defined
-	} catch(err) {
-	  // catches errors in any of the await statements in try {}
-	  alert(err);
-	}
+      // other code to execute once response is defined
+    } catch(err) {
+      // catches errors in any of the await statements in try {}
+      alert(err);
+    }
   }
   
   component.render = () => {
@@ -163,7 +163,7 @@ const Item = () => {
    
 export default Item;
 ```
-- You can use `setState` within the `componentDidMount` method to update any state variables
+> Note: you can use `setState` within the `componentDidMount` method to update any state variables
 
 ## NYC Open Data APIs
 
