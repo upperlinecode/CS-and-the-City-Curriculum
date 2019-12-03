@@ -169,6 +169,8 @@ export default Item;
 ```
 > Note: you can use `setState` within the `componentDidMount` method to update any state variables
 
+> JOLSON: I STILL NEED TO CHECK AND SEE IF ASYNC WORKS WITH THE FUNCTIONAL COMPONENT FORM OF LIFECYCLE EVENTS
+
 - More on [Using `async await` in React](https://www.valentinog.com/blog/await-react/), including troubleshooting
 
 ## NYC Open Data APIs
