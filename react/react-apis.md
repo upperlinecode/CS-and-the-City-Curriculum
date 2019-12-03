@@ -169,6 +169,8 @@ export default Item;
 ```
 > Note: you can use `setState` within the `componentDidMount` method to update any state variables
 
+- More on [Using `async await` in React](https://www.valentinog.com/blog/await-react/), including troubleshooting
+
 ## NYC Open Data APIs
 
 ![NYC Open Data Portal](./img/nyc-open-data.png)
