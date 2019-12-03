@@ -51,6 +51,8 @@ The [jservice.io](http://jservice.io/) site is a place where you can go to acces
 }]
 ```
 
+> Note: the data above is an array containing a single object. This will become important later when we use data in React.
+
 - What if you wanted 20 questions instead of just 1? How would you change the URL to get more results?
 
 ## APIs Overview
@@ -80,6 +82,8 @@ Most API requests are built from three parts:
 	> For the first example we saw, the parameter was `count`.
 3. Values: values are paired with variables and are the data that is passed to the database in the request. For the example above, the value `red+lobster` is paired with the parameter `q`.
 	> For the first example we saw, the value was `1`.
+
+> Note: when there are multiple parameters and variables passed to an API, the parameter/variable pairs are separated by an `&` symbol.
 
 Not all API requests will return the data for a webpage like Google search results; some APIs like jservice.io just return raw data.
 	
@@ -226,28 +230,99 @@ Try using _your_ App Token with the endpoint above to get the raw data.
 
 > Note: I've altered the App Token above so you will receive a permissions error if you try to use the token shown. You will know your App Token works because you will get data back from the URL.
 
+### Filtering Data from Socrata
 
+Socrata includes a simple way to [filter data](https://dev.socrata.com/docs/filtering.html) in API requests: by using column names as parameters.
 
+The NYC Film Permit data has 14 columns, one of which indicates the `borough` in which filming will take place:
 
+```javascript
+// 14 fields for each entry in dataset
+"eventid"
+"eventtype"
+"startdatetime"
+"enddatetime"
+"enteredon"
+"eventagency"
+"parkingheld"
+"borough"
+"communityboard_s"
+"policeprecinct_s"
+"category"
+"subcategoryname"
+"country"
+"zipcode_s"
+```
 
+To use the `borough` parameter to filter to only the permits granted in Manhattan, we can append `&borough=Manhattan` at the end of our request URL (which already includes our App Token):
 
+```javascript
+https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan
+```
 
+Try using _your_ App Token with this endpoint and parameter/variable to get filtered raw data.
 
-- Documentation
-- Peculiarities, difficulties, troubleshooting
+#### More Complex Filtering
 
-> This is both the hardest part of the task I've set before you, Jeffrey, and also the most important.
-> 
-> If the WHOLE lesson can be focused mostly around this, with an aside to "btw, giphy's api is much easier", that feels right to me.
-> 
-> If that's not possible, let me know and we can brainstorm scaffolding.
+What if you wanted to get all of the Film Permits _except_ for the ones in Manhattan?
 
-- For visualizing API data - check out the [Victory](victory.md) mini-unit
+Socrata has more complex filtering capabilities using [SoQL clauses](https://dev.socrata.com/docs/queries/). We might construct the query above using the `$where` parameter, but in this case the variable is an inequality that indicates how to filter the data, e.g. `$where=(borough!="Manhattan").
+
+```javascript
+https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&$where=(borough!=%22Manhattan%22)
+```
+
+> Note: the parentheses are not necessary, however they're included for readibility.
+> Note: `%22` is the HTML character code for `"`.
+
+### Getting NYC Open Data into React
+
+Pulling together our React component and our NYC Open Data (Socrata) API request, we end up with a React component that's requesting data from Socrata:
+
+```javascript
+import React from 'react';
+// any other import statements
+
+const Item = () => {
+  const component = new React.Component();
+  component.state = {
+    // define state variables here
+  }
+
+  async component.componentDidMount = () => {
+    try {
+      let response = await fetch('https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan');
+      // other await statements could go here
+
+      // other code to execute once response is defined
+    } catch(err) {
+      // catches errors in any of the await statements in try {}
+      alert(err);
+    }
+  }
+  
+  component.render = () => {
+    return (
+      // render component HTML here
+    )
+  }
+
+  return component;
+}
+   
+export default Item;
+```
+
+At this point, it's worth re-recognizing that the API's response, the variable `response` above, is an array of objects. We know how to use `.map()` and other JavaScript functions on an array of objects to manipulate and return HTML in a React component! Yay!
+
+### Visualizing API Data
+
+If you've completed the [Victory](victory.md) mini-unit, you can also consider how you might visualize data returned from an API.
 
 ## Close
 
-Some text here
+Successfully using APIs to get data is all about knowing the data you need, finding a source for that data, and being able to access it via a URL.
 
-#### Questions for students
+In order to implement APIs in React, we've also covered two more-technical strategies: leveraging the `componentDidMount` method in React and using `async await` and `try ... catch` to asynchronously request data while handling errors that may result.
 
-- Some text here
+At this point, we encourage you to explore the NYC Open Data Portal for data that you find interesting and would like use in a creative and meaningful way.
