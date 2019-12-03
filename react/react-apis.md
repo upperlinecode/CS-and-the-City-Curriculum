@@ -313,11 +313,11 @@ const Item = () => {
 export default Item;
 ```
 
-At this point, it's worth re-recognizing that the API's response, the variable `response` above, is an array of objects. We know how to use `.map()` and other JavaScript functions on an array of objects to manipulate and return HTML in a React component! Yay!
+At this point, it's worth re-recognizing that the API's response, the variable `response` above, is an array of objects. We already know how to use `.map()` and other JavaScript functions on an array of objects to manipulate and return HTML in a React component! Yay!
 
 ### Visualizing API Data
 
-If you've completed the [Victory](victory.md) mini-unit, you can also consider how you might visualize data returned from an API.
+If you've completed the [Victory](victory.md) mini-unit, you can also consider how you might visualize or graph data returned from an API.
 
 ## Close
 
@@ -325,4 +325,4 @@ Successfully using APIs to get data is all about knowing the data you need, find
 
 In order to implement APIs in React, we've also covered two more-technical strategies: leveraging the `componentDidMount` method in React and using `async await` and `try ... catch` to asynchronously request data while handling errors that may result.
 
-At this point, we encourage you to explore the NYC Open Data Portal for data that you find interesting and would like use in a creative and meaningful way.
+At this point, we encourage you to explore the [NYC Open Data Portal](https://opendata.cityofnewyork.us/) for data that you find interesting and would like use in a creative and meaningful way.
