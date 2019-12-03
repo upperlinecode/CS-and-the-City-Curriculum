@@ -195,16 +195,24 @@ To get to the API version of the dataset: from the information page, we can clic
 
 ![NYC Open Data Film Permits](./img/nyc-open-data-film-4.png)
 
+### Getting an App Token
+
 Although it may seem like we're good to go now that we know the endpoint for the dataset (the JSON file linked above), Socrata puts a limit on how many times we can access that data without an Application Token. That means we need to [register an Application Token](https://dev.socrata.com/register) (and also create an Account on Socrata):
 
 1. Sign up for a Socrata Account here: [opendata.socrata.com/signup](https://opendata.socrata.com/signup)
-![Socrata](./img/socrata-1.png)
+
 2. If you're not directed to the Developer Settings, from the bottom of your profile page, tap the "Manage" link in the top-right corner of your "Applications" list.
+![Socrata](./img/socrata-1.png)
+
+3. Tap the "Create New App Token" button, fill in the required information about the app/dataset you're using, and then tap "Save".
 ![Socrata](./img/socrata-2.png)
-3. Tap the "Create New App Token" button, fill in the required information about the app/dataset you're using, and then tap "Save". You'll see your new App Token in the list below the button:
+
+4. You'll see your new App Token in the list below the button:
 ![Socrata](./img/socrata-3.png)
 
 > Note: you get a public and a private App Token - keep the secret token secure and don't share it with others (or in a github repository). Although we won't be using it here, there are other APIs for which you may need to use the secret token to access data.
+
+### Using Our App Token
 
 Now that we have an App Token, we can start to make requests of the API!
 
