@@ -167,6 +167,64 @@ export default Item;
 
 ## NYC Open Data APIs
 
+![NYC Open Data Portal](./img/nyc-open-data.png)
+
+New York City provides free access to numerous data resources on the [NYC Open Data](https://opendata.cityofnewyork.us/) website. There you can [search for datasets](https://opendata.cityofnewyork.us/data/) of city-related data, including 311 calls, restaurant inspection results, geographic datasets, and much much more.
+
+> Because NYC Open Data is coming from a variety of city departments, there's some variability in the quality, utility, and completeness of the data.
+
+The best way to learn how to use the data at NYC Open Data is to dive in, find the API developer documentation, and begin to get some data.
+
+Let's say we're interested in NYC Film Permits, and we find the dataset below:
+
+![NYC Open Data Film Permits](./img/nyc-open-data-film-1.png)
+
+Clicking on the title leads to a page with more information about the dataset.
+
+There we can see how many rows are in the dataset (62.6K), how many columns it has (14), how often it's updated (daily), how many people have downloaded it (over 8,100), etc.
+
+![NYC Open Data Film Permits](./img/nyc-open-data-film-2.png)
+
+At this point, if we weren't sure whether this dataset is useful to us, we could click on the "View Data" button where we can begin to get a sense of what data is in the Film Permits dataset. There, you can view the data in a big table (like in Excel or Google Sheets) or one record at a time:
+
+![NYC Open Data Film Permits](./img/nyc-open-data-film-3.png)
+
+The dataset has over 62,600 records, and that many records is too cumbersome to load into our app directly! We'll need to use an API.
+
+To get to the API version of the dataset: from the information page, we can click on the "API" button (a few over from the "View Data" button). That will show a modal window with information about the Socrata Open Data API (SODA), including links to the [API documentation](https://dev.socrata.com/foundry/data.cityofnewyork.us/tg4x-b46p), the [Socrata portal homepage](https://dev.socrata.com/), and the raw API data, e.g. [https://data.cityofnewyork.us/resource/tg4x-b46p.json](https://data.cityofnewyork.us/resource/tg4x-b46p.json).
+
+![NYC Open Data Film Permits](./img/nyc-open-data-film-4.png)
+
+Although it may seem like we're good to go now that we know the endpoint for the dataset (the JSON file linked above), Socrata puts a limit on how many times we can access that data without an Application Token. That means we need to [register an Application Token](https://dev.socrata.com/register) (and also create an Account on Socrata):
+
+1. Sign up for a Socrata Account here: [opendata.socrata.com/signup](https://opendata.socrata.com/signup)
+![Socrata](./img/socrata-1.png)
+2. If you're not directed to the Developer Settings, from the bottom of your profile page, tap the "Manage" link in the top-right corner of your "Applications" list.
+![Socrata](./img/socrata-2.png)
+3. Tap the "Create New App Token" button, fill in the required information about the app/dataset you're using, and then tap "Save". You'll see your new App Token in the list below the button:
+![Socrata](./img/socrata-3.png)
+
+> Note: you get a public and a private App Token - keep the secret token secure and don't share it with others (or in a github repository). Although we won't be using it here, there are other APIs for which you may need to use the secret token to access data.
+
+Now that we have an App Token, we can start to make requests of the API!
+
+According to the [Socrata documentation](https://dev.socrata.com/docs/app-tokens.html), we can append the variable `$$app_token` to the endpoint along with our App Token in order to make the request:
+
+```javascript
+https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ
+```
+
+Try using _your_ App Token with the endpoint above to get the raw data.
+
+> Note: I've altered the App Token above so you will receive a permissions error if you try to use the token shown. You will know your App Token works because you will get data back from the URL.
+
+
+
+
+
+
+
+
 - Documentation
 - Peculiarities, difficulties, troubleshooting
 
