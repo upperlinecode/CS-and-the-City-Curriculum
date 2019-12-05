@@ -2,7 +2,12 @@
 
 ## Learning Objectives
 
-- SWBAT 
+- SWBAT set up a Firebase account
+- SWBAT initialize a Firestore database
+- SWBAT write data to Firestore
+- SWBAT read data from Firestore
+- SWBAT update data in Firestore
+- SWBAT use Firestore as part of a React component
 
 ## Sequence
 
