@@ -239,11 +239,14 @@ Now that we have a database with a collection and we've integrated our Firebase 
 
 ## Storing to Firestore
 
-### Option A: Direct Upload
+### Direct Upload
 
-Unfortunately, Firestore doesn't enable a direct upload of a JSON file, but if you're looking to do this there are some [straight-forward write-ups](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57) out there about how to do this.
+Unfortunately, Firestore doesn't enable a direct upload of a JSON file, but if you're looking to do this there are some [straight-forward write-ups](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57) out there about how to do this in Firestore.
 
-@JOLSON: Should we make a simple tool/interface to do this? e.g. put in your credentials and point to a file and it'll do the upload?
+There are alternatives, however, including:
+1. use a different Firebase product, the Real-time Database,
+2. include static data locally in your app, or
+3. use an API - see the [API mini-unit](react-apis.md) for more on this.
 
 ### Option B: Collect Data from a React Form
 
