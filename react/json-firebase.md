@@ -10,12 +10,13 @@
 2. [JSON Review](#json-review)
 3. [Firebase's Firestore](#firebase's-firestore)
 4. [Setting Up Firestore](#storing-to-firestore)
-4. [Storing to Firestore](#storing-to-firestore)
-5. [Reading from Firestore](#reading-from-firestore)
-6. [Updating in Firestore](#updating-in-firestore)
-7. [Deleting from Firestore](#deleting-from-firestore)
-8. [Firestore in React](#firestore-in-react)
-9. [Close](#close)
+5. [Using Firestore](#using-firestore)
+   1. [Writing/Adding Data to Firestore](#writingadding-data-to-firestore)
+   2. [Reading from Firestore](#reading-from-firestore)
+   3. [Updating in Firestore](#updating-in-firestore)
+   4. [Deleting from Firestore](#deleting-from-firestore)
+6. [Firestore in React](#firestore-in-react)
+7. [Close](#close)
 
 ## Launch
 
@@ -238,7 +239,7 @@ Tap "Save".
 
 Now that we have a database with a collection and we've integrated our Firebase credentials into our React project, we're ready to start CRUD-ing!
 
-## Storing to Firestore
+## Using Firestore
 
 It's best to think of Firestore as a place to store user data, user interactions, or user feedback. For example, Firestore is great at storing a user's account information, what a user has liked, or what a user had to say about something.
 
@@ -276,7 +277,7 @@ let addDoc = documentToAdd.set({
 
 - For more on writing data to Firestore, see the [Firestore Documentation on Adding Data](https://firebase.google.com/docs/firestore/manage-data/add-data).
 
-## Reading from Firestore
+### Reading from Firestore
 
 Reading data from Firestore uses a slightly different pattern than writing data because we need to know from which document we want to read data.
 
@@ -309,7 +310,7 @@ let getDoc = documentToRead.get()
 
 > Note: Firestore can also listen for real-time updates to data. For more on listening to data, see the [Firestore Documentation on Listening For Real-Time Updates](https://firebase.google.com/docs/firestore/query-data/listen).
 
-## Updating in Firestore
+### Updating in Firestore
 
 Updating data in Firestore is a lot like adding or writing data, but instead of creating a new record we'll `.update()` the data for an existing one:
 
@@ -322,7 +323,7 @@ let getDoc = documentToUpdate.update({'name':'Elizabeth Windsor'})
 
 - For more on updating data in Firestore, see the [Firestore Documentation on Updating Data](https://firebase.google.com/docs/firestore/manage-data/add-data#update-data).
 
-## Deleting from Firestore
+### Deleting from Firestore
 
 To delete a document in Firestore, just indicate the `documentId` and use the `.delete()` method:
 
