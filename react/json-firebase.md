@@ -14,7 +14,8 @@
 5. [Reading from Firestore](#reading-from-firestore)
 6. [Updating in Firestore](#updating-in-firestore)
 7. [Deleting from Firestore](#deleting-from-firestore)
-8. [Close](#close)
+8. [Firestore in React](#firestore-in-react)
+9. [Close](#close)
 
 ## Launch
 
@@ -248,18 +249,92 @@ When developers think about collecting user data, it usually involves some type 
 Writing to Firestore is quite simply done by:
 - Indicating Firestore is the data's destination: `firebase.firestore()`
 - Indicating what collection to write data to: `.collection("test")`
-- Using the `.add()` function with the JSON object to store to the database.
+- Using the `.add()` function with the JSON object you want to store to the database
 
 ```javascript
 // So you don't have to rewrite this each time you perform a database action
 const db = firebase.firestore();
 
 // Add JSON object to collection called "test" and store the response in userRef
-const userRef = db.collection("test").add({
-  fullname: component.state.fullname,
-  email: component.state.email
-}); 
+let userRef = db.collection('test').add({
+  fullname: 'First Last',
+  email: 'email@domain.tld'
+});
 ```
+
+> Note: the response from Firestore when adding a new document will include the unique ID created by Firestore, e.g. `userRef.id`.
+
+If you want to create your own `documentId` instead of letting Firestore create a unique ID for you, you can also use `.doc('documentId').set(data)` to add a new document with a `documentId` that you choose:
+
+```javascript
+let documentToAdd = db.collection('test').doc('first-last');
+let addDoc = documentToAdd.set({
+  fullname: 'First Last',
+  email: 'email@domain.tld'
+});
+```
+
+- For more on writing data to Firestore, see the [Firestore Documentation on Adding Data](https://firebase.google.com/docs/firestore/manage-data/add-data).
+
+## Reading from Firestore
+
+Reading data from Firestore uses a slightly different pattern than writing data because we need to know from which document we want to read data.
+
+Given a `documentId`, we can read the document using:
+
+```javascript
+let documentToRead = db.collection('users').doc('documentId');
+let getDoc = documentToRead.get();
+```
+
+While that gets the data, it doesn't do anything with the data or account for any errors in retrieving the data. To do something with the data we get, we can chain a `.then()` function and a `.catch()` function after `.get()`:
+
+```javascript
+let documentToRead = db.collection('users').doc('documentId');
+let getDoc = documentToRead.get()
+  .then(doc => {
+    if (!doc.exists) {
+      console.log('No such document!');
+    } else {
+      // Do something with the data here
+      console.log('Document data:', doc.data());
+    }
+  })
+  .catch(err => {
+    console.log('Error getting document', err);
+  });
+```
+
+- For more on writing data to Firestore, see the [Firestore Documentation on Reading Data](https://firebase.google.com/docs/firestore/query-data/get-data).
+
+> Note: Firestore can also listen for real-time updates to data. For more on listening to data, see the [Firestore Documentation on Listening For Real-Time Updates](https://firebase.google.com/docs/firestore/query-data/listen).
+
+## Updating in Firestore
+
+Updating data in Firestore is a lot like adding or writing data, but instead of creating a new record we'll `.update()` the data for an existing one:
+
+```javascript
+let documentToUpdate = db.collection('users').doc('documentId');
+let getDoc = documentToUpdate.update({'name':'Elizabeth Windsor'})
+```
+
+> Note: `.set()` will overwrite all data in a record while `.update()` will only change the indicated fields.
+
+- For more on updating data in Firestore, see the [Firestore Documentation on Updating Data](https://firebase.google.com/docs/firestore/manage-data/add-data#update-data).
+
+## Deleting from Firestore
+
+To delete a document in Firestore, just indicate the `documentId` and use the `.delete()` method:
+
+```javascript
+let documentToDelete = db.collection('users').doc('documentId').delete();
+```
+
+You can also [delete particular fields in a Firestore document](https://firebase.google.com/docs/firestore/manage-data/delete-data#fields) using the `.update()` method and a JSON object in the form of `{fieldName: FieldValue.delete()}`.
+
+- For more on deleting data in Firestore, see the [Firestore Documentation on Deleting Data](https://firebase.google.com/docs/firestore/manage-data/delete-data).
+
+## Firestore in React
 
 Below is a simple React component called `<User />` that stores a user's name and email address when they are submitted via a form. It demonstrates basic `.add()` functionality in Firestore. The component works like this:
 
@@ -284,8 +359,8 @@ import firebase from "./Firestore";
 const User = () => {
   const component = new React.Component();
   component.state = {
-  	email: "",
-  	fullname: ""
+    email: "",
+    fullname: ""
   }
 
   component.updateInput = e => {
@@ -350,70 +425,7 @@ import User from './components/User'
 <User />
 ```
 
-> Note: the response from Firestore when adding a new document, `ref`, will include the unique ID created by Firestore, e.g. `ref.id`.
-> Note: you can also use `.doc('documentId').set(data)` to add a new document with a `documentId` that you choose.
-
-- For more on writing data to Firestore, see the [Firestore Documentation on Adding Data](https://firebase.google.com/docs/firestore/manage-data/add-data).
-
-## Reading from Firestore
-
-Reading data from Firestore uses a slightly different pattern than writing data because we need to know from which document we want to read data.
-
-Given a `documentId`, we can read the document using:
-
-```javascript
-let documentToRead = db.collection('users').doc('documentId');
-let getDoc = documentToRead.get();
-```
-
-While that gets the data, it doesn't do anything with the data or account for any errors in retrieving the data. To do something with the data we get, we can chain a `.then()` function and a `.catch()` function after `.get()`:
-
-```javascript
-let documentToRead = db.collection('users').doc('documentId');
-let getDoc = documentToRead.get()
-  .then(doc => {
-    if (!doc.exists) {
-      console.log('No such document!');
-    } else {
-      // Do something with the data here
-      console.log('Document data:', doc.data());
-    }
-  })
-  .catch(err => {
-    console.log('Error getting document', err);
-  });
-```
-
-- For more on writing data to Firestore, see the [Firestore Documentation on Reading Data](https://firebase.google.com/docs/firestore/query-data/get-data).
-
-> Note: Firestore can also listen for real-time updates to data. For more on listening to data, see the [Firestore Documentation on Listening For Real-Time Updates](https://firebase.google.com/docs/firestore/query-data/listen).
-
-## Updating in Firestore
-
-Updating data in Firestore is a lot like adding or writing data, but instead of creating a new record we'll `.update()` the data for an existing one:
-
-```javascript
-let documentToUpdate = db.collection('users').doc('documentId');
-let getDoc = documentToUpdate.update({'name':'Elizabeth Windsor'})
-```
-
-> Note: `.set()` will overwrite all data in a record while `.update()` will only change the indicated fields.
-
-- For more on updating data in Firestore, see the [Firestore Documentation on Updating Data](https://firebase.google.com/docs/firestore/manage-data/add-data#update-data).
-
-## Deleting from Firestore
-
-To delete a document in Firestore, just indicate the `documentId` and use the `.delete()` method:
-
-```javascript
-let documentToDelete = db.collection('users').doc('documentId').delete();
-```
-
-You can also [delete particular fields in a Firestore document](https://firebase.google.com/docs/firestore/manage-data/delete-data#fields) using the `.update()` method and a JSON object in the form of `{fieldName: FieldValue.delete()}`.
-
-- For more on deleting data in Firestore, see the [Firestore Documentation on Deleting Data](https://firebase.google.com/docs/firestore/manage-data/delete-data).
-
-## No Direct Upload
+#### No Direct Upload
 
 Unfortunately, Firestore doesn't enable a direct upload of a JSON file, but if you're looking to do this there are some [straight-forward write-ups](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57) out there about how to do this in Firestore.
 
