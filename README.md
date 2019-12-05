@@ -96,7 +96,7 @@
 * Lab: TBD - new repo even if revising an older lab
 
 #### Unit 2-C APIs
-* Lesson: [Getting Data into Your App](react/react-apis.md)
+* Lesson: [APIs in React](react/react-apis.md)
 * Lab: TBD - new repo even if revising an older lab
 
 ### Unit 3
