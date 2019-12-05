@@ -265,15 +265,15 @@ Below is a simple React component called `<User />` that stores a user's name an
 
 1. There is a `<form>` element that handles an `onSubmit` event; when the `<form>` is submitted, it will perform the `addUser` method that is part of the component.
 2. There are two `<input>`s in the `<form>`, one for the user's full name and one for the user's email address:
-    1. Each `<input>` has an `onChange` event handler that fires each time the value of the `<input>` is changed. `onChange` performs the `updateInput` method that is part of the component.
-    2. The `updateInput` method stores the value of the input in state, so each time the value of the input is changed, it is stored in state.
-    3. Each `<input>` also displays the value stored in state as its value to ensure that the value of the input and the value stored in state are the same.
+   1. Each `<input>` has an `onChange` event handler that fires each time the value of the `<input>` is changed. `onChange` performs the `updateInput` method that is part of the component.
+   2. The `updateInput` method stores the value of the input in state, so each time the value of the input is changed, it is stored in state.
+   3. Each `<input>` also displays the value stored in state as its value to ensure that the value of the input and the value stored in state are the same.
 6. The `addUser` method:
-    1. Prevents the default submit behavior which is to open a new tab/window.
-    2. Sets the variable `db` to indicate the destination for where data will be written.
-    3. Changes a setting for the database so a timestamp will be rendered along with the data.
-    4. Adds new data to the database using the `.add()` method.
-    5. Resets the state variables used to populate the inputs to be blank.
+   1. Prevents the default submit behavior which is to open a new tab/window.
+   2. Sets the variable `db` to indicate the destination for where data will be written.
+   3. Changes a setting for the database so a timestamp will be rendered along with the data.
+   4. Adds new data to the database using the `.add()` method.
+   5. Resets the state variables used to populate the inputs to be blank.
 
 #### `User.js`
 
