@@ -137,11 +137,13 @@ From the Firebase homepage [https://firebase.google.com](https://firebase.google
 
 Once you're logged in, you'll see a page where you can "Create project" (or "Add project" if you already have a firebase account).
 
+Tap the "Create project" button to add a new Firebase project. 
+
 ### 3. Add a new Firebase project
 
 ![Firebase - Create project](./img/firebase-setup-2.png)
 
-Tap the "Create project" button to add a new Firebase project. Give your project a name, e.g. `stranger-things`, and go ahead and agree to the checkbox prompt. Then, it's up to you if you want to use Google Analytics on your project; if you do, you'll have to agree to a few more checkboxes. Tap "Create Project" to finish up this step.
+Give your project a name, e.g. `stranger-things`, and go ahead and agree to the checkbox prompt. Then, it's up to you if you want to use Google Analytics on your project; if you do, you'll have to agree to a few more checkboxes. Tap "Create Project" to finish up this step.
 
 ### 4. Integrate Firebase into our React app
 
