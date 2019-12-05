@@ -239,24 +239,41 @@ Now that we have a database with a collection and we've integrated our Firebase 
 
 ## Storing to Firestore
 
-### Direct Upload
+It's best to think of Firestore as a place to store user data, user interactions, or user feedback. For example, Firestore is great at storing a user's account information, what a user has liked, or what a user had to say about something.
 
-Unfortunately, Firestore doesn't enable a direct upload of a JSON file, but if you're looking to do this there are some [straight-forward write-ups](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57) out there about how to do this in Firestore.
+When developers think about collecting user data, it usually involves some type of user interaction, maybe a form the user fills out or a button the user clicks to indicate a rating or preference.
 
-There are alternatives, however, including:
-1. use a different Firebase product, the Real-time Database,
-2. include static data locally in your app, or
-3. use an API - see the [API mini-unit](react-apis.md) for more on this.
+### Writing/Adding Data to Firestore
 
-### Option B: Collect Data from a React Form
+Writing to Firestore is quite simply done by:
+- Indicating Firestore is the data's destination: `firebase.firestore()`
+- Indicating what collection to write data to: `.collection("test")`
+- Using the `.add()` function with the JSON object to store to the database.
 
-Instead of [uploading data directly to Firestore](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57), it's best to think of Firestore as a place to store user data, user interactions, or user feedback. For example, Firestore is great at storing a user's account information, what a user has liked, or what a user had to say about something.
+```javascript
+// So you don't have to rewrite this each time you perform a database action
+const db = firebase.firestore();
 
-> - Still need to flesh this out if we're going to go with Firestore
+// Add JSON object to collection called "test" and store the response in userRef
+const userRef = db.collection("test").add({
+  fullname: component.state.fullname,
+  email: component.state.email
+}); 
+```
 
-> - This is for a simple form input, but may change this to capture other CRUD stuff, too?
+Below is a simple React component called `<User />` that stores a user's name and email address when they are submitted via a form. It demonstrates basic `.add()` functionality in Firestore. The component works like this:
 
-> - Or should this be a simple input like a button click so the `write` doesn't get lost in the rest of the React stuff?
+1. There is a `<form>` element that handles an `onSubmit` event; when the `<form>` is submitted, it will perform the `addUser` method that is part of the component.
+2. There are two `<input>`s in the `<form>`, one for the user's full name and one for the user's email address:
+  1. Each `<input>` has an `onChange` event handler that fires each time the value of the `<input>` is changed. `onChange` performs the `updateInput` method that is part of the component.
+  2. The `updateInput` method stores the value of the input in state, so each time the value of the input is changed, it is stored in state.
+  3. Each `<input>` also displays the value stored in state as its value to ensure that the value of the input and the value stored in state are the same.
+6. The `addUser` method:
+  1. Prevents the default submit behavior which is to open a new tab/window.
+  2. Sets the variable `db` to indicate the destination for where data will be written.
+  3. Changes a setting for the database so a timestamp will be rendered along with the data.
+  4. Adds new data to the database using the `.add()` method.
+  5. Resets the state variables used to populate the inputs to be blank.
 
 #### `User.js`
 
@@ -333,23 +350,78 @@ import User from './components/User'
 <User />
 ```
 
+> Note: the response from Firestore when adding a new document, `ref`, will include the unique ID created by Firestore, e.g. `ref.id`.
+> Note: you can also use `.doc('documentId').set(data)` to add a new document with a `documentId` that you choose.
+
+- For more on writing data to Firestore, see the [Firestore Documentation on Adding Data](https://firebase.google.com/docs/firestore/manage-data/add-data).
+
 ## Reading from Firestore
 
-Some text here
+Reading data from Firestore uses a slightly different pattern than writing data because we need to know from which document we want to read data.
+
+Given a `documentId`, we can read the document using:
+
+```javascript
+let documentToRead = db.collection('users').doc('documentId');
+let getDoc = documentToRead.get();
+```
+
+While that gets the data, it doesn't do anything with the data or account for any errors in retrieving the data. To do something with the data we get, we can chain a `.then()` function and a `.catch()` function after `.get()`:
+
+```javascript
+let documentToRead = db.collection('users').doc('documentId');
+let getDoc = documentToRead.get()
+  .then(doc => {
+    if (!doc.exists) {
+      console.log('No such document!');
+    } else {
+      // Do something with the data here
+      console.log('Document data:', doc.data());
+    }
+  })
+  .catch(err => {
+    console.log('Error getting document', err);
+  });
+```
+
+- For more on writing data to Firestore, see the [Firestore Documentation on Reading Data](https://firebase.google.com/docs/firestore/query-data/get-data).
+
+> Note: Firestore can also listen for real-time updates to data. For more on listening to data, see the [Firestore Documentation on Listening For Real-Time Updates](https://firebase.google.com/docs/firestore/query-data/listen).
 
 ## Updating in Firestore
 
-- mirroring CRUD a bit, but although it is a combination in principle, it's a different function (as opposed to being a combination of reading then writing)
-- Jolson: To update a record, just combine Reading and Storing, with a step to modify it in between!
+Updating data in Firestore is a lot like adding or writing data, but instead of creating a new record we'll `.update()` the data for an existing one:
+
+```javascript
+let documentToUpdate = db.collection('users').doc('documentId');
+let getDoc = documentToUpdate.update({'name':'Elizabeth Windsor'})
+```
+
+> Note: `.set()` will overwrite all data in a record while `.update()` will only change the indicated fields.
+
+- For more on updating data in Firestore, see the [Firestore Documentation on Updating Data](https://firebase.google.com/docs/firestore/manage-data/add-data#update-data).
 
 ## Deleting from Firestore
 
-Some text here
+To delete a document in Firestore, just indicate the `documentId` and use the `.delete()` method:
+
+```javascript
+let documentToDelete = db.collection('users').doc('documentId').delete();
+```
+
+You can also [delete particular fields in a Firestore document](https://firebase.google.com/docs/firestore/manage-data/delete-data#fields) using the `.update()` method and a JSON object in the form of `{fieldName: FieldValue.delete()}`.
+
+- For more on deleting data in Firestore, see the [Firestore Documentation on Deleting Data](https://firebase.google.com/docs/firestore/manage-data/delete-data).
+
+## No Direct Upload
+
+Unfortunately, Firestore doesn't enable a direct upload of a JSON file, but if you're looking to do this there are some [straight-forward write-ups](https://levelup.gitconnected.com/firebase-import-json-to-firestore-ed6a4adc2b57) out there about how to do this in Firestore.
+
+There are alternatives, however, including:
+1. use a different Firebase product: the Real-time Database,
+2. include static data locally in your app, or
+3. use an API - see the [API mini-unit](react-apis.md) for more on this.
 
 ## Close
 
-Some text here
-
-#### Questions for students
-
-- Some text here
+As you can see, Firestore is a powerful tool that can be used to create, read, update, and delete data in your application. It's worth spending some time thinking about how best to format the data you write to Firestore so you can readily [build visualizations](victory.md) or display feedback to users as a result of their interaction.
