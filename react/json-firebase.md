@@ -147,7 +147,7 @@ Tap the "Create project" button to add a new Firebase project. Give your project
 
 ![Firebase - Add to web app](./img/firebase-setup-3.png)
 
-Next tap the "`</>`"" button to add Firebase to your web app (since our React app is web-based).
+Next tap the "`</>`" button to add Firebase to your web app (since our React app is web-based).
 
 ![Firebase - Give app a name](./img/firebase-setup-4.png)
 
