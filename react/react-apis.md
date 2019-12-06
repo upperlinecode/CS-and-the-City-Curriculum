@@ -4,7 +4,6 @@
 
 - SWBAT read developer documentation to construct an API call
 - SWBAT read developer documentation to interpret an API response
-- SWBAT request data from NYC Open Data
 - SWBAT integrate API data into a React component
 
 ## Sequence
@@ -16,13 +15,7 @@
    1. [Async & Await](#async--await)
    2. [Using `async` & `await`](#using-async--await)
    3. [Using `async` & `await` in React](#using-async--await-in-react)
-5. [NYC Open Data APIs](#nyc-open-data-apis)
-   1. [Getting an App Token](#getting-an-app-token)
-   2. [Using Our App Token](#using-our-app-token)
-   3. [Filtering Data from Socrata](#filtering-data-from-socrata)
-      1. [More Complex Filtering](#more-complex-filtering)
-   4. [Getting NYC Open Data into React](#getting-nyc-open-data-into-react)
-   5. [Visualizing API Data](#visualizing-api-data)
+5. [Visualizing API Data](#visualizing-api-data)
 6. [Close](#close)
 
 ## Launch
@@ -182,153 +175,7 @@ export default Item;
 
 - More on [Using `async await` in React](https://www.valentinog.com/blog/await-react/), including troubleshooting
 
-## NYC Open Data APIs
-
-![NYC Open Data Portal](./img/nyc-open-data.png)
-
-New York City provides free access to numerous data resources on the [NYC Open Data](https://opendata.cityofnewyork.us/) website. There you can [search for datasets](https://opendata.cityofnewyork.us/data/) of city-related data, including 311 calls, restaurant inspection results, geographic datasets, and much much more.
-
-> Because NYC Open Data is coming from a variety of city departments, there's some variability in the quality, utility, and completeness of the data.
-
-The best way to learn how to use the data at NYC Open Data is to dive in, find the API developer documentation, and begin to get some data.
-
-Let's say we're interested in NYC Film Permits, and we find the dataset below:
-
-![NYC Open Data Film Permits](./img/nyc-open-data-film-1.png)
-
-Clicking on the title leads to a page with more information about the dataset.
-
-There we can see how many rows are in the dataset (62.6K), how many columns it has (14), how often it's updated (daily), how many people have downloaded it (over 8,100), etc.
-
-![NYC Open Data Film Permits](./img/nyc-open-data-film-2.png)
-
-At this point, if we weren't sure whether this dataset is useful to us, we could click on the "View Data" button where we can begin to get a sense of what data is in the Film Permits dataset. There, you can view the data in a big table (like in Excel or Google Sheets) or one record at a time:
-
-![NYC Open Data Film Permits](./img/nyc-open-data-film-3.png)
-
-The dataset has over 62,600 records, and that many records is too cumbersome to load into our app directly! We'll need to use an API.
-
-To get to the API version of the dataset: from the information page, we can click on the "API" button (a few over from the "View Data" button). That will show a modal window with information about the Socrata Open Data API (SODA), including links to the [API documentation](https://dev.socrata.com/foundry/data.cityofnewyork.us/tg4x-b46p), the [Socrata portal homepage](https://dev.socrata.com/), and the raw API data, e.g. [https://data.cityofnewyork.us/resource/tg4x-b46p.json](https://data.cityofnewyork.us/resource/tg4x-b46p.json).
-
-![NYC Open Data Film Permits](./img/nyc-open-data-film-4.png)
-
-### Getting an App Token
-
-Although it may seem like we're good to go now that we know the endpoint for the dataset (the JSON file linked above), Socrata puts a limit on how many times we can access that data without an Application Token. That means we need to [register an Application Token](https://dev.socrata.com/register) (and also create an Account on Socrata):
-
-1. Sign up for a Socrata Account here: [opendata.socrata.com/signup](https://opendata.socrata.com/signup)
-
-2. If you're not directed to the Developer Settings, from the bottom of your profile page, tap the "Manage" link in the top-right corner of your "Applications" list.
-![Socrata](./img/socrata-1.png)
-
-3. Tap the "Create New App Token" button, fill in the required information about the app/dataset you're using, and then tap "Save".
-![Socrata](./img/socrata-2.png)
-
-4. You'll see your new App Token in the list below the button:
-![Socrata](./img/socrata-3.png)
-
-> Note: you get a public and a private App Token - keep the secret token secure and don't share it with others (or in a github repository). Although we won't be using it here, there are other APIs for which you may need to use the secret token to access data.
-
-### Using Our App Token
-
-Now that we have an App Token, we can start to make requests of the API!
-
-According to the [Socrata documentation](https://dev.socrata.com/docs/app-tokens.html), we can append the variable `$$app_token` to the endpoint along with our App Token in order to make the request:
-
-```javascript
-https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ
-```
-
-Try using _your_ App Token with the endpoint above to get the raw data.
-
-> Note: I've altered the App Token above so you will receive a permissions error if you try to use the token shown. You will know your App Token works because you will get data back from the URL.
-
-### Filtering Data from Socrata
-
-Socrata includes a simple way to [filter data](https://dev.socrata.com/docs/filtering.html) in API requests: by using column names as parameters.
-
-The NYC Film Permit data has 14 columns, one of which indicates the `borough` in which filming will take place:
-
-```javascript
-// 14 fields for each entry in dataset
-"eventid"
-"eventtype"
-"startdatetime"
-"enddatetime"
-"enteredon"
-"eventagency"
-"parkingheld"
-"borough"
-"communityboard_s"
-"policeprecinct_s"
-"category"
-"subcategoryname"
-"country"
-"zipcode_s"
-```
-
-To use the `borough` parameter to filter to only the permits granted in Manhattan, we can append `&borough=Manhattan` at the end of our request URL (which already includes our App Token):
-
-```javascript
-https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan
-```
-
-Try using _your_ App Token with this endpoint and parameter/variable to get filtered raw data.
-
-#### More Complex Filtering
-
-What if you wanted to get all of the Film Permits _except_ for the ones in Manhattan?
-
-Socrata has more complex filtering capabilities using [SoQL clauses](https://dev.socrata.com/docs/queries/). We might construct the query above using the `$where` parameter, but in this case the variable is an inequality that indicates how to filter the data, e.g. `$where=(borough!="Manhattan").
-
-```javascript
-https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&$where=(borough!=%22Manhattan%22)
-```
-
-> Note: the parentheses are not necessary, however they're included for readibility.
-> Note: `%22` is the HTML character code for `"`.
-
-### Getting NYC Open Data into React
-
-Pulling together our React component and our NYC Open Data (Socrata) API request, we end up with a React component that's requesting data from Socrata:
-
-```javascript
-import React from 'react';
-// any other import statements
-
-const Item = () => {
-  const component = new React.Component();
-  component.state = {
-    // define state variables here
-  }
-
-  async component.componentDidMount = () => {
-    try {
-      let response = await fetch('https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan');
-      // other await statements could go here
-
-      // other code to execute once response is defined
-    } catch(err) {
-      // catches errors in any of the await statements in try {}
-      alert(err);
-    }
-  }
-  
-  component.render = () => {
-    return (
-      // render component HTML here
-    )
-  }
-
-  return component;
-}
-   
-export default Item;
-```
-
-At this point, it's worth re-recognizing that the API's response, the variable `response` above, is an array of objects. We already know how to use `.map()` and other JavaScript functions on an array of objects to manipulate and return HTML in a React component! Yay!
-
-### Visualizing API Data
+## Visualizing API Data
 
 If you've completed the [Victory](victory.md) mini-unit, you can also consider how you might visualize or graph data returned from an API.
 
@@ -338,4 +185,4 @@ Successfully using APIs to get data is all about knowing the data you need, find
 
 In order to implement APIs in React, we've also covered two more-technical strategies: leveraging the `componentDidMount` method in React and using `async await` and `try ... catch` to asynchronously request data while handling errors that may result.
 
-At this point, we encourage you to explore the [NYC Open Data Portal](https://opendata.cityofnewyork.us/) for data that you find interesting and would like use in a creative and meaningful way.
+At this point, we encourage you to move on to the [NYC Open Data mini-unit](react-nyc-open-data).
