@@ -31,6 +31,14 @@ Click on this url: [http://jservice.io/api/random?count=1](http://jservice.io/ap
 
 The [jservice.io](http://jservice.io/) site is a place where you can go to access over 156,800 trivia questions. We've reformatted one of the trivia questions below so you can more easily inspect the data you get from this API.
 
+#### Request
+
+```javascript
+http://jservice.io/api/random?count=1
+```
+
+#### Response
+
 ```javascript
 [{
 	"id": 117776,

@@ -74,13 +74,70 @@ Now that we have an App Token, we can start to make requests of the API!
 
 According to the [Socrata documentation](https://dev.socrata.com/docs/app-tokens.html), we can append the variable `$$app_token` to the endpoint along with our App Token in order to make the request:
 
+#### Request
+
 ```javascript
 https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ
 ```
 
-Try using _your_ App Token with the endpoint above to get the raw data.
+#### Response
 
-> Note: I've altered the App Token above so you will receive a permissions error if you try to use the token shown. You will know your App Token works because you will get data back from the URL.
+```javascript
+[{
+    "eventid": "507027",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2019-09-06T06:00:00.000",
+    "enddatetime": "2019-09-06T22:00:00.000",
+    "enteredon": "2019-09-05T14:02:05.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "PROVOST STREET between FREEMAN STREET and GREEN STREET,  PROVOST STREET between GREEN STREET and HURON STREET,  PROVOST STREET between GREEN STREET and FREEMAN STREET",
+    "borough": "Brooklyn",
+    "communityboard_s": "1",
+    "policeprecinct_s": "94",
+    "category": "Television",
+    "subcategoryname": "Cable-episodic",
+    "country": "United States of America",
+    "zipcode_s": "11222"
+  },
+  {
+    "eventid": "506980",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2019-09-06T10:00:00.000",
+    "enddatetime": "2019-09-07T04:00:00.000",
+    "enteredon": "2019-09-05T10:38:20.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "KINGSLAND AVENUE between GREENPOINT AVENUE and NORMAN AVENUE,  MONITOR STREET between GREENPOINT AVENUE and NORMAN AVENUE",
+    "borough": "Brooklyn",
+    "communityboard_s": "1",
+    "policeprecinct_s": "114, 94",
+    "category": "Television",
+    "subcategoryname": "Episodic series",
+    "country": "United States of America",
+    "zipcode_s": "11105, 11222"
+  },
+  {
+    "eventid": "506958",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2019-09-06T07:00:00.000",
+    "enddatetime": "2019-09-06T21:00:00.000",
+    "enteredon": "2019-09-05T09:39:17.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "DIAMOND STREET between MESEROLE AVENUE and CALYER STREET,  JEWEL STREET between MESEROLE AVENUE and CALYER STREET,  CALYER STREET between DIAMOND STREET and JEWEL STREET,  MESEROLE AVENUE between DIAMOND STREET and JEWEL STREET",
+    "borough": "Brooklyn",
+    "communityboard_s": "1",
+    "policeprecinct_s": "94",
+    "category": "Television",
+    "subcategoryname": "Episodic series",
+    "country": "United States of America",
+    "zipcode_s": "11222"
+  },
+  ...
+]
+```
+
+**Try using _your_ App Token with the endpoint above to get the raw data.**
+
+> **Note: I've altered the App Token above so you will receive a permissions error if you try to use the token shown. You will know your App Token works because you will get data back from the URL.**
 
 ## Filtering Data from Socrata
 
@@ -108,11 +165,68 @@ The NYC Film Permit data has 14 columns, one of which indicates the `borough` in
 
 To use the `borough` parameter to filter to only the permits granted in Manhattan, we can append `&borough=Manhattan` at the end of our request URL (which already includes our App Token):
 
+#### Request
+
 ```javascript
 https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan
 ```
 
-Try using _your_ App Token with this endpoint and parameter/variable to get filtered raw data.
+#### Response
+
+```javascript
+[{
+    "eventid": "506313",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2019-09-06T06:00:00.000",
+    "enddatetime": "2019-09-06T21:00:00.000",
+    "enteredon": "2019-08-30T15:02:36.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "RIVERSIDE DRIVE between WEST   75 STREET and WEST   74 STREET,  RIVERSIDE DRIVE between WEST   75 STREET and WEST   76 STREET",
+    "borough": "Manhattan",
+    "communityboard_s": "7",
+    "policeprecinct_s": "20",
+    "category": "Film",
+    "subcategoryname": "Short",
+    "country": "United States of America",
+    "zipcode_s": "10023"
+  },
+  {
+    "eventid": "505834",
+    "eventtype": "Theater Load in and Load Outs",
+    "startdatetime": "2019-09-06T06:00:00.000",
+    "enddatetime": "2019-09-07T23:45:00.000",
+    "enteredon": "2019-08-28T11:05:52.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "WEST   43 STREET between BROADWAY and 6 AVENUE",
+    "borough": "Manhattan",
+    "communityboard_s": "5",
+    "policeprecinct_s": "14",
+    "category": "Theater",
+    "subcategoryname": "Theater",
+    "country": "United States of America",
+    "zipcode_s": "10036"
+  },
+  {
+    "eventid": "506218",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2019-09-06T09:00:00.000",
+    "enddatetime": "2019-09-06T23:00:00.000",
+    "enteredon": "2019-08-30T09:12:25.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "5 AVENUE between EAST   26 STREET and WEST   25 STREET,  WEST   25 STREET between BROADWAY and 5 AVENUE,  BROADWAY between WEST   26 STREET and WEST   25 STREET,  WEST   27 STREET between BROADWAY and 6 AVENUE",
+    "borough": "Manhattan",
+    "communityboard_s": "5",
+    "policeprecinct_s": "13",
+    "category": "WEB",
+    "subcategoryname": "Not Applicable",
+    "country": "United States of America",
+    "zipcode_s": "10001, 10010"
+  },
+  ...
+]
+```
+
+**Try using _your_ App Token with this endpoint and parameter/variable to get filtered raw data.**
 
 ### More Complex Filtering
 
@@ -120,8 +234,65 @@ What if you wanted to get all of the Film Permits _except_ for the ones in Manha
 
 Socrata has more complex filtering capabilities using [SoQL clauses](https://dev.socrata.com/docs/queries/). We might construct the query above using the `$where` parameter, but in this case the variable is an inequality that indicates how to filter the data, e.g. `$where=(borough!="Manhattan").
 
+#### Request
+
 ```javascript
 https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&$where=(borough!=%22Manhattan%22)
+```
+
+#### Response
+
+```javascript
+[{
+    "eventid": "186438",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2014-10-30T07:00:00.000",
+    "enddatetime": "2014-10-31T02:00:00.000",
+    "enteredon": "2014-10-27T12:14:15.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "LAUREL HILL BLVD between REVIEW AVENUE and RUST ST,  REVIEW AVE between VAN DAM STREET and LAUREL HILL BOULEVARD,  59 ROAD between 60 LANE and 61 STREET,  59 ROAD between 60 LANE and 61 STREET,  61 STREET between 59 ROAD and FRESH POND ROAD,  FRESH POND ROAD between 59 AVENUE and 59 DRIVE,  59 DRIVE between FRESH POND ROAD and 63 STREET,  59 DRIVE between FRESH POND ROAD and 64 STREET",
+    "borough": "Queens",
+    "communityboard_s": "2, 5",
+    "policeprecinct_s": "104, 108",
+    "category": "Television",
+    "subcategoryname": "Episodic series",
+    "country": "United States of America",
+    "zipcode_s": "11378"
+  },
+  {
+    "eventid": "445255",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2018-10-20T07:00:00.000",
+    "enddatetime": "2018-10-20T18:00:00.000",
+    "enteredon": "2018-10-09T21:34:58.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "JORALEMON STREET between BOERUM PLACE and COURT STREET",
+    "borough": "Brooklyn",
+    "communityboard_s": "2",
+    "policeprecinct_s": "84",
+    "category": "Still Photography",
+    "subcategoryname": "Not Applicable",
+    "country": "United States of America",
+    "zipcode_s": "11201"
+  },
+  {
+    "eventid": "43547",
+    "eventtype": "Shooting Permit",
+    "startdatetime": "2012-01-10T07:00:00.000",
+    "enddatetime": "2012-01-10T19:00:00.000",
+    "enteredon": "2012-01-04T12:25:37.000",
+    "eventagency": "Mayor's Office of Film, Theatre & Broadcasting",
+    "parkingheld": "EAGLE STREET between FRANKLIN STREET and WEST STREET,  WEST STREET between EAGLE STREET and FREEMAN STREET,  FREEMAN STREET between WEST STREET and FRANKLIN STREET",
+    "borough": "Brooklyn",
+    "communityboard_s": "1, 2",
+    "policeprecinct_s": "108, 94",
+    "category": "Television",
+    "subcategoryname": "Episodic series",
+    "country": "United States of America",
+    "zipcode_s": "11101, 11222"
+  },
+  ...
+]
 ```
 
 > Note: the parentheses are not necessary, however they're included for readibility.
