@@ -239,6 +239,8 @@ Socrata has more complex filtering capabilities using [SoQL clauses](https://dev
 ```javascript
 https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&$where=(borough!=%22Manhattan%22)
 ```
+> Note: the parentheses are not necessary, however they're included for readibility.
+> Note: `%22` is the HTML character code for `"`.
 
 #### Response
 
@@ -294,9 +296,6 @@ https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FD
   ...
 ]
 ```
-
-> Note: the parentheses are not necessary, however they're included for readibility.
-> Note: `%22` is the HTML character code for `"`.
 
 ## Getting NYC Open Data into React
 
