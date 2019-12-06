@@ -85,20 +85,6 @@
 * Lab: [Create a Grocery App](https://github.com/upperlinecode/grosseries)
 * Lab: [Scorekeeper](https://github.com/upperlinecode/scoreboard)
 
-> Below are three stand-alone, yet interconnected extensions that can be approached in any order.
-
-#### Unit 2-A Victory
-* Lesson: [Visualizing Data with Victory](react/victory.md)
-* Lab: TBD - new repo even if revising an older lab
-
-#### Unit 2-B JSON & Firebase
-* Lesson: [Storing Data with JSON & Firebase](react/json-firebase.md)
-* Lab: TBD - new repo even if revising an older lab
-
-#### Unit 2-C APIs
-* Lesson: [APIs in React](react/react-apis.md)
-* Lab: TBD - new repo even if revising an older lab
-
 ### Unit 3
 #### Data Science Mindsets
 ----------
@@ -140,3 +126,15 @@
 * Student Exemplar Project 2: Nutrition Tracker
 	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank">Deployed</a>
 	* <a href="https://github.com/upperlinecode/nyc-nutritional-facts" target="_blank">Code</a>
+
+#### Unit 4-A Victory
+* Lesson: [Visualizing Data with Victory](react/victory.md)
+* Lab: [Demographics Dashboard](https://github.com/upperlinecode/react-victory-lab)
+
+#### Unit 4-B JSON & Firebase
+* Lesson: [Storing Data with JSON & Firebase](react/json-firebase.md)
+* Lab: [User Interaction Components](https://github.com/upperlinecode/firestore-lab)
+
+#### Unit 4-C APIs
+* Lesson: [APIs in React](react/react-apis.md)
+* Lab: [Squirrel Data Explorer](https://github.com/upperlinecode/react-apis-lab)

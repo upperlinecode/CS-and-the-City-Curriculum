@@ -11,7 +11,10 @@
 1. [Launch](#launch)
 2. [Getting Started with Victory](#getting-started-with-victory)
 3. [More Victory Examples](#more-victory-examples)
+   1. [Optional Exercise](#optional-exercise)
 4. [Visual Design](#visual-design)
+   1. [Building a Beautiful Visualization: Color](#building-a-beautiful-visualization-color)
+   2. [Building a Beautiful Visualization: Text & Fonts](#building-a-beautiful-visualization-text--fonts)
 5. [Close](#close)
 
 ## Launch

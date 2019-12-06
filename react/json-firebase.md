@@ -14,7 +14,9 @@
 1. [Launch](#launch)
 2. [JSON Review](#json-review)
 3. [Firebase's Firestore](#firebase's-firestore)
+   1. [CRUD: Create, Read, Update, Delete](#crud-create-read-update-delete)
 4. [Setting Up Firestore](#storing-to-firestore)
+   1. [Getting Started](#getting-started)
 5. [Using Firestore](#using-firestore)
    1. [Writing/Adding Data to Firestore](#writingadding-data-to-firestore)
    2. [Reading from Firestore](#reading-from-firestore)
@@ -122,7 +124,7 @@ To get up and running with Firestore in React, we need to do the following thing
 
 Before you get started, you can either integrate Firestore into one of your existing React projects, or you can `git clone` [this repo (need to add/build this)](#) and follow along there.
 
-### 1. Install the `firebase` library to our development environment
+#### 1. Install the `firebase` library to our development environment
 
 To install the firebase library to our development environment, we just need to:
 
@@ -136,7 +138,7 @@ Easy! You should now see `firebase` and a version number in your `package.json` 
 "firebase": "^7.4.0",
 ```
 
-### 2. Sign up for a Firebase account
+#### 2. Sign up for a Firebase account
 
 From the Firebase homepage [https://firebase.google.com](https://firebase.google.com), sign in using a Google account or sign up and make yourself a new Google account.
 
@@ -146,13 +148,13 @@ Once you're logged in, you'll see a page where you can "Create project" (or "Add
 
 Tap the "Create project" button to add a new Firebase project. 
 
-### 3. Add a new Firebase project
+#### 3. Add a new Firebase project
 
 ![Firebase - Create project](./img/firebase-setup-2.png)
 
 Give your project a name, e.g. `stranger-things`, and go ahead and agree to the checkbox prompt. Then, it's up to you if you want to use Google Analytics on your project; if you do, you'll have to agree to a few more checkboxes. Tap "Create Project" to finish up this step.
 
-### 4. Integrate Firebase into our React app
+#### 4. Integrate Firebase into our React app
 
 ![Firebase - Add to web app](./img/firebase-setup-3.png)
 
@@ -204,7 +206,7 @@ export default firebase;
 
 > Note: Don't copy and paste these config variables, they are just an example. You should use the configuration variables from your Firebase account.
 
-### 5. Set up a database and collection in Firestore
+#### 5. Set up a database and collection in Firestore
 
 ![Firestore - Create database](./img/firestore-setup-1.png)
 

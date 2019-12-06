@@ -13,7 +13,16 @@
 2. [APIs Overview](#apis-overview)
 3. [Viewing Data](#viewing-data)
 4. [APIs + JavaScript](#apis--javascript)
+   1. [Async & Await](#async--await)
+   2. [Using `async` & `await`](#using-async--await)
+   3. [Using `async` & `await` in React](#using-async--await-in-react)
 5. [NYC Open Data APIs](#nyc-open-data-apis)
+   1. [Getting an App Token](#getting-an-app-token)
+   2. [Using Our App Token](#using-our-app-token)
+   3. [Filtering Data from Socrata](#filtering-data-from-socrata)
+      1. [More Complex Filtering](#more-complex-filtering)
+   4. [Getting NYC Open Data into React](#getting-nyc-open-data-into-react)
+   5. [Visualizing API Data](#visualizing-api-data)
 6. [Close](#close)
 
 ## Launch
