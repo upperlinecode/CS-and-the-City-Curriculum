@@ -46,10 +46,10 @@ Let's consult the Victory Getting Started Guide in order to build the data visua
 ![Stacked Bar Graph](./img/victory-1.png)
 
 1. (Guide Step 1) Initialize a new React project:
-	a. Run `git clone git@github.com:FormidableLabs/victory-tutorial.git`.
-	b. `cd` into the `victory-tutorial` folder.
-	c. Overwrite the contents of the `client.js` file with what's in the guide.
-	d. Run `npm install` and `npm start` to install the dependencies and spin up the basic project.
+   a. Run `git clone git@github.com:FormidableLabs/victory-tutorial.git`.
+   b. `cd` into the `victory-tutorial` folder.
+   c. Overwrite the contents of the `client.js` file with what's in the guide.
+   d. Run `npm install` and `npm start` to install the dependencies and spin up the basic project.
 2. (Guide Step 2) Add Victory via `npm install victory` and `import` the whole library into your project. Check the documentation to see how they suggest doing this.
 3. (Guide Step 3) Add the data below to your file:
 ```javascript
