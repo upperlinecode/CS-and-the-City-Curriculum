@@ -156,7 +156,29 @@ In addition to the stacked bar graph component you just saw, there are examples 
 
 Click into one of the visualizations and explore the code that's used to produce it. Most importantly, look at the data and the structure of the data that is ingested.
 
-For instance, the pie (donut) visualization below is made up of a `<VictoryPie />` component with a `<VictoryLabel />` component for the middle text. The data is a series of points with a `x` and `y`, where the `x` value is the series name or category, and the `y` value is related to how much of the pie it will take up. Victory does the hard work of figuring out the math for how big each slice of the pie should be depending on the `y` values.
+For instance, the pie (donut) visualization below is made up of a `<VictoryPie />` component with a `<VictoryLabel />` component for the middle text. The `<VictoryPie /> component has several props, but the two that matter most for how it looks are the `innerRadius={68}` prop which turns the pie into a donut, and the `labelRadius={100}` which sets the placement of the series labels. Notice how the `style` prop is used to change the color of the labels so they're white instead of the default color.
+
+```javascript
+<VictoryPie
+  standalone={false}
+  width={400}
+  height={400}
+  data={[
+    { x: 1, y: 120 }, { x: 2, y: 150 }, { x: 3, y: 75 }
+  ]}
+  innerRadius={68} labelRadius={100}
+  style={{ labels: { fontSize: 20, fill: "white" } }}
+/>
+<VictoryLabel
+  textAnchor="middle"
+  style={{ fontSize: 20 }}
+  x={200}
+  y={200}
+  text="Pie!"
+/>
+```
+
+The `data` for the `<VictoryPie />` is a series of points with a `x` and `y` value, where the `x` value is the series name (or category), and the `y` value is related to how much of the pie it will take up. Victory does the hard work of figuring out the math for how big each slice of the pie should be depending on the `y` values so the whole pie adds up to 100%.
 
 ![Pie Chart](./img/victory-3.png)
 
