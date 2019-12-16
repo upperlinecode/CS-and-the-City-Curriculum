@@ -253,7 +253,16 @@ const Item = () => {
   component.componentDidMount = () => {
     fetch(apiURL)
       .then(result => component.setState({"hits": result.data}))
-      .catch(e => console.log(e))
+      .catch(e => {
+        console.log(e);
+        component.setState({"hits":[
+          {
+            'title':'An error has occurred.',
+            'objectID': 0,
+            'url': '#'
+          }
+        ]})
+      })
   }
   
   component.render = () => {
