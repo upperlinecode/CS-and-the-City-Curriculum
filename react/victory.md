@@ -26,7 +26,7 @@ Explore their [home page](https://formidable.com/open-source/victory/) and see w
 ![Victory Example 1](./img/victory-example-1.png)
 ![Victory Example 2](./img/victory-example-2.png)
 
-Now clone [this repository](https://github.com/upperlinecode/nyc_open_data_water_project), `cd` into the `nyc_open_data_water_project` folder, run `npm install` and `npm start`, and then preview the running application. Explore the code and see if you can determine how Victory was used to visualize the data in that app.
+Check out the code for ["Exemplar Project 1: NYC Water"](https://github.com/upperlinecode/nyc_open_data_water_project). Explore the code in the repository and see if you can determine how Victory was used to visualize the data in that app.
 
 - How many data visualization components are there?
 - What is the filename of the New York City Population data?
@@ -44,34 +44,92 @@ Open the [Getting Started Guide](https://formidable.com/open-source/victory/docs
 
 > Note: Instead of reproducing the Victory Getting Started Guide, you will practice using the developer documentation to figure out how to work with Victory. This is how real developers would approach and implement a library like this.
 
-Let's consult the Victory Getting Started Guide in order to build the data visualization below:
+Let's consult the [Victory Getting Started Guide](https://formidable.com/open-source/victory/docs) in order to build the data visualization below:
 
 ![Stacked Bar Graph](./img/victory-1.png)
 
-1. (Guide Step 1) Initialize a new React project:
-   1. Run `git clone git@github.com:FormidableLabs/victory-tutorial.git`.
+1. ([Guide Step 1](https://formidable.com/open-source/victory/docs/#1-set-up-a-basic-react-project)) Initialize a new React project:
+   1. Run `git clone https://github.com/FormidableLabs/victory-tutorial`.
    2. `cd` into the `victory-tutorial` folder.
    3. Overwrite the contents of the `client.js` file with what's in the guide.
    4. Run `npm install` and `npm start` to install the dependencies and spin up the basic project.
-2. (Guide Step 2) Add Victory via `npm install victory` and `import` the whole library into your project. Check the documentation to see how they suggest doing this.
-3. (Guide Step 3) Add the data below to your file:
+2. ([Guide Step 2](https://formidable.com/open-source/victory/docs/#2-add-victory)) Add Victory via `npm install victory` and `import` the whole library in your `client.js` file. Check the [documentation](https://formidable.com/open-source/victory/docs/#2-add-victory) to see how they suggest doing this.
+3. ([Guide Step 3](https://formidable.com/open-source/victory/docs/#3-add-your-data)) Add the data below to your `client.js` file after the `import` statements and before your component definition:
 ```javascript
-const data = [
+const earningsData = [
   {quarter: 1, earnings: 13000},
   {quarter: 2, earnings: 16500},
   {quarter: 3, earnings: 14250},
   {quarter: 4, earnings: 19000}
 ];
 ```
-4. (Guide Step 4a) Import the `VictoryBar` component from the Victory library, and use it (`<VictoryBar />`) in your project. But wait, it doesn't refer to the data yet...
-5. (Guide Step 4b) Add accessor props to the `<VictoryBar />` component, including for `data`, `x`, and `y` values.
-6. (Guide Step 5) Wrap the `<VictoryBar />` component with a `<VictoryChart />` component to provide axes, and don't forget to import `VictoryChart`, too.
-7. (Guide Step 6) Import and add the `<VictoryAxis />` component (x 2!), and set props to add `tickValues` and `tickFormatting`. Notice how you can also add `domainPadding` to the `<VictoryChart />` component to better arrange the y-axis.
-	- How does Victory make a distinction between the x-axis and the y-axis?
-8. (Guide Step 7) Import and add the `<VictoryTheme />` component, and add a `theme` prop to the `<VictoryChart />` component.
-9. (Guide Step 8) Import and add the `<VictoryStack />` component, and update your component according to the Getting Started Guide to build the stacked bar chart shown above.
+4. ([Guide Step 4a](https://formidable.com/open-source/victory/docs/#4-add-your-first-victory-component)) Import the `VictoryBar` component from the Victory library by updating the import function:
+```javascript
+// Before: import everything from Victory
+import * from 'victory';
 
-The Getting Started Guide also shows a Step 9 which overrides the default theme colors using a `colorScale` prop on the `<VictoryStack />` component; we'll return to this later when we discuss visual design.
+// After: just import the VictoryBar component
+import { VictoryBar } from 'victory';
+```
+Now add it (`<VictoryBar />`) into the `return` statement of the main component. But wait, it doesn't refer to the data yet...
+5. (Guide Step 4b) Add accessor props to the `<VictoryBar />` component, including for `data`, `x`, and `y` values.
+```javascript
+// Before: a lonely <VictoryBar /> component with no data
+<VictoryBar />
+
+// After: a populated <VictoryBar /> component with props
+<VictoryBar
+  data={earningsData} // what's stored in const earningsData
+  x="quarter" // which field to make the x values
+  y="earnings" // which field to make the y values
+/>
+```
+6. ([Guide Step 5](https://formidable.com/open-source/victory/docs/#5-add-a-chart-wrapper)) Next, wrap the `<VictoryBar />` component with a `<VictoryChart></VictoryChart>` component which enables the bar chart to have axes. Don't forget to import `VictoryChart`, too:
+```javascript
+// update the Victory import statement
+import { VictoryBar, VictoryChart } from 'victory';
+
+// wrap the VictoryBar component with the VictoryChart component
+<VictoryChart>
+  <VictoryBar
+    data={earningsData} // what's stored in const earningsData
+    x="quarter" // which field to make the x values
+    y="earnings" // which field to make the y values
+  />
+</VictoryChart>
+```
+7. ([Guide Step 6](https://formidable.com/open-source/victory/docs/#6-customize-the-axes)) Import the `<VictoryAxis />` component and add two of them inside the `<VictoryChart />` component. Set the props for each: the x-axis `<VictoryAxis />` component should have `tickValues` and `tickFormatting` props, but the y-axis `<VictoryAxis />` component only has `tickFormatting` and a `dependentAxis` parameter that indicates that its values and range aren't rigidly set (because they depend on the data).
+
+You can also add `domainPadding` to the `<VictoryChart />` component to better arrange the y-axis.
+```javascript
+<VictoryChart
+  domainPadding={20}
+>
+  <VictoryAxis
+    tickValues={[1, 2, 3, 4]}
+    tickFormat={["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"]}
+  />
+  <VictoryAxis
+    dependentAxis
+    tickFormat={(x) => (`$${x / 1000}k`)}
+  />
+  <VictoryBar
+    data={data}
+    x="quarter"
+    y="earnings"
+  />
+</VictoryChart>
+```
+8. ([Guide Step 7](https://formidable.com/open-source/victory/docs/#7-add-a-theme)) Import and add the `<VictoryTheme />` component, and add a `theme` prop to the `<VictoryChart />` component where the value is `{VictoryTheme.material}`. This default `material` theme will add pre-set colors and spacing to the chart.
+```javascript
+<VictoryChart
+  theme={VictoryTheme.material}
+  domainPadding={20}
+>
+```
+9. ([Guide Step 8](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts)) Import and add the `<VictoryStack />` component, and update your component according to the [Getting Started Guide](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts) to build the stacked bar chart shown above.
+
+The Getting Started Guide also shows a [Step 9](https://formidable.com/open-source/victory/docs/#9-override-themes-color-scale) which overrides the default theme colors using a `colorScale` prop on the `<VictoryStack />` component; we'll return to this later when we discuss visual design.
 
 ## More Victory Examples
 
@@ -81,53 +139,43 @@ In addition to the stacked bar graph component you just saw, there are examples 
 
 ![Victory Gallery](./img/victory-gallery.png)
 
-Click into one of the visualizations and explore the code that's used to produce it. Most importantly, look at the data and the structure of the data that is ingested. For instance, the Streamgraph visualization below is made up of multiple `<VictoryArea />` components, each of which is built from a series of points with an `x`, `y`, and `y0` value.
+Click into one of the visualizations and explore the code that's used to produce it. Most importantly, look at the data and the structure of the data that is ingested.
 
-![Streamgraph](./img/victory-2.png)
+For instance, the pie (donut) visualization below is made up of a `<VictoryPie />` component with a `<VictoryLabel />` component for the middle text. The data is a series of points with a `x` and `y`, where the `x` value is the series name or category, and the `y` value is related to how much of the pie it will take up. Victory does the hard work of figuring out the math for how big each slice of the pie should be depending on the `y` values.
 
-> The `y` and `y0` values define a range at a value for `x` which is then displayed on the Streamgraph. `y` corresponds to the max value, and `y0` corresponds to the min value.
-
-Although the example uses the function `getStreamData()` below to generate random values, data could also come from some other source, e.g. a spreadsheet or an API.
-
-```javascript
-getStreamData() {
-  return _.range(7).map(i =>
-    _.range(26).map(j => ({
-      x: j,
-      y: (10 - i) * _.random(10 - i, 20 - 2 * i),
-      _y0: -1 * (10 - i) * _.random(10 - i, 20 - 2 * i)
-    }))
-  );
-}
-```
+![Pie Chart](./img/victory-3.png)
 
 ### Optional Exercise
 
-Most of the data used by Victory comes in the form of `x`, `y` pairs. Given the simple example data below, which graph(s) do you think could be used to display the data?
+As you begin to use Victory to visualize data, you'll realize there are many different visualizations you could use to display the same data. The choice of which visualization is best will depend on the message you want to communicate, but there will not be one "correct" visualization to use. The following exercise is meant to simulate how you can go about finding many visualizations for the same data.
+
+Most of the data used by Victory comes in the form of `x`, `y` pairs. Imagine you've been given the example data below which represents the number of boxes of Girl Scout cookies sold by 5 members of Girl Scout Troop 314 over the last three years. 
+
+Which different graph(s) do you think could be used to display some or all of the data? What story would each type of graph tell?
 
 ```javascript
-const lastYear = {[
-  { x: 1, y: 2 },
-  { x: 2, y: 3 },
-  { x: 3, y: 5 },
-  { x: 4, y: 4 },
-  { x: 5, y: 7 }
+const sales2017 = {[
+  { x: 1, y: 24 },
+  { x: 2, y: 31 },
+  { x: 3, y: 55 },
+  { x: 4, y: 42 },
+  { x: 5, y: 70 }
 ]}
 
-const thisYear = {[
-  { x: 1, y: 3 },
-  { x: 2, y: 5 },
-  { x: 3, y: 4 },
-  { x: 4, y: 6 },
-  { x: 5, y: 3 }
+const sales2018 = {[
+  { x: 1, y: 32 },
+  { x: 2, y: 50 },
+  { x: 3, y: 49 },
+  { x: 4, y: 61 },
+  { x: 5, y: 39 }
 ]}
 
-const nextYear = {[
-  { x: 1, y: 4 },
-  { x: 2, y: 7 },
-  { x: 3, y: 3 },
-  { x: 4, y: 4 },
-  { x: 5, y: 5 }
+const sales2019 = {[
+  { x: 1, y: 42 },
+  { x: 2, y: 72 },
+  { x: 3, y: 39 },
+  { x: 4, y: 42 },
+  { x: 5, y: 58 }
 ]}
 ```
 
