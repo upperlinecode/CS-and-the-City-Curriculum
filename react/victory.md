@@ -53,8 +53,11 @@ Let's consult the [Victory Getting Started Guide](https://formidable.com/open-so
    2. `cd` into the `victory-tutorial` folder.
    3. Overwrite the contents of the `client.js` file with what's in the guide.
    4. Run `npm install` and `npm start` to install the dependencies and spin up the basic project.
+
 2. ([Guide Step 2](https://formidable.com/open-source/victory/docs/#2-add-victory)) Add Victory via `npm install victory` and `import` the whole library in your `client.js` file. Check the [documentation](https://formidable.com/open-source/victory/docs/#2-add-victory) to see how they suggest doing this.
+
 3. ([Guide Step 3](https://formidable.com/open-source/victory/docs/#3-add-your-data)) Add the data below to your `client.js` file after the `import` statements and before your component definition:
+
 ```javascript
 const earningsData = [
   {quarter: 1, earnings: 13000},
@@ -63,7 +66,9 @@ const earningsData = [
   {quarter: 4, earnings: 19000}
 ];
 ```
+
 4. ([Guide Step 4a](https://formidable.com/open-source/victory/docs/#4-add-your-first-victory-component)) Import the `VictoryBar` component from the Victory library by updating the import function:
+
 ```javascript
 // Before: import everything from Victory
 import * from 'victory';
@@ -71,8 +76,11 @@ import * from 'victory';
 // After: just import the VictoryBar component
 import { VictoryBar } from 'victory';
 ```
-Now add it (`<VictoryBar />`) into the `return` statement of the main component. But wait, it doesn't refer to the data yet...
+
+Now add the `<VictoryBar />` component into the `return` statement of the main component. But wait, it doesn't refer to the data yet...
+
 5. (Guide Step 4b) Add accessor props to the `<VictoryBar />` component, including for `data`, `x`, and `y` values.
+
 ```javascript
 // Before: a lonely <VictoryBar /> component with no data
 <VictoryBar />
@@ -84,7 +92,9 @@ Now add it (`<VictoryBar />`) into the `return` statement of the main component.
   y="earnings" // which field to make the y values
 />
 ```
+
 6. ([Guide Step 5](https://formidable.com/open-source/victory/docs/#5-add-a-chart-wrapper)) Next, wrap the `<VictoryBar />` component with a `<VictoryChart></VictoryChart>` component which enables the bar chart to have axes. Don't forget to import `VictoryChart`, too:
+
 ```javascript
 // update the Victory import statement
 import { VictoryBar, VictoryChart } from 'victory';
@@ -98,9 +108,11 @@ import { VictoryBar, VictoryChart } from 'victory';
   />
 </VictoryChart>
 ```
+
 7. ([Guide Step 6](https://formidable.com/open-source/victory/docs/#6-customize-the-axes)) Import the `<VictoryAxis />` component and add two of them inside the `<VictoryChart />` component. Set the props for each: the x-axis `<VictoryAxis />` component should have `tickValues` and `tickFormatting` props, but the y-axis `<VictoryAxis />` component only has `tickFormatting` and a `dependentAxis` parameter that indicates that its values and range aren't rigidly set (because they depend on the data).
 
 You can also add `domainPadding` to the `<VictoryChart />` component to better arrange the y-axis.
+
 ```javascript
 <VictoryChart
   domainPadding={20}
@@ -120,13 +132,16 @@ You can also add `domainPadding` to the `<VictoryChart />` component to better a
   />
 </VictoryChart>
 ```
+
 8. ([Guide Step 7](https://formidable.com/open-source/victory/docs/#7-add-a-theme)) Import and add the `<VictoryTheme />` component, and add a `theme` prop to the `<VictoryChart />` component where the value is `{VictoryTheme.material}`. This default `material` theme will add pre-set colors and spacing to the chart.
+
 ```javascript
 <VictoryChart
   theme={VictoryTheme.material}
   domainPadding={20}
 >
 ```
+
 9. ([Guide Step 8](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts)) Import and add the `<VictoryStack />` component, and update your component according to the [Getting Started Guide](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts) to build the stacked bar chart shown above.
 
 The Getting Started Guide also shows a [Step 9](https://formidable.com/open-source/victory/docs/#9-override-themes-color-scale) which overrides the default theme colors using a `colorScale` prop on the `<VictoryStack />` component; we'll return to this later when we discuss visual design.
