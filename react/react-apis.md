@@ -14,9 +14,9 @@
 4. [APIs + JavaScript](#apis--javascript)
    1. [Fetch](#fetch)
       1. [Chaining `.then()` Functions](#chaining-then-functions)
-      2. [fetch(): GET and POST](#fetch-get-and-post)
-      3. [Async & Await](#async--await)
-   2. [Using `fetch` in React](#using-fetch-in-react)
+      2. [`fetch()`: `GET` and `POST`](#fetch-get-and-post)
+      3. [`async` & `await`](#async--await)
+   2. [Using `fetch()` in React](#using-fetch-in-react)
 5. [Visualizing API Data](#visualizing-api-data)
 6. [Close](#close)
 
@@ -216,12 +216,12 @@ const Item = () => {
 
   component.componentDidMount = () => {
     fetch(apiURL)
-      .then(
+      .then(data => {
         // do something with the response from apiURL
-      )
-      .catch(
+      })
+      .catch(e => {
         // handle any errors from the request
-      )
+      })
   }
   
   component.render = () => {
@@ -253,9 +253,7 @@ const Item = () => {
   component.componentDidMount = () => {
     fetch(apiURL)
       .then(result => component.setState({"hits": result.data}))
-      .catch(
-        // handle any errors from the request
-      )
+      .catch(e => console.log(e))
   }
   
   component.render = () => {
