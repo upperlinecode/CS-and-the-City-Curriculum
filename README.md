@@ -133,6 +133,7 @@
 
 #### Unit 4-B JSON & Firebase
 * Lesson: [Storing Data with JSON & Firebase](react/json-firebase.md)
+	* Setup: [Getting Started with Firestore](react/json-firebase-setup.md)
 * Lab: [User Interaction Components](https://github.com/upperlinecode/firestore-lab)
 
 #### Unit 4-C APIs
