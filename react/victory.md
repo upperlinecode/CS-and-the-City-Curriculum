@@ -109,7 +109,7 @@ import { VictoryBar, VictoryChart } from 'victory';
 </VictoryChart>
 ```
 
-7. ([Guide Step 6](https://formidable.com/open-source/victory/docs/#6-customize-the-axes)) Import the `<VictoryAxis />` component and add two of them inside the `<VictoryChart />` component. Set the props for each: the x-axis `<VictoryAxis />` component should have `tickValues` and `tickFormatting` props, but the y-axis `<VictoryAxis />` component only has `tickFormatting` and a `dependentAxis` parameter that indicates that its values and range aren't rigidly set (because they depend on the data).
+7. ([Guide Step 6](https://formidable.com/open-source/victory/docs/#6-customize-the-axes)) Import the `VictoryAxis` component and add two of them inside the `<VictoryChart />` component. Set the props for each: the x-axis `<VictoryAxis />` component should have `tickValues` and `tickFormatting` props, but the y-axis `<VictoryAxis />` component only has `tickFormatting` and a `dependentAxis` parameter that indicates that its values and range aren't rigidly set (because they depend on the data).
 
 You can also add `domainPadding` to the `<VictoryChart />` component to better arrange the y-axis.
 
@@ -133,7 +133,7 @@ You can also add `domainPadding` to the `<VictoryChart />` component to better a
 </VictoryChart>
 ```
 
-8. ([Guide Step 7](https://formidable.com/open-source/victory/docs/#7-add-a-theme)) Import and add the `<VictoryTheme />` component, and add a `theme` prop to the `<VictoryChart />` component where the value is `{VictoryTheme.material}`. This default `material` theme will add pre-set colors and spacing to the chart.
+8. ([Guide Step 7](https://formidable.com/open-source/victory/docs/#7-add-a-theme)) Import and add the `VictoryTheme` component, and add a `theme` prop to the `<VictoryChart />` component where the value is `{VictoryTheme.material}`. This default `material` theme will add pre-set colors and spacing to the chart.
 
 ```javascript
 <VictoryChart
@@ -142,7 +142,7 @@ You can also add `domainPadding` to the `<VictoryChart />` component to better a
 >
 ```
 
-9. ([Guide Step 8](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts)) Import and add the `<VictoryStack />` component, and update your component according to the [Getting Started Guide](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts) to build the stacked bar chart shown above.
+9. ([Guide Step 8](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts)) Import and add the `VictoryStack` component, and update your component according to the [Getting Started Guide](https://formidable.com/open-source/victory/docs/#8-stack-multiple-bar-charts) to build the stacked bar chart shown above.
 
 The Getting Started Guide also shows a [Step 9](https://formidable.com/open-source/victory/docs/#9-override-themes-color-scale) which overrides the default theme colors using a `colorScale` prop on the `<VictoryStack />` component; we'll return to this later when we discuss visual design.
 
@@ -156,7 +156,7 @@ In addition to the stacked bar graph component you just saw, there are examples 
 
 Click into one of the visualizations and explore the code that's used to produce it. Most importantly, look at the data and the structure of the data that is ingested.
 
-For instance, the pie (donut) visualization below is made up of a `<VictoryPie />` component with a `<VictoryLabel />` component for the middle text. The `<VictoryPie /> component has several props, but the two that matter most for how it looks are the `innerRadius={68}` prop which turns the pie into a donut, and the `labelRadius={100}` which sets the placement of the series labels. Notice how the `style` prop is used to change the color of the labels so they're white instead of the default color.
+For instance, the pie (donut) visualization below is made up of a `<VictoryPie />` component with a `<VictoryLabel />` component for the middle text. The `<VictoryPie />` component has several props, but the two that matter most for how it looks are the `innerRadius={68}` prop which turns the pie into a donut, and the `labelRadius={100}` which sets the placement of the series labels. The `style` prop is also used to change the color of the labels so they're white instead of the default color.
 
 ```javascript
 <VictoryPie
@@ -188,7 +188,7 @@ As you begin to use Victory to visualize data, you'll realize there are many dif
 
 Most of the data used by Victory comes in the form of `x`, `y` pairs. Imagine you've been given the example data below which represents the number of boxes of Girl Scout cookies sold by 5 members of Girl Scout Troop 314 over the last three years. 
 
-Which different graph(s) do you think could be used to display some or all of the data? What story would each type of graph tell?
+Which different graph(s) do you think could be used to display some or all of the data? What story would each type of graph tell? Without coding a solution, try to draw what you think the visualization(s) would look like.
 
 ```javascript
 const sales2017 = {[
