@@ -13,9 +13,10 @@
 3. [Viewing Data](#viewing-data)
 4. [APIs + JavaScript](#apis--javascript)
    1. [Fetch](#fetch)
-   1. [Async & Await](#async--await)
-   2. [Using `async` & `await`](#using-async--await)
-   3. [Using `async` & `await` in React](#using-async--await-in-react)
+      1. [Chaining `.then()` Functions](#chaining-then-functions)
+      2. [fetch(): GET and POST](#fetch-get-and-post)
+      3. [Async & Await](#async--await)
+   2. [Using `fetch` in React](#using-fetch-in-react)
 5. [Visualizing API Data](#visualizing-api-data)
 6. [Close](#close)
 
@@ -38,7 +39,7 @@ The [jservice.io](http://jservice.io/) site is a place where you can go to acces
 http://jservice.io/api/random?count=1
 ```
 
-#### Response
+#### JSON Response
 
 ```javascript
 [{
