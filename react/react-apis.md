@@ -247,7 +247,7 @@ import React from 'react';
 const Item = () => {
   const component = new React.Component();
   component.state = {
-    hits = []
+    hits: []
   }
 
   component.componentDidMount = () => {
@@ -293,4 +293,4 @@ Successfully using APIs to get data is all about knowing the data you need, find
 
 In order to implement APIs in React, we've also covered two more-technical strategies: leveraging the `componentDidMount` method in React and using `fetch()` to asynchronously request data while handling errors that may result.
 
-At this point, we encourage you to move on to the [NYC Open Data mini-unit](react-nyc-open-data).
+At this point, we encourage you to move on to the [NYC Open Data mini-unit](react-nyc-open-data.md).

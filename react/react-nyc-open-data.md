@@ -15,6 +15,7 @@
 4. [Filtering Data from Socrata](#filtering-data-from-socrata)
   1. [More Complex Filtering](#more-complex-filtering)
 5. [Getting NYC Open Data into React](#getting-nyc-open-data-into-react)
+  1. [Keeping Our App Token Safe](#keeping-our-app-token-safe)
 6. [Close](#close)
 
 ## Launch
@@ -80,7 +81,7 @@ According to the [Socrata documentation](https://dev.socrata.com/docs/app-tokens
 https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ
 ```
 
-#### Response
+#### JSON Response
 
 ```javascript
 [{
@@ -171,7 +172,7 @@ To use the `borough` parameter to filter to only the permits granted in Manhatta
 https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan
 ```
 
-#### Response
+#### JSON Response
 
 ```javascript
 [{
@@ -242,7 +243,7 @@ https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FD
 > Note: the parentheses are not necessary, however they're included for readibility.
 > Note: `%22` is the HTML character code for `"`.
 
-#### Response
+#### JSON Response
 
 ```javascript
 [{
@@ -311,16 +312,16 @@ const Item = () => {
     // define state variables here
   }
 
-  async component.componentDidMount = () => {
-    try {
-      let response = await fetch('https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token=TNxXJT9OVmO6FDIhzqXYaEKJ&borough=Manhattan');
-      // other await statements could go here
-
-      // other code to execute once response is defined
-    } catch(err) {
-      // catches errors in any of the await statements in try {}
-      alert(err);
-    }
+  component.componentDidMount = () => {
+    let appToken = 'TNxXJT9OVmO6FDIhzqXYaEKJ'; // see below to secure your App Token
+    fetch('https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token='+appToken+'&borough=Manhattan')
+      .then(response => response.json()) // convert response to JSON
+      .then(data => {
+        // code to execute once data is defined
+      })
+      .catch(e => {
+        alert(e);
+      })
   }
   
   component.render = () => {
@@ -336,6 +337,19 @@ export default Item;
 ```
 
 At this point, it's worth re-recognizing that the API's response, the variable `response` above, is an array of objects. We already know how to use `.map()` and other JavaScript functions on an array of objects to manipulate and return HTML in a React component! Yay!
+
+### Keeping Our App Token Safe
+
+Although the Socrata App Token is generally ok to send "in the clear" (without encrypting it or hiding it) when making an API request, there are some credentials that you'll want to keep safe from prying eyes. For those, you'll want to create a special file to store environment variables. This file is called `.env`, and in React there are a few things to note when creating and using an `.env` file:
+- All React environment variables must start with `REACT_APP_` in order to be recognized by the App: e.g. `REACT_APP_SOCRATA_TOKEN`.
+- The variable is stored in `.env` along with its value, but the .env file is part of your `.gitignore` file so it isn't committed to github:
+```
+REACT_APP_SOCRATA_TOKEN = TNxXJT9OVmO6FDIhzqXYaEKJ
+```
+- The environment variable can be used in your code by prepending `process.env.` to the name of the variable and wrapping it in `{}`: e.g. `{process.env.REACT_APP_SOCRATA_TOKEN}
+- If you change the environment variables, you will need to restart the server to implement the new environment variables.
+
+> Read more about using [Custom Environment Variables in the React Documentation](https://create-react-app.dev/docs/adding-custom-environment-variables/).
 
 ## Close
 
