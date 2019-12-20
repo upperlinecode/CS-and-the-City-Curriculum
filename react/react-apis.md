@@ -10,7 +10,7 @@
 
 1. [Launch](#launch)
 2. [APIs Overview](#apis-overview)
-3. [Viewing Data](#viewing-data)
+3. [Anatomy of an API Request](#anatomy-of-an-api-request)
 4. [APIs + JavaScript](#apis--javascript)
    1. [Fetch](#fetch)
       1. [Chaining `.then()` Functions](#chaining-then-functions)
@@ -84,7 +84,7 @@ Can you guess what data this URL will show?: [https://www.google.com/search?q=re
 
 Now click on the URL. What happens if you change part of the URL from `red+lobster` to `blue+lobster`?
 
-## Viewing Data
+## Anatomy of an API Request
 
 Most API requests are built from three parts:
 
