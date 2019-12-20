@@ -88,11 +88,11 @@ Now click on the URL. What happens if you change part of the URL from `red+lobst
 
 Most API requests are built from three parts:
 
-1. An Endpoint: an endpoint is the stem of the request URL. For the example above, the endpoint is `https://www.google.com/search`.
+1. **An Endpoint**: an endpoint is the stem of the request URL. For the example above, the endpoint is `https://www.google.com/search`.
 	> For the first example we saw, the endpoint is `http://jservice.io/api/random`.
-2. Parameters: parameters are the variables that are passed to the database as part of the request and follow the `?`. For the example above, there is one parameter, `q`.
+2. **Parameters**: parameters are the variables that are passed to the database as part of the request and follow the `?`. For the example above, there is one parameter, `q`.
 	> For the first example we saw, the parameter was `count`.
-3. Values: values are paired with variables and are the data that is passed to the database in the request. For the example above, the value `red+lobster` is paired with the parameter `q`.
+3. **Values**: values are paired with variables and are the data that is passed to the database in the request. For the example above, the value `red+lobster` is paired with the parameter `q`.
 	> For the first example we saw, the value was `1`.
 
 > Note: when there are multiple parameters and variables passed to an API, the parameter/variable pairs are separated by an `&` symbol.
