@@ -10,7 +10,7 @@
 
 1. [Launch](#launch)
 2. [Passing State Among Elements](#passing-state-among-elements)
-3. [Lifecycle Methods](#lifecycle-methods)
+3. [Lifecycle Methods (optional)](#lifecycle-methods-optional)
 4. [Close](#close)
 
 ## Launch

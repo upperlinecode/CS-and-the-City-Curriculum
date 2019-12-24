@@ -14,11 +14,11 @@
 4. [APIs + JavaScript](#apis--javascript)
    1. [Fetch](#fetch)
       1. [Chaining `.then()` Functions](#chaining-then-functions)
-      2. [`fetch()`: `GET` and `POST`](#fetch-get-and-post)
-      3. [`async` & `await`](#async--await)
    2. [Using `fetch()` in React](#using-fetch-in-react)
 5. [Visualizing API Data](#visualizing-api-data)
 6. [Close](#close)
+7. [Stretch #1: `fetch()` - `GET` and `POST`](#stretch-1-fetch---get-and-post)
+8. [Stretch #2: `async` & `await`](#stretch-2-async--await)
 
 ## Launch
 
@@ -130,7 +130,7 @@ fetch(apiURL) // requests data from apiURL
 
 The pattern shown above is the simplest implementation of the `fetch()` which will get data from a URL, and it's primarily what we'll be using. It can, however, get more complex.
 
-For instance, it's possible to chain together multiple `.then()` functions which will be executed in order following a successful `fetch()` request. This might come in handy if you first want to convert response data to JSON before using it:
+For instance, it's possible to chain together multiple `.then()` functions which will be executed in order following a successful `fetch()` request. This might come in handy if you first need to convert response data to JSON before using it:
 
 ```javascript
 fetch(apiURL)
@@ -143,64 +143,11 @@ fetch(apiURL)
   });
 ```
 
-#### `fetch()`: `GET` and `POST`
-
-The `fetch()` function is, as a default, making a `GET` request of the API URL. But what if you wanted to use `fetch()` to send data via a `POST` request?
-
-`fetch()` can accept an optional second parameter which is a set of options for how the `fetch()` request should be made. In this `init` parameter, you can set things like the type of request (`GET`, `POST`, `PUT`, etc.), headers, credentials, the body of a `POST` request, and more.
-
-```javascript
-// default options marked with *
-fetch(apiURL, {
-  method: 'POST', // *GET, POST, PUT, DELETE, etc.
-  mode: 'cors', // no-cors, *cors, same-origin
-  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-  credentials: 'same-origin', // include, *same-origin, omit
-  headers: {
-    'Content-Type': 'application/json'
-    // 'Content-Type': 'application/x-www-form-urlencoded',
-  },
-  redirect: 'follow', // manual, *follow, error
-  referrer: 'no-referrer', // no-referrer, *client
-  body: JSON.stringify(data) // body data type must match "Content-Type" header
-})
-```
-
-> Read more about `fetch()` in the [Mozilla Web Developer Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
-
-We'll use `fetch()` as the primary method for making API calls because that's what you'll see as you explore documentation on the web. That said, there's another pattern which is becoming more common which you may also see, so it's worth mentioning it here, too.
-
-#### Async & Await
-
-Another way to overcome this problem is to use a pattern called `async await` which you may see in documentation. `async` (for asynchronous) means that JavaScript will not have to wait for a function to succeed before continuing on to do other things. The `async` function will `await` a response from an API, and depending on the response - usually either `success` or an `error` - will do something. `async` and `await` are useful because they won't block the rest of the page from continuing to load even though data hasn't been received yet. This is particularly useful when you can't be certain how long an API will take to return data (if it returns data at all).
-
-There's a lot to be said about using `async` and `await` properly, and there's a lot of complexity to handling and manipulating promises efficiently, but the basic anonymous version of the `async-await` functional pattern (with error handling) is below:
-
-```javascript
-(async () => {
-  try {
-    let response = await fetch(apiURL);
-    // other await statements could go here
-
-    // other code to execute once response is defined
-  } catch(err) {
-    // catches errors in any of the await statements in try {}
-    alert(err);
-  }
-})();
-```
-- the `async` keyword is placed before the function to define it as an asynchronous function and to indicate that it will return a promise
-- `try ... catch` is used to handle any errors that might result from an unsuccessful API request
-- `await` makes JavaScript wait until the `fetch()` request has returned a result
-> Note: `await` only works within an `async` function
-
-So the anonymous function will wait for `https://someAPIcall` to return a result. If it does return a result, then it will store that as the `response` variable and then do something with it. If the request throws an error, then the function will do what's the in the `catch` code block, in this case showing an `alert()` with the error.
-
-- More on [Using `async await` in React](https://www.valentinog.com/blog/await-react/), including troubleshooting
-
 ### Using `fetch()` in React
 
-Now that we know what an API is and how it works, and how to make `fetch()` API requests, we can see how to make an API call in React.
+Now that we know what an API is and how it works, and how to make `fetch()` API requests, we can see how to make an API call in React. So far, we've spend the most time thinking about the `render` lifecycle method, but there are other important ones, too. The next most important lifecycle method is `componentDidMount` and this is where API calls are made.
+
+> Click here for a refresher on [Lifecycle Methods](passing-state-lifecycle-methods.md#lifecycle-methods-optional).
 
 API calls are typically done in the `componentDidMount` method of a component because the timing of the API request should be so the response of the request can be displayed in the component on the page:
 
@@ -238,7 +185,7 @@ export default Item;
 
 The standard way of handling the data returned from an API is to use `setState` within the `.then()` method in order to update any state variables which act as containers for the data that's returned. The component then renders based on updates to the state variables.
 
-Below is an example where the `component.state.hits` variable is used to store the results of the API request; `component.state.hits` is also used to render the result.
+Imagine you're getting a list of public schools from a [NYC Open Data](react-nyc-open-data.md) API. Below you'll see how the `component.state.schools` variable is used to store the result of the API request; `component.state.schools` is also then used to render the result.
 
 ```javascript
 import React from 'react';
@@ -247,15 +194,15 @@ import React from 'react';
 const Item = () => {
   const component = new React.Component();
   component.state = {
-    hits: []
+    schools: []
   }
 
   component.componentDidMount = () => {
     fetch(apiURL)
-      .then(result => component.setState({"hits": result.data}))
+      .then(result => component.setState({"schools": result.data}))
       .catch(e => {
         console.log(e);
-        component.setState({"hits":[
+        component.setState({"schools":[
           {
             'title':'An error has occurred.',
             'objectID': 0,
@@ -268,9 +215,9 @@ const Item = () => {
   component.render = () => {
     return (
       <ul>
-        {component.state.hits.map(hit =>
-          <li key={hit.objectID}>
-            <a href={hit.url}>{hit.title}</a>
+        {component.state.schools.map(school =>
+          <li key={school.objectID}>
+            <a href={school.url}>{school.title}</a>
           </li>
         )}
       </ul>
@@ -294,3 +241,58 @@ Successfully using APIs to get data is all about knowing the data you need, find
 In order to implement APIs in React, we've also covered two more-technical strategies: leveraging the `componentDidMount` method in React and using `fetch()` to asynchronously request data while handling errors that may result.
 
 At this point, we encourage you to move on to the [NYC Open Data mini-unit](react-nyc-open-data.md).
+
+## Stretch #1: `fetch()` - `GET` and `POST`
+
+The `fetch()` function is, as a default, making a `GET` request of the API URL. But what if you wanted to use `fetch()` to send data via a `POST` request?
+
+`fetch()` can accept an optional second parameter which is a set of options for how the `fetch()` request should be made. In this `init` parameter, you can set things like the type of request (`GET`, `POST`, `PUT`, etc.), headers, credentials, the body of a `POST` request, and more.
+
+```javascript
+// default options marked with *
+fetch(apiURL, {
+  method: 'POST', // *GET, POST, PUT, DELETE, etc.
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+    'Content-Type': 'application/json'
+    // 'Content-Type': 'application/x-www-form-urlencoded',
+  },
+  redirect: 'follow', // manual, *follow, error
+  referrer: 'no-referrer', // no-referrer, *client
+  body: JSON.stringify(data) // body data type must match "Content-Type" header
+})
+```
+
+> Read more about `fetch()` in the [Mozilla Web Developer Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+
+We'll use `fetch()` as the primary method for making API calls because that's what you'll see as you explore documentation on the web. That said, there's another pattern which is becoming more common which you may also see, so it's worth mentioning it here, too.
+
+## Stretch #2: Async & Await
+
+Another way to overcome this problem is to use a pattern called `async await` which you may see in documentation. `async` (for asynchronous) means that JavaScript will not have to wait for a function to succeed before continuing on to do other things. The `async` function will `await` a response from an API, and depending on the response - usually either `success` or an `error` - will do something. `async` and `await` are useful because they won't block the rest of the page from continuing to load even though data hasn't been received yet. This is particularly useful when you can't be certain how long an API will take to return data (if it returns data at all).
+
+There's a lot to be said about using `async` and `await` properly, and there's a lot of complexity to handling and manipulating promises efficiently, but the basic anonymous version of the `async-await` functional pattern (with error handling) is below:
+
+```javascript
+(async () => {
+  try {
+    let response = await fetch(apiURL);
+    // other await statements could go here
+
+    // other code to execute once response is defined
+  } catch(err) {
+    // catches errors in any of the await statements in try {}
+    alert(err);
+  }
+})();
+```
+- the `async` keyword is placed before the function to define it as an asynchronous function and to indicate that it will return a promise
+- `try ... catch` is used to handle any errors that might result from an unsuccessful API request
+- `await` makes JavaScript wait until the `fetch()` request has returned a result
+> Note: `await` only works within an `async` function
+
+So the anonymous function will wait for `https://someAPIcall` to return a result. If it does return a result, then it will store that as the `response` variable and then do something with it. If the request throws an error, then the function will do what's the in the `catch` code block, in this case showing an `alert()` with the error.
+
+- More on [Using `async await` in React](https://www.valentinog.com/blog/await-react/), including troubleshooting
