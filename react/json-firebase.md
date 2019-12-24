@@ -245,7 +245,7 @@ Below is a simple React component called `<User />` that stores a user's name an
 
 ```javascript
 import React from 'react';
-import firebase from "./Firestore";
+import firebase from "./Firestore.js";
 
 const User = () => {
   const component = new React.Component();
@@ -308,7 +308,7 @@ export default User;
 
 ```javascript
 // Add import
-import User from './components/User'
+import User from './components/User.js'
 
 ...
 
