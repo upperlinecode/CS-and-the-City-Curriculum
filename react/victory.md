@@ -34,6 +34,8 @@ Check out the code for ["Exemplar Project 1: NYC Water"](https://github.com/uppe
 
 ## Getting Started with Victory
 
+> Watch this [video walk-through](https://youtu.be/YJEeV3NpslU) to help you get started with Victory.
+
 By now you're familiar with _why_ you'd want to [visualize data](./data/visualization.md), but doing it will draw upon not just our ability to code but also our skills in visual design. Once you know how to make a visualization with Victory, then we'll discuss how to make a _good_ visualization with Victory.
 
 Although there are quite a few other data visualization libraries out there (e.g. [d3.js](https://d3js.org/)), we've chosen to explore Victory because it is a natural fit when we're building with React.

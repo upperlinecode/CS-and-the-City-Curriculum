@@ -98,6 +98,8 @@ Firebase is a database solution from Google which has a lot of different product
 
 ### CRUD: Create, Read, Update, Delete
 
+> Watch this [video walk-through](https://youtu.be/52qkg7zvz6I) to help you CRUD in Firestore.
+
 There are 4 main operations a database needs to be able to do: create, read, update, and delete.
 
 - Creating data means making a new record in the database.
@@ -226,6 +228,8 @@ You can also [delete particular fields in a Firestore document](https://firebase
 - For more on deleting data in Firestore, see the [Firestore Documentation on Deleting Data](https://firebase.google.com/docs/firestore/manage-data/delete-data).
 
 ## Firestore in React
+
+> Watch this [video walk-through](https://youtu.be/52qkg7zvz6I) to help you CRUD in Firestore + React.
 
 Below is a simple React component called `<User />` that stores a user's name and email address when they are submitted via a form. It demonstrates basic `.add()` functionality in Firestore. The component works like this:
 

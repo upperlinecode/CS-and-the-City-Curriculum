@@ -112,6 +112,8 @@ When we make a request to an API, sometimes it takes a bit of time for the API t
 
 ### Fetch
 
+> Watch this [video walk-through](https://youtu.be/Al4mH79Ka34) to see how fetch() is used with NYC Open Data APIs in React.
+
 To overcome this problem, we need to use a way of calling the API where the call is done as soon as a page loads, and then the response (or lack thereof) can trigger a secondary event such as rendering the data. This pattern of requesting data in parallel to the normal loading order of the page is done using a "promise" function called `fetch()`.
 
 `fetch()` requests data from an API via a URL (or even a local file) and then will do something depending on what it gets back from its request. If `fetch()` gets a response from the request (even if that response is no data at all), `fetch()` will pass that data on to a function called `.then()` which is chained to the `fetch()` request. If, however, the `fetch()` function gets an error response from its request (e.g. because of a bad request or a server error), it will execute whatever is in a `.catch()` function which is also chained to the `fetch()` request:

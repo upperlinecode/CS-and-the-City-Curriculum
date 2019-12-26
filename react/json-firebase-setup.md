@@ -21,7 +21,7 @@ To get up and running with Firestore in React, we need to do the following thing
 4. Integrate Firebase into our React app
 5. Set up a database and collection in Firestore
 
-Before you get started, you can either integrate Firestore into one of your existing React projects, or you can `git clone` [this repo (need to add/build this)](#) and follow along there.
+Before you get started, you can either integrate Firestore into one of your existing React projects, or you can `git clone https://github.com/upperlinecode/react-project-template` and follow along there.
 
 #### 1. Install the `firebase` library to our development environment
 
@@ -42,6 +42,8 @@ Easy! You should now see `firebase` and an automatically-generated version numbe
 > Note: It's ok if you see a different number than `^7.4.0` - depending on when you're reading this, Firebase may have released a newer version since we wrote these lessons.
 
 #### 2. Sign up for a Firebase account
+
+> Watch this [video walk-through](https://youtu.be/dAE4QdP-c7s) to help you as you're signing up for Firebase.
 
 From the Firebase homepage [https://firebase.google.com](https://firebase.google.com), sign in using a Google account or sign up and make yourself a new Google account.
 

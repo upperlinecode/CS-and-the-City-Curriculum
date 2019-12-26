@@ -22,6 +22,8 @@
 
 If you haven't yet read through the [React APIs mini-unit](react-apis.md), please do that before beginning this mini-unit.
 
+> Watch this [video walk-through](https://youtu.be/Al4mH79Ka34) to see how NYC Open Data APIs are used with React.
+
 ## NYC Open Data APIs
 
 ![NYC Open Data Portal](./img/nyc-open-data.png)
