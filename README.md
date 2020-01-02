@@ -126,3 +126,17 @@
 * Student Exemplar Project 2: Nutrition Tracker
 	* <a href="https://nostalgic-mccarthy-29ceb2.netlify.com/" target="_blank">Deployed</a>
 	* <a href="https://github.com/upperlinecode/nyc-nutritional-facts" target="_blank">Code</a>
+
+#### Unit 4-A Victory
+* Lesson: [Visualizing Data with Victory](react/victory.md)
+* Lab: [Demographics Dashboard](https://github.com/upperlinecode/react-victory-lab)
+
+#### Unit 4-B JSON & Firebase
+* Lesson: [Storing Data with JSON & Firebase](react/json-firebase.md)
+	* Setup: [Getting Started with Firestore](react/json-firebase-setup.md)
+* Lab: [User Interaction Components](https://github.com/upperlinecode/react-firebase-lab)
+
+#### Unit 4-C APIs
+* Lesson: [APIs in React](react/react-apis.md)
+* Lesson: [NYC Open Data](react/react-nyc-open-data.md)
+* Lab: [Squirrel Data Explorer](https://github.com/upperlinecode/react-apis-lab)
