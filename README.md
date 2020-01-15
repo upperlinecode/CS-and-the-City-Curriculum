@@ -129,11 +129,13 @@
 
 #### Unit 4-A Victory
 * Lesson: [Visualizing Data with Victory](react/victory.md)
+* Video: [Data Vizualization with Victory Walkthrough](https://www.youtube.com/watch?v=YJEeV3NpslU&feature=youtu.be)
 * Lab: [Demographics Dashboard](https://github.com/upperlinecode/react-victory-lab)
 
 #### Unit 4-B JSON & Firebase
 * Lesson: [Storing Data with JSON & Firebase](react/json-firebase.md)
 	* Setup: [Getting Started with Firestore](react/json-firebase-setup.md)
+* Video: [JSON & Firebase Walkthrough](https://www.youtube.com/watch?v=YJEeV3NpslU&feature=youtu.be)
 * Lab: [User Interaction Components](https://github.com/upperlinecode/react-firebase-lab)
 
 #### Unit 4-C APIs
