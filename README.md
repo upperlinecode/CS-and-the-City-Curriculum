@@ -139,4 +139,5 @@
 #### Unit 4-C APIs
 * Lesson: [APIs in React](react/react-apis.md)
 * Lesson: [NYC Open Data](react/react-nyc-open-data.md)
+* Video: [APIs Walkthrough](https://www.youtube.com/watch?v=Al4mH79Ka34&feature=youtu.be)
 * Lab: [Squirrel Data Explorer](https://github.com/upperlinecode/react-apis-lab)
