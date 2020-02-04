@@ -12,18 +12,21 @@
 1. [Launch](#launch)
 2. [Iteration with for loops](#iteration-with-for-loops)
 3. [Iteration with map](#iteration-with-map)
-4. [Close](#close)
+3. [Iteration with forEach](#iteration-with-foreach)
 
 ## Launch
 
-You might know that computers are incredibly fast at performing calculations. But it's hard to wrap ones head around just HOW fast they are. In one second your average desktop computer can perform over a billions calculations. It would take you over 300 years with no breaks for you to do what a computer can do in one second!
+> Teacher note: This is generally really challenging, and may be worth breaking out into several days, one for each concept.
 
-Due to the speed at which computers can calculate, they are very good at performing specialized tasks - such as searching for primes numbers. The Great Internet Mersenne Prime Search is a project that looks for larger and larger prime numbers using distributed computer networks around the world. While checking for Mersenne Primes (which can be done using the formula 2^n - 1) can be a complex task, can you write sudo code for how you would program a computer to find every even number less than 10? Less than 1,000? Less than 100,000,000?
+You might know that computers are incredibly fast at performing calculations. But it's hard to wrap ones head around just HOW fast they are. In one second your average desktop computer can perform over a billions calculations.
 
-#### Questions for Students
+For most people, it would take over 300 years with no breaks to do what a modern computer can do in about one second.
 
-* Share your sudo code with a partner - did they use a similar method? How are they similar? How are they different?
-* Did your sudo code change for when you were checking the numbers less than 10 to when you were checking the numbers less than 100,000,000? If so, how did it change?
+The speed with which a computer can handle this type of tedious task is one major reason why people who dislike doing math problems often love writing computer programs - they can code out HOW the problem is done without having to go through the work of doing it.
+
+#### Launch Challenges
+
+* Print
 
 ## Iteration with `for` loops
 
@@ -39,33 +42,44 @@ for(let i = 0; i<5; i++){
 }
 ```
 
-A `for` loop takes **three** arguments separated by a semicolon. The first argument is the starting value of the loop. This loop will begin with the number 0 (thinking of our launch, if we were checking what numbers are even you might want to start at a higher number, such as 1).
+A `for` loop takes three statements separated by a semicolon. In short, it's easiest to think of these three statements as the **start where...**, **while...**, and **go up by...**. Reading these three statements for the above example, it would be "Start where i is 0, and keep going while i is less than 5, going up by 1 each time."
 
-The second argument tells the computer when to stop. In this example, after what number will the loop stop running?
+(If this is the first time students have seen `i++`, it may be worth mentioning that this is a really common syntax in many programming languages).
 
-The third argument is how much we want to increment by every time the loops runs. In this example, `i` will increase by 1 (`i++` is shorthand for `i = i + 1` or `i += 1`).
+#### OPTIONAL: Under the hood of `for` loops
 
-#### Questions for Students
+Here's a more precise look at exactly how these three statements are implemented. This is generally not helpful for first-time students.
+* The first statement is the starting value of the loop - it's run only once, before the loop begins. The loop above begins with the number 0, but could start anywhere.
+* The second statement is run *before* each iteration in the loop. The code block is only executed when this second statement evaluates to `True`.
+* The third statement is run *after* each iteration in the loop. much we want to increment by every time the loops runs. In the above example, `i` will increase by 1 (`i++` is shorthand for `i = i + 1` or `i += 1`), but you could just as easily skip-count by 3s or any other number with something like `i = i + 3`.
 
-* Write a for loop that starts at 0, ends at 20, and increments by 1
-* Write a for loop that starts at 10, ends at 100, and increments by 20.
-* Stretch: Write a for loop that starts at 100, end at 10, and decreases by 5
+#### Playtime
 
-### Practice with `for` loops
+* Log out every number from 1-20
+* Log out every number from 50-100
+* Log out every even number up to 100
+* Log out every multiple of 2 and every multiple of 3 up to 100
+* Log out the sum of every number under 1000
+* Log out the first 10 digits of the fibbonacci series.
 
-> Some data has already been stored for you in the [`friends.js`](javascript-iteration/friends.js) file. It's also copied here:
 
-```javascript 
-const names = ["Yhadira", "Kadiatou", "Isiah", "Yadelin", "Darius"]
-const nicknames = ["Deary", "Kadi-B", "Izzy", "Loki", "Yaddy", "DRock"]
-const age = [22,28,27,33,29]
-const favAnimal = ["Cat", "Ferret", "Dog", "Sloth", "Zebra"]
-const born = ["Queens", "Bronx", "Manhattan", "Bronx", "Brooklyn"]
+#### Arrays for use with `for` loops
+
+Here are some sample Arrays you can use with students.
+
+These examples are most easily run in Repl.it, but you can also run them in a linked JavaScript file in an HTML document, which may reduce friction if you want to prioritize DOM manipulation through iteration as part of this lesson.
+
+```javascript
+const names = ["Yadira", "Kadiatou", "Isaiah", "Fancisco", "Darius"]
+const nicknames = ["Deary", "Kadi-B", "Izzy", "Paco", "DRock"]
+const ages = [22,28,27,33,29]
+const favAnimals = ["Cat", "Ferret", "Dog", "Sloth", "Zebra"]
+const birthLocations = ["Queens", "Bronx", "Manhattan", "Bronx", "Brooklyn"]
 ```
 
-In `friends.js` there is an array stored in the variable `names`. Let's say we wanted to greet each person in this array by saying "Hello, ____. So good to see you! Your hair looks amazing today."
+There is an array stored in the variable `names`. Let's say we wanted to greet each person in this array by saying "Hello, ____. So good to see you! Your hair looks amazing today."
 
-How could we do this using a `for` loop?
+#### Using a `for` loop with an array
 
 Example 1a:
 ```javascript
@@ -73,11 +87,11 @@ for(let i = 0; i<names.length; i++){
   console.log("Hello, " + names[i] + ". So good to see you! Your hair looks amazing today.")
 }
 ```
-> To check if the code is working, tell students to open index.html in their browsers and check the console.
 
-Remember, arrays start at index 0, so we want to start at 0 and run the whole length of the array. `array.length` returns the length of the array, which is why we used that as our second argument.
+The property `array.length` is a built-in property that always contains the length of the array, so using `names.length` as our second statement means this code will work for any length of array.
 
-In `friends.js` there is another array stored in the variable `nickname`. How can we have the computer console.log "____'s nickname is ____" for each person?
+In `friends.js` there is another array stored in the variable `nicknames`.
+Challenge students to have the computer log out "____'s nickname is ____" for each person?
 
 Example 1b:
 ```javascript
@@ -88,75 +102,184 @@ for(let i = 0; i<names.length; i++){
 
 > Teachers note: Depending on where you think the students are in their understanding, you can either have them work independently on the previous example or directly show them the code. There will be plenty more practice in the upcoming lab.
 
-You might be thinking "storing the name and the nickname in separate arrays is not the most useful data structure." You'd be right. What if we wanted to create an array of objects that had "Name" and "Nickname" keys for storing these values for each person. How could zip these two arrays into a single object using a `for` loop?
+Ask students why storing the name and the nickname in separate arrays is not the most useful data structure.
+
+We can use a `for` loop to create an array *of objects*. Each object will represent one person, and have "Name" and "Nickname" keys for storing that person's specific values.
+
+Here's what that might look like:
 
 Example 1c:
 ```javascript
+// Create a new array to store our more complex people objects
 let people = []
 for(let i = 0; i<names.length; i++){
+  // Create a blank person object for each name
   let person = {}
+  // Add that person's name as a key-value pair in the person object.
   person["Name"] = names[i]
+  // Add that person's Nickname as a key-value pair in the person object.
   person["Nickname"] = nicknames[i]
+  // Add the entire person object to the people array.
   people.push(person)
 }
+// Log out the final result.
 console.log(people)
 ```
 
-You might notice we used `people.push` in this for loop. `array.push` adds a new element to end of the existing array. We use it here to add each `person` object to our `people` array.
-
-Now that we have our new `people` array, how can we refactor our previous code to console.log "____'s nickname is ____" for each person?
+Now that we have our new `people` array, refactoring our original for loop can look a lot clearer.
 
 Example 1d:
 ```javascript
 for(let i = 0; i<people.length; i++){
-  console.log(people["Name"] +  "'s nickname is " + people["Nickname"] )
+  console.log(people[i]["Name"] +  "'s nickname is " + people[i]["Nickname"] )
 }
 ```
 
 ## Iteration with map
 
-`for` loops are useful in some situations, but using the `array.map()` method has many benefits when looping through an array.
+`for` loops are awesome, but you may have noticed that only example 1c showed how to save the changes you make in a for loop, and in most situations, you want to save the output of a for loop for later use in other contexts.
 
-### Why map?
+Let's keep using our array of objects called `people` and see what it takes to SAVE (instead of console.log) the results of creating these quick nickname bios ("____'s nickname is ____").
 
-The `array.map()` method has two major benefits when looping through arrays. First, the map method returns a new array and leaves the original array unaffected. Second, it leads to cleaner, more readable code.
-
-Let's once again try to refactor our code to console.log "____'s nickname is ____" using the map method.
-
-Example 2a:
 ```javascript
-let bios = people.map(bio => {
-    return (bio["Name"] +  "'s nickname is " + bio["Nickname"])
-  })
+// Create a variable to save the results in. It will start empty:
+let bios = []
+// Iterate over the people, pushing each person's bio to to the bios array
+for(let i = 0; i<people.length; i++){
+  bios.push(people[i]["Name"] +  "'s nickname is " + people[i]["Nickname"])
+}
+// Log the results to see if it saved our info as expected.  
 console.log(bios)
 ```
 
-In this example, the map method returns a new array and leaves the original `people` array unaffected.
+#### Save results faster with `.map()`
 
-We can also use the map function to create new HTML elements. Instead of just printing each string to the console, let's add these strings to our website.
+The `array.map()` method basically creates a parallel new array to the one you start with. It doesn't distort the original, and the new parallel array always comes out the same length as the original.
+
+Let's once again try to refactor our code to console.log "____'s nickname is ____" using the map method instead.
+
+Example 2a:
+```javascript
+let bios = people.map(person => {
+  return(person["Name"] +  "'s nickname is " + person["Nickname"])
+})
+console.log(bios)
+```
+
+Here are the key differences:
+* You can create the resulting array (`bios`) on the same line as you use the map function - this makes our code more streamlined.
+* You can create a placeholder for each item in the original array. In this case, we're using the name `person` for readability, but it could be anything. This placeholder for each item is sometimes called the **iterator** or the **constant of iteration**, and it essentially is a more readable way of writing `people[i]`.
+* Instead of using `bios.push()` to manually create an array the map method uses `return` to create it automatically.
+
+#### A Simpler `.map()` Example
+
+Most students need another example, as this is really confusing the first dozen times you see it.
+
+The simplest example is probably to think of a list of numbers: `nums = [3,10,1,25]`
+* Ask students to create the map of doubles: `doubles = [6, 20, 2, 50]`
+* Ask students about the length of each of these arrays.
+* Prompt someone to make the realization that a map of an array will always be the same length as the original.
+
+Here's what that would look like in JavaScript:
+
+```javascript
+let nums = [3,10,1,25]
+
+let doubles = nums.map(x => {
+  return(2 * x)
+})
+console.log(doubles)
+```
+
+Reading this aloud sounds something like this:
+* "Let doubles be a map of nums"
+* "For every number (x) in the original, save/return 2 times that number"
+
+Then trace this with specific data, scaffolding the question less and less each time:
+* "When we're mapping over this array and we're at the first spot where x is 3, what should we return to the first spot of our map?"
+* "When we're at the second spot, what should we return to the second spot?"
+* "What will we return for the third spot?"
+
+
+We can also use the map function to create new HTML elements. Instead of just printing each string to the console, let's create a list of elements we could add to our site.
 
 Example 2b:
 ```javascript
-let greetings = document.querySelector("#greetings")
-people.map(bio => {
-    return (greetings += "<h5>" + bio["Name"] +  "'s nickname is " + bio["Nickname"] + "</h5>")
-  })
+let greetingElements = people.map(person => {
+  return("<h5>" + person["Name"] +  "'s nickname is " + person["Nickname"] + "</h5>")
+})
 ```
 
-Viola! By using loops we are harnessing the power of what computers do best - performing repetitive tasks very quickly!
+Once you have an array of greeting elements (or *any* HTML elements, really), getting those elements on screen can be done any number of ways.
 
 #### Mini-Challenges
 
-* Add two more keys to each object in the `people` array. These should store each persons age and favorite animal.
+* Add two more keys to each object in the `people` array: one for a person's `age` and one for their favorite `animal`.
 * Console.log "Hey! My name is ____ but my friends call me ____. I am ____ years old and my favorite animal is a _____" for each person.
-* Add the sentence above to the webpage by changing the innerHTML of div with the id of `introductions`.
-* Stretch: Add another key to each person object in the `people` array for where they were born. Then, add the following sentence to the webpage for each person: "My name is ____ and I'm from ____." If they are from your borough, have it display something special. For example, one student from the Bronx had his program display that they are from "DA BOOGEY DOWN BRONX."
+* Use a map to save all of these longer bios in a variable.
+* Use anotehr map to save these longer bios, but this time wrap them in `h3` tags.
+* Stretch: Add another key to each person object in the `people` array for where they were born. Then, create a map of elements for each person with the following strings: "My name is ____ and I'm from ____." If they are from *your* borough, have it display something special. For example, one student from the Bronx had his program display that they are from "DA BOOGEY DOWN BRONX."
+
+## Iteration with forEach
+
+The last form of array iteration is perhaps the simplest and most readable, but it's also the least versatile. The `.forEach()` method works exactly the same as `.map()`, except instead of returning a copy of the original array, it returns nothing.
+
+Why use it if it has *less* functionality than `.map()`? Generally, `.forEach()` triumphs with the most readable code.
+
+With that in mind, be aware that since it uses a function (just like `.map()` does), sometimes certain syntax like `return` statements and local variables will behave differently than you might expect. If you're creating conditionals, algorithms, or other complex behavior, a standard `for` loop might accomplish that more simply and efficiently.
+
+The best use cases for a `.forEach()` loop are when you're sure you want to DO something for every single item in an array (there's no stopping early, so it's not often the most efficient), and you also really don't care about saving the results.
+
+#### ForEach examples
+
+```javascript
+people.forEach(person => {
+  console.log(person["Name"] +  "'s nickname is " + person["Nickname"])
+})
+```
+
+In this example, the syntax is identical to the map syntax. You have an array (`people`), an iterator (`person`), and since you only want to console log the results, you don't need to save them anywhere.
+
+Another case where `.forEach()` is perhaps the best solution when adding event listeners to multiple similar items on an HTML page using JavaScript.
+
+```javascript
+// Select all elements on an HTML document with the class="clickMe"
+const allClickButtons = document.querySelectorAll(".clickMe")
+
+// Iterate over that array of buttons...
+allClickButtons.forEach(clickButton => {
+  // ...and add an event listener to each. That click event should trigger...
+  clickButton.addEventListener("click", (e)=>{
+    // ...this code block that logs out a message with that button's HTML ID.
+    console.log(`You pressed the ${clickButton.id} button`)
+  })
+})
+```
+
+This example is also a bit complicated in that it nests two levels deep. The first arrow function is part of our `.forEach()` loop, and the second arrow function is the event listener callback. This example combines two powerful tools, and is probably the most authentic context in which you might see a this type of loop.
 
 ## Close
 
-Remember to gather student feedback on this lesson. In addition to the standard close, consider priming students for feedback with the following questions.
+Ask students which syntax they like the best. Then review these use cases:
 
-#### Questions for Students
+#### `for` loop iteration
+* Can iterate over numerical ranges OR over arrays.
+* Is the most similar to a wide variety of other languages.
+* Is the most versatile (can be used to do everything that the others can)
+* Can be exited/stopped at any point with the `break` keyword.
+* Is often the hardest for beginners to read.
+* May loop infinitely or not at all when one of your three statements is buggy.
 
-* In your own words, what is the difference between for loops and the map method?
-* In what situations would we prefer a `for` loop? In what situations would we prefer the `.map()` method?
+#### `.map()` iteration
+* Can only iterate over arrays.
+* Best when you want to save your results.
+* Is slightly more readable.
+* Does not loop infinitely (unless you modify the original array).
+* Is very difficult to exit/stop early.
+
+#### `.forEach()` iteration
+* Can only iterate over arrays. 
+* Best when you do **not** care about saving your results.
+* Is usually the most readable.
+* Does not loop infinitely (unless you modify the original array).
+* Is very difficult to exit/stop early.
