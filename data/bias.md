@@ -16,7 +16,11 @@
 
 ## Launch
 
-> In this, and in many lessons throughout this unit, there may be occasion to include content warnings for students, or to swap out news sources provided for some that feel more topical and less emotionally charged for your students. You know your students, and you know what level of seriousness is going to best benefit them.
+> In this, and in many lessons throughout this unit, there may be occasion to include content warnings for students, or to swap out news sources provided for some that feel more tailored to your students' interests and emotional readiness to discuss certain topics. You know your students, and you know what level of seriousness/intensity is going to best benefit them.
+
+**Discuss: What is an unemployment rate? Is it better for a state to have a low or high unemployment rate?**
+
+**Follow-up: If a state has low unemployment, is it reasonable to suppose that the people who live in that state are happier (on average)?**
 
 Consider the following Facebook post and excerpt from a [news article in the _Tennessean_ newspaper](https://www.tennessean.com/story/news/2017/07/20/tennessees-unemployment-rate-last-month-lowest-state-history-gov-bill-haslam-announced-thursday/496383001/) from 2017:
 
@@ -47,9 +51,11 @@ Now consider the following chart that shows the percent of each state's workers 
 - Can you come up with a way to describe the employment situation in Tennessee that can encompass BOTH the low unemployment and the high percentage of employed workers making less than minimum wage?
 - After learning this new information, what questions do you still have?
 
-One conclusion might be that even though the state's unemployment rate is lower than it has been (but what is it compared to other states?), you still can't get anywhere working in Tennessee since so many jobs are at or below minimum wage.
+One conclusion might be that even though the state's unemployment rate is lower than it has been before, the types of jobs created in Tennessee may not be viable options for some individuals or families, since so many jobs are at or below minimum wage. With that context, it is possible to disagree with the Senator's conclusion that this is a great place to work. 
 
-This is an example of selection bias: the senator and the newspaper each had a story they wanted to tell and chose data that supports the point the want to make. In this case, that point may just be "Tennessee is a great place for jobs!"
+However, another conclusion is possible: We don't have *historical* data for minimum wage jobs in Tennesse - those numbers could be going down too, meaning more workers are working their way out of the minimum wage bracket. Additionally, these articles also don't say anything about the cost of living in Tennessee when compared to other locations - it could be that minimum wage in Tennessee affords someone a very different day-to-day life than it would in NYC. 
+
+This is an example of selection bias: the senator and the newspaper each had a story they wanted to tell and chose data that supports the point the want to make. In this case, that point may just be "Tennessee is a great place for jobs!" but you, the reader, bear the responsibility to decide whether the data they present is enough information to support their point. It's also the reader's responsibility to look at the other dat given (for example, in the comments section) to determine 
 
 #### Additional Reading
 
@@ -68,28 +74,26 @@ This is an example of selection bias: the senator and the newspaper each had a s
 
 ## Case Study 1: Bias in Reporting
 
-### Content warning: Police violence
-> Replace or skip this case study if this is not a discussion you think wise to faciliate in your classroom. 
+Optional framing questions: 
+- If you own something, should you be able to sell it for any price you want?
+- If someone needs that thing to survive, does that change your answer?
 
-The following two headlines and subheads were written by two different news outlets about a 2018 shooting death in Dallas, TX.
-
-| Headline A |
+| Passage A: ["Martin Shkreli faces antitrust suit over raising drug price 4,000%"](https://www.latimes.com/business/story/2020-01-27/martin-shkreli-sued-by-ftc-over-daraprim-drug-price) - LA Times |
 | --- |
-| <h3>Police officer charged in shooting death of unarmed neighbor</h3><h5>Dallas police officer Amber Guyger says she entered Botham Shem Jean's apartment by mistake at end of her shift; Casey Stegall reports.</h5> |
+|"Pharma bro" Martin Shkreli was sued Monday by U.S. officials and the state of New York, who are accusing him of violating antitrust law when he jacked up the price of a crucial drug by 4,000% overnight in 2015.... <br> <br> The allegations are separate from what landed Shkreli behind bars, though the drug at the center of the case is the same. He’s in prison serving a seven-year sentence for defrauding investors in hedge funds he ran by lying to them about his track record and performance — as well as for a fraud scheme involving Retrophin Inc., a company he founded in 2011.|
 
-| Headline B |
+| Passage B: ["‘Pharma Bro’ Martin Shkreli Must Face Antitrust Suit for Now"](https://news.bloomberglaw.com/mergers-and-antitrust/pharma-bro-martin-shkreli-must-face-antitrust-suit-for-now) -  |
 | --- |
-| <h3>Dallas police officer charged with manslaughter in fatal shooting of unarmed man in his own apartment</h3><h5>A Dallas police officer was arrested Sunday in connection with the shooting death of Botham Shem Jean, the Texas Rangers said.</h5><h5>Amber Guyger, who is white, was off-duty when she shot Jean, a black man, after mistakenly entering his apartment at the complex where she also lived, police said Thursday.</h5> |
+|Martin Shkreli failed to convince a federal judge to dismiss an antitrust lawsuit against him April 10, about a week after reports that the imprisoned “pharma bro” had been placed in solitary confinement. <br> <br> Shkreli, Retrophin Inc., and two related companies are facing claims that they unlawfully shielded the blockbuster kidney drug Thiola from competition by refusing to put out samples that competing pharmaceutical companies must use, under federal law, to demonstrate the “bioequivalence” of their generics. <br> <br>They will now have to undergo 90 days of limited discovery to determine whether plaintiff Spring Pharmaceuticals LLC has standing to sue by virtue of the investment it made preparing to develop a generic Thiola rival, according to the ruling by Judge J. Curtis Joyner of the U.S. District Court of the Eastern District of Pennsylvania.|
 
 #### Discussion Questions
-
-- How would you describe each author's intent for writing their headline and subhead?
-- How is each author using their language to impact the reader's response?
-- What data is each author including or not including that might impact the reader's response?
-- Do the noticeable differences between these two headlines and excerpts constitute bias? Or are they two unbiased stories each emphasizing different facets of this event?
-- Which story do you consider to be less biased?
-
-The comparison you've just made is what people think about when they think about biased reporting. Unfortunately, the biases with which we analyze data can also lead to differences in interpretation.
+- What facts/data/information were included in Passage A that were not included in Passage B?
+- How does the inclusion / omission of these facts influence how a reader might feel about Martin Shkreli?
+- Either of these ways of reporting the information that Martink Shkreli is being sued could be considered accurate:
+	- Make a case for why Passage A is more accurate.
+	- Make a case for why Passage B is more accurate.
+- Now that we've considered the facts/data/information, how do specific word choices (adjectives, etc) in each article might influence the reader's opinion of Shkreli?
+- After thinking over both cases, which do you think is the more unbiased reporting?
 
 ## Case Study 2: Bias in Interpretation
 
