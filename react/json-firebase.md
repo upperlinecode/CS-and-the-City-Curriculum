@@ -251,51 +251,53 @@ Below is a simple React component called `<User />` that stores a user's name an
 import React from 'react';
 import firebase from "./Firestore.js";
 
-const User = () => {
-  const component = new React.Component();
-  component.state = {
-    email: "",
-    fullname: ""
+class User extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      fullname: ""
+    }
   }
 
-  component.updateInput = e => {
-    component.setState({
+  updateInput = e => {
+    this.setState({
       [e.target.name]: e.target.value
     });
   }
 
-  component.addUser = e => {
+  addUser = e => {
     e.preventDefault();
     const db = firebase.firestore();
     db.settings({
       timestampsInSnapshots: true
     });
     const userRef = db.collection("test").add({
-      fullname: component.state.fullname,
-      email: component.state.email
+      fullname: this.state.fullname,
+      email: this.state.email
     });  
-    component.setState({
+    this.setState({
       fullname: "",
       email: ""
     });
   };
   
-  component.render = () => {
+  render() {
     return (
-      <form onSubmit={component.addUser}>
+      <form onSubmit={this.addUser}>
         <input
           type="text"
           name="fullname"
           placeholder="Full name"
-          onChange={component.updateInput}
-          value={component.state.fullname}
+          onChange={this.updateInput}
+          value={this.state.fullname}
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          onChange={component.updateInput}
-          value={component.state.email}
+          onChange={this.updateInput}
+          value={this.state.email}
         />
         <button type="submit">Submit</button>
       </form>

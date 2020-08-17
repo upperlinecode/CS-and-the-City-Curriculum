@@ -34,25 +34,19 @@ As we have discussed, React allows developers to build websites by piecing toget
 Props are passed from the implementation of a component, e.g. `<someComponent />`, down into the definition of that component, e.g. `function someComponent(){..}` in `someComponent.js`. We are going to pass our first prop from where we use `<Testimonials />` in `App.js` to our `Testimonials` function in `Testimonials.js`. To do so, we are going to modify the code in the `App.js` and `Testimonials.js` files to the following:
 
 ```javascript
-const App = () => {
-  const component = new React.Component()
+function App() {
+  return(
+    <div className="App">
+      <Navbar/>
+      <Splash/>
+      <Testimonials userTestimonial="Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."/>
+      <div className = "container">
+        <div className="row">
 
-  component.render = () => {
-    return(
-      <div className="App">
-        <Navbar/>
-        <Splash/>
-        <Testimonials userTestimonial="Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."/>
-        <div className = "container">
-          <div className="row">
-
-          </div>
         </div>
       </div>
-    )
-  }
-
-  return component
+    </div>
+  )
 }
 ```
 
@@ -61,7 +55,7 @@ You will notice we only modified line 16 of the code. We added an attribute to t
 From the [React documentation](https://reactjs.org/docs/components-and-props.html): "When React sees an element representing a user-defined component, it passes JSX attributes to this component as a single object. We call this object "props"."
 
 ```javascript
-function Testimonial(props){
+function Testimonial(props) {
   return(
     <div className="Testimonials">
       <div className="row">
@@ -74,6 +68,8 @@ function Testimonial(props){
   )
 }
 ```
+
+In this case, we're using the  `<p className="paragraph-text"> {props.userTestimonial}</p>` to indicate that the contents of this paragraph should be filled with whatever prop was passed with the attribute `userTestimonial`.
 
 Now we are going to modify two lines of code in our `Testimonials.js` file:
 
@@ -90,29 +86,23 @@ We are then going to render our prop onto the screen. To embed our prop into the
 In the example we just did, we passed a hard-coded string down as the prop "userTestimonial." We can also pass down a JavaScript variable (or even a function! But that's for another time...) as a prop. Let's try this by refactoring our code a bit. We are going to create a variable called `testimonial` and set it equal to our previous review. Then we can pass it down as a prop by using JSX syntax as seen below:
 
 ```javascript
-const App = () => {
-  const component = new React.Component()
+function App() {
+  // Declare our variable called testimonial
+  let testimonial = "Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."
 
-  component.render = () => {
-    // Declare our variable called testimonial
-    let testimonial = "Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."
+  // Pass that variable to the Testimonials component as part of the return
+  return(
+    <div className="App">
+      <Navbar/>
+      <Splash/>
+      <Testimonials userTestimonial={testimonial} />
+      <div className="container">
+        <div className="row">
 
-    // Pass that variable to the Testimonials component as part of the return
-    return(
-      <div className="App">
-        <Navbar/>
-        <Splash/>
-        <Testimonials userTestimonial={testimonial} />
-        <div className="container">
-          <div className="row">
-
-          </div>
         </div>
       </div>
-    )
-  }
-
-  return component
+    </div>
+  )
 }
 ```
 
@@ -132,32 +122,26 @@ To complete We Eat Street Meat, we need to add reviews to our site. We have save
 Let's create our first review card by adding the following code to our `App.js` file:
 
 ```javascript
-const App = () => {
-  const component = new React.Component()
-
-  component.render = () => {
-    let testimonial = "Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."
-    return(
-      <div className="App">
-        <Navbar/>
-        <Splash/>
-        <Testimonials userTestimonial={testimonial} />
-        <div className="container">
-          <div className="row">
-            <ReviewCard
-              name={ reviews[0].name }
-              headline={ reviews[0].headline }
-              summary={ reviews[0].summary }
-              stars={ reviews[0].stars }
-              posted={ reviews[0].posted }
-            />
-          </div>
+function App() {
+  let testimonial = "Street Eats is the best food review site that has ever been built. Now I can pick the best food cart with confidence instead of wondering if I'm getting a raw deal."
+  return(
+    <div className="App">
+      <Navbar/>
+      <Splash/>
+      <Testimonials userTestimonial={testimonial} />
+      <div className="container">
+        <div className="row">
+          <ReviewCard
+            name={ reviews[0].name }
+            headline={ reviews[0].headline }
+            summary={ reviews[0].summary }
+            stars={ reviews[0].stars }
+            posted={ reviews[0].posted }
+          />
         </div>
       </div>
-    )
-  }
-
-  return component
+    </div>
+  );
 }
 ```
 
@@ -166,7 +150,7 @@ The first step is to create a `<ReviewCard />` element and add the attributes as
 > To help students understand how this nested data is being extracted from the array, it would be a good idea to `console.log(review)` and look at the review object. Then, walk students through how to get the first name from the review in the array, the first headline, etc.
 
 ```javascript
-function ReviewCard(props){
+function ReviewCard(props) {
 	return(
 	  <div className="col-4 Review">
 	    <div className="card text-center mb-3r">

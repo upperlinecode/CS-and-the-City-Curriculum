@@ -2,10 +2,10 @@
 
 ### Navbar.js
 ```jsx
-import React from 'react'
-import {link} from 'react-router-dom'
+import React from 'react';
+import {link} from 'react-router-dom';
 
-const Navbar = (props) => {
+funciton Navbar(props) {
   const activeStyle = {background: 'blue', color: 'white'}
   return(
     <nav>
@@ -15,74 +15,58 @@ const Navbar = (props) => {
         <li><Link to="/" style={props.active == 'contact' ? activeStyle : {}} href="index.html">Contact</Link></li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
 ```
 
 ### Home.js
 ```jsx
-import React from 'react'
-import Navbar from './components/Navbar.js'
+import React from 'react';
+import Navbar from './components/Navbar.js';
 
-const Home = () => {
-  const component = new React.Component()
-
-  component.render = () => {
+class Home() extends React.Component {
+  render() {
     return (
       <div className="Home">
         <Navbar active="home" />
       </div>
-    )
+    );
   }
-
-  return component
 }
 
-export default Home
+export default Home;
 ```
 
 ### About.js
 ```jsx
-import React from 'react'
-import Navbar from './components/Navbar.js'
+import React from 'react';
+import Navbar from './components/Navbar.js';
 
-const About = () => {
-  const component = new React.Component()
-
-  component.render = () => {
-    return (
-      <div className="About">
-        <Navbar active="about" />
-      </div>
-    )
-  }
-
-  return component
+function About() {
+  return (
+    <div className="About">
+      <Navbar active="about" />
+    </div>
+  );
 }
 
-export default About
+export default About;
 ```
 
 ### Contact.js
 ```jsx
-import React from 'react'
-import Navbar from './components/Navbar.js'
+import React from 'react';
+import Navbar from './components/Navbar.js';
 
-const Contact = () => {
-  const component = new React.Component()
-
-  component.render = () => {
-    return (
-      <div className="Contact">
-        <Navbar active="contact" />
-      </div>
-    )
-  }
-
-  return component
+function Contact() {
+  return (
+    <div className="Contact">
+      <Navbar active="contact" />
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;
 ```

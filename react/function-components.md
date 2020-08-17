@@ -32,21 +32,15 @@ import Descriptions from "./components/descriptions.js";
 
 import "./App.css";
 
-const App = () => {
-  const component = new React.Component()
-
-  component.render = () => {
-    return(
-      <div className="App">
-        <Navbar/>
-        <Splash/>
-      	<Photos/>
-      	<Descriptions/>
-      </div>
-    )
-  }
-
-  return component
+function App() {
+  return(
+    <div className="App">
+      <Navbar/>
+      <Splash/>
+      <Photos/>
+      <Descriptions/>
+    </div>
+  )
 }
 
 export default App;
@@ -72,26 +66,17 @@ Here's what's happening in the code above:
 
 ```js
 // This is an App function which...
-const App = () => {
-  // Creates a component
-  const component = new React.Component()
-
-  // Defines that component's render function, which...
-  component.render = () => {
-    // Returns the HTML
-    return(
-      <div className="App">
-        <Navbar/>
-        <Splash/>
-      	<Photos/>
-      	<Descriptions/>
-      </div>
-    )
-  }
-
-  // Finish the functional component by returning that component we created at the start.
-  // This component will have its render function called by by React itself.
-  return component
+function App {
+  // Returns the HTML contained herein.
+  return(
+    <div className="App">
+      <Navbar/>
+      <Splash/>
+      <Photos/>
+      <Descriptions/>
+    </div>
+  );
+  // Each of those elements which aren't really HTML are actually components of their own, which will also return their own HTML.
 }
 ```
 
@@ -101,21 +86,15 @@ Let's try an experiment. What would happen if we added another Navbar to our exi
 
 ```js
 const App = () => {
-  const component = new React.Component()
-
-  component.render = () => {
-    return(
-      <div className="App">
-        <Navbar/>
-        <Navbar/>
-        <Splash/>
-      	<Photos/>
-      	<Descriptions/>
-      </div>
-    )
-  }
-
-  return component
+  return(
+    <div className="App">
+      <Navbar/>
+      <Navbar/>
+      <Splash/>
+      <Photos/>
+      <Descriptions/>
+    </div>
+  )
 }
 ```
 
@@ -150,15 +129,15 @@ You will also notice an `export` statement at the end of each file. This `export
 
 You will notice that the HTML for each component is written inside of a function. In React, components can be written as JavaScript functions that **return** an HTML code block every time that component is called. It is important to remember that the function *must* contain a **return** statement, or no HTML will be rendered to the screen.
 
-There are TWO ways to code out functional components.
+There are TWO ways to code out React components.
 
-#### Functional Component Option 1: TRUE Functional Components
+#### React Component Option 1: Functional Components
 
-The first is a TRUE functional component. It skips the creation of a full React component and simply returns some JSX (which looks a lot like HTML). A true functional component relies primarily on return values - there can be additional JavaScript added in before the return statement, but in general this is not necessary.
+The first is a functional component. It skips the creation of a full React component as an object, and simply returns some JSX (which looks a lot like HTML). A true functional component relies primarily on return values - there can be additional JavaScript added in before the return statement, but in general this is not necessary.
 
 ```Javascript
 // True functional component
-const Example = () => {
+function Example() {
 	return(
 		<div>
       //Block of JSX/HTML code goes here
@@ -167,43 +146,32 @@ const Example = () => {
 };
 ```
 
-#### Functional Component Option 2: Functional Components as Constructors
+Note that most React documentation uses the earlier function notation `function Example() {}`, but the newer ES6 arrow function notation `const Example = () => {}` would work in 90% of cases too. For now, we'll stick closely to documentation, because it's what you'll see if you look things up. 
 
-The second method is a functional component as a constructor. This type of functional component operates in 3-4 chunks.
+#### Component Option 2: Class Components
 
-1. Create the component.
-2. Modify the component - only necessary when implementing some more advanced methods.
-3. Write the component's render method.
-4. Return the component.
+The second way to build a React component is as a class. If you've used classes before, this will look really similar. We'll get into this when we cover state later on, but for now, here's a preview of what a class component might look like:
 
 ```javascript
-// Functional component as Constructor
-const Example = () => {
-  // 1. create a component.
-  const component = new React.Component()
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    // Any additional initial properties of the component
+  }
 
-  // 2. modify the component - we won't do that until later in the unit.
-
-  // 3. Write the component's return method.
-	component.render = () => {
+  render() {
     return(
 		<div>
       //Block of JSX/HTML code goes here
 		</div>
-	)}
-
-  //4. Return the component
-  return component
+	  );
+  }
 }
 ```
 
-For now, either method works, so in order to get exposure to both, we'll use the more complex method (Option 2 - functional component as constructor) for the `App.js` component, since it will probably need more complex functionality sooner than the others, and we'll use the simpler true functional components (Option 1) for our simpler components like the `<Navbar />` and its sibling components. In reality, which form a developer chooses to use depends on what that components needs to do and how it will be used.
+Either method works, but since they both do what we need them fore, we'll stick to the simpler functional components for now, and introduce class components later, when we need them. In reality, which form a developer chooses to use depends on what each component needs to do and how it will be used.
 
-> Note: as we'll learn later when we discuss state, the constructor approach (Option 2) can be used as [a work-around for writing Class-based components](https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160). In order to keep things simple, all components will be written as functions in this course; we won't discuss class-based components, however students may encounter them if they continue to work with React.
->
-> To go a bit more in-depth, see [how the construtor method compares to the class-based method](class-to-function-component.md).
-
-Components can technically only return a single element, but other elements can be nested inside that one. If you want to return multiple HTML elements, then all of your HTML must be wrapped in a single parent element. The `<div>` in the examples above is a good way to do that.
+Components can technically only return a single element, but other elements can be nested inside that one. If you want to return multiple HTML elements, then all of your HTML must be wrapped in a single parent element. The `<div>` in the examples above is typically the most common way to do that.
 
 #### Mini-Challenges
 

@@ -17,9 +17,9 @@
 
 ## Launch
 
-Let's all look at [this repository](https://github.com/upperlinecode/react-parent-child-lecture)'s code. You're welcome to clone, install, and start the app, or you can simply reference the screenshot. 
+Let's all look at [this yearbook repository](https://github.com/upperlinecode/react-parent-child-lecture)'s code. You're welcome to clone, install, and start the app, or you can simply reference the screenshot. 
 
-Based on what you know so far, how would you accomplish the following modifications to this digital yearbook mockup for Glenbrook North High School:
+Based on what you know so far, how would you accomplish the following modifications to the digital yearbook mockup for Glenbrook North High School:
 
 - Add an "Honors" section for each student.
 - Make all Senior quotes in _italics_.
@@ -34,70 +34,76 @@ Based on what you know so far, how would you accomplish the following modificati
 
 As you've seen, it's possible to break code up into functional components to make it easier for a developer to manage the code in different parts of a React app. It's worth recognizing, however, that components can use (or be used by) other components. This makes code a bit more structurally semantic (it gives it more meaning), instead of just duplicating the way you might build an app in HTML.
 
-> Explore [this repository](https://github.com/upperlinecode/react-parent-child-lecture-nesting) to demonstrate the following description of nested components. Either `clone` the repository, `npm install` then `npm start`, or explore the code in the `src/` subfolder.
+In order to fully prep for the Yearbook lab, let's practice on this music library app. 
 
-When the `Artist` component uses the `Album` component as part of its `return` statement, `Artist` is referred to as the "parent" of `Album`, and `Album` is referred to as the "child" of `Artist`. `Album` could, in turn, be built from other components - say `AlbumArt` and `TrackList`. In this case, `Album` is the "parent" of `AlbumArt` and `TrackList`, and `AlbumArt` and `TrackList` are the "children" of `Album`. `Album` is the "child" of `Artist` and the "parent" of `AlbumArt` and `TrackList`.
+> Explore [this music library repository](https://github.com/upperlinecode/react-parent-child-lecture-nesting) to demonstrate the following description of nested components. Either `clone` the repository, `npm install` then `npm start`, or explore the code directly in the `src/` subfolder.
+
+When the `Artist` component uses the `Album` component as part of its `return` statement, `Artist` is referred to as the "parent" of `Album`, and `Album` is referred to as the "child" of `Artist`. 
+
+The next level down, `Album` could, in turn, be built from other components - say `AlbumArt` and `TrackList`. In this case, `Album` is the "parent" of `AlbumArt` and `TrackList`, and `AlbumArt` and `TrackList` are the "children" of `Album`. 
+
+So `Album` both a parent and a child. It is the child of `Artist` and the parent of `AlbumArt` and `TrackList`.
 
 #### `./Artist.js`
 ```javascript
-import React from 'react'
-import Album from './Album'
+import React from 'react';
+import Album from './Album';
 
-const Artist = () => {
+function Artist() {
   return (
     <Album />
-  )
+  );
 }
 
-export default Artist
+export default Artist;
 ```
 
 #### `./Album.js`
 ```javascript
-import React from 'react'
-import AlbumArt from './AlbumArt'
-import TrackList from './TrackList'
+import React from 'react';
+import AlbumArt from './AlbumArt';
+import TrackList from './TrackList';
 
-const Album = () => {
+function Album() {
   return (
     <div>
       <AlbumArt />
       <TrackList />
     </div>
-  )
+  );
 }
 
-export default Album
+export default Album;
 ```
 
 #### `./AlbumArt.js`
 ```javascript
-import React from 'react'
+import React from 'react';
 
-const AlbumArt = () => {
+function AlbumArt() {
   return (
     <div>
       // Some code
     </div>
-  )
+  );
 }
 
-export default AlbumArt
+export default AlbumArt;
 ```
 
 #### `./TrackList.js`
 ```javascript
-import React from 'react'
+import React from 'react';
 
-const TrackList = () => {
+function TrackList() {
   return (
     <div>
       // Some code
     </div>
-  )
+  );
 }
 
-export default TrackList
+export default TrackList;
 ```
 
 The parent-child relationship is all about nesting.
@@ -151,67 +157,69 @@ Let's revisit our nesting example above to see how data could be passed from `Ar
 
 #### `./Artist.js`
 ```javascript
-import React from 'react'
-import Album from './Album'
+import React from 'react';
+import Album from './Album';
 
-// this data might come from a database or a music service like spotify
-let data = {
-  "artist": "My favorite singer",
-  "album": "Their best album",
-  "image": "albumCover.png",
-  "tracks": [
-    {
-      "id": 1,
-      "title": "Opening Song",
-      "duration": "2:31",
-      "comment": "makes me want to dance"
-    },
-    {
-      "id": 2,
-      "title": "Second Song",
-      "duration": "3:12",
-      "comment": "always skip this one"
-    },
-    {
-      "id": 3,
-      "title": "Third Song",
-      "duration": "5:33",
-      "comment": "my favorite!"
-    }
-  ]
-}
+function Artist() {
+  // This data might come from a database or a music service like spotify. 
+  // You can find it in the data.js file and copy it over if you like. 
+  // You'll obviously want to take a moment and values to match one of your favorite albums.
+  let data = {
+    "artist": "My favorite singer",
+    "album": "Their best album",
+    "image": "albumCover.png",
+    "tracks": [
+      {
+        "id": 1,
+        "title": "Opening Song",
+        "duration": "2:31",
+        "comment": "makes me want to dance"
+      },
+      {
+        "id": 2,
+        "title": "Second Song",
+        "duration": "3:12",
+        "comment": "always skip this one"
+      },
+      {
+        "id": 3,
+        "title": "Third Song",
+        "duration": "5:33",
+        "comment": "my favorite!"
+      }
+    ]
+  }
 
-const Artist = (data) => {
   return (
     <div>
-      <h1>data.artist</h1>
+      <h1>{data.artist}</h1>
       <Album data={data} />
     </div>
-  )
+  );
 }
 
-export default Artist
+export default Artist;
 ```
 
 `Artist` receives the `data` (from some database or some API call) and renders the artist name in an `<h1>`. However, the rest of the data isn't used in `Artist`, so the entire data object is passed as a prop called `data` to `Album`.
 
 #### `./Album.js`
 ```javascript
-import React from 'react'
-import AlbumArt from './AlbumArt'
-import TrackList from './TrackList'
+import React from 'react';
+import AlbumArt from './AlbumArt';
+import TrackList from './TrackList';
 
-const Album = (props) => {
+function Album(props) {
   return (
     <div>
       <h3>{props.data.album}</h3>
       <AlbumArt image={props.data.image}/>
       <TrackList songs={props.data.tracks}/>
     </div>
-  )
+  );
 }
 
-export default Album
+export default Album;
 ```
 
 `Album` receives the `data` as props, and renders an `<h3>` showing the name of the album. Note: we could imagine making some small updates to this code in order to show multiple albums, right?
@@ -220,45 +228,58 @@ The remaining data, however, doesn't get used by `Album`. In this case `AlbumArt
 
 #### `./AlbumArt.js`
 ```javascript
-import React from 'react'
+import React from 'react';
 
-const AlbumArt = (props) => {
+function AlbumArt(props) {
+  // Bear in mind that since we haven't actually uploaded an image, this will likely render as a broken image at first. 
   return (
     <div>
-      <img src="{props.image}">
+      <img src="{props.image}" />
     </div>
-  )
+  );
 }
 
-export default AlbumArt
+export default AlbumArt;
 ```
 
 `AlbumArt` receives a single prop, `image`, and then uses it to render the album artwork. There are no more nested components that will need any additional data here...
 
 #### `./TrackList.js`
 ```javascript
-import React from 'react'
+import React from 'react';
 
-const TrackList = (props) => {
+function TrackList(props) {
   return (
     <ul>
       {
         props.songs.map(tune => {
-          return "<li>" + tune.title + "</li>";
+          return (<li>{tune.title}</li>);
         })
       }
     </ul>
-  )
+  );
 }
 
 export default TrackList
 ```
 
-`TrackList` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list of tune titles (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data...
+`TrackList` receives a single prop, `songs`, which is an array of objects listing out the songs in that album. You could imagine using `.map()` to iterate over that list to make a bulleted list of tune titles (shown), or even to make it more complex so you could link out to play the songs, etc. But after this component, there are no more nested components that will need any additional data.
+
+NOTE: This `.map()` used an _explicit_ return statement where we actually write `return`, which means we sort of have two returns total in this component - one small one for the map method, and the other for the entire `TrackList` component. However, since the return statement for the map method is a single line of JSX, that could actually be rewritten as a single line:
+
+```javascript
+{props.songs.map(tune => {<li>{tune.title}</li>})}
+```
+
+However, this single-line refactoring won't be as useful if you want to start adding additional features to each of these tracks (like showing duration, your comments, or a link out to a youtube video of the song).
 
 ## Close
 
-Think back to the three changes that you were asked to make at the beginning of this lesson. Take a moment to make those changes to your app now that you've broken it apart into nested functional components:
+Think back to the three changes that you were asked to make at the beginning of this lesson to the Yearbook app. 
+
+- What components would we need to make for the yearbook app?
+
+For the next lab, break that yearbook app up into functional components, and then make these changes:
 
 - Add an "Honors" section for each student.
 - Make all Senior quotes in _italics_.

@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-* SWBAT set up a React project locally on personal computer or Goorm IDE
+* SWBAT set up a React project locally on personal computer or remotely on an IDE like Cloud Shell
 * SWBAT edit the React starter page to display HTML they have written
 * SWBAT identify why React is a popular front-end development framework
 
@@ -11,8 +11,7 @@
 1. [Launch](#launch)
 2. [React in the Wild](#react-in-the-wild)
 3. [React Setup: Local](#local)
-4. [React Setup: Goorm](goorm-react-setup.md)
-5. [Close](#close)
+4. [Close](#close)
 
 ## Launch
 
@@ -81,7 +80,7 @@ First you need to check if you have Node installed on your computer. You can che
 npm -v
 ```
 
-You should have Node 5.2 or higher installed. If it tells you Node is not installed please go to https://nodejs.org and installed the latest version.
+You should have Node 5.2 or higher installed. If it tells you Node is not installed please go to https://nodejs.org and install the latest version.
 
 #### Step 2
 

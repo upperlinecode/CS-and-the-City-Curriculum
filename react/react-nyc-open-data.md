@@ -308,13 +308,15 @@ Pulling together our React component and our NYC Open Data (Socrata) API request
 import React from 'react';
 // any other import statements
 
-const Item = () => {
-  const component = new React.Component();
-  component.state = {
-    // define state variables here
+class Item extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // define state variables here
+    }
   }
 
-  component.componentDidMount = () => {
+  componentDidMount = () => {
     let appToken = 'TNxXJT9OVmO6FDIhzqXYaEKJ'; // see below to secure your App Token
     fetch('https://data.cityofnewyork.us/resource/tg4x-b46p.json?$$app_token='+appToken+'&borough=Manhattan')
       .then(response => response.json()) // convert response to JSON
@@ -326,13 +328,11 @@ const Item = () => {
       })
   }
   
-  component.render = () => {
+  render() {
     return (
       // render component HTML here
-    )
+    );
   }
-
-  return component;
 }
    
 export default Item;

@@ -43,7 +43,6 @@
 * Lesson: [Hello World](react/react-setup.md)
 	* [Worksheet #1 (HTML)](react/launch-worksheet-html.md)
 	* [Worksheet #2 (React)](react/launch-worksheet-react.md)
-	* Additional: [Goorm Setup](react/goorm-react-setup.md)
 	* Additional: [Blank Project Template](https://github.com/upperlinecode/react-project-template)
 
 #### Unit 2-2 Functional Components
@@ -65,7 +64,7 @@
 
 #### Unit 2-5 Parent & Child Components
 * Lesson: [Parent & Child Components](react/parent-child.md) (Breaking a page down into components, deciding what will be inside of what)
-	* [Example App: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
+	* [Example App / Lab: Yearbook](https://github.com/upperlinecode/react-parent-child-lecture)
 	* [Accompanying App: Music Library](https://github.com/upperlinecode/react-parent-child-lecture-nesting)
 * Lab: [Build-a-Blog](https://github.com/upperlinecode/build-a-blog-react-lab) (Componentize HTML into components which are nested)
 * Lab: [Atlas of Remote Islands](https://github.com/upperlinecode/atlas-of-remote-islands-lab) (Pass props down through nested components)

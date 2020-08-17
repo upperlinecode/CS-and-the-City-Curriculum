@@ -51,57 +51,60 @@ This example includes a fairly complex state, which includes many different type
 
 ## State in Functional Components
 
-State can be included as part of a component or it can be passed from a parent to a child component. First we'll take a look at how state can be stored as part of a component, and later we'll look at how state can be passed between child components via state on a parent component (or a global state on the App component).
+State can be included as part of a component or it can be passed down from a parent to a child component. First we'll take a look at how state can be stored as part of a component, and later we'll look at how state can be shared among child components via state on a parent component (or a global state on the App component).
 
-### But First, a Note on Components with State
+### Stateful Components must be Class Components
 
 So far, we've primarily been using functional components (components written as functions) to build our React applications. If you look at most React developer documentation, you'll find that functional components cannot be used to store state. As a result, class-based components (components written as classes) are typically introduced at the same time as when state is introduced.
-
-In these lessons, however, we have been using (and will continue to use) [a workaround that enables us to write a functional component](https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160) which has the effect of creating a class-based component that can store state. It's less memory efficient, but is a little easier conceptually for students than digging immediately into the concept of "this", which changes meaning when written at different levels of code.
-
-The tl;dr here is that we'll be using functional components to store state even though that isn't normally how React is written.
-
-> To go a bit more in-depth, see [how the constructor method compares to the class-based method](class-to-function-component.md).
 
 ### Accessing State
 
 Functional components can access the state object by using JSX. The code below would insert the value of the `status` property of the state object shown above in between the two `span` elements:
 
 ```html
-<span>{component.state.status}</span>
+<span>{this.state.status}</span>
 ```
 
 ### Updating State
 
-State is an immutable (unchangeable) object, which means when we are interacting with the state object, we don't modify it directly. Instead, we make a copy of state, update that copy, then set the copy to be the new version of state.
+State is an immutable (unchangeable) object, which means when we are interacting with it, we **never modify state directly**. Instead, we make a copy of state, update that copy, then set the copy to be the new version of state.
 
 The state property `favoriteColor` might be `red`:
 
 ```js
-component.state = {
+this.state = {
   favoriteColor: "red",
-  favoriteBand: "Wham!"
+  favoriteBand: "Janelle Monae"
 }
 ```
 
-But when we've changed our minds, and now our `favoriteColor` is `blue`, we need to use the `.setState()` method in order to update state:
+But when we've changed our minds, and now our `favoriteColor` is `blue`, we need to use the `.setState()` method in order to update state. You can do this in two ways: you can either pass in a JavaScript object, or you can pass in an arrow function.
 
+#### Option 1: Use a JavaScript Object
 ```js
-component.setState({"favoriteColor": "blue"});
+this.setState({favoriteColor: "blue", favoriteFood: "sushi"});
 ```
 
-> Make sure NEVER to directly modify state. The expression `component.state.favoriteColor = "Blue"` will cause unwanted behavior and will not trigger a re-render, which is the main reason we're using React.js in the first place.
-
-NOTE: If you want to store more complex data in the State object (like arrays, or other objects), you may need to make a copy of state before modifying it.
+When you set state by passing in a new dictionary, it will merge in any new key-value pairs, overwrite any existing key-value pairs that match the keys you passed, and leave alone earlier key-value pairs that don't match anything in the new dictionary. So the new state would look something like this:
 
 ```js
-// Make a copy of the array of shoes stored in state.
-let newList = Array.from(component.state.shoes)
-// Modify that list.
-newList.append("Jordans")
-// Overwrite the old list with the new one.
-component.setState({shoes: newList})
+{
+  favoriteColor: "blue",
+  favoriteFood: "sushi",
+  favoriteBand: "Janelle Monae"
+}
 ```
+
+#### Option 2: Use an arrow function 
+```js
+this.setState(state => {
+  state.favoriteColor = "blue";
+  state.favoriteFood = "sushi";
+  return state;
+});
+```
+
+> Make sure NEVER to directly modify state directly unless you're inside a setState arrow function as in option 2. The expression `this.state.favoriteColor = "Blue"` will cause unwanted behavior and will not trigger a re-render, which is the main reason we're using React.js in the first place.
 
 ## Inline Events
 
@@ -117,15 +120,15 @@ Because state is closely associated with interactivity, we need a way to listen 
 
 To use these in action, add them as attributes, and then use JSX to explain what function should be called when
 
-```html
+```jsx
 // Example of the onClick inline event callback without arguments:
-<button onClick={()=>{component.handleClick()}}>Click me!</button>
+<button onClick={()=>{this.handleClick()}}>Click me!</button>
 
 // Example of the onClick inline event callback with arguments:
-<button onClick={()=>{component.handleClick(arguments)}}>Click me!</button>
+<button onClick={()=>{this.handleClick(arguments)}}>Click me!</button>
 
-// Example of the most common notation - it's simpler but only allows the default EVENT arguments to be passed.
-<button onClick={component.handleClick}>Click me!</button>
+// Example of the most common notation - it's simpler but only allows the default EVENT arguments to be passed, rather than custom arguments.
+<button onClick={this.handleClick}>Click me!</button>
 ```
 
 The function `handleClick` is not a reserved or special name - it's just a commonly used name for functions that respond to click events. Separately, we'd need to define a function called `handleClick` (or whatever you choose to call the function) in order to control what happens when that click event occurs.
@@ -141,7 +144,7 @@ In the example below:
 - There is a state property `button1` which is initially set to `On!`. The version in the template has state properties for all three buttons, and state can have as many or as few properties as you like.
 
 ```js
-component.state = {
+this.state = {
   button1: "On!"
 }
 ```
@@ -149,31 +152,31 @@ component.state = {
 - The `<button>` element has an `onClick` inline event that calls the `handleButton1` function
 
 ```js
-component.render = () => {
+render() {
   return(
     <div className="StateCard">
       <h2>Press some buttons!</h2>
       <div className="card-content">
         <div className="item">
-          <button onClick={component.handleButton1}>
+          <button onClick={this.handleButton1}>
             Button 1
           </button>
-          <p>Current status: {component.state.button1}</p>
+          <p>Current status: {this.state.button1}</p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 ```
 
 - The `handleButton1` function updates the `button1` state to the opposite of its current value, turning the light on or off.
 
 ```js
-component.handleButton1 = () => {
-  if (component.state.button1 === "On!") {
-    component.setState({button1: "Off..."})
+handleButton1 = () => {
+  if (this.state.button1 === "On!") {
+    this.setState({button1: "Off..."})
   } else {
-    component.setState({button1: "On!"})
+    this.setState({button1: "On!"})
   }
 }
 ```
@@ -184,8 +187,8 @@ component.handleButton1 = () => {
     1. Embed the current state of button 2 and button 3 in the status paragraph.
     2. Create `onClick` attributes for each of the `<button>` elements.
     3. Embed the functions `handleButton1` and `handleButton2` into those buttons.
-    4. Code out functionality for `handleButton2` to increase the `component.state.button2` property by 1 each time. Be sure to use the `component.setState({property: value})` syntax.
-    5. Code out functionality for `handleButton3` to change the `component.state.button3` property each time and say the sentence "You are cool!" one word at a time. Be sure to use the `component.setState({property: value})` syntax.
+    4. Code out functionality for `handleButton2` to increase the `this.state.button2` property by 1 each time. Be sure to use the `this.setState({property: value})` syntax.
+    5. Code out functionality for `handleButton3` to change the `this.state.button3` property each time and say the sentence "You are cool!" one word at a time. Be sure to use the `this.setState({property: value})` syntax.
 * Right now these buttons assume only a basic understanding of JavaScript, but there are some really wonderful advanced JavaScript functionalities that allow for much cooler functions. Brainstorm some more interesting behaviors for our app, and program out those event handlers.
 
 ## Close

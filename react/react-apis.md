@@ -157,13 +157,15 @@ API calls are typically done in the `componentDidMount` method of a component be
 import React from 'react';
 // any other import statements
 
-const Item = () => {
-  const component = new React.Component();
-  component.state = {
-    // define state variables here
+class Item extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // define state variables here
+    }
   }
 
-  component.componentDidMount = () => {
+  componentDidMount = () => {
     fetch(apiURL)
       .then(data => {
         // do something with the response from apiURL
@@ -173,13 +175,11 @@ const Item = () => {
       })
   }
   
-  component.render = () => {
+  render() {
     return (
       // render component HTML here
     )
   }
-
-  return component;
 }
    
 export default Item;
@@ -187,24 +187,26 @@ export default Item;
 
 The standard way of handling the data returned from an API is to use `setState` within the `.then()` method in order to update any state variables which act as containers for the data that's returned. The component then renders based on updates to the state variables.
 
-Imagine you're getting a list of public schools from a [NYC Open Data](react-nyc-open-data.md) API. Below you'll see how the `component.state.schools` variable is used to store the result of the API request; `component.state.schools` is also then used to render the result.
+Imagine you're getting a list of public schools from a [NYC Open Data](react-nyc-open-data.md) API. Below you'll see how the `this.state.schools` variable is used to store the result of the API request; `this.state.schools` is also then used to render the result.
 
 ```javascript
 import React from 'react';
 // any other import statements
 
-const Item = () => {
-  const component = new React.Component();
-  component.state = {
-    schools: []
+class Item extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      schools = []
+    }
   }
 
-  component.componentDidMount = () => {
+  componentDidMount = () => {
     fetch(apiURL)
-      .then(result => component.setState({"schools": result.data}))
+      .then(result => this.setState({"schools": result.data}))
       .catch(e => {
         console.log(e);
-        component.setState({"schools":[
+        this.setState({"schools":[
           {
             'title':'An error has occurred.',
             'objectID': 0,
@@ -214,19 +216,21 @@ const Item = () => {
       })
   }
   
-  component.render = () => {
+  render() {
     return (
       <ul>
-        {component.state.schools.map(school =>
-          <li key={school.objectID}>
-            <a href={school.url}>{school.title}</a>
-          </li>
-        )}
+        {
+          this.state.schools.map(school => {
+            return(
+              <li key={school.objectID}>
+                <a href={school.url}>{school.title}</a>
+              </li>
+            )
+          })
+        }
       </ul>
     )
   }
-
-  return component;
 }
    
 export default Item;
