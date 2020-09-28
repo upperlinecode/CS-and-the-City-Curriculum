@@ -113,6 +113,8 @@ npm install
 
 This will trigger the installation of all the files needed to run a React App - it usually takes about 1-2 minutes. 
 
+NOTE: If your install mentions vulnerabilities, you can usually ignore them. If we need to troubleshoot them, we'll do it in step 5 below. 
+
 #### Step 5: Run the App
 
 Finally, you need to host your app by running the following command:
@@ -122,6 +124,8 @@ npm start
 ```
 
 This should take another minute to start up, but you'll know it's ready when you see a message detailing which port the app is hosted on. From here you can preview the app at that port using Cloud Shell's preview button. You should see some placeholder code when the app preview starts.
+
+NOTE: If your app failed to start up for some reason, and there were vulnerabilities listed in step 4, you can try updating the installation file with the command `npm audit fix` - if the app started up in spite of its vulnerabilities, ignore them for now. 
 
 #### Step 6: Mess with the App
 
