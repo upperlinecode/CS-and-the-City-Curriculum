@@ -113,7 +113,7 @@ npm install
 
 This will trigger the installation of all the files needed to run a React App - it usually takes about 1-2 minutes. 
 
-NOTE: If your install mentions vulnerabilities, you can usually ignore them. If we need to troubleshoot them, we'll do it in step 5 below. 
+NOTE: If your install mentions vulnerabilities, you can usually ignore them (even if they are described as "high"). If we need to troubleshoot them, we'll do it in step 5 below. 
 
 #### Step 5: Run the App
 
