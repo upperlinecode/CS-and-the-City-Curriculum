@@ -11,7 +11,7 @@
 * [Unit 4: Project Mode](#unit-4)
 
 ### Resources to build Prerequisite Skills
-* Lab: <a href="https://github.com/upperlinecode/html_biography" target="_blank_">Command Line Hidden Treasure</a> (Command Line)
+* Lab: <a href="https://github.com/upperlinecode/command-line-hidden-treasure" target="_blank_">Command Line Hidden Treasure</a> (Command Line)
 
 ### Unit 1
 #### HTML and CSS Review
