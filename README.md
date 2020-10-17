@@ -30,7 +30,7 @@
 * Lab: <a href="https://github.com/upperlinecode/SeriousSelectors" target="_blank">Serious Selectors</a> (Specificity & niche CSS selectors)
 
 #### Unit 1-3 Boostrap (extension unit)
-* Lab: <a hrev="https://github.com/upperlinecode/bootstrap-card-columns-mockup-match" target="_blank">Boostrap Card Columns Inspiration Wall</a> (Interact with Bootstrap Documentation)
+* Lab: <a href="https://github.com/upperlinecode/bootstrap-card-columns-mockup-match" target="_blank">Boostrap Card Columns Inspiration Wall</a> (Interact with Bootstrap Documentation)
 
 #### Unit 1-4 CSS Grid (extension unit)
 * Lesson: [CSS Grid](html/css-grid.md)
