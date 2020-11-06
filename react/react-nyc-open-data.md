@@ -56,12 +56,11 @@ To get to the API version of the dataset: from the information page, we can clic
 
 ## Getting an App Token
 
-Although it may seem like we're good to go now that we know the endpoint for the dataset (the JSON file linked above), Socrata puts a limit on how many times we can access that data without an Application Token. That means we need to [register an Application Token](https://dev.socrata.com/register) (and also create an Account on Socrata):
+Although it may seem like we're good to go now that we know the endpoint for the dataset (the JSON file linked above), Socrata puts a limit on how many times we can access that data without an Application Token. That means we need to register an Application Token (and also create an Account on the Open Data Portal):
 
-1. Sign up for a Socrata Account here: [opendata.socrata.com/signup](https://opendata.socrata.com/signup)
+1. Sign up for an [Open Data Account](https://data.cityofnewyork.us/login)
 
-2. If you're not directed to the Developer Settings, from the bottom of your profile page, tap the "Manage" link in the top-right corner of your "Applications" list.
-![Socrata](./img/socrata-1.png)
+2. If you're not directed to the Developer Settings, click "edit profile" and then click "Developer Settings". This [link](https://data.cityofnewyork.us/profile/edit/developer_settings) may also get you there.
 
 3. Tap the "Create New App Token" button, fill in the required information about the app/dataset you're using, and then tap "Save".
 ![Socrata](./img/socrata-2.png)
