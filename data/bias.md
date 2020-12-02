@@ -132,7 +132,14 @@ Sometimes people interpret data differently, and that can be okay. However, if t
 
 ## Case Study 3: Bias in Visualization
 
-Consider the three sets of data visualizations below. Each pair represents the same information:
+Consider the three sets of data visualizations below. Each pair represents the same information.
+
+#### Discussion Questions
+
+- Why did the person making each of these graphs choose to represent the data the way they have?
+- What message do you think that person was trying to communicate by making those choices?
+- Which do you think is more biased? more unbiased?
+
 
 | Visualization A | Visualization B |
 | :---: | :---: |
@@ -146,16 +153,13 @@ Consider the three sets of data visualizations below. Each pair represents the s
 | :---: | :---: |
 | ![Gun Deaths](./images/gun-deaths-0.jpg) | ![Gun Deaths](./images/gun-deaths-1.jpg) |
 
-#### Discussion Questions
+#### Additional Discussion Questions
 
-- Why did the person making each of these graphs choose to represent the data the way they have?
-- What message do you think that person was trying to communicate by making those choices?
-- Which do you think is more biased? more unbiased?
-- Each of these pairs of visualizations represents the same data in two different ways:
-		- Is there a pair among these three pairs that seems to provide two *equally helpful* ways of visualizing information?
-		- Are any of the six visualizations particularly *helpful* in conveying useful information?
-		- Are any of the six visualizations particularly *unhelpful* in conveying information?
-		- Do any of the six visualizations appear to be *intentionally* misleading?
+Notice that each of these pairs of visualizations represents the same data in two different ways. 
+- Is there a pair among these three pairs that seems to provide two *equally helpful* ways of visualizing information?
+- Are any of the six visualizations particularly *helpful* in conveying useful information?
+- Are any of the six visualizations particularly *unhelpful* in conveying information?
+- Do any of the six visualizations appear to be *intentionally* misleading?
 
 ## Close
 
