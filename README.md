@@ -12,6 +12,7 @@
 
 ### Resources to build Prerequisite Skills
 * Lab: <a href="https://github.com/upperlinecode/command-line-hidden-treasure" target="_blank_">Command Line Hidden Treasure</a> (Command Line)
+* Lab: <a href="https://github.com/upperlinecode/command-line-refrigerator-lab" target="_blank_">Clean the Refrigerator</a> (Command Line Advanced)
 
 ### Unit 1
 #### HTML and CSS Review
