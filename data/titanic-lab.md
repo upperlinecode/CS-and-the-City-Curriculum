@@ -6,7 +6,7 @@
 
 In this lab, you'll explore historical data about passengers on the _RMS Titanic_. Your goal is to determine the factor(s) that led to passengers' survival (or death).
 
-- Make a copy of the [Titanic Data Google Sheet](https://docs.google.com/spreadsheets/d/17PncyppLXjKyGZFgcSfgkWIulJ-rsZv2suqQ_bsSKE4/edit?usp=sharing)
+- Make a copy of the <a href="https://docs.google.com/spreadsheets/d/17PncyppLXjKyGZFgcSfgkWIulJ-rsZv2suqQ_bsSKE4/edit?usp=sharing" target="_blank_">Titanic Data Google Sheet</a>
 
 > The file contains a `README` sheet with definitions for the variables. Consult the `README` for abbreviations (e.g. C, Q, S) and Booleans (survival: 0 = No, 1 = Yes).
 
