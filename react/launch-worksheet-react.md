@@ -5,7 +5,7 @@
 import React from 'react';
 import {link} from 'react-router-dom';
 
-funciton Navbar(props) {
+function Navbar(props) {
   const activeStyle = {background: 'blue', color: 'white'}
   return(
     <nav>
