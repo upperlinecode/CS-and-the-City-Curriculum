@@ -114,7 +114,7 @@
 
 #### Unit 3-5 Segmenting & Pivot Tables
 * Lesson: [Data Analysis](data/segmenting.md)
-* Lab: [Titantic Data](data/titanic-lab.md)
+* Lab: [Titanic Data](data/titanic-lab.md)
 * Lab: [Manhattan Street Trees](data/nyc-street-trees.md)
 
 #### Unit 3-6 Data Visualization (Mapping)
