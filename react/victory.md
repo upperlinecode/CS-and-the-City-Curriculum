@@ -73,7 +73,7 @@ const earningsData = [
 
 ```javascript
 // Before: import everything from Victory
-import * from 'victory';
+import * as V from 'victory';
 
 // After: just import the VictoryBar component
 import { VictoryBar } from 'victory';
